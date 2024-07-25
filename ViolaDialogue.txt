@@ -1,0 +1,40 @@
+if (DialogueScreen == "FirstScreen")
+    ("V")
+    ("IOLA NOX")
+        CharacterDescription = "She moans in her sickbed, a sheen of sweat on her face. Her bed and bandages are soaked in blood, and the cabin stinks of gangrene."
+        SpecificDescription = "She looks down her nose at you whenever you suggest she might do any work. She came 2nd in her entire year at the Academy, she tells you, and this job is beneath her. With a sniff, she resumes reading the newspaper."
+            WoundDescription = "##Purple bruising has spread over her face like spilled ink."
+            WoundDescription = "##Though her current wounds are clearly genuine, you suspect she's secretly pleased to have yet another excuse to avoid working."
+            WoundDescription = ""
+            SanityDescription = "##Without apparently realizing, she has started voicing all of her thoughts aloud, most of them patronizing or rude."
+            SanityDescription = ""
+    ("Return.", "Leave Viola to her duties.")
+        ("Tell her that you know she is an Aspect of the Trickster.")
+            ("Ask if she knows anything about the City of Glass.")
+        ("Flirt with Viola.", "A certain smile, a lingering look. Gauge her openness to a relationship. You never know where it might lead...")
+        NeedsInformationItem("Do her job for her.", "The engine is howling and she's just... sitting there!", "[This will increase your Graft by 1, and cost you 15 Apprehensions.]")
+else if (DialogueScreen == "SecondScreen" && IncreasingGraft == 1)
+    ("V")
+    ("IOLA NOX")
+    ("You leap from place to place, tightening screws, refilling tanks of coolant, banging a wrench against the complaining engine until it stops sputtering. Viola licks her finger and turns a page in the paper.")
+    ("An hour later, you're exhausted, but the engine is back to normal. Viola's eyes flick toward you. " + '"' + "I had everything under control," + '"' + " she says languidly. " + '"' + "This is a very untrusting environment to work in." + '"')
+    ("+1 Graft", "Challenge", 6)
+    ("Too... tired... to argue...", "You learned a lot about engineering-work, at least.")
+else if (DialogueScreen == "SecondScreen" && CharacterFlirt == 1)
+    ("V")
+    ("IOLA NOX")
+    ("You hang around in the engine-room and nonchalantly ask Viola on a date. She looks up at you, rolls her eyes, then looks back to her newspaper with a sigh.")
+    ("[Viola is not interested in a relationship.]", "Romance", 5)
+    ("You wait for a further response. There is none.")
+else if (DialogueScreen == "SecondScreen" && GlassQuest1 == 1)
+    ("V")
+    ("IOLA NOX")
+    ("Viola looks up at you, sighs, then looks back down at her newspaper and turns a page.")
+    ("No luck.")
+else if (DialogueScreen == "SecondScreen" && TricksterQuest1 == 1)
+    ("V")
+    ("IOLA NOX")
+    ("Viola looks up at you, sighs, and closes her newspaper. A guilty grin crawls across her face. " + '"' + "You got me," + '"' + " she says.")
+    ("Gained x1 Aspect of the Trickster", "Aspect", 4)
+    ("[You will lose this Aspect of the Trickster if Viola leaves your crew.]", "", 4)
+    ("She resumes reading the paper, and refuses to answer further questions.")

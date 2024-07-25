@@ -1,0 +1,17 @@
+    ("S")
+    ("KIMMERSKARD")
+    ("Violante looks around the primitive townsfolk in their helmets and furs. The air stinks of manure and foetid water. " + '"' + "It's... lovely," + '"' + " she says, an eye twitching. " + '"' + "Promise me you'll visit." + '"')
+    ("Concerns concluded: A Noddy Problem", "Logbook", 6)
+    ("Gained x1 Moment of Melancholy", "Logbook", 3)
+    ("+2 Relationship: Violante DiMar", "Logbook", 5)
+    ("You leave her, a lonely figure in a busy street.")
+        oInventories.ViolanteHiding = "Skimmerskard"
+        ChangeConcerns2Description(90, "You left Violante in Skimmerskard.")
+        oPlayer.Lookout = "Dead"
+    ("S")
+    ("KIMMERSKARD")
+    ("Violante seems to have been welcomed into a family of tradespeople. She absent-mindedly ruffles a child's hair when she stands up to greet you, and introduces you to her host-family one by one. " + '"' + "Come on," + '"' + " she says. " + '"' + "I have something to show you." + '"')
+    ("She takes you up to one of the highest towers in Skimmerskard, and spreads her arms - embracing the city-wings, the glimmering lake. " + '"' + "Isn't it beautiful?" + '"' + " she says.")
+    ("Gained x1 Breathtaking Spectacle", "Logbook", 3)
+    ("Gained a small amount of Sanity", "Sanity", 1)
+    ("She waves you off with a smile on her face.")

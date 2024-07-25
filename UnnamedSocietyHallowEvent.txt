@@ -1,0 +1,7 @@
+("T")
+("HE OLD HALLOW")
+("Your contact is a bald man covered in swirling tattoos, sitting at the bar with a pint of peregrine-flavoured cider. He winks as you approach and belches the pass-phrase.")
+('"' + "Cheers mate," + '"' + " he says as he takes the envelope. He hands you a Five of Hearts card to return to the Society, and resumes sipping his pint.")
+("Concerns updated: The Unnamed Society", "Logbook", 6)
+("The message has been relayed.", "Now return to the Mill and report back to Clayton.", "")
+    ChangeConcernsDescription(85, "Return to the Unnamed Society at Clayton's Mill.")

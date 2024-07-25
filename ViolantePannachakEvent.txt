@@ -1,0 +1,16 @@
+    ("P")
+    ("ANNACHAK")
+    ("Violante looks around Pannachak, her face twisted with disgust. The whole place stinks of rust and rot. " + '"' + "It's... lovely," + '"' + " she says, an eye twitching. " + '"' + "I am quite beside myself with joy. Promise me you'll visit." + '"')
+    ("Concerns concluded: A Noddy Problem", "Logbook", 6)
+    ("Gained x1 Moment of Melancholy", "Logbook", 3)
+    ("+2 Relationship: Violante DiMar", "Logbook", 5)
+    ("You leave her, a lonely figure shadowed by jags of metal.")
+        oInventories.ViolanteHiding = "Pannachak"
+        ChangeConcerns2Description(90, "You left Violante in Pannachak.")
+        oPlayer.Lookout = "Dead"
+    ("P")
+    ("ANNACHAK")
+    ("You can't find her anywhere. You ask around.")
+    ('"' + "She went to complain to Mayor Feverbeard about something-or-other," + '"' + " says one villager nervously. " + '"' + "I don't know what happened to her. Maybe she'll come back soon?" + '"')
+    ("Gained x1 Moment of Melancholy", "Logbook", 3)
+    ("You wait as long as you can, but she is nowhere to be found.")

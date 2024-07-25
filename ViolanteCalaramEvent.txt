@@ -1,0 +1,17 @@
+    ("C")
+    ("ALARAM")
+    ("Violante looks around the honey-slick streets. " + '"' + "It's... lovely," + '"' + " she says, an eye twitching. A fly settles on one jutting cheekbone.")
+    ('"' + "Promise you'll visit," + '"' + " she adds urgently.")
+    ("Concerns concluded: A Noddy Problem", "Logbook", 6)
+    ("Gained x1 Moment of Melancholy", "Logbook", 3)
+    ("+2 Relationship: Violante DiMar", "Logbook", 5)
+    ("You leave her, a lonely figure struggling with suitcases.")
+        oInventories.ViolanteHiding = "Calaram"
+        ChangeConcerns2Description(90, "You left Violante in Calaram.")
+        oPlayer.Lookout = "Dead"
+    ("C")
+    ("ALARAM")
+    ("Violante has rented room on the outskirts of town, sharing a building with three noisy families and a mellified man who apparently 'won't give her the time of day.'")
+    ("She has been writing her novel again, and she reads you a few excerpts - the prose is a little stilted. You share jokes and stories, but eventually her cheerful facade breaks. " + '"' + "I hate it here," + '"' + " she says frankly. " + '"' + "Too warm, flies everywhere, sticky and smelly and... ugh. If I never have to eat another honeyed meat-treat, it'll be too soon." + '"')
+    ("Gained x1 Moment of Melancholy", "Logbook", 3)
+    ("She accompanies you back to the kinetopede and waves you off.")

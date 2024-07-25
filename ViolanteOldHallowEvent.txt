@@ -1,0 +1,15 @@
+    ("T")
+    ("HE OLD HALLOW")
+    ("Violante looks around her warm little bedroom with undisguised relief. " + '"' + "I had dreaded the idea of hanging around in the arse-end of nowhere," + '"' + " she says. " + '"' + "But this is much better. Maybe I'll even start writing my novel again. Promise me you'll visit." + '"')
+    ("Concerns concluded: A Noddy Problem", "Logbook", 6)
+    ("+2 Relationship: Violante DiMar", "Logbook", 5)
+    ("You leave her as she starts unpacking her things.")
+        oInventories.ViolanteHiding = "The Old Hallow"
+        ChangeConcerns2Description(90, "You left Violante in th Old Hallow.")
+        oPlayer.Lookout = "Dead"
+    ("T")
+    ("HE OLD HALLOW")
+    ("Violante at first seems cheerful, but as the night wears on and her smile wears thinner, you realize how forced it all is. She must feel very trapped, but she does her best not to show it.")
+    ("She reads you a few excerpts from her novel - the prose is a little dry - and you share jokes and stories.")
+    ("Gained x1 Droll Recollection", "Logbook", 3)
+    ("She stares longingly through the window as you leave.")

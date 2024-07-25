@@ -1,0 +1,7 @@
+("T")
+("YBALT BALSAMIC IV")
+("The wreckage of the enemy vehicle sprawls before you like the guts of some disembowelled iron god. Tybalt approaches you with too-wide eyes, clutching his helmet with shaking hands.")
+('"' + "That was horrible," + '"' + " he whispers. " + '"' + "I never - I never -" + '"')
+("He pauses, then holds his helmet up to his face like a bucket and is violently sick into it.")
+("-1 Relationship: Tybalt Balsamic IV", "Logbook", 5)
+("Onward.", "")

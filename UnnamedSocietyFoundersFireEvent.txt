@@ -1,0 +1,7 @@
+("F")
+("OUNDER'S FIRE")
+("Your contact is a generously-proportioned woman with a colourful scarf and dyed-green hair. She waits for you in Shipshade Market, selling trinkets from a nondescript stall.")
+('"' + "Thank you," + '"' + " she murmurs as she takes the envelope. She hands you a scrap of red cloth to return to the Society, then resumes hawking her wares.")
+("Concerns updated: The Unnamed Society", "Logbook", 6)
+("The message has been relayed.", "Now return to the Mill and report back to Clayton.", "")
+    ChangeConcernsDescription(85, "Return to the Unnamed Society at Clayton's Mill.")

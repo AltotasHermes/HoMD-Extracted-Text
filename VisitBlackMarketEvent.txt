@@ -1,0 +1,7 @@
+("S")
+("TICKY END")
+("Lilian Mourn's face hangs in the darkness of the alley like a putrid moon. Her mad-eyed poodle chews at your shoes.")
+('"' + "Wotcher," + '"' + " says the ghoul. " + '"' + "Buyin'? Sellin'?" + '"')
+('"' + "Actually, neither. I need to go." + '"')
+NeedsMoney('"' + "Buying." + '"', "Lilian plies a busy trade, and her selection changes every day.", 80)
+NeedsMoney('"' + "Selling." + '"', "Lilian shows you her dwindled teeth. " + '"' + "Oh, I'd dearly 'oped so." + '"', 80)

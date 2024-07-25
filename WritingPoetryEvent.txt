@@ -1,0 +1,18 @@
+("A")
+(" FLOOD OF WORDS")
+("You sit at your desk and strive furiously to compose yourself before you can compose anything else. Your pen shakes in excitement. Images flicker through your mind: patterns, echoes, reflections.")
+("On second thoughts...", "The muse abandons you, as suddenly as it came.#")
+NeedsExperienceItem("Write a transcendent ballad.", "Kaleidoscopic; disordered. A poem of refraction and sparking eyes.", (("[Requires x3 Fragments of Epiphany. You currently have x" + string(ExperiencesReturnNumberOfItems(11))) + ".]"), WeHaveTheEpiphanyItemsNeeded)
+    TypeOfPoem = "Dreamlike"
+NeedsExperienceItem("Write a mournful lament.", "Regretful. Woebegone. A poem of crippled birds and dead trees.", (("[Requires x3 Moments of Melancholy. You currently have x" + string(ExperiencesReturnNumberOfItems(2))) + ".]"), WeHaveTheMelancholyItemsNeeded)
+    TypeOfPoem = "Melancholic"
+NeedsExperienceItem("Write a romantic verse.", "Passionate, affectionate. A poem of fire and skin.", (("[Requires x3 Romantic Encounters. You currently have x" + string(ExperiencesReturnNumberOfItems(0))) + ".]"), WeHaveTheRomanticItemsNeeded)
+    TypeOfPoem = "Romantic"
+NeedsExperienceItem("Write a gothic horror.", "Macabre and unsettling. A poem of whispers, and cold cracked stone.", (("[Requires x3 Horrifying Ordeals. You currently have x" + string(ExperiencesReturnNumberOfItems(3))) + ".]"), WeHaveTheHorrifyingItemsNeeded)
+    TypeOfPoem = "Gothic"
+NeedsExperienceItem("Write a mischievous satire.", "Parodic and self-parodic and endlessly, knowingly clever. A poem that bites and pokes.", (("[Requires x3 Droll Recollections. You currently have x" + string(ExperiencesReturnNumberOfItems(5))) + ".]"), WeHaveTheDrollItemsNeeded)
+    TypeOfPoem = "Satiric"
+NeedsExperienceItem("Write a grand epic.", "Sprawling and mythopoeic. A poem of sundered stone and thunder.", (("[Requires x3 Breathtaking Spectacles. You currently have x" + string(ExperiencesReturnNumberOfItems(6))) + ".]"), WeHaveTheBreathtakingItemsNeeded)
+    TypeOfPoem = "Epic"
+NeedsExperienceItem("Write a meditative elegy.", "Morbid but not macabre. Sombre, not sorrowful. A poem of relentless sand and empty glass.", (("[Requires x3 Reflections on Mortality. You currently have x" + string(ExperiencesReturnNumberOfItems(8))) + ".]"), WeHaveTheMortalityItemsNeeded)
+    TypeOfPoem = "Melancholic"

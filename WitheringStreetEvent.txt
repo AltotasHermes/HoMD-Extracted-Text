@@ -1,0 +1,200 @@
+        ("1")
+        ("51 WITHERING STREET")
+        ("Withering Street is a tranquil row of middle-class homes: narrow leafy gardens and ornamental gnomes. 151 looks just as cheery as all its neighbours.")
+        ("Your knock at the door is answered by a small man in an ill-fitting suit. He has a craggy face, unkempt stubble, alarmingly blue eyes. " + '"' + "I am a Governor's Man," + '"' + " he explains without preamble, ushering you inside. " + '"' + "Sit down. Talk." + '"')
+        ("The inside of the house is devoid of furniture, except for a single velvet armchair into which the Governor's Man reclines. He looks up at you and smiles quizzically, hands folded in his lap.")
+        ("[The Governor's Man will pay you for secrets with guineas and Reputation.]", "", 0)
+        ('"' + "What should I call you?" + '"')
+        ("Leave.", "The Governor's Man is silent and smiling. He does not say goodbye.")
+        NeedsInformationItem("Sell a Terrible Secret.", "A long silence follows your words, broken by the scratching of his pen.", "[You will receive 200 G and +1 Reputation: The City of Keys.]" HasSecret)
+            GainString = "Gained 200 G!"
+            LossString = "Lost x1 Terrible Secret"
+            LossString2 = "+1 Reputation: The City of Keys"
+                LossString3 = "-1 Radical Sympathies"
+                LossString3 = ""
+        NeedsInformationItem("Sell a scrap of Scandalous Gossip.", "The Governor's Man listens with half-closed eyes. He does not write anything down.", "[You will receive 30 G.]" HasGossip)
+            GainString = "Gained 30 G!"
+            LossString = "Lost x1 Scandalous Gossip"
+                LossString2 = "-1 Radical Sympathies"
+                LossString2 = ""
+            LossString3 = ""
+        NeedsInformationItem("Sell your Unsettling Conjecture.", "All just guesswork and inference, of course, but the Governor's Man taps his pen against his teeth and gestures you to continue.", "[You will receive 60 G.]" HasConjecture)
+            GainString = "Gained 60 G!"
+            LossString = "Lost x1 Unsettling Conjecture"
+                LossString2 = "-1 Radical Sympathies"
+                LossString2 = ""
+            LossString3 = ""
+        NeedsInformationItem("Sell your knowledge of Dread Machinations.", "He sits up. Eyes widen. " + '"' + "Again," + '"' + " he says, beginning to write. " + '"' + "Slower." + '"', "[You will receive 300 G, +1 Reputation: The City of Keys, and +1 Stability: The City of Keys.]" HasDread)
+            GainString = "Gained 300 G!"
+            LossString = "Lost x1 Dread Machinations"
+            LossString2 = "+1 Reputation: The City of Keys"
+            LossString3 = "+1 Stability: The City of Keys"
+        NeedsInformationItem("Sell your Hideous Revelation.", "You stammer it, the words sliding from your mouth like the birth of eels. The Governor's Man writes frantically, his face pale, his blue eyes bulging.", "[You will receive 500 G and +1 Reputation: The City of Keys.]" HasRevelation)
+            GainString = "Gained 500 G!"
+            LossString = "Lost x1 Hideous Revelation"
+            LossString2 = "+1 Reputation: The City of Keys"
+                LossString3 = "-1 Radical Sympathies"
+                LossString3 = ""
+        NeedsInformationItem("Sell Seditious Whispers: The City of Keys.", "The smile turns distinctly chilly. " + '"' + "This will be seen to." + '"', "[You will receive 300 G.]" HasKeysWhispers)
+            GainString = "Gained 300 G!"
+            LossString = "Lost x1 Seditious Whispers: The City of Keys"
+                LossString2 = "-1 Radical Sympathies"
+                LossString2 = ""
+            LossString3 = ""
+        NeedsInformationItem("Sell your Evidence: The Governor.", "He regards you carefully. " + '"' + "If this is what I think it is, I am going to have to take all related memories. Apologies. You will still be paid." + '"', "[You will receive 600 G and +1 Reputation: The City of Keys.]" HasGovernorEvidence)
+            GainString = "Gained 600 G!"
+            LossString = "Lost x1 Evidence: The Governor"
+            LossString2 = "+1 Reputation: The City of Keys"
+                LossString3 = "-1 Radical Sympathies"
+                LossString3 = ""
+        NeedsInformationItem("Sell your Evidence: The Shrouded Council.", "The Governor's Man nods. " + '"' + "Very good work. Very good work indeed." + '"', "[You will receive 100 G.]" HasCouncilEvidence)
+            GainString = "Gained 100 G!"
+            LossString = "Lost x1 Evidence: The Shrouded Council"
+            LossString2 = ""
+            LossString3 = ""
+        NeedsInformationItem("Sell your Evidence: The Consortium.", "The Governor's Man smiles. " + '"' + "More of this. Our dealings with the Consortium have always been... troubled." + '"', "[You will receive 100 G.]" HasConsortiumEvidence)
+            GainString = "Gained 100 G!"
+            LossString = "Lost x1 Evidence: The Consortium"
+            LossString2 = ""
+            LossString3 = ""
+        NeedsExperienceItem("Sell your Glimpse of Another World.", "The Governor's Man does not write but listens, his face hardened by longing.", "[You will receive 150 G.]" HasGlimpse)
+            GainString = "Gained 150 G!"
+            LossString = "Lost x1 Glimpse of Another World"
+            LossString2 = ""
+            LossString3 = ""
+            ("Hand in the Radical Pamphlet.", "He tucks it away in his jacket. " + '"' + "If you find any more of this material, please hand it in. If a civilian found it, it could be... dangerous for them." + '"', "[You will receive 10 G.]", sFightIcon, 7, 0.8)
+                GainString = "Gained 10 G!"
+                LossString = "Lost x1 Radical Pamphlet"
+                    LossString2 = "-1 Radical Sympathies"
+                    LossString2 = ""
+                LossString3 = ""
+            ("Hand in the Unsanctioned Scripture.", "He tucks it away in his jacket. " + '"' + "If you find any more of this material, please hand it in. If a civilian found it, it could be... dangerous for them." + '"', "[You will receive 10 G.]", sFightIcon, 7, 0.8)
+                GainString = "Gained 10 G!"
+                LossString = "Lost x1 Unsanctioned Scripture"
+                LossString2 = ""
+                LossString3 = ""
+            ("Sell your Box of Redacted Memories.", '"' + "I don't know where you found this, and I won't ask." + '"', "[You will receive 250 G.]", sFightIcon, 7, 0.8)
+                GainString = "Gained 250 G!"
+                LossString = "Lost x1 Box of Redacted Memories"
+                LossString2 = ""
+                LossString3 = ""
+            ("Hand in the Swarm Bomb.", "He leaps up from his armchair. " + '"' + "You have WHAT in your cargo?" + '"', "[You will receive 3000 G, +1 Reputation: The City of Keys and +2 Stability: The City of Keys.]", sFightIcon, 7, 0.8)
+                GainString = "Gained 3000 G!"
+                LossString = "Lost x1 Swarm Bomb"
+                LossString2 = "+1 Reputation: The City of Keys"
+                LossString3 = "+2 Stability: The City of Keys"
+        ("1")
+        ("51 WITHERING STREET")
+        ("From inside 151, you can't hear the cheery noise of its neighbours.")
+        ("The blue-eyed Governor's Man sits in an armchair - the only furniture in the entire building. His hands are in his lap, that odd smile playing at the corners of his mouth. " + '"' + "Well?" + '"')
+        ("[The Governor's Man will pay you for secrets with guineas and Reputation.]", "Logbook", 4)
+        ("Leave.", "The Governor's Man is silent and smiling. He does not say goodbye.")
+        NeedsInformationItem("Sell a Terrible Secret.", "A long silence follows your words, broken by the scratching of his pen.", "[You will receive 200 G and +1 Reputation: The City of Keys.]" HasSecret)
+            GainString = "Gained 200 G!"
+            LossString = "Lost x1 Terrible Secret"
+            LossString2 = "+1 Reputation: The City of Keys"
+                LossString3 = "-1 Radical Sympathies"
+                LossString3 = ""
+        NeedsInformationItem("Sell a scrap of Scandalous Gossip.", "The Governor's Man listens with half-closed eyes. He does not write anything down.", "[You will receive 30 G.]" HasGossip)
+            GainString = "Gained 30 G!"
+            LossString = "Lost x1 Scandalous Gossip"
+            LossString2 = ""
+            LossString3 = ""
+        NeedsInformationItem("Sell your Unsettling Conjecture.", "All just guesswork and inference, of course, but the Governor's Man taps his pen against his teeth and gestures you to continue.", "[You will receive 60 G.]" HasConjecture)
+            GainString = "Gained 60 G!"
+            LossString = "Lost x1 Unsettling Conjecture"
+                LossString2 = "-1 Radical Sympathies"
+                LossString2 = ""
+            LossString3 = ""
+        NeedsInformationItem("Sell your knowledge of Dread Machinations.", "He sits up. Eyes widen. " + '"' + "Again," + '"' + " he says, beginning to write. " + '"' + "Slower." + '"', "[You will receive 300 G, +1 Reputation: The City of Keys, and +1 Stability: The City of Keys.]" HasDread)
+            GainString = "Gained 300 G!"
+            LossString = "Lost x1 Dread Machinations"
+            LossString2 = "+1 Reputation: The City of Keys"
+            LossString3 = "+1 Stability: The City of Keys"
+        NeedsInformationItem("Sell your Hideous Revelation.", "You stammer it, the words sliding from your mouth like the birth of eels. The Governor's Man writes frantically, his face pale, his blue eyes bulging.", "[You will receive 500 G and +1 Reputation: The City of Keys.]" HasRevelation)
+            GainString = "Gained 500 G!"
+            LossString = "Lost x1 Hideous Revelation"
+            LossString2 = "+1 Reputation: The City of Keys"
+                LossString3 = "-1 Radical Sympathies"
+                LossString3 = ""
+        NeedsInformationItem("Sell Seditious Whispers: The City of Keys.", "The smile turns distinctly chilly. " + '"' + "This will be seen to." + '"', "[You will receive 300 G.]" HasKeysWhispers)
+            GainString = "Gained 300 G!"
+            LossString = "Lost x1 Seditious Whispers: The City of Keys"
+                LossString2 = "-1 Radical Sympathies"
+                LossString2 = ""
+            LossString3 = ""
+        NeedsInformationItem("Sell your Evidence: The Governor.", "He regards you carefully. " + '"' + "If this is what I think it is, I am going to have to take all related memories. Apologies. You will still be paid." + '"', "[You will receive 600 G and +1 Reputation: The City of Keys.]" HasGovernorEvidence)
+            GainString = "Gained 600 G!"
+            LossString = "Lost x1 Evidence: The Governor"
+            LossString2 = "+1 Reputation: The City of Keys"
+                LossString3 = "-1 Radical Sympathies"
+                LossString3 = ""
+        NeedsInformationItem("Sell your Evidence: The Shrouded Council.", "The Governor's Man nods. " + '"' + "Very good work. Very good work indeed." + '"', "[You will receive 100 G.]" HasCouncilEvidence)
+            GainString = "Gained 100 G!"
+            LossString = "Lost x1 Evidence: The Shrouded Council"
+            LossString2 = ""
+            LossString3 = ""
+        NeedsInformationItem("Sell your Evidence: The Consortium.", "The Governor's Man smiles. " + '"' + "More of this. Our dealings with the Consortium have always been... troubled." + '"', "[You will receive 100 G.]" HasConsortiumEvidence)
+            GainString = "Gained 100 G!"
+            LossString = "Lost x1 Evidence: The Consortium"
+            LossString2 = ""
+            LossString3 = ""
+        NeedsExperienceItem("Sell your Glimpse of Another World.", "The Governor's Man does not write but listens, his face hardened by longing.", "[You will receive 150 G.]" HasGlimpse)
+            GainString = "Gained 150 G!"
+            LossString = "Lost x1 Glimpse of Another World"
+            LossString2 = ""
+            LossString3 = ""
+            ("Hand in the Radical Pamphlet.", "He tucks it away in his jacket. " + '"' + "If you find any more of this material, please hand it in. If a civilian found it, it could be... dangerous for them." + '"', "[You will receive 10 G.]", sFightIcon, 7, 0.8)
+                GainString = "Gained 10 G!"
+                LossString = "Lost x1 Radical Pamphlet"
+                    LossString2 = "-1 Radical Sympathies"
+                    LossString2 = ""
+                LossString3 = ""
+            ("Hand in the Unsanctioned Scripture.", "He tucks it away in his jacket. " + '"' + "If you find any more of this material, please hand it in. If a civilian found it, it could be... dangerous for them." + '"', "[You will receive 10 G.]", sFightIcon, 7, 0.8)
+                GainString = "Gained 10 G!"
+                LossString = "Lost x1 Unsanctioned Scripture"
+                LossString2 = ""
+                LossString3 = ""
+            ("Sell your Box of Redacted Memories.", '"' + "I don't know where you found this, and I won't ask." + '"', "[You will receive 250 G.]", sFightIcon, 7, 0.8)
+                GainString = "Gained 250 G!"
+                LossString = "Lost x1 Box of Redacted Memories"
+                LossString2 = ""
+                LossString3 = ""
+            ("Hand in the Swarm Bomb.", "He leaps up from his armchair. " + '"' + "You have WHAT in your cargo?" + '"', "[You will receive 3000 G, +1 Reputation: The City of Keys and +2 Stability: The City of Keys.]", sFightIcon, 7, 0.8)
+                GainString = "Gained 3000 G!"
+                LossString = "Lost x1 Swarm Bomb"
+                LossString2 = "+1 Reputation: The City of Keys"
+                LossString3 = "+2 Stability: The City of Keys"
+        ("1")
+        ("51 WITHERING STREET")
+        ("The door to 151 is locked. Peeking through a window, you see a family gathered around the fireplace, parents reading a book to their identically adorable children.")
+        ("The blue-eyed Governor's Man is missing. So is his armchair.")
+        ("[You cannot sell information to the Governor's Man while your Reputation: The City of Keys is below 0.]", "Logbook", 4)
+        ("Leave.", "You are not welcome.")
+    ("1")
+    ("51 WITHERING STREET")
+    ('"' + "You may refer to me as 151 Withering Street," + '"' + " says the Governor's Man. " + '"' + "And perhaps, one day, a friend." + '"')
+    ("That damn smile never leaves his lips.")
+    ("1")
+    ("51 WITHERING STREET")
+    ('"' + "You have, as always, been most helpful." + '"' + " Does the smile turn genuine? Just for a second?")
+    (GainString, "Money", 0)
+    (LossString, "Logbook", 4)
+    if (LossString2 != "")
+        (LossString2, "Reputation", 5)
+    if (LossString3 != "")
+        (LossString3, "Logbook", 4)
+    ("You have more information to sell.", "He cocks his head.")
+    ("Leave.", "The Governor's Man is silent and smiling. He does not say goodbye.")
+    ("1")
+    ("51 WITHERING STREET")
+    ("When you wake up, there is a suspicious hole in your memories. Sure enough - you reach to your temple and feel a damp scar.")
+    ('"' + "Unavoidable," + '"' + " says the Governor's Man apologetically.")
+    (GainString, "Money", 0)
+    (LossString, "Logbook", 4)
+    if (LossString2 != "")
+        (LossString2, "Reputation", 5)
+    if (LossString3 != "")
+        (LossString3, "Logbook", 4)
+    ("You have more information to sell.", "He cocks his head.")
+    ("Leave.", "The Governor's Man is silent and smiling. He does not say goodbye.")

@@ -1,0 +1,17 @@
+    ("I")
+    ("CICLE SPINE")
+    (((((((("Violante's bony body is draped in furs, but it's not enough to stop the shivering. " + '"' + "Th-th-thank you, " + oPlayer.PlayerName) + ",") + '"') + " she says through chattering teeth. She looks around at the frost-dulled mycenae. ") + '"') + "M-maybe I-I'll even start writing m-my novel again. P-promise m-me you will v-v-visit.") + '"'))
+    ("Concerns concluded: A Noddy Problem", "Logbook", 6)
+    ("Gained x1 Moment of Melancholy", "Logbook", 3)
+    ("+2 Relationship: Violante DiMar", "Logbook", 5)
+    ("You leave her, a skinny figure swallowed quickly by whirling snow.")
+        oInventories.ViolanteHiding = "Icicle Spine"
+        ChangeConcerns2Description(90, "You left Violante in Icicle Spine.")
+        oPlayer.Lookout = "Dead"
+    ("I")
+    ("CICLE SPINE")
+    ("She's set up residence in a little patchy-roofed shack on the outskirts of the village. Snow coats her dining-room floor. She reads you a few excerpts from her novel - the prose is excellent - and you share jokes and stories.")
+    ("Her face slumps in despair when you tell her you have to leave.")
+    ("Gained x1 Moment of Melancholy", "Logbook", 3)
+    ("Gained x1 Droll Recollection", "Logbook", 3)
+    ("She comes out into the snow to wave you off.")

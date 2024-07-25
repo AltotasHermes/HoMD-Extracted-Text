@@ -1,0 +1,7 @@
+("T")
+("HE CITY OF BRIDGES")
+("Your contact is a thin-lipped man in dark glasses and a dark coat, waiting in an alley on Rosepike Bridge. He is not a ghoul, but he has the hollow-cheeked face of a corpse.")
+('"' + "Thank you," + '"' + " he murmurs as he takes the envelope. He hands you a signet ring to return to the Society, and slips away into the fog.")
+("Concerns updated: The Unnamed Society", "Logbook", 6)
+("The message has been relayed.", "Now return to the Mill and report back to Clayton.", "")
+    ChangeConcernsDescription(85, "Return to the Unnamed Society at Clayton's Mill.")
