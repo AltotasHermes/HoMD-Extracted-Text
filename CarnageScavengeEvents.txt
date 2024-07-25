@@ -1,0 +1,36 @@
+    ("C")
+    ("ARNAGE AND RUST")
+    ("You overturn kinetopedes and dig beneath the hulking wrecks of blimps. You trawl through the ancient remnants until your face is black with dust and your fingers red with rust.")
+    ("You find a City of Keys scuttler, mechanical legs blown off, upside-down in the debris. When you flip it over, you discover an antique medal on the lapel of the dead officer inside.")
+    ("Gained x1 Historial Curio.", "Cargo", 1)
+        ("(You passed a Vigilance challenge!)", "Challenge", 0)
+    ("A piece of brazen history.", "", "")
+        
+    ("C")
+    ("ARNAGE AND RUST")
+    ("You overturn kinetopedes and dig beneath the hulking wrecks of blimps. You trawl through the ancient remnants until your face is black with dust and your fingers red with rust.")
+    ("Beneath a shattered gigantopede, you discover a mass of skeletons. They must have been hit by some of the strange occult weaponry popular during the Glass Reclamation - the bones are covered in strange growths, like ivory thorns.")
+        ("(You passed a Vigilance challenge!)", "Challenge", 0)
+        ("These were your comrades, once.", "You lose yourself in reverie...", "[You will gain x3 Moments of Melancholy. This option is available because you have Former Profession: Soldier.]")
+            
+    ("Respect the dead.", "", "[You will gain x1 Reflection on Mortality.]")
+        
+    ("Take the unusual bones.", "", "[You will gain x3 Old Bones.]")
+        
+    ("C")
+    ("ARNAGE AND RUST")
+    ("You overturn kinetopedes and dig beneath the hulking wrecks of blimps. You trawl through the ancient remnants until your face is black with dust and your fingers red with rust.")
+    ("Buried deep beneath the rubble, you discover a cannon built of interlocking iron puzzle-pieces. When you attempt to dissemble the thing, it comes back together with a will of its own. You've never before seen its like.")
+    ("Gained x1 Experimental Weaponry", "Weapon", 1)
+        ("(You passed a Vigilance challenge!)", "Challenge", 0)
+    ("An unsettling find.", "Some obscene weaponry was used in the Reclamation. This thing is probably horrendous in a more inventive way than usual artillery.", "")
+        
+    ("C")
+    ("ARNAGE AND RUST")
+    ("You overturn kinetopedes and dig beneath the hulking wrecks of blimps. You trawl through the ancient remnants until your face is black with dust and your fingers red with rust.")
+    ("Buried deep beneath the rubble, you discover one of the Principate's broken-down combat-golems, its bladed arms raised in defiance, its eyes empty. Beneath it, a hidden cache of Flares.")
+    ("Gained x1 Deactivated Golem", "Occult", 3)
+    ("Gained x5 Flares", "Flare", 1)
+        ("(You passed a Vigilance challenge!)", "Challenge", 0)
+    ("Enough Flares to keep the worst of the dark at bay.", "", "")
+        

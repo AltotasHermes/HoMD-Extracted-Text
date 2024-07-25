@@ -1,0 +1,202 @@
+if (BoxMode == "Event")
+            oPlayer.LastVisitedForSavePurposes = "Affina"
+            FileSelected = "SaveFile0.homd"
+        else if (DialogueScreen == "FirstScreen")
+                ("A")
+                ("FFINA")
+                ("A spindly town of boiled black sugar, brittle towers swaying gently in the under-door draught.")
+                if NextButton("The entire cough-sweet-stinking place sits above a lake of liquid liquorice so still and dark and pure it could be a mirror.", 1)
+                        (("New location visited. " + ApprehensionsString), "Logbook", 4)
+                            FileSelected = "SaveFile0.homd"
+                        ("Search for the Prince's Heart.")
+                            
+                        ("Bring x3 Occult Relics or a sacrifice to the hooded merchants.", "It's what they demand in exchange for information on the whereabouts of the Heart.")
+                            
+                        AndNeedsMoney("Rest and recover.", "You've heard that it is unwise to sleep in Affina. You must be cautious. [This will recover some of your Sanity, but will cost you 25 guineas.]", "Vigilance", 61, 25)
+                            
+                        NeedsMoney("Gather news.", "The Affinites will speak to you in exchange for a drop of your blood on their tongue.", "[This will cost you 5 Sanity.]", 25)
+                            
+                    if (oPlayer.LastVisited != "Affina" && global.Affina1 == 0)
+                        ("The lake stirs.", "Silence.", "")
+                            
+                        ((("Preach the word of " + oInventories.GodNameForMissionaryWork) + "."), "Can you bear to break the silence of this place?", "")
+                            
+                    ("Inside the kinetopede.", "Here you can find all miscellaneous options.")
+                        
+                ("A")
+                ("FFINA")
+                ("A spindly town of boiled black sugar, brittle towers swaying gently in the under-door draught.")
+                    ("Search for the Prince's Heart.")
+                        
+                    ("Bring x3 Occult Relics or a sacrifice to the hooded merchants.", "It's what they demand in exchange for information on the whereabouts of the Heart.")
+                        
+                    AndNeedsMoney("Rest and recover.", "You've heard that it is unwise to sleep in Affina. You must be cautious. [This will recover some of your Sanity, but will cost you 25 guineas.]", "Vigilance", 61, 25)
+                        
+                    NeedsMoney("Gather news.", "The Affinites will speak to you in exchange for a drop of your blood on their tongue.", "[This will cost you 5 Sanity.]", 25)
+                        
+                if (oPlayer.LastVisited != "Affina" && global.Affina1 == 0)
+                    ("The lake stirs.", "Silence.", "")
+                        
+                    ((("Preach the word of " + oInventories.GodNameForMissionaryWork) + "."), "Can you bear to break the silence of this place?", "")
+                        
+                ("Inside the kinetopede.", "Here you can find all miscellaneous options.")
+                    
+        else if (DialogueScreen == "SecondScreen" && LeavingTheCity == 1 && TooHeavyToLeaveTheCity == 0)
+            ("I")
+            ("NTO THE DARK")
+            ("Which direction will you go?")
+            ("On second thoughts...", "There are matters here that still merit attention.", "#"0, 0.8)
+                
+            ("Pore over the map.", "Orient yourself before you launch off into the ravenous dark.")
+                    BoxMode = "Map"
+            ("North.", "...You will travel far, and find all the doors are locked.")
+                oPlayer.LastVisited = "Affina"
+                LeavingSpecialRoomDialogueBox("North")
+            ("West.", "The rest of the Confectorate. Affinites tell you this with unconcealed distaste.")
+                oPlayer.LastVisited = "Affina"
+                LeavingSpecialRoomDialogueBox("West")
+            ("East.", "Just locked doors that way. Boring and pointless.")
+                oPlayer.LastVisited = "Affina"
+                LeavingSpecialRoomDialogueBox("East")
+            ("South.", "To the Empire of Thread. Surely a terrible neighbour, though the Affinites seem unconcerned.")
+                oPlayer.LastVisited = "Affina"
+                LeavingSpecialRoomDialogueBox("South")
+        else if (DialogueScreen == "SecondScreen" && LeavingTheCity == 1 && TooHeavyToLeaveTheCity == 1)
+        else if (DialogueScreen == "SecondScreen" && MissionaryPreaching == 1)
+            ("The silence weighs heavily. No-one comes to listen, though you think you feel hidden eyes boring into you when you finally give up.")
+            ("When you return to the kinetopede, you find it covered in tar and graffiti. An evil-looking stone idol has been placed on your bed - you have no idea how it got there.")
+            ("Gained x1 Bizarre Effigy", "Occult", 1)
+            ("Unnerving.", "Somewhere else will accept your god; keep looking.", "")
+                
+        else if (DialogueScreen == "SecondScreen" && WanderTheStreets == 1)
+                ("A")
+                ("FFINA")
+                    DecideLowerCrewNameStringAndPronouns("Swabbie")
+                    ((("As you observe the rippling lake, a deafening bell tolls somewhere above. You hear tramping feet, and a low guttural murmur not quite rhythmic enough to be a chant. A swarm of robed, hooded figures are approaching the dark lake of liquorice, carrying a struggling figure above their heads. " + HeShePronoun) + " is carried above their heads, lashed to a makeshift throne of bone and driftwood, naked and smeared in painted runes."))
+                    (((" You hesitate as they get closer. A spark of recognition. Is that - is that " + NameString) + " that they're carrying? Your Swabbie?"))
+                    DecideLowerCrewNameStringAndPronouns("Junior Engineer")
+                    ((("As you observe the rippling lake, a deafening bell tolls somewhere above. You hear tramping feet, and a low guttural murmur not quite rhythmic enough to be a chant. A swarm of robed, hooded figures are approaching the dark lake of liquorice, carrying a struggling figure above their heads. " + HeShePronoun) + " is carried above their heads, lashed to a makeshift throne of bone and driftwood, naked and smeared in painted runes."))
+                    ((("You hesitate as they get closer. A spark of recognition. Is that - is that " + NameString) + " that they're carrying? Your Junior Engineer?"))
+                    DecideLowerCrewNameStringAndPronouns("Gunner")
+                    ((("As you observe the rippling lake, a deafening bell tolls somewhere above. You hear tramping feet, and a low guttural murmur not quite rhythmic enough to be a chant. A swarm of robed, hooded figures are approaching the dark lake of liquorice, carrying a struggling figure above their heads. " + HeShePronoun) + " is carried above their heads, lashed to a makeshift throne of bone and driftwood, naked and smeared in painted runes."))
+                    ((("You hesitate as they get closer. A spark of recognition. Is that - is that " + NameString) + " that they're carrying? Your Gunner?"))
+                    DecideLowerCrewNameStringAndPronouns("Guard")
+                    ((("As you observe the rippling lake, a deafening bell tolls somewhere above. You hear tramping feet, and a low guttural murmur not quite rhythmic enough to be a chant. A swarm of robed, hooded figures are approaching the dark lake of liquorice, carrying a struggling figure above their heads. " + HeShePronoun) + " is carried above their heads, lashed to a makeshift throne of bone and driftwood, naked and smeared in painted runes."))
+                    ((("You hesitate as they get closer. A spark of recognition. Is that - is that " + NameString) + " that they're carrying? Your Guard?"))
+                ((("Demand they let " + NameString) + " go."), "They might listen.", "")
+                ("Lead your crew in a charge.", (("You'll rescue " + string_lower(HimHerPronoun)) + " if it's the last thing you do."), "Grit", 66)
+                ("Slip away.", (("To be honest, you never liked " + NameString) + " anyway."), "")
+                    
+                ("Join in the march.", "If anyone's going to sacrifice a lower-deck crewmember, it's going to be you.", "")
+                ("A")
+                ("FFINA")
+                ("As you watch ripples spread across the lake, a hooded head emerges near the bank. Then another, and another. A dozen hooded ones come marching out of the molten liquorice, each holding a swaying lantern.")
+                ("You call out, but they ignore you. They march past without turning their heads. For days after, you are tormented by nightmares where something colossal and black and ill-defined follows them out onto the shore.")
+                ("Gained x1 Disquieting Incident", "Logbook", 3)
+                ("Slip away.", "There is something wrong with Affina.", "")
+                    
+        else if (DialogueScreen == "SecondScreen" && Sacrifice1 == 1)
+            ("A")
+            ("FFINA")
+                DecideLowerCrewNameStringAndPronouns("Swabbie")
+                DecideLowerCrewNameStringAndPronouns("Junior Engineer")
+                DecideLowerCrewNameStringAndPronouns("Gunner")
+                DecideLowerCrewNameStringAndPronouns("Guard")
+            ((((((("You leap in front of the hooded ones, stopping them in their tracks. " + NameString) + " squirms and shrieks through ") + string_lower(HisHerPronoun)) + " gag. You ask them to spare ") + string_lower(HimHerPronoun)) + "."))
+            ("The foremost hooded figure steps forward. " + '"' + "We are just merchants," + '"' + " he says. " + '"' + "Buying from our supplier. This is not a sacrifice, it is a transaction. Why not join us in drowning this poor fool? You will be rewarded." + '"')
+            ((("Demand a second time that " + NameString) + " be released."), "The hooded figures grumble, but seem willing to acquiesce.", "")
+            ((("Help them sacrifice " + NameString) + "."), "A reward? That changes everything.", "")
+        else if (DialogueScreen == "SecondScreen" && Sacrifice2 == 1 && WasChallengeSuccessful == 1)
+            ("A")
+            ("FFINA")
+                DecideLowerCrewNameStringAndPronouns("Swabbie")
+                DecideLowerCrewNameStringAndPronouns("Junior Engineer")
+                DecideLowerCrewNameStringAndPronouns("Gunner")
+                DecideLowerCrewNameStringAndPronouns("Guard")
+            ((("As the hooded ones trudge toward the lakeside, they are met by a roaring charge from your crew, firing pistols and swinging sabres and eager to defend one of their own. The hooded merchants drop " + NameString) + " to the floor and flee in all directions."))
+            ("(You passed a Grit challenge!)", "Challenge", 5)
+            ("A successful rescue.", (("You untie " + NameString) + ", who is trembling like a leaf."), "")
+                
+        else if (DialogueScreen == "SecondScreen" && Sacrifice2 == 1 && WasChallengeSuccessful == 0)
+            ("A")
+            ("FFINA")
+                DecideLowerCrewNameStringAndPronouns("Swabbie")
+                DecideLowerCrewNameStringAndPronouns("Junior Engineer")
+                DecideLowerCrewNameStringAndPronouns("Gunner")
+                DecideLowerCrewNameStringAndPronouns("Guard")
+            ("As the hooded ones trudge toward the lakeside, they are met by a roaring charge from your crew. Most of the hooded ones immediately flee back to the town, but a few break through your line and dive into the lake of liquorice. It swallows them without so much as a ripple.")
+            ((((((("A moment later, something huge and fluid whips from the lake, grabbing " + NameString) + " from atop ") + string_lower(PronounHisHer)) + " bone-and-wood throne. It snakes back beneath the surface almost instantly, dragging poor ") + NameString) + " with it into the liquorice depths."))
+            ("(You failed a Grit challenge...)", "Challenge", 5)
+            ((NameString + " is dead!"), "Cargo", 4)
+            ("Gained x1 Disquieting Incident", "Logbook", 3)
+            ("The hooded ones have scattered.", "The lakeside is silent. Your crew stand in mute shock.", "")
+                
+        else if (DialogueScreen == "SecondScreen" && HeartQuest == 1)
+        else if (DialogueScreen == "SecondScreen" && Sacrifice3 == 1)
+            ("A")
+            ("FFINA")
+                DecideLowerCrewNameStringAndPronouns("Swabbie")
+                DecideLowerCrewNameStringAndPronouns("Junior Engineer")
+                DecideLowerCrewNameStringAndPronouns("Gunner")
+                DecideLowerCrewNameStringAndPronouns("Guard")
+            ("The hooded merchants part to let you join them, and you slip into their ranks like an old comrade. That low-grade mumble of a chant, you realize, is a shopping list. The hooded man to one side of you is asking for emeralds and wine; on the other side, whispers of a desire for blocks of warding iron.")
+            ((((((((("You slowly shuffle toward the lake, " + NameString) + " writhing atop ") + string_lower(PronounHisHer)) + " throne. Finally, when you reach the lapping waves, you help the hooded ones pull ") + string_lower(HimHerPronoun)) + " down. ") + HeShePronoun) + " is swallowed by the liquorice instantly, and does not resurface."))
+                ("Moments later, the hooded merchants are pulling all sorts of treasures from the lake, bottles and vials and stoppered jars. You reach down yourself, and something slips into your palm. You lift from the lake a silver knife, crusted with ancient blood.")
+                ("Gained x1 Occult Relic", "Occult", 1)
+                ("Moments later, the hooded merchants are pulling all sorts of treasures from the lake, bottles and vials and stoppered jars. You reach down yourself, and something slips into your palm. You lift from the lake a porcelain cat, its eyes oddly realistic.")
+                ("Gained x1 Dubious Trinket", "Occult", 1)
+            ((NameString + " is dead!"), "Cargo", 4)
+            ("The hooded merchants bow to the lake.", "A chorus of thanks rises from the crowd.", "")
+                
+        else if (DialogueScreen == "SecondScreen" && Sacrifice4 == 1)
+            ("A")
+            ("FFINA")
+                DecideLowerCrewNameStringAndPronouns("Swabbie")
+                DecideLowerCrewNameStringAndPronouns("Junior Engineer")
+                DecideLowerCrewNameStringAndPronouns("Gunner")
+                DecideLowerCrewNameStringAndPronouns("Guard")
+            ("A murmur passes through the hooded ones. " + '"' + "You are a valued customer. We will release your employee if you promise to recommend our wares to all your friends." + '"')
+            ((("They drop the throne and untie " + NameString) + ", who grabs you in a tight and shivering embrace."))
+            ("The hooded merchants disperse.", "", "")
+                
+        else if (DialogueScreen == "SecondScreen" && GatheringNews == 1)
+            ("T")
+            ("HE LATEST GOINGS-ON")
+            News1 = "A cauldron of boiling sugar has overturned, burning the flesh from a dozen workers. The treacle-mines have been closed amid authorities' fear of an accident on the same scale as the Makkera disaster. The hooded merchants were seen wandering at night."
+            News2 = "Gangs of occultists stalk the streets. More bodies found floating. One of the black towers has cracked, right down the middle, and threatens to fall."
+                News3 = "Whatever dwells in the lake has been emerging in the night and kidnapping entire families. An occult sacrifice was found displayed in the centre square, entrails glistening. The hooded merchants have swollen in numbers."
+                News3 = "Whatever dwells in the lake has been emerging in the night and kidnapping entire families. An occult sacrifice was found displayed in the centre square, entrails glistening. The hooded merchants have been accused of gouging customers with meat-hooks."
+            ("Gained x1 Current Affairs: Affina", "Logbook", 4)
+            ("Well, well.", "In all things, defer to the hooded ones.", "")
+                
+        else if (DialogueScreen == "SecondScreen" && RecoveringSanity == 1)
+            ("A")
+            (" BRIEF RESPITE")
+                ("You cannot find anywhere to relax in Affina. The streets are mostly empty, as though a permanent curfew has been ordered.")
+                ("When you do stumble across an inn it is empty, silent, and expensive. You drink warily, and sleep with one eye open.")
+                ("(You passed a Vigilance challenge!)", "Challenge", 0)
+                ("Your Sanity recovers slightly.", "Sanity", 1)
+                ("You spent 1 day at Affina.", "Time", 1)
+                ("You dream of hooded figures outside your door.", "You cannot see their faces. Perhaps they have none.", "#")
+                    
+                ("You cannot find anywhere to relax in Affina. The streets are mostly empty, as though a permanent curfew has been ordered.")
+                ("When you do stumble across an inn it is empty, silent, and expensive. You try to liven the place up, urging your crew to sing and laugh and make noise.")
+                if NextButton("The drinks you are poured start to taste foul, like corrupted metal. The bartender seems nervous. Too late, you realize that something is wrong, but your chin is already sinking to your chest.", 1)
+                    ("You dream of horrifying things - hooded men with porcelain faces, bloated corpses rising from the lake and begging for mercy. When you wake you are somehow back in your kinetopede, and chill with sweat.")
+                    ("(You failed a Vigilance challenge...)", "Challenge", 0)
+                    ("Your Sanity decreases slightly.", "Sanity", 1)
+                    ("Gained x1 Haunting Vision.", "Logbook", 3)
+                    ("You spent 1 day at Affina.", "Time", 1)
+                    ("You feel better already", "One night of humanity and warmth makes a world of difference.", "#")
+                        
+        else if (DialogueScreen == "SecondScreen" && MiscellaneousEvent == 1)
+        else if (DialogueScreen == "SecondScreen" && MiscOptions == 1)
+            ("C")
+            ("APTAIN'S QUARTERS")
+            ("The machine greets you with a steady, soothing hum. In your quarters, you can safely decide what side activity to pursue. Deal with prisoners? Drink something? Operate on your own memories, perhaps?")
+            ("Return to location.", "")
+                
+        
+                
+    draw_text(((view_wport[(0 << 0)] * 0.5) - 3), ((view_hport[(0 << 0)] * 0.75) - 3), "Affina")
+    draw_text((view_wport[(0 << 0)] * 0.5), (view_hport[(0 << 0)] * 0.75), "Affina")

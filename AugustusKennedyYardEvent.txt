@@ -1,0 +1,16 @@
+    ("K")
+    ("ENNEDY YARD")
+    ('"' + "Show me," + '"' + " says the Governor's Man. She is covered with shifting blue tattooes, and has muscles like tree-trunks.")
+    ("Augustus lurks in the background like an unhappy ghost as you bring out Waif. " + '"' + "Where am I going?" + '"' + " asks Waif uncertainly. " + '"' + "Am I living here now? Is Mr Ribbins coming with me?" + '"')
+    ('"' + "I'm going to take you back to your own world," + '"' + " says the Governor's Man, her tone smooth as silk. " + '"' + "Back to mummy and daddy. All this will have just been a dream." + '"')
+    ("Lost x1 Waif", "Cargo", 3)
+    ("Waif claps with delight as she is led away.", "", "")
+    ("K")
+    ("ENNEDY YARD")
+    ("Augustus stares after her for a moment, then composes himself. " + '"' + "It was the right thing to do," + '"' + " he says, sounding deeply depressed.")
+    ("Concerns concluded: Waif", "Logbook", 6)
+    
+    ("+3 Reputation: The City of Keys", "Reputation", 5)
+    ("The gate shuts behind Waif with clanging finality.", "", "")
+        ChangeConcerns2Description(97, "You left Waif in the Kennedy Yard.")
+        

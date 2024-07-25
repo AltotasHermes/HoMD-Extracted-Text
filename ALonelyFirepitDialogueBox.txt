@@ -1,0 +1,101 @@
+if (BoxMode == "Event")
+            oPlayer.LastVisitedForSavePurposes = "A Lonely Firepit"
+            FileSelected = "SaveFile0.homd"
+        else if (DialogueScreen == "FirstScreen")
+                ("A")
+                (" LONELY FIREPIT")
+                    ("A skeleton sits in a rocking chair beside a lonely firepit. She is knitting something black. Noticing your approach, she stops for a moment, greets you with a silent nod and resumes her work.")
+                    ("A skeleton sits in a rocking chair beside a lonely firepit. She is knitting something black. Are those the needles clacking, or her bony fingers?")
+                    (("New location visited. " + ApprehensionsString), "Logbook", 4)
+                        FileSelected = "SaveFile0.homd"
+                    if (oPlayer.GuardCaptain == "Fiona McConnaghe")
+                        ("Toward the firepit with Fiona.")
+                            
+                if (CargoReturnNumberOfItems(134) > 6 && ConcernsReturnNumberOfItems(119) > 8 && oPlayer.ChiefEngineer == "Viola Nox")
+                    ("Reunite the Trickster.", "", "[Requires x7 Aspects of the Trickster.]"0, 0.8)
+                        
+                if (oPlayer.LastVisited != "A Lonely Firepit" && global.ALonelyFirepit == 0)
+                    ("Speak to Nanny Bones.", "Pray she does not look up from her needlework.", "")
+                        
+                ("Inside the kinetopede.", "Here you can find all miscellaneous options.")
+                    
+                ("A")
+                (" LONELY FIREPIT")
+                    ("A skeleton sits in a rocking chair beside a lonely firepit. She is knitting something black. Noticing your approach, she stops for a moment, greets you with a silent nod and resumes her work.")
+                    ("A skeleton sits in a rocking chair beside a lonely firepit. She is knitting something black. Are those the needles clacking, or her bony fingers?")
+                    if (oPlayer.GuardCaptain == "Fiona McConnaghe")
+                        ("Toward the firepit with Fiona.")
+                            
+                if (CargoReturnNumberOfItems(134) > 6 && ConcernsReturnNumberOfItems(119) > 8 && oPlayer.ChiefEngineer == "Viola Nox")
+                    ("Reunite the Trickster.", "", "[Requires x7 Aspects of the Trickster.]"0, 0.8)
+                        
+                if (oPlayer.LastVisited != "A Lonely Firepit" && global.ALonelyFirepit == 0)
+                    ("Speak to Nanny Bones.", "Pray she does not look up from her needlework.", "")
+                        
+                ("Inside the kinetopede.", "Here you can find all miscellaneous options.")
+                    
+        else if (DialogueScreen == "SecondScreen" && LeavingTheCity == 1 && TooHeavyToLeaveTheCity == 0)
+            ("I")
+            ("NTO THE DARK")
+            ("Which direction will you go?")
+            ("On second thoughts...", "There are matters here that still merit attention.", "#"0, 0.8)
+                
+            ("Pore over the map.", "Orient yourself before you launch off into the ravenous dark.")
+                    BoxMode = "Map"
+            ("North.", "Ice and locked doors.")
+                oPlayer.LastVisited = "A Lonely Firepit"
+                LeavingSpecialRoomDialogueBox("North")
+            ("West.", "Snow and locked doors.")
+                oPlayer.LastVisited = "A Lonely Firepit"
+                LeavingSpecialRoomDialogueBox("West")
+            ("East.", "An old signal station built by Governor's men.")
+                oPlayer.LastVisited = "A Lonely Firepit"
+                LeavingSpecialRoomDialogueBox("East")
+            ("South.", "Lands of the dead far far away.")
+                oPlayer.LastVisited = "A Lonely Firepit"
+                LeavingSpecialRoomDialogueBox("South")
+        else if (DialogueScreen == "SecondScreen" && LeavingTheCity == 1 && TooHeavyToLeaveTheCity == 1)
+        else if (DialogueScreen == "SecondScreen" && FionaQuest == 1)
+        else if (DialogueScreen == "SecondScreen" && TricksterQuest == 1)
+        else if (DialogueScreen == "SecondScreen" && WanderTheStreets == 1)
+                ("A")
+                (" LONELY FIREPIT")
+                ('"' + "How goes the dreaming, dearie? Careful who you befriend." + '"')
+                ("Gained x1 Disquieting Incident", "Logbook", 3)
+                ("She resumes her knitting.", "", "")
+                    
+                ("A")
+                (" LONELY FIREPIT")
+                ('"' + "I have a son who reminds me of you. Never wanted to grow up." + '"')
+                ("Gained x1 Disquieting Incident", "Logbook", 3)
+                ("She resumes her knitting.", "", "")
+                    
+                ("A")
+                (" LONELY FIREPIT")
+                ('"' + "You look cold, dearie. Come a bit closer to the fire. We don't want you catching your death." + '"')
+                ("Gained x1 Disquieting Incident", "Logbook", 3)
+                ("She resumes her knitting.", "", "")
+                    
+                ("A")
+                (" LONELY FIREPIT")
+                ('"' + "Round and round we go, dearie. I have spoken to you before. I hope I won't speak to you again." + '"')
+                ("Gained x1 Disquieting Incident", "Logbook", 3)
+                ("She resumes her knitting.", "", "")
+                    
+                ("A")
+                (" LONELY FIREPIT")
+                ('"' + "You can't leave the House, dear, not even after you die." + '"' + " Clacker-clack go the needles. " + '"' + "Most will linger as ghosts. Some retreat into mirrors. A few become background characters in the dreams of the living." + '"')
+                ("Gained x1 Unsettling Conjecture", "Logbook", 3)
+                ("She does not look up from her knitting.", "", "")
+                    
+        else if (DialogueScreen == "SecondScreen" && MiscellaneousEvent == 1)
+        else if (DialogueScreen == "SecondScreen" && MiscOptions == 1)
+            ("C")
+            ("APTAIN'S QUARTERS")
+            ("The machine greets you with a steady, soothing hum. In your quarters, you can safely decide what side activity to pursue. Deal with prisoners? Drink something? Operate on your own memories, perhaps?")
+            ("Return to location.", "")
+                
+        
+                
+    draw_text(((view_wport[(0 << 0)] * 0.5) - 3), ((view_hport[(0 << 0)] * 0.75) - 3), "A Lonely Firepit")
+    draw_text((view_wport[(0 << 0)] * 0.5), (view_hport[(0 << 0)] * 0.75), "A Lonely Firepit")

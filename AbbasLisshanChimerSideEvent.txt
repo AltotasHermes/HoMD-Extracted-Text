@@ -1,0 +1,7 @@
+    ("L")
+    ("ISSHAN")
+    ("It's a calm day in Lisshan. The two sides of the war are at an uneasy standstill; only once do you hear the distant blast of an explosion.")
+    ("You find a group of old folks outside a half-ruined, shatter-windowed cafe. Life goes on, even here. They're old enough to remember when the city was a Free Republic - and their eyebrows go up when you mention Linnaea.")
+    ('"' + "She was a celebrity here back in the peaceful days," + '"' + " says one wrinkled old lady. " + '"' + "Such a strange condition, she had. I think she lived over -" + '"' + " she lowers her voice. " + '"' + "- on the other side." + '"')
+    ("It seems you'll need to go around to the rebel-occupied half of Lisshan.")
+        

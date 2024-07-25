@@ -1,0 +1,169 @@
+if (BoxMode == "Event")
+            oPlayer.LastVisitedForSavePurposes = "Blad Raddock"
+            FileSelected = "SaveFile0.homd"
+        else if (DialogueScreen == "FirstScreen")
+                ("B")
+                ("LAD RADDOCK")
+                ("A scatter of badly-built tin huts, nestled in the crevice of a tumorous mountain.")
+                if NextButton("Not the friendliest place you've been. Eyes like flint follow your every step. Some villagers spit as you pass, and others make a strange sign with their hands.", 1)
+                        (("New location visited. " + ApprehensionsString), "Logbook", 4)
+                            FileSelected = "SaveFile0.homd"
+                            ("Warn the villagers of Blad Raddock about the approaching storm.")
+                                
+                        else ("You were too late.")
+                            
+                        AndMultipleItems("Rest and recover.", "Hostile silence greets you at every turn. [This will recover some of your Sanity, but will cost you 10 Apprehensions.]", "Spirit", 70, EnoughApprehensions)
+                            
+                        ("Gather news.", "They don't take kindly to strangers, especially not strangers asking questions. You'll have to help with the harvest to get a word out of them.", "Graft", 57)
+                            
+                    if (oPlayer.LastVisited != "Blad Raddock" && global.BladRaddock1 == 0)
+                        ("Investigate the organ-mines.", "Try not to step in anything unfortunate.", "#")
+                            
+                        ((("Preach the word of " + oInventories.GodNameForMissionaryWork) + "."), "You've never heard laughter here. Not until you stand up and start speaking.", "")
+                            
+                    if (global.BladRaddock2 == 0 && oPlayer.LastVisited != "Blad Raddock" && ConcernsCheckForSpecificItem(0))
+                        ((("Preach the word of " + oInventories.GodNameForMissionaryWork) + "."), "This place is a red place. A meat place. Meat swells beneath the mountain. Graveddon will thrive here, whether these fools like it or not.", "")
+                            
+                    ("Inside the kinetopede.", "Here you can find all miscellaneous options.")
+                        
+                ("B")
+                ("LAD RADDOCK")
+                ("A scatter of badly-built tin huts, nestled in the crevice of a tumorous mountain.")
+                    ("Since you preached here, the worship of Graveddon has spread like rot through a corpse. A crude abbatoir-church has been built atop the red mines, and inside they hold devotional orgies of meat and violence.")
+                        ("Warn the villagers of Blad Raddock about the approaching storm.")
+                            
+                    else ("You were too late.")
+                        
+                    AndMultipleItems("Rest and recover.", "Hostile silence greets you at every turn. [This will recover some of your Sanity, but will cost you 10 Apprehensions.]", "Spirit", 70, EnoughApprehensions)
+                        
+                    ("Gather news.", "They don't take kindly to strangers, especially not strangers asking questions. You'll have to help with the harvest to get a word out of them.", "Graft", 57)
+                        
+                if (oPlayer.LastVisited != "Blad Raddock" && global.BladRaddock1 == 0)
+                    ("Investigate the organ-mines.", "Try not to step in anything unfortunate.", "#")
+                        
+                    ((("Preach the word of " + oInventories.GodNameForMissionaryWork) + "."), "You've never heard laughter here. Not until you stand up and start speaking.", "")
+                        
+                if (global.BladRaddock2 == 0 && oPlayer.LastVisited != "Blad Raddock" && ConcernsCheckForSpecificItem(0))
+                    ((("Preach the word of " + oInventories.GodNameForMissionaryWork) + "."), "This place is a red place. A meat place. Meat swells beneath the mountain. Graveddon will thrive here, whether these fools like it or not.", "")
+                        
+                ("Inside the kinetopede.", "Here you can find all miscellaneous options.")
+                    
+        else if (DialogueScreen == "SecondScreen" && LeavingTheCity == 1 && TooHeavyToLeaveTheCity == 0)
+            ("I")
+            ("NTO THE DARK")
+            ("Which direction will you go?")
+            ("On second thoughts...", "There are matters here that still merit attention.", "#"0, 0.8)
+                
+            ("Pore over the map.", "Orient yourself before you launch off into the ravenous dark.")
+                    BoxMode = "Map"
+            ("North.", "A way back.")
+                oPlayer.LastVisited = "Blad Raddock"
+                LeavingSpecialRoomDialogueBox("North")
+            ("West.", "Just a wall of locked doors.")
+                oPlayer.LastVisited = "Blad Raddock"
+                LeavingSpecialRoomDialogueBox("West")
+            ("East.", "To a winged town, sadly flightless.")
+                oPlayer.LastVisited = "Blad Raddock"
+                LeavingSpecialRoomDialogueBox("East")
+            ("South.", "Just empty wastes.")
+                oPlayer.LastVisited = "Blad Raddock"
+                LeavingSpecialRoomDialogueBox("South")
+        else if (DialogueScreen == "SecondScreen" && LeavingTheCity == 1 && TooHeavyToLeaveTheCity == 1)
+        else if (DialogueScreen == "SecondScreen" && MissionaryPreaching == 1)
+            ("You start to preach, but your voice dies in your throat. The villagers have assembled with weapons - long cruel hooks, iron spikes.")
+            ("They stare at you, daring you to continue. But you don't plan to become a martyr.")
+            ("Pack up your things.", "Somewhere else will accept your god; keep looking.", "")
+                
+        else if (DialogueScreen == "SecondScreen" && MissionaryGraveddon == 1)
+            ("T")
+            ("HE IRON SWINE")
+            ("You start to preach, but your voice dies in your throat. The villagers have assembled with weapons - long cruel hooks, iron spikes.")
+            ("Preach anyway.", "", "Guts", 35)
+        else if (DialogueScreen == "SecondScreen" && SuccessfulMissionaryChallenge == 1 && WasChallengeSuccessful == 1)
+            ("T")
+            ("HE IRON SWINE")
+            ("The villagers' faces twist into wolfish snarls. They stalk toward you, but something in your voice keeps them from attacking. You are talking their language, the language of red things, meat and slaughter. And you are not afraid of them.")
+            ("You urge them to plunder more and more meat from their mountain, to eat it raw and bless Graveddon with every mouthful of gristle. They don't exactly cheer or pray - such actions are not in their nature - but the villagers lay down their weapons and gruffly ask you to eat with them.")
+            ("(You passed a Guts challenge!)", "Challenge", 3)
+            ReligionText("Graveddon", 1, 1)
+            ("Graveddon-worship will spread here like fire, you know it.", "", "")
+                ReligionItemAdd("Graveddon", 1, 1)
+                
+        else if (DialogueScreen == "SecondScreen" && SuccessfulMissionaryChallenge == 1 && WasChallengeSuccessful == 0)
+            ("T")
+            ("HE IRON SWINE")
+            ("The villagers' faces twist into wolfish snarls. They don't listen to your speech - they swing their hooks and blades. One catches your flesh and takes a great gouge from your thigh.")
+            ("As you turn and flee for your life, a thrown stone catches the side of your head. By the time you're back to the safety of your kinetopede, your face and neck are slick with blood.")
+            
+            ("(You failed a Guts challenge...)", "Challenge", 3)
+            ("You had thought them on your side...", "", "")
+                
+        else if (DialogueScreen == "SecondScreen" && WanderTheStreets == 1)
+            ("B")
+            ("LAD RADDOCK")
+            ("You sneak into one of the tunnels that riddles the sulphur-belching mountain. The scraggly-toothed villagers above would undoubtedly be outraged to discover you here, but the mines are so labyrinthine you doubt you'll run into trouble.")
+            ("Delving deep into the mines, you come across a cavity in the wall. It's a hollow the precise shape and depth of a human body, with an anatomically-correct collection of innards - a thumping heart, a drab brain, a network of veins, all exposed to the open air.")
+            ("But some of the organs are missing. Its lungs have been replaced by crude bellows, its liver by a rusted tin can. Several arteries are missing, replaced by lengths of plastic tubing.")
+            ("Gained x1 Disquieting Incident", "Logbook", 3)
+            ("Take the heart.", "It's just something growing in the mountain, right? It's not like its alive?", "")
+            ("Hasten away.", "The innards are raw, and red, and pulsating. You can feel the heat coming off them.", "")
+                
+        else if (DialogueScreen == "SecondScreen" && GrabOrgan == 1)
+            ("B")
+            ("LAD RADDOCK")
+            ("You tear the heart right out of the cavity's splayed-open chest. Blood sprays up the walls. The rest of the organs fall limp, no longer pumping and churning.")
+            ("Gained x1 Delicious Meat", "Food", 4)
+            ("Hasten away.", "The heart sits lumpen in your palm.", "")
+                
+        else if (DialogueScreen == "SecondScreen" && GatheringNews == 1 && WasChallengeSuccessful == 1)
+            ("T")
+            ("HE LATEST GOINGS-ON")
+            ("No-one in Blad Raddock will speak to you unless you earn it with sweat. You spend the day helping them bring in the harvest - kidneys and livers and lungs and intestines, pulled from the wet insides of the mountain by blood-soaked miners.")
+            ("They don't offer a hint of gratitude, but they talk about recent affairs as they pass you each wobbling gobbet of flesh.")
+            News1 = "The elders are angry. The mountain has been belching poison. Deep in the organ-mines, a new cavity has been uncovered."
+            News2 = "A collapse in the organ-mines has crushed one of the miners. A feast has been held to honour the elder ones. The sacrifices are ripe."
+            News3 = "A suspected witch has been burned at stake. A burst of blood and pus from the mountain has swept away one of the huts. Reality storms incoming."
+            ("(You passed a Graft challenge!)", "Challenge", 6)
+            ("Gained x1 Current Affairs: Blad Raddock", "Logbook", 4)
+            ("Well, well.", "The mountain belches and coughs.", "#")
+                
+        else if (DialogueScreen == "SecondScreen" && GatheringNews == 1 && WasChallengeSuccessful == 0)
+            ("T")
+            ("HE LATEST GOINGS-ON")
+            ("No-one in Blad Raddock will speak to you unless you earn it with sweat. You spend the day helping them bring in the harvest - kidneys and livers and lungs and intestines, pulled from the wet insides of the mountain by blood-soaked miners.")
+            ("It's stinking hard work, and you're sure there are toxic gases burping from the mines. You start to feel light-headed. Your stomach is wracked with cramp, invisible fingers tearing your guts.")
+            if NextButton("You're forced to give up. Jeers pursue you as you leave.", 1)
+                ("(You failed a Graft challenge...)", "Challenge", 6)
+                ("You lost some Sanity.", "Sanity", 0)
+                ("You need to get out of here.", "The cramps are worsening.", "#")
+                    
+        else if (DialogueScreen == "SecondScreen" && RecoveringSanity == 1)
+            ("A")
+            (" BRIEF RESPITE")
+                ("There's a local bar, but it locks its doors as you walk up the street. You retreat outside the village and set up a campfire on the mountain, cooking food and swapping stories with your crew.")
+                ("Villagers come sniffing around to try and intimidate you, but you just laugh and sing even louder. When you finally return to your quarters, your sleep is peaceful and untroubled by nightmares.")
+                ("(You passed a Spirit challenge!)", "Challenge", 7)
+                ("Your Sanity recovers slightly.", "Sanity", 1)
+                ("You spent 1 day at Blad Raddock.", "Time", 1)
+                ("A nice warm evening.", "Blad Raddock was, briefly, as cheery a place as it's ever been.", "")
+                    
+                ("There's a local bar, but it locks its doors as you walk up the street. You retreat outside the village and set up a campfire on the mountain, cooking food and swapping stories with your crew.")
+                ("You cannot get away from the villagers, however. They lurk half-hidden in the shadows and crevices of the mountain, watching you with eyes that reflect firelight, sharpening knives and licking their teeth. You eventually douse the fire and return back to your kinetopede, a little shaken.")
+                ("Your Sanity decreases slightly.", "Sanity", 0)
+                ("Gained x1 Disquieting Incident.", "Logbook", 3)
+                ("You spent 1 day at Blad Raddock.", "Time", 1)
+                ("(You failed a Spirit challenge...)", "Challenge", 7)
+                ("That was hunger you saw.", "In their glittering, starving eyes.", "")
+                    
+        else if (DialogueScreen == "SecondScreen" && StormQuest == 1)
+        else if (DialogueScreen == "SecondScreen" && MiscellaneousEvent == 1)
+        else if (DialogueScreen == "SecondScreen" && MiscOptions == 1)
+            ("C")
+            ("APTAIN'S QUARTERS")
+            ("The machine greets you with a steady, soothing hum. In your quarters, you can safely decide what side activity to pursue. Deal with prisoners? Drink something? Operate on your own memories, perhaps?")
+            ("Return to location.", "")
+                
+        
+                
+    draw_text(((view_wport[(0 << 0)] * 0.5) - 3), ((view_hport[(0 << 0)] * 0.75) - 3), "Blad Raddock")
+    draw_text((view_wport[(0 << 0)] * 0.5), (view_hport[(0 << 0)] * 0.75), "Blad Raddock")

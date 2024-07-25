@@ -1,0 +1,218 @@
+if (BoxMode == "Event")
+            oPlayer.LastVisitedForSavePurposes = "A Room of Memories"
+            FileSelected = "SaveFile0.homd"
+        else if (DialogueScreen == "FirstScreen")
+                ("A")
+                (" ROOM OF MEMORIES")
+                ("It's too narrow to navigate your kinetopede all the way through the Door, but it stretches for miles to the left and right. One wall is covered in thousands of portraits and daguerreotypes, each unique in its size and shape and subject matter. The other wall is an endless crowded bookcase.")
+                ("Right next to the Door, a blue fire burns cold and silent. Beside it sits an old brown armchair - the type that has been stained and battered and sat on until it achieves a state of supreme comfortableness.")
+                    (("New location visited. " + ApprehensionsString), "Logbook", 4)
+                        FileSelected = "SaveFile0.homd"
+                if (oPlayer.LastVisited != "A Room of Memories" && global.RoomofMemories1 == 0)
+                    ("Examine the pictures on the walls.", "Most of the frames are gold or silver or plain old wood. A few are of stranger materials: bone, obsidian, woven hair.", "")
+                        
+                if (oPlayer.LastVisited != "A Room of Memories" && global.RoomofMemories2 == 0)
+                    ("Rest a while.", "That armchair looks enticing...", "")
+                        
+                ("Inside the kinetopede.", "Here you can find all miscellaneous options.")
+                    
+                ("A")
+                (" ROOM OF MEMORIES")
+                ("It's too narrow to navigate your kinetopede all the way through the Door, but it stretches for miles to the left and right. One wall is covered in thousands of portraits and daguerreotypes, each unique in its size and shape and subject matter. The other wall is an endless crowded bookcase.")
+                ("Right next to the Door, a blue fire burns cold and silent. Beside it sits an old brown armchair - the type that has been stained and battered and sat on until it achieves a state of supreme comfortableness.")
+                if (oPlayer.LastVisited != "A Room of Memories" && global.RoomofMemories1 == 0)
+                    ("Examine the pictures on the walls.", "Most of the frames are gold or silver or plain old wood. A few are of stranger materials: bone, obsidian, woven hair.", "")
+                        
+                if (oPlayer.LastVisited != "A Room of Memories" && global.RoomofMemories2 == 0)
+                    ("Rest a while.", "That armchair looks enticing...", "")
+                        
+                ("Inside the kinetopede.", "Here you can find all miscellaneous options.")
+                    
+        else if (DialogueScreen == "SecondScreen" && LeavingTheCity == 1 && TooHeavyToLeaveTheCity == 0)
+            ("I")
+            ("NTO THE DARK")
+            ("You can only go west. The Doors are locked on all other sides.")
+            ("On second thoughts...", "There are matters here that still merit attention.", "#"0, 0.8)
+                
+            ("Pore over the map.", "Orient yourself before you launch off into the ravenous dark.")
+                    BoxMode = "Map"
+            ("West", "Back to the House.")
+                oPlayer.LastVisited = "A Room of Memories"
+                LeavingSpecialRoomDialogueBox("West")
+        else if (DialogueScreen == "SecondScreen" && LeavingTheCity == 1 && TooHeavyToLeaveTheCity == 1)
+        else if (DialogueScreen == "SecondScreen" && Rest1 == 1)
+                ("A")
+                (" ROOM OF MEMORIES")
+                ("You sit in the comfortable old armchair. Your crew trickle out from the kinetopede to sit and bathe in the cold azure light of the fire.")
+                if (oPlayer.Pilot == "Tera Skae")
+                    ("Tera is the first to speak, with obvious reluctance. She tells a story from her youth, before she travelled the House, when she would dash every morning to the kinetopede station at the City of Angels and watch the trains scuttle in. Every day, she says, she imagined herself at the wheel of one of those great rusty beasts.")
+                else if (oPlayer.Pilot == "Augustus Ribbins")
+                    ("Augustus is the first to speak, with obvious reluctance. He speaks of how he lied about his age to join the war effort, together with a childhood friend named Charlie. He speaks of how a kindly sergeant made sure they were sent to the same regiment - a kindness that Augustus would always despise him for. Charlie would die in battle, torn apart by a combat golem while Augustus watched in horror and did nothing.")
+                else if (oPlayer.Pilot == "Banjo Smiggs")
+                    ("Banjo grins and launches into a story with obvious enthusiasm. It's an anecdote from when he was a street-urchin in the City of Knives, and how he outwitted the Golemgarde time and time again.")
+                else if (oPlayer.Pilot == "Bishop Landman")
+                    ("Bishop smiles thinly, coughs, and speaks with obvious reluctance. He tells a disjointed story of how he first became interested in the taxonomy of plants. It is incredibly dull, and lacks any kind of personal detail at all, but it seems to fill him with emotion. He blows his nose loudly.")
+                if (oPlayer.Lightbearer == "Panorama Volt")
+                    ("Panorama is next. She tells a story of how, as a little girl in Eld Abrathat, she sneaked into a cultists' compound and watched them messily sacrifice a bellowing bull.")
+                else if (oPlayer.Pilot == "Otto Von Honbach")
+                    ("Otto is next. With a broad smile he tells a story of how, as a sickly youth, he would entice birds to his window with crumbs and seeds, give them all names, and tell stories with them as the central characters.")
+                else if (oPlayer.Pilot == "Genevieve Caul")
+                    ("Genevieve is next. She tells the story of how she became a vampire - back on some distant world, before she was taken by the House. She hunted down a vampire who had been killing dozens in her neighbourhood, but before she staked him through the heart, she demanded he turn her.")
+                if (oPlayer.GuardCaptain == "Ashen")
+                    ("Ashen grits her teeth, but something compels her to speak nevertheless. With obvious reluctance, she talks about how she spent years soaking in alcohol in a nameless little bar in the City of Knives, never starting fights but always keen to finish them.")
+                else if (oPlayer.GuardCaptain == "Tybalt Balsamic IV")
+                    ("All eyes shift to Tybalt. With a reluctant sigh, he tells you how he was raised by a beloved nanny - and how his father was outraged when she was overheard teaching him a foreign language. His father didn't sack her personally. He forced Tybalt to do so in his stead.")
+                else if (oPlayer.GuardCaptain == "Abbas Salem")
+                    ("All eyes shift to Abbas. Grinning, he spins an elaborate tale of his adventures searching for treasure in the buried tunnels beneath Eld Abrathat.")
+                else if (oPlayer.GuardCaptain == "Fiona McConnaghe")
+                    ("All eyes shift to Fiona. Smiling, she relays some of her favourite recollections of Fargyle Keep - curled up reading poetry in front of a roaring fire, or training so hard with her fencing-mistress that by the end of the day she couldn't walk and had to crawl to bed.")
+                else if (oPlayer.GuardCaptain == "Ransack Morton")
+                    ("All eyes shift to Ransack. With a grin, he tells a hideous story of how he slaughtered an entire crew of merchants back in his 'bandit days.' He ends it with a cough and an apologetic mumble that he feels bad about it.")
+                if (oPlayer.Navigator == "Peter McNally")
+                    ("The last to speak is Peter. He tells stories of hiking through the moors in his old world, and of the big, boisterous family he left behind. When he's finished, he wanders off to examine the bookshelves, shoulders shaking.")
+                else if (oPlayer.Navigator == "Cromlech")
+                    ("Firelight reflects in Cromlech's slotted eyes. He tells a story of the first play he saw in the City of Masks, and how he was thrown out when he made other members of the audience 'feel uncomfortable.' Despite missing that play's conclusion, theatre became one of his greatest pleasures.")
+                else if (oPlayer.Navigator == "Sandy Bracket")
+                    ("Sandy grins, sloshes from a small bottle of wine she had concealed inside her hat, and tells an extremely lengthy story of how she survived an attempted assassination attempt from a jealous ex-lover after seducing the Prince in Founder's Fire.")
+                else if (oPlayer.Navigator == "Valeria Bell-Roberts")
+                    ("Firelight reflects in Valeria's eyes. She tells a story from her days as an overseer and ghost-tormentor in the Howling Pits. Sometimes she'd get flashes of memories from the ghosts she wrangled - memories of other worlds, mostly, memories that would leave her drained and unnerved for weeks.")
+                ("Then the stories are finished, and silence settles across you all. You feel lighter, somehow.")
+                ("Gained some Sanity!", "Logbook", 3)
+                ("Gained x1 Moment of Melancholy", "Logbook", 3)
+                ("Return to the kinetopede.", "There is nothing more to be said here.", "")
+                    
+                ("A")
+                (" ROOM OF MEMORIES")
+                ("You sit in the comfortable old armchair. Your crew trickle out from the kinetopede to sit and bathe in the cold azure light of the fire.")
+                if (oPlayer.Recordkeeper == "Penpusher")
+                    ("Penpusher is the first to speak. ")
+                else if (oPlayer.Recordkeeper == "Harmony Ricketts")
+                    ("Harmony is the first to speak. She talks about her first forays into the world of art, bringing her gloomy pieces to exhibits and setting up in damp corners. Her success frightened and bewildered her, but the more outrageous the things she did, the more famous she became.")
+                else if (oPlayer.Recordkeeper == "Bradley Baggs")
+                    ("Bradley is the first to speak, though every word is dragged out of him like an extracted tooth. He talks about the 'good old days' when he was just a boy in Croakabode Lane, running around with a gang of similarly burly youths and beating up smaller boys.")
+                else if (oPlayer.Recordkeeper == "Jack of Quills")
+                    ("Jack is the first to speak. In his piping voice, he talks about his adventures wandering through the House all alone, begging for scraps and running away from enterprising librarians who wanted to harvest him for his ink.")
+                if (oPlayer.Surgeon == "Dr Mobius Vanch")
+                    ("Dr Vanch speaks next, talking in a dramatic tone about his battle against plague. You've heard it all before.")
+                else if (oPlayer.Surgeon == "Char Dvetistek")
+                    ("Char speaks next, cracking her knuckles and talking about her most infamous party while a student at the Alchemists' Spine. It got so out of hand that the River Scenic ended up on fire.")
+                else if (oPlayer.Surgeon == "Rotherford")
+                    ("Rotherford moans and grouses, but all eyes are on him and finally he caves. He launches into a story about how, after his license was revoked, he operated a back-alley surgery treating criminals and outcasts. He runs through some of his most memorable patients - a Razor Gent gangster whose head had been turned into a candle, an exile from Calaram whose face had turned to honey.")
+                else if (oPlayer.Surgeon == "Jhang Ba Sho")
+                    ("Jhang Ba Sho sighs and talks about how his adoptive parents helped him learn medicine even after he was rejected from the academy, smuggling him textbooks and scalpels and the occasional corpse.")
+                if (oPlayer.ChiefEngineer == "Viola Nox")
+                    ("Viola just rolls her eyes.")
+                else if (oPlayer.ChiefEngineer == "Gladys Skarter")
+                    ("Gladys talks about how she first built herself new hands. She tracked down a blacksmith and browbeat him into making the first, crudest pair - then she made improvement after improvement. She enthusiastically launches into the engineering side of things, and won't stop talking about ball-bearings and joints for at least a half-hour.")
+                else if (oPlayer.ChiefEngineer == "Judith Grimalkin")
+                    ("Firelight dances across Judith's cold cat-Mask. She tells a story about how she knifed an entire kinetopede-crew to death because she grew tired of all their stories. You think she's probably joking.")
+                else if (oPlayer.ChiefEngineer == "Lucetta Quetzl")
+                    ("Lucetta talks of her youth on another world, growing up in a sunny city surrounded by a big, raucous family.")
+                else if (oPlayer.ChiefEngineer == "Dr Henry Delgado")
+                    ("Dr Delgado talks of his youth on another world, asking his parents constant avid questions about medicine, dressing up in their too-long coats and pretending to be a mad scientist.")
+                if (oPlayer.Lookout == "Spire")
+                    ("The last to speak is Spire. Gulping, he talks about how he grew up fascinated by daguerreotypy, taking pictures of every little thing with his father's camera - dead rats, street-signs, anything that stayed still long enough for the camera to do its work.")
+                else if (oPlayer.Lookout == "Finnegan Skip")
+                    ("Finnegan has fallen fast asleep by this point. When you nudge him awake, he jolts and splutters and launches into a story of how as a child he climbed into a baker's oven by accident because it was warm and he thought he could sleep in it. He was almost baked into bread.")
+                else if (oPlayer.Lookout == "Violante DiMar")
+                    ("Violante is quiet for a long time, and for a moment you don't think she'll speak. Finally, she launches into a story of how she would stay up as a small girl beneath her bedsheets, reading colossal books by candlelight. One day she dropped the candle and burned her house down - no-one died, but there were no more books after that.")
+                else if (oPlayer.Lookout == "Nicholas Verdant")
+                    ("Finally, Nicholas talks proudly about his time as a wild street-urchin in the City of Keys, knocking the helmets off watchmen with well-aimed stones and scrawling graffiti across the Fountain of Bastards.")
+                ("Then the stories are finished, and silence settles across you all. You feel lighter, somehow.")
+                ("Gained some Sanity!", "Logbook", 3)
+                ("Gained x1 Moment of Melancholy", "Logbook", 3)
+                ("Return to the kinetopede.", "There is nothing more to be said here.", "")
+                    
+        else if (DialogueScreen == "SecondScreen" && WanderTheStreets == 1)
+            ("A")
+            (" ROOM OF MEMORIES")
+                ("The faces on the wall are mostly children, young boys and girls with glum faces. Standing beside them, in just a few of the portraits, is a looming skeletal figure.")
+                ("Gained x1 Disquieting Incident", "Logbook", 3)
+                ("Turn away.", "You can bear no more of this.", "")
+                    
+                    FirstName = "Tera. "
+                    FirstName = ""
+                    Name2 = "Augustus. "
+                    Name2 = ""
+                    Name3 = "Genevieve. "
+                    Name3 = ""
+                    Name4 = "Dr Delgado. "
+                    Name4 = ""
+                    Name5 = "Spire. "
+                    Name5 = ""
+                    Name6 = "Abbas. "
+                    Name6 = ""
+                    Name7 = "Bishop. "
+                    Name7 = ""
+                    Name8 = "Bradley. "
+                    Name8 = ""
+                    Name9 = "Finnegan. "
+                    Name9 = ""
+                    Name10 = "Banjo. "
+                    Name10 = ""
+                    Name11 = "Valeria. "
+                    Name11 = ""
+                    Name12 = "Peter. "
+                    Name12 = ""
+                    Name13 = "Violante."
+                    Name13 = ""
+                    Name14 = "Nicholas. "
+                    Name14 = ""
+                    Name15 = "Penpusher. "
+                    Name15 = ""
+                    Name16 = "Harmony. "
+                    Name16 = ""
+                    Name17 = "Jack. "
+                    Name17 = ""
+                    Name18 = "Ashen. "
+                    Name18 = ""
+                    Name19 = "Fiona. "
+                    Name19 = ""
+                    Name20 = "Ransack. "
+                    Name20 = ""
+                    Name21 = "Otto. "
+                    Name21 = ""
+                    Name22 = "Char. "
+                    Name22 = ""
+                    Name23 = "Dr Vanch. "
+                    Name23 = ""
+                    Name24 = "Jhang Ba Sho. "
+                    Name24 = ""
+                    Name26 = "Gladys. "
+                    Name26 = ""
+                    Name27 = "Lucetta. "
+                    Name27 = ""
+                    Name28 = "Judith. "
+                    Name28 = ""
+                    Name29 = "Tybalt. "
+                    Name29 = ""
+                    Name30 = "Panorama. "
+                    Name30 = ""
+                    Name31 = "Sandy. "
+                    Name31 = ""
+                    Name32 = "Rotherford. "
+                    Name32 = ""
+                    Name33 = "Avery. "
+                    Name33 = ""
+                    Name34 = "Cromlech. "
+                    Name34 = ""
+                ("With a jolt, you realize you recognize the subjects of some of the portraits. Crewmembers who died while under your care.")
+                (((((((((((((((((((((((((((((((((FirstName + Name2) + Name3) + Name4) + Name5) + Name6) + Name7) + Name8) + Name9) + Name10) + Name11) + Name12) + Name13) + Name14) + Name15) + Name16) + Name17) + Name18) + Name19) + Name20) + Name21) + Name22) + Name23) + Name24) + Name26) + Name27) + Name28) + Name29) + Name30) + Name31) + Name32) + Name33) + "Sitting on the wall, framed in gold. Exactly as they looked when alive."))
+                ("There is something accusing about their stare.")
+                ("Gained x1 Reflection on Mortality", "Logbook", 3)
+                ("Gained x1 Moment of Melancholy", "Logbook", 3)
+                ("Turn away.", "You can bear no more of this.", "")
+                    
+        else if (DialogueScreen == "SecondScreen" && PickUpPassenger == 1)
+            PickingUpPassenger("Fractal Fortress")
+        else if (DialogueScreen == "SecondScreen" && MiscellaneousEvent == 1)
+        else if (DialogueScreen == "SecondScreen" && MiscOptions == 1)
+            ("C")
+            ("APTAIN'S QUARTERS")
+            ("The machine greets you with a steady, soothing hum. In your quarters, you can safely decide what side activity to pursue. Deal with prisoners? Drink something? Operate on your own memories, perhaps?")
+            ("Return to location.", "")
+                
+        
+                
+    draw_text(((view_wport[(0 << 0)] * 0.5) - 3), ((view_hport[(0 << 0)] * 0.75) - 3), "A Room of Memories")
+    draw_text((view_wport[(0 << 0)] * 0.5), (view_hport[(0 << 0)] * 0.75), "A Room of Memories")

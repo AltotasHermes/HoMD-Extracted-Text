@@ -1,0 +1,32 @@
+("S")
+("TICKY END")
+    if CrewSpeechText("Lilian Mourn", 161, '"' + "What do you have for me?" + '"', 0)
+        ('"' + "Actually, nothing. I should go." + '"')
+            
+        ('"' + "My mistake, I just want to buy." + '"', "", "[Lilian's selection changes every day.]", sFightIcon, 7, 0.8)
+            
+    if CrewSpeechText("Lilian Mourn", 161, '"' + "Show me the stuff." + '"', 0)
+        ('"' + "I should go." + '"')
+            
+        ('"' + "My mistake, I just want to buy." + '"', "", "[Lilian's selection changes every day.]", sFightIcon, 7, 0.8)
+            
+    if CrewSpeechText("Lilian Mourn", 161, '"' + "You're threatenin' to become my best supplier, mate. We've got a nice thing going here. Keep it up." + '"', 0)
+        ('"' + "I should go." + '"')
+            
+        ('"' + "Actually, I just want to buy." + '"', "", "[Lilian's selection changes every day.]", sFightIcon, 7, 0.8)
+            
+    ("Poodle weaving between her feet, Lilian takes you down the alley and into a derelict house. A few ratty fellows are waiting in the shadows, and for a moment you fear a trap.")
+    if CrewSpeechText("Lilian Mourn", 161, '"' + "Relax. I've been lookin' for a new supplier, an' you fit the bill." + '"', 1)
+        if CrewSpeechText("Lilian Mourn", 161, '"' + "You keep the goods coming like this, an' I'll be able to expand our little operation. Maybe start givin' you a little extra. Let's carve a slice of this city for ourselves." + '"', 2)
+            ('"' + "I like the sound of that." + '"')
+                
+            ('"' + "Sounds dangerous." + '"')
+                
+            ('"' + "No. I can't do that." + '"')
+                
+    ("Lilian, her poodle and her merry band of thugs are waiting for you at the derelict house.")
+    ("When they see you, Lilian nods and offers you a tin cup of boiling black tea. Now that they trust you, they're willing to pay you a little more to retain your services.")
+    ('"' + "I should go." + '"')
+        
+    ('"' + "Actually, I just want to buy." + '"', "", "[Lilian's selection changes every day.]", sFightIcon, 7, 0.8)
+        

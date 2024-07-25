@@ -1,0 +1,9 @@
+    ("T")
+    ("HE UNMOVING STAR")
+    ("The star banishes the House's darkness completely - shadows gnaw pathetically at the corners of the room. It swells and contracts with something like breath: vast, blazing, glorious.")
+    ('"' + "What is it meant to do?" + '"' + " asks Bradley. " + '"' + "Does it just sit there? My eyes hurt." + '"')
+    ("Concerns updated: A Bet With Bradley", "Logbook", 6)
+    ("Gained x1 Breathtaking Spectacle", "Logbook", 3)
+    ("-1 Relationship: Bradley Baggs", "Logbook", 5)
+    ("Maybe somewhere less bright...", "", "")
+        

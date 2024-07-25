@@ -1,0 +1,54 @@
+        ("An Obscene Booklet.", "Lilian's gurgling laugh would make a statue blush.", "[Sells for 30 guineas.]", sFightIcon, 7, 0.8)
+            if (oPlayer.LastVisited != "The City of Keys" && EnterpriseIncrease == 0)
+            
+        ("A Godsmoke Vial.", "Lilian grunts approval.", "[Sells for 70 guineas.]", sFightIcon, 7, 0.8)
+            if (oPlayer.LastVisited != "The City of Keys" && EnterpriseIncrease == 0)
+            
+        ("Witches' Butter.", "Lilian examines it with an expert eye.", "[Sells for 140 guineas.]", sFightIcon, 7, 0.8)
+            if (oPlayer.LastVisited != "The City of Keys" && EnterpriseIncrease == 0)
+            
+        ("Colour-Dust.", "The poodle goes into a frenzy.", "[Sells for 90 guineas.]", sFightIcon, 7, 0.8)
+            if (oPlayer.LastVisited != "The City of Keys" && EnterpriseIncrease == 0)
+            
+        ("Necrosia.", '"' + "Stay away from this stuff," + '"' + " Lilian advises.", "[Sells for 10 guineas.]", sFightIcon, 7, 0.8)
+            if (oPlayer.LastVisited != "The City of Keys" && EnterpriseIncrease == 0)
+            
+        ("Toadskin.", "Lilian holds it up to the light, then nods.", "[Sells for 40 guineas.]", sFightIcon, 7, 0.8)
+            if (oPlayer.LastVisited != "The City of Keys" && EnterpriseIncrease == 0)
+            
+        ("Bottled Darkness.", "Lilian whistles. " + '"' + "Careful. Bring me more of this an' I'll have to kiss you." + '"', "[Sells for 500 guineas.]", sFightIcon, 7, 0.8)
+            if (oPlayer.LastVisited != "The City of Keys" && EnterpriseIncrease == 0)
+            
+        ("Ineffective Remedy.", '"' + "Don't try to tell me it works, sunshine, I didn't die yesterday." + '"', "[Sells for 40 guineas.]", sFightIcon, 7, 0.8)
+            if (oPlayer.LastVisited != "The City of Keys" && EnterpriseIncrease == 0)
+            
+        ("Dreamsalve.", '"' + "Premium stuff, this." + '"', "[Sells for 160 guineas.]", sFightIcon, 7, 0.8)
+            if (oPlayer.LastVisited != "The City of Keys" && EnterpriseIncrease == 0)
+            
+        ("An Obscene Booklet.", "Lilian's gurgling laugh would make a statue blush.", "[Sells for 40 guineas.]", sFightIcon, 7, 0.8)
+            if (oPlayer.LastVisited != "The City of Keys" && EnterpriseIncrease == 0)
+            
+        ("A Godsmoke Vial.", "Lilian grunts approval.", "[Sells for 80 guineas.]", sFightIcon, 7, 0.8)
+            if (oPlayer.LastVisited != "The City of Keys" && EnterpriseIncrease == 0)
+            
+        ("Witches' Butter.", "Lilian examines it with an expert eye.", "[Sells for 160 guineas.]", sFightIcon, 7, 0.8)
+            if (oPlayer.LastVisited != "The City of Keys" && EnterpriseIncrease == 0)
+            
+        ("Colour-Dust.", "The poodle goes into a frenzy.", "[Sells for 100 guineas.]", sFightIcon, 7, 0.8)
+            if (oPlayer.LastVisited != "The City of Keys" && EnterpriseIncrease == 0)
+            
+        ("Necrosia.", '"' + "Stay away from this stuff," + '"' + " Lilian advises.", "[Sells for 20 guineas.]", sFightIcon, 7, 0.8)
+            if (oPlayer.LastVisited != "The City of Keys" && EnterpriseIncrease == 0)
+            
+        ("Toadskin.", "Lilian holds it up to the light, then nods.", "[Sells for 50 guineas.]", sFightIcon, 7, 0.8)
+            if (oPlayer.LastVisited != "The City of Keys" && EnterpriseIncrease == 0)
+            
+        ("Bottled Darkness.", "Lilian whistles. " + '"' + "Careful. Bring me more of this an' I'll have to kiss you." + '"', "[Sells for 530 guineas.]", sFightIcon, 7, 0.8)
+            if (oPlayer.LastVisited != "The City of Keys" && EnterpriseIncrease == 0)
+            
+        ("Ineffective Remedy.", '"' + "Don't try to tell me it works, sunshine, I didn't die yesterday." + '"', "[Sells for 60 guineas.]", sFightIcon, 7, 0.8)
+            if (oPlayer.LastVisited != "The City of Keys" && EnterpriseIncrease == 0)
+            
+        ("Dreamsalve.", '"' + "Premium stuff, this." + '"', "[Sells for 190 guineas.]", sFightIcon, 7, 0.8)
+            if (oPlayer.LastVisited != "The City of Keys" && EnterpriseIncrease == 0)
+            

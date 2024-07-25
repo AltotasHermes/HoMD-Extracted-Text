@@ -1,0 +1,127 @@
+        ("B")
+        ("ASILMOTH")
+        ("You are led to a grand office in Fortune Hall - a chandelier hangs ponderous and ridiculous from the ceiling, the desk is built from only the most endangered trees.")
+        ("A pinch-faced old man sits behind the desk, flanked by two scribbling scribes. His eyes are hidden behind circular dark glasses. " + '"' + "My name is Basilmoth," + '"' + " he says, not looking up. " + '"' + "If you come across any information relevant to the Consortium on your travels, you are to bring it directly to me. Understand?" + '"')
+        ("[Basilmoth will pay you for secrets with guineas and Reputation.]", "", 0)
+        ('"' + "And who exactly are you?" + '"')
+        ("Leave.", '"' + "You will find it in your interests to listen to me," + '"' + " says Basilmoth as you stand up. " + '"' + "Any betrayal will be met with appropriate chastisement." + '"')
+            
+        NeedsInformationItem("Sell a Terrible Secret.", "The scribes write furiously. Basilmoth sits with folded arms.", "[You will receive 200 G and +1 Reputation: The City of Bridges.]" HasSecret)
+            GainString = "Gained 200 G!"
+            LossString = "Lost x1 Terrible Secret"
+            LossString2 = "+1 Reputation: The City of Bridges"
+            LossString3 = ""
+        NeedsInformationItem("Sell a scrap of Scandalous Gossip.", '"' + "What is this nonsense?" + '"' + " snaps Basilmoth. " + '"' + "I want matters of substance." + '"', "[You will receive 5 G.]" HasGossip)
+            GainString = "Gained 5 G!"
+            LossString = "Lost x1 Scandalous Gossip"
+            LossString2 = ""
+            LossString3 = ""
+        NeedsInformationItem("Sell your Unsettling Conjecture.", "Basilmoth adjusts his spectacles. " + '"' + "I do not pay you to bring me speculation." + '"', "[You will receive 20 G.]" HasConjecture)
+            GainString = "Gained 20 G!"
+            LossString = "Lost x1 Unsettling Conjecture"
+            LossString2 = ""
+            LossString3 = ""
+        NeedsInformationItem("Sell your knowledge of Dread Machinations.", '"' + "Are you getting this down?" + '"' + " Basilmoth snaps to his scribes. One of them spills ink across the page in terror.", "[You will receive 300 G and +1 Reputation: The City of Bridges.]" HasDread)
+            GainString = "Gained 300 G!"
+            LossString = "Lost x1 Dread Machinations"
+            LossString2 = "+1 Reputation: The City of Bridges"
+            LossString3 = ""
+        NeedsInformationItem("Sell your Hideous Revelation.", "Words force themselves between the cracks in your teeth. They erupt from your mouth like vomitous snakes. One of the scribes begins weeping.", "[You will receive 500 G and +1 Reputation: The City of Bridges.]" HasRevelation)
+            GainString = "Gained 500 G!"
+            LossString = "Lost x1 Hideous Revelation"
+            LossString2 = "+1 Reputation: The City of Bridges"
+            LossString3 = ""
+        NeedsInformationItem("Sell Seditious Whispers: The City of Keys.", "Basilmoth smiles. " + '"' + "We will have to send them a bouquet of flowers. And perhaps some funds." + '"', "[You will receive 300 G.]" HasKeysWhispers)
+            GainString = "Gained 300 G!"
+            LossString = "Lost x1 Seditious Whispers: The City of Keys"
+            LossString2 = ""
+            LossString3 = ""
+        NeedsInformationItem("Sell your Evidence: The Consortium.", '"' + "Don't write that down, fools!" + '"' + " Basilmoth snaps to his scribes. " + '"' + "Report to your supervisor for memory confiscation. Immediately!" + '"', "[You will receive 600 G and +1 Reputation: The City of Bridges.]" HasGovernorEvidence)
+            GainString = "Gained 600 G!"
+            LossString = "Lost x1 Evidence: The Consortium"
+            LossString2 = "+1 Reputation: The City of Bridges"
+            LossString3 = ""
+        NeedsInformationItem("Sell your Evidence: The Governor.", "Basilmoth unclasps his briefcase and begins sorting through papers. " + '"' + "This is more like it." + '"', "[You will receive 100 G.]" HasConsortiumEvidence)
+            GainString = "Gained 300 G!"
+            LossString = "Lost x1 Evidence: The Governor"
+            LossString2 = ""
+            LossString3 = ""
+            ("Hand in the Unsanctioned Scripture.", "Basilmoth sniffs as you hand it to him. " + '"' + "Heathen rubbish," + '"' + " he says. " + '"' + "Good work. If you find any more, hand them in to me." + '"', "[You will receive 15 G.]", sFightIcon, 7, 0.8)
+                GainString = "Gained 15 G!"
+                LossString = "Lost x1 Unsanctioned Scripture"
+                LossString2 = ""
+                LossString3 = ""
+        ("B")
+        ("ASILMOTH")
+        ("Inside Fortune Hall, the only sound is the scratching of the scribes' pen. Basilmoth treats you to a wintry smile, rapidly dropped.")
+        ('"' + "You better have something good for me this time," + '"' + " he says, folding his arms.")
+        ("Leave.", '"' + "You will find it in your interests to listen to me," + '"' + " says Basilmoth as you stand up. " + '"' + "Any betrayal will be met with appropriate chastisement." + '"')
+            
+        NeedsInformationItem("Sell a Terrible Secret.", "The scribes write furiously. Basilmoth sits with folded arms.", "[You will receive 200 G and +1 Reputation: The City of Bridges.]" HasSecret)
+            GainString = "Gained 200 G!"
+            LossString = "Lost x1 Terrible Secret"
+            LossString2 = "+1 Reputation: The City of Bridges"
+            LossString3 = ""
+        NeedsInformationItem("Sell a scrap of Scandalous Gossip.", '"' + "What is this nonsense?" + '"' + " snaps Basilmoth. " + '"' + "I want matters of substance." + '"', "[You will receive 5 G.]" HasGossip)
+            GainString = "Gained 5 G!"
+            LossString = "Lost x1 Scandalous Gossip"
+            LossString2 = ""
+            LossString3 = ""
+        NeedsInformationItem("Sell your Unsettling Conjecture.", "Basilmoth's mouth twists sourly. " + '"' + "I do not pay you to bring me speculation." + '"', "[You will receive 20 G.]" HasConjecture)
+            GainString = "Gained 20 G!"
+            LossString = "Lost x1 Unsettling Conjecture"
+            LossString2 = ""
+            LossString3 = ""
+        NeedsInformationItem("Sell your knowledge of Dread Machinations.", '"' + "Are you getting this down?" + '"' + " Basilmoth snaps to his scribes. One of them spills ink across the page in terror.", "[You will receive 300 G and +1 Reputation: The City of Bridges.]" HasDread)
+            GainString = "Gained 300 G!"
+            LossString = "Lost x1 Dread Machinations"
+            LossString2 = "+1 Reputation: The City of Bridges"
+            LossString3 = ""
+        NeedsInformationItem("Sell your Hideous Revelation.", "Words force themselves between the cracks in your teeth. They erupt from your mouth like vomitous snakes. One of the scribes begins weeping.", "[You will receive 500 G and +1 Reputation: The City of Bridges.]" HasRevelation)
+            GainString = "Gained 500 G!"
+            LossString = "Lost x1 Hideous Revelation"
+            LossString2 = "+1 Reputation: The City of Bridges"
+            LossString3 = ""
+        NeedsInformationItem("Sell Seditious Whispers: The City of Keys.", "Basilmoth smiles. " + '"' + "We will have to send them a bouquet of flowers. And perhaps some funds." + '"', "[You will receive 300 G.]" HasKeysWhispers)
+            GainString = "Gained 300 G!"
+            LossString = "Lost x1 Seditious Whispers: The City of Keys"
+            LossString2 = ""
+            LossString3 = ""
+        NeedsInformationItem("Sell your Evidence: The Consortium.", '"' + "Don't write that down, fools!" + '"' + " Basilmoth snaps to his scribes. " + '"' + "Report to your supervisor for memory confiscation. Immediately!" + '"', "[You will receive 600 G and +1 Reputation: The City of Bridges.]" HasGovernorEvidence)
+            GainString = "Gained 600 G!"
+            LossString = "Lost x1 Evidence: The Consortium"
+            LossString2 = "+1 Reputation: The City of Bridges"
+            LossString3 = ""
+        NeedsInformationItem("Sell your Evidence: The Governor.", "Basilmoth unclasps his briefcase and begins sorting through papers. " + '"' + "This is more like it." + '"', "[You will receive 100 G.]" HasConsortiumEvidence)
+            GainString = "Gained 300 G!"
+            LossString = "Lost x1 Evidence: The Governor"
+            LossString2 = ""
+            LossString3 = ""
+            ("Hand in the Unsanctioned Scripture.", "Basilmoth sniffs as you hand it to him. " + '"' + "Heathen rubbish," + '"' + " he says. " + '"' + "Good work. If you find any more, hand them in to me." + '"', "[You will receive 15 G.]", sFightIcon, 7, 0.8)
+                GainString = "Gained 15 G!"
+                LossString = "Lost x1 Unsanctioned Scripture"
+                LossString2 = ""
+                LossString3 = ""
+        ("B")
+        ("ASILMOTH")
+        ("When you try to approach Fortune Hall, burly mercenaries hem in on you from all angles.")
+        ('"' + "Walk away while you still have limbs," + '"' + " grows the largest and ugliest of the bunch.")
+        ("[You cannot sell information to Basilmoth while your Reputation: The City of Bridges is below 0.]", "Logbook", 4)
+        ("Leave.", "You are not welcome.")
+            
+    ("B")
+    ("ASILMOTH")
+    ('"' + "I am an advisor and consultant to those in the highest echelons of the Consortium," + '"' + " he says. " + '"' + "As such, I like to know what's going on. And if you lead me wrong I will make a very small mark against your name in my register. The next day, every mercenary in the City will be fighting each other to bring me your head." + '"')
+    ("He treats you to a wintry smile.")
+    ("B")
+    ("ASILMOTH")
+    ('"' + "Good." + '"' + " He pauses, then hits one of his scribes across the back of the head. " + '"' + "Wait. Cross that out. Write that I said 'adequate.'" + '"')
+    (GainString, "Money", 0)
+    (LossString, "Logbook", 4)
+    if (LossString2 != "")
+        (LossString2, "Logbook", 5)
+    if (LossString3 != "")
+        (LossString3, "Logbook", 4)
+    ("You have more information to sell.", "He checks a pocket-watch. " + '"' + "Well? I haven't got all day." + '"')
+    ("Leave.", '"' + "You will find it in your interests to listen to me," + '"' + " says Basilmoth as you stand up. " + '"' + "Any betrayal will be met with appropriate chastisement." + '"')
+        

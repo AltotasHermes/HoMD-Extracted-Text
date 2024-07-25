@@ -1,0 +1,94 @@
+if (BoxMode == "Event")
+            oPlayer.LastVisitedForSavePurposes = "Carnage and Rust"
+            FileSelected = "SaveFile0.homd"
+        else if (DialogueScreen == "FirstScreen")
+                ("C")
+                ("ARNAGE AND RUST")
+                ("A terrible battle raged here at the end of the Glass Reclamation. The floor is a pocked wasteland of rusted metal, rubble, and bones.")
+                    (("New location visited. " + ApprehensionsString), "Logbook", 4)
+                        FileSelected = "SaveFile0.homd"
+                    if (oPlayer.Navigator == "Valeria Bell-Roberts")
+                        ("Hunt down one of Valeria's runaway ghosts.")
+                            
+                    if (oPlayer.LastVisited != "Carnage and Rust" && global.CarnageandRust1 == 0)
+                        ("Scavenge.", "The most valuable remnants have been looted already, but there might be something worthwhile left.", "Vigilance", 43)
+                            
+                else if (oPlayer.LastVisited != "Carnage and Rust" && global.CarnageandRust1 == 0)
+                    ("Scavenge like an expert.", "", "[This option is available because you have the Scavenger childhood.]")
+                        
+                if (oPlayer.LastVisited != "Carnage and Rust" && global.CarnageandRust2 == 0)
+                    NeedsDistinctionsItem("Reminisce.", "You were here before.", "[Requires Former Profession: Soldier.]", IAmSoldier)
+                        
+                ("Inside the kinetopede.", "Here you can find all miscellaneous options.")
+                    
+                ("C")
+                ("ARNAGE AND RUST")
+                ("A terrible battle raged here at the end of the Glass Reclamation. The floor is a pocked wasteland of rusted metal, rubble, and bones.")
+                    if (oPlayer.Navigator == "Valeria Bell-Roberts")
+                        ("Hunt down one of Valeria's runaway ghosts.")
+                            
+                    if (oPlayer.LastVisited != "Carnage and Rust" && global.CarnageandRust1 == 0)
+                        ("Scavenge.", "The most valuable remnants have been looted already, but there might be something worthwhile left.", "Vigilance", 43)
+                            
+                else if (oPlayer.LastVisited != "Carnage and Rust" && global.CarnageandRust1 == 0)
+                    ("Scavenge like an expert.", "", "[This option is available because you have the Scavenger childhood.]")
+                        
+                if (oPlayer.LastVisited != "Carnage and Rust" && global.CarnageandRust2 == 0)
+                    NeedsDistinctionsItem("Reminisce.", "You were here before.", "[Requires Former Profession: Soldier.]", IAmSoldier)
+                        
+                ("Inside the kinetopede.", "Here you can find all miscellaneous options.")
+                    
+        else if (DialogueScreen == "SecondScreen" && LeavingTheCity == 1 && TooHeavyToLeaveTheCity == 0)
+            ("I")
+            ("NTO THE DARK")
+            ("Which direction will you go?")
+            ("On second thoughts...", "There are matters here that still merit attention.", "#"0, 0.8)
+                
+            ("Pore over the map.", "Orient yourself before you launch off into the ravenous dark.")
+                    BoxMode = "Map"
+            ("North.", "Nothing but badlands that away.")
+                oPlayer.LastVisited = "Carnage and Rust"
+                LeavingSpecialRoomDialogueBox("North")
+            ("West.", "The Cities beckon.")
+                oPlayer.LastVisited = "Carnage and Rust"
+                LeavingSpecialRoomDialogueBox("West")
+            ("East.", "The Principate awaits.")
+                oPlayer.LastVisited = "Carnage and Rust"
+                LeavingSpecialRoomDialogueBox("East")
+            ("South.", "Miles and miles of empty rooms.")
+                oPlayer.LastVisited = "Carnage and Rust"
+                LeavingSpecialRoomDialogueBox("South")
+        else if (DialogueScreen == "SecondScreen" && LeavingTheCity == 1 && TooHeavyToLeaveTheCity == 1)
+        else if (DialogueScreen == "SecondScreen" && ValeriaQuest == 1)
+        else if (DialogueScreen == "SecondScreen" && ReminiscingSoldier == 1)
+            ("C")
+            ("ARNAGE AND RUST")
+            ("The Glass Reclamation was back in '02. In this room, the Cities and the Principate clashed for the first and only time. It was slaughter on an unprecedented scale.")
+            if NextButton("Your memories of that day are fuzzy. Kinetopedes melting into slag under red-hot beams of light. Principate dirigibles exploding in balls of flame. Your friends died and changed around you under occult pressure, their faces twisting and vanishing like candle-flame, their skin ascending and leaving their bones behind, tongues and eyeballs sucked violently inward.", 1)
+                ("The skeletons still show evidence of these horrendous abuses. They are contorted, broken things that lie among the detritus and hurt your mind.")
+                if NextButton("Your only consolation is that the Principate army suffered even worse.", 2)
+                    ("Gained x1 Reflection on Mortality.", "Logbook", 3)
+                    ("Gained x1 Moment of Melancholy.", "Logbook", 3)
+                    ("Gained x1 War Story.", "Logbook", 3)
+                    ("Lost some Sanity.", "Sanity", 0)
+                    ("Those were vibrant days.", "You found love, and laughter, and horror. But mostly horror.", "")
+                        
+        else if ((DialogueScreen == "SecondScreen" && WanderTheStreets == 1 && WasChallengeSuccessful == 1) || ExpertScavenging == 1)
+        else if (DialogueScreen == "SecondScreen" && WanderTheStreets == 1 && WasChallengeSuccessful == 0)
+            ("C")
+            ("ARNAGE AND RUST")
+            ("You overturn kinetopedes and dig beneath the hulking wrecks of blimps. You trawl through the ancient remnants until your face is black with dust and your fingers red with rust.")
+            ("(You failed a Vigilance challenge...)", "Challenge", 0)
+            ("You find nothing.", "", "")
+                
+        else if (DialogueScreen == "SecondScreen" && MiscellaneousEvent == 1)
+        else if (DialogueScreen == "SecondScreen" && MiscOptions == 1)
+            ("C")
+            ("APTAIN'S QUARTERS")
+            ("The machine greets you with a steady, soothing hum. In your quarters, you can safely decide what side activity to pursue. Deal with prisoners? Drink something? Operate on your own memories, perhaps?")
+            ("Return to location.", "")
+                
+        
+                
+    draw_text(((view_wport[(0 << 0)] * 0.5) - 3), ((view_hport[(0 << 0)] * 0.75) - 3), "Carnage and Rust")
+    draw_text((view_wport[(0 << 0)] * 0.5), (view_hport[(0 << 0)] * 0.75), "Carnage and Rust")

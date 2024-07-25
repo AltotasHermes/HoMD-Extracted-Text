@@ -1,0 +1,5 @@
+("A")
+(" BRISK GOODBYE")
+("Your passenger pays what was promised and slips into the crowd.")
+("Gained 100 G!", "Money", 0)
+("You hope whatever awaits them is better than what they left.", "", "")

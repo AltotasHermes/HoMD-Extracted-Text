@@ -1,0 +1,10 @@
+("S")
+("TICKY END")
+    ('"' + "Nice," + '"' + " says Lilian, handing you your guineas. " + '"' + "Let's keep this good thing goin'." + '"')
+        ("Gained x1 Criminal Enterprise", "Logbook", 6)
+    ('"' + "Bad news, boss," + '"' + " says Lilian. " + '"' + "The Hangknot Mob have been takin' notice of us, and they've come down hard on our operation. My people are goin' missing. Not sure how long we can keep this up." + '"')
+        ("Gained x1 Criminal Enterprise", "Logbook", 6)
+('"' + "Pleasure doing business." + '"')
+    
+NeedsMoney('"' + "Anything worth buying?" + '"', "", "[Lilian's selection changes every day.]" 80)
+    

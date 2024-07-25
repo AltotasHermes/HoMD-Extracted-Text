@@ -1,0 +1,6 @@
+    ("G")
+    ("HOULWATCH")
+    ("From the heights of the Gardens to the lowest dungeons, no-one in Ghoulwatch seems to have heard of Linnaea or a Two-Bodied Woman.")
+    ("You must have got it wrong.")
+    ("Return to the book, see if you can find some other pattern...")
+        

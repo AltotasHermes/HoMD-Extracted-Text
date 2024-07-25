@@ -1,0 +1,10 @@
+("A")
+("N ADVERTISEMENT")
+("Days or weeks or months in a scuttling tin can, surrounded by strangers with questionable morals and mental health, and a significant risk of death or worse - who wouldn't want to join your expedition?")
+("...You hope the new prospects don't question why you're in constant need of new crew.")
+("You can put up a poster by the kinetopede station, which is cheap but ineffective. Or you could take out advertising space in one of the City's many newspapers, which will cast a wide net and doubtless attract prospects, but will be moderately expensive.")
+("On second thoughts...", "You don't need to do this.")
+    
+NeedsMoney("Put up a poster.", "All the station's walls are covered in scraps of paper, some many years old. No-one pays attention to these things.", "[Renting the wall-space will cost you 10 guineas and your self-respect.]", 10)
+    
+NeedsMoney("Place an advertisement in the newspaper.", "Hmmm - the Civean Times, the Keybearer's Journal, the Hollow Trumpet, the Pioneer? Decisions, decisions.", "[This will cost you 50 guineas.]", 50)

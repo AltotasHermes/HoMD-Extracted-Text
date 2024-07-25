@@ -1,0 +1,45 @@
+("S")
+("TICKY END")
+("Lilian takes a satisfied drag on her cigarette.")
+        NeedsMoney("Obscene Booklet.", "Lilian barks a laugh, and shows you her favourite page.", "[Costs 40 guineas.]" 40)
+            
+        NeedsMoney("Godsmoke Vial.", "Ghouls can't get high, which makes them ideal drug-peddlers.", "[Costs 90 guineas.]" 90)
+            
+        NeedsMoney("Witches' Butter.", '"' + "Fresh," + '"' + " says Lilian, with an obscene smile.", "[Costs 180 guineas.]" 180)
+            
+        NeedsMoney("Colour-Dust.", '"' + "Go on. 'Ave a taste of a diff'rent spectrum." + '"', "[Costs 110 guineas.]" 110)
+            
+        NeedsMoney("Necrosia.", '"' + "My partic'ler poison, when I was alive. Killed me in the end, o'course." + '"', "[Costs 20 guineas.]" 20)
+            
+        NeedsMoney("Toadskin.", '"' + "Priests in the Entomarch eat this every day. You feeling religious?" + '"', "[Costs 50 guineas.]" 50)
+            
+        NeedsMoney("Human Heart.", '"' + "Don't ask." + '"', "[Costs 90 guineas.]" 90)
+            
+        NeedsMoney("Bottled Darkness.", '"' + "Rare stuff. At least in bottled form." + '"', "[Costs 540 guineas.]" 540)
+            
+        NeedsMoney("Ineffective Remedy.", '"' + "Them doctors don't want you to know this even exists. It's good for anything wot ails yer." + '"', "[Costs 50 guineas.]" 50)
+            
+        NeedsMoney("Dreamsalve.", "Lilian wiggles her eyebrows. " + '"' + "Why keep those dreams inside your head?" + '"', "[Costs 200 guineas.]" 200)
+            
+        NeedsMoney("Obscene Booklet.", "Lilian barks a laugh, and shows you her favourite page.", "[Costs 40 guineas.]" 40)
+            
+        NeedsMoney("Godsmoke Vial.", "Ghouls can't get high, which makes them ideal drug-peddlers.", "[Costs 90 guineas.]" 90)
+            
+        NeedsMoney("Witches' Butter.", '"' + "Fresh," + '"' + " says Lilian, with an obscene smile.", "[Costs 180 guineas.]" 180)
+            
+        NeedsMoney("Colour-Dust.", '"' + "Go on. 'Ave a taste of a diff'rent spectrum." + '"', "[Costs 110 guineas.]" 110)
+            
+        NeedsMoney("Necrosia.", '"' + "My partic'ler poison, when I was alive. Killed me in the end, o'course." + '"', "[Costs 20 guineas.]" 20)
+            
+        NeedsMoney("Toadskin.", '"' + "Priests in the Entomarch eat this every day. You feeling religious?" + '"', "[Costs 50 guineas.]" 50)
+            
+        NeedsMoney("Human Heart.", '"' + "Don't ask." + '"', "[Costs 90 guineas.]" 90)
+            
+        NeedsMoney("Bottled Darkness.", '"' + "Rare stuff. At least in bottled form." + '"', "[Costs 540 guineas.]" 540)
+            
+        NeedsMoney("Ineffective Remedy.", '"' + "Them doctors don't want you to know this even exists. It's good for anything wot ails yer." + '"', "[Costs 50 guineas.]" 50)
+            
+        NeedsMoney("Dreamsalve.", "Lilian wiggles her eyebrows. " + '"' + "Why keep those dreams inside your head?" + '"', "[Costs 200 guineas.]" 200)
+            
+('"' + "That's all I needed." + '"', "Lilian waves you languidly away.")
+    

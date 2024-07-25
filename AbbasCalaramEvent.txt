@@ -1,0 +1,6 @@
+    ("C")
+    ("ALARAM")
+    ("Up and down the canals, no-one seems to have heard of Linnaea or a Two-Bodied Woman.")
+    ("You must have got it wrong.")
+    ("Return to the book, see if you can find some other pattern...")
+        

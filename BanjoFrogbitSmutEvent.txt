@@ -1,0 +1,13 @@
+    ("F")
+    ("ROGBIT SMUT")
+    ("The mycenae listen carefully as Banjo describes Mr Winter, and the Elder nods his wizened head. " + '"' + "Yes, we had a white-bearded traveller come here, forty years ago. He brought us many gifts, and earned his keep, and then he was murdered. The previous Elder was upset that a guest had come to harm within our borders, but we never found the killer." + '"')
+    ("Concerns updated: Gathering the Dead.", "Logbook", 6)
+    ("+1 Relationship: Banjo Smiggs", "Logbook", 5)
+    ("Ask to visit Mr Winter's grave.", "", "")
+    ("Leave.", "You have what you came for.", "")
+    ("F")
+    ("ROGBIT SMUT")
+    ("The Elder apologizes. " + '"' + "We cremated him, as is our custom. There is nothing left of your friend." + '"')
+    ("Gained x1 Reflection on Mortality", "Logbook", 3)
+    ("Leave.", "You have what you came for.", "")
+        

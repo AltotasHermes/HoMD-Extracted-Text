@@ -1,0 +1,153 @@
+if (BoxMode == "Event")
+            oPlayer.LastVisitedForSavePurposes = "Bodach's Gaze"
+            FileSelected = "SaveFile0.homd"
+        else if (DialogueScreen == "FirstScreen")
+                ("B")
+                ("ODACH'S GAZE")
+                    ("Dozens of colossal eyes stare from the ceiling.")
+                        (("New location visited. " + ApprehensionsString), "Logbook", 4)
+                            FileSelected = "SaveFile0.homd"
+                    if (oPlayer.LastVisited != "Bodach's Gaze" && global.BodachsGaze1 == 0 && oInventories.TimesDecryptedGaze < 3)
+                            ("Examine the Gaze.", "The eyes blink in a strange pattern. Could it be a code?", "Esoterica", 60)
+                                
+                        else ("Continue decoding the Gaze.", "You're close to finding a pattern in the blinks, you're sure of it...", "Esoterica", 60)
+                            
+                    if (oPlayer.LastVisited != "Bodach's Gaze" && oInventories.TimesDecryptedGaze == 3 && global.BodachsGaze2 == 0)
+                        ("Research Bodach's Gaze.", "Look through your books. There must be a reason - what is it? And why does it want to die? Should you destroy it, or leave it be?", "Esoterica", 80)
+                            
+                    if (oPlayer.LastVisited != "Bodach's Gaze" && oInventories.TimesDecryptedGaze >= 3)
+                        NeedsCargoItem("Blind Bodach's Gaze.", "Setting off this many flares at once will burn out the eyes. Perhaps that will be enough?", (("[Costs x10 Flares. You currently have x" + string(CargoReturnNumberOfItems(77))) + ".]"), HasFlares)
+                            
+                        NeedsCargoItem("Blind Bodach's Gaze.", "A huge explosion will burn out the eyes. Perhaps that will be enough?", (("[Costs x6 Gunpowder. You currently have x" + string(CargoReturnNumberOfItems(84))) + ".]"), HasGun)
+                            
+                    ("The eyes are blinded. Bodach's Gaze is at last able to sleep.")
+                ("Inside the kinetopede.", "Here you can find all miscellaneous options.")
+                    
+                ("B")
+                ("ODACH'S GAZE")
+                    ("Dozens of colossal eyes stare from the ceiling.")
+                    if (oPlayer.LastVisited != "Bodach's Gaze" && global.BodachsGaze1 == 0 && oInventories.TimesDecryptedGaze < 3)
+                            ("Examine the Gaze.", "The eyes blink in a strange pattern. Could it be a code?", "Esoterica", 60)
+                                
+                        else ("Continue decoding the Gaze.", "You're close to finding a pattern in the blinks, you're sure of it...", "Esoterica", 60)
+                            
+                    if (oPlayer.LastVisited != "Bodach's Gaze" && oInventories.TimesDecryptedGaze == 3 && global.BodachsGaze2 == 0)
+                        ("Research Bodach's Gaze.", "Look through your books. There must be a reason - what is it? And why does it want to die? Should you destroy it, or leave it be?", "Esoterica", 80)
+                            
+                    if (oPlayer.LastVisited != "Bodach's Gaze" && oInventories.TimesDecryptedGaze >= 3)
+                        NeedsCargoItem("Blind Bodach's Gaze.", "Setting off this many flares at once will burn out the eyes. Perhaps that will be enough?", (("[Costs x10 Flares. You currently have x" + string(CargoReturnNumberOfItems(77))) + ".]"), HasFlares)
+                            
+                        NeedsCargoItem("Blind Bodach's Gaze.", "A huge explosion will burn out the eyes. Perhaps that will be enough?", (("[Costs x6 Gunpowder. You currently have x" + string(CargoReturnNumberOfItems(84))) + ".]"), HasGun)
+                            
+                    ("The eyes are blinded. Bodach's Gaze is at last able to sleep.")
+                ("Inside the kinetopede.", "Here you can find all miscellaneous options.")
+                    
+        else if (DialogueScreen == "SecondScreen" && LeavingTheCity == 1 && TooHeavyToLeaveTheCity == 0)
+            ("I")
+            ("NTO THE DARK")
+            ("Which direction will you go?")
+            ("On second thoughts...", "There are matters here that still merit attention.", "#"0, 0.8)
+                
+            ("Pore over the map.", "Orient yourself before you launch off into the ravenous dark.")
+                    BoxMode = "Map"
+            ("North.", "A mycena village.")
+                oPlayer.LastVisited = "Bodach's Gaze"
+                LeavingSpecialRoomDialogueBox("North")
+            ("West.", "To the forgotten colony of the Cities.")
+                oPlayer.LastVisited = "Bodach's Gaze"
+                LeavingSpecialRoomDialogueBox("West")
+            ("East.", "The Old Hallow - the best place this side of the House.")
+                oPlayer.LastVisited = "Bodach's Gaze"
+                LeavingSpecialRoomDialogueBox("East")
+            ("South.", "Bogs, unbearable humidity and insects - what's not to like?")
+                oPlayer.LastVisited = "Bodach's Gaze"
+                LeavingSpecialRoomDialogueBox("South")
+        else if (DialogueScreen == "SecondScreen" && LeavingTheCity == 1 && TooHeavyToLeaveTheCity == 1)
+        else if (DialogueScreen == "SecondScreen" && (BlindGaze1 == 1 || BlindGaze2 == 1))
+            ("B")
+            ("ODACH'S GAZE")
+            ("You set the match to the fuse and run. All your crew take cover, huddled beneath chairs and tables with thick blankets over the windows.")
+            ("The flash is so bright you can still see it through the heavy cloth. The kinetopede rocks back and forth.")
+            ("And as a thousand eyes burn you can sense, for just a moment, the Gaze's consuming bittersweet melancholy. Its memories flood through you, fading almost instantly. Memories of tedium and torment and claustrophobia. And before that, a brief time of sunlight. Then that, too, fades.")
+            ("When the brightness fades, the eyes covering the ceiling are gone. Except for one. A solitary eye has survived, seeking refuge on your hull - it sits nestled in the metal, blinking out at you.")
+            ("Concerns concluded: Bodach's Gaze", "Logbook", 6)
+            
+                ("Lost x6 Gunpowder", "Weapon", 1)
+                ("Lost x10 Flares", "Flare", 1)
+            ("Gained x1 Moment of Melancholy", "Logbook", 3)
+            ("Gained x1 Haunting Vision", "Logbook", 3)
+            ("Gained x1 Glimpse of Another World", "Logbook", 3)
+            ("Gained x1 Trophy: Eye of Bodach", "Engine", 2)
+            ("The Gaze sleeps.", "At long last, it is blind.", "")
+                
+        else if (DialogueScreen == "SecondScreen" && ResearchGaze1 == 1 && WasChallengeSuccessful == 1)
+            ("B")
+            ("ODACH'S GAZE")
+            ("Mentions of Bodach's Gaze are few and far between. Apparently it was discovered centuries ago by an explorer named Josephine Bodach, who stayed here just long enough to plant a flag and name it after herself. She was later eaten by some moths in an unrelated incident.")
+            ("Since then, precious few have bothered to visit the Gaze. Several scholars and occultists have speculated as to its origin, though.")
+            ("One theory is that Bodach's Gaze is the eyes of people from other worlds, seers and summoners and world-nomads who attempted to peer into the House without actually travelling there. The House refuses to let anything escape, not even those who stare into it. Their Gaze has been trapped, for thousands of years, on an unremarkable section of floor.")
+            ("(You passed an Esoterica challenge!)", "Challenge", 1)
+            ("You spent 1 day poring through your books!", "Time", 1)
+            ("Gained x1 Unsettling Conjecture", "Logbook", 3)
+            ("And now it wants to die.", "The Gaze is eyesight. Blinding it will destroy it utterly.", "")
+                
+        else if (DialogueScreen == "SecondScreen" && ResearchGaze1 == 1 && WasChallengeSuccessful == 0)
+            ("B")
+            ("ODACH'S GAZE")
+            ("You pore through all your books, but you can't find a single mention of Bodach's Gaze. Has no-one ever bothered to study it?")
+            ("(You failed an Esoterica challenge...)", "Challenge", 1)
+            ("Perhaps you've missed something.", "", "")
+                
+        else if (DialogueScreen == "SecondScreen" && WanderTheStreets == 1 && WasChallengeSuccessful == 1)
+                ("B")
+                ("ODACH'S GAZE")
+                ("After a full day of painstaking notation and poring over books of ciphers, you conclude that Bodach's Gaze is definitely trying to communicate. The rhythm of its blinking is too formulaic. The same few patterns crop up again and again.")
+                ("But it's a complex code. It will require a great effort to decipher, and you're not even halfway there.")
+                ("(You passed an Esoterica challenge!)", "Challenge", 1)
+                ("You spent 1 day decoding!", "Time", 1)
+                ("Concerns updated: Bodach's Gaze", "Logbook", 6)
+                
+                ("You might have to revisit this...", "So far you've ruled out some ciphers, and have several vague and contradictory theories.", "")
+                    
+                ("B")
+                ("ODACH'S GAZE")
+                ("You start to get a sense of what the Gaze is trying to say. You decode two words that are used repeatedly: 'pain' and 'end.'")
+                ("The rest remains indecipherable gibberish.")
+                ("(You passed an Esoterica challenge!)", "Challenge", 1)
+                ("You spent 1 day decoding!", "Time", 1)
+                ("Concerns updated: Bodach's Gaze", "Logbook", 6)
+                ("Gained x1 Moment of Melancholy", "Logbook", 3)
+                
+                ("You might have to revisit this...", "You've almost got an alphabet. You just need to eliminate some odd outliers...", "")
+                    
+                ("B")
+                ("ODACH'S GAZE")
+                ('"' + "END US END US END US END US IN PAIN IN PAIN IN PAIN IN PAIN IN PAIN IN PAIN END US END US END US END US END US BLIND US END US BLIND US END US BLIND BLIND BLIND END END END" + '"')
+                ("You try to ask the Gaze who it is, why it is in pain, how you can help it. But it just repeats that smatter of words, again and again, in its near-impenetrable blinking code.")
+                ("(You passed an Esoterica challenge!)", "Challenge", 1)
+                ("You spent 1 day decoding!", "Time", 1)
+                ("Concerns updated: Bodach's Gaze", "Logbook", 6)
+                ("Gained x1 Moment of Melancholy", "Logbook", 3)
+                
+                ("You're not sure how to help.", "It wants to be blinded. Ended. Perhaps you should do some research...", "")
+                    ChangeConcernsDescription(124, "Bodach's Gaze wants to be destroyed.")
+                    
+        else if (DialogueScreen == "SecondScreen" && WanderTheStreets == 1 && WasChallengeSuccessful == 0)
+            ("B")
+            ("ODACH'S GAZE")
+            ("You examine the blinking eyes for a pattern, any coherent structure at all. You sit out under their unremitting glare, poring over books of cryptograms and ciphers.")
+            ("But no, it's no good. The spark of understanding escapes you today. Perhaps another time, you will have more success.")
+            ("(You failed an Esoterica challenge...)", "Challenge", 1)
+            ("Onward.", "Or perhaps it is just insensible blinking after all.", "")
+                
+        else if (DialogueScreen == "SecondScreen" && MiscellaneousEvent == 1)
+        else if (DialogueScreen == "SecondScreen" && MiscOptions == 1)
+            ("C")
+            ("APTAIN'S QUARTERS")
+            ("The machine greets you with a steady, soothing hum. In your quarters, you can safely decide what side activity to pursue. Deal with prisoners? Drink something? Operate on your own memories, perhaps?")
+            ("Return to location.", "")
+                
+        
+                
+    draw_text(((view_wport[(0 << 0)] * 0.5) - 3), ((view_hport[(0 << 0)] * 0.75) - 3), "Bodach's Gaze")
+    draw_text((view_wport[(0 << 0)] * 0.5), (view_hport[(0 << 0)] * 0.75), "Bodach's Gaze")

@@ -1,0 +1,54 @@
+    ("An escape, of sorts.", "The rational part of your mind is locked screaming away. You press the razor against your throat, surprised you never thought of this before.")
+        
+    ("You think you know where to find the City of Glass.", "", (("[Requires x5 Clues: The City of Glass. You currently have x" + string(InformationReturnNumberOfItems(40))) + ".]")0, 0.8)
+        GlassInput = ""
+        
+        
+    ("Retrieve your memories.", "Attach the nozzle to the hole in your skull and crank the handle.", "[You will lose x1 Box of Your Memories]"0, 0.8)
+        
+        
+    ("Open Lord Attercroppe's letter.", "It is sealed with wax - he will know that you read it.")
+        
+        
+    ("Speak to Peter McNally, the escapee you rescued from Kennedy Yard.", "He's currently sitting in the pilot-bay, asking enthusiastic questions about what each lever does.")
+        
+        
+    ("Open the Omnipope's gift.", "What would a figure like the Omnipope want to offer you?")
+        
+        
+    ("Review the clues about the location of the City of Glass.")
+        
+        
+    ("Travel through your Fetch-mirror.", "You can reach large cities through the Mirrorwise, as long as you've visited it already.", "[You will advance time by 2 weeks and lose x1 Fetch-mirror.]"0, 0.8)
+        
+        
+    ("A hideous nightmare!", "These things will creep back to haunt you, sooner or later.", "[Combine x3 Disquieting Incidents into x1 Horrifying Ordeal, but lose Sanity.]"0, 0.8)
+        
+        
+    ("A disturbing nightmare!", "Your visions come crawling up from the recesses of your mind.", "[Combine x3 Haunting Visions into x1 Horrifying Ordeal, but lose Sanity.]"0, 0.8)
+        
+        
+    ("Ponder your Unsettling Conjectures.", "[On a success, you will gain Apprehensions and x1 Dread Machinations; on a failure, you will lose x3 Unsettling Conjectures.]"0, 0.8, "Esoterica", 45)
+        
+        
+    ("Propitiate a God.", "This will grant you a Divine Favour. Provided it doesn't go wrong.", "[Requires x7 Divine Scrutiny with any of the Sanctioned Gods.]"0, 0.8)
+        
+        
+    ("Call in your Divine Favour.", "A god's Favour should not be spent lightly.")
+        
+        
+    ("Craft or use an item.", "Time to free up some cargo space.")
+        
+        
+    ("Fill your Empty Memory-box.", "The only way to trade memories for guineas. Or simply remove the unwanted ones from your head.")
+        
+        
+        ("Seek emotional support.", "Pets are good providers of that thing.", "[Available once per trip.]"0, 0.8)
+            
+            
+    ("Betray your passenger.", "They picked the wrong kinetopede.")
+        
+        
+    ("Deal with your prisoner.", "Dead weight is unwelcome.")
+        
+        

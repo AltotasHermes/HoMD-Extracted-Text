@@ -1,0 +1,9 @@
+    ("V")
+    ("EX")
+    ("The burning god looms, a smouldering pillar surveying its domain. Cinders dance above tranquil black water. Godsmoke blooms and billows, a shifting black-green-violet shroud on the landscape.")
+    ('"' + "The air here is full of drugs," + '"' + " says Bradley disgustedly.")
+    ("Concerns updated: A Bet With Bradley", "Logbook", 6)
+    ("Gained x1 Breathtaking Spectacle", "Logbook", 3)
+    ("-1 Relationship: Bradley Baggs", "Logbook", 5)
+    ("Maybe somewhere less intoxicating...", "", "")
+        

@@ -1,0 +1,351 @@
+if (BoxMode == "Event")
+            oPlayer.LastVisitedForSavePurposes = "Bluesteel Court"
+            FileSelected = "SaveFile0.homd"
+        else if (DialogueScreen == "FirstScreen")
+                ("B")
+                ("LUESTEEL COURT")
+                ("House Bluesteel have established interconnected shelf-towns and shelf-castles on the walls. Blue-cloaked knights glide from one to the other on giant dragonfly steeds.")
+                ("Even higher, traitors and exiles hide in semi-secret edgeholds, with their own complex politics and inter-shelf turmoils.")
+                    (("New location visited. " + ApprehensionsString), "Logbook", 4)
+                        FileSelected = "SaveFile0.homd"
+                    ("Hand Queen Sabetha's edict to Lady Bluesteel.")
+                        
+                    ("Inform Lady Bluesteel that now would be the perfect time for war.", "", "[Think carefully. This will lead to a climactic battle and prevent you from further changing factions' allegiances. There is no going back.]"0, 0.8)
+                        
+                    ("Hand Queen Sabetha's edict to Lady Lampyre.")
+                        
+                    ("Inform Lady Lampyre that now would be the perfect time for war.", "", "[Think carefully. This will lead to a climactic battle and prevent you from further changing factions' allegiances. There is no going back.]"0, 0.8)
+                        
+                    ("Inform Lady Bluesteel of Lady Thespian's hypocrisy.", "Lady Thespian still allows her Baronesses to keep thralls.")
+                        
+                    NeedsRelationshipsItem("A private audience with Lady Bluesteel.", "It might be worthwhile to investigate her position in the civil war...", "[Costs x1 Lady Bluesteel's Favour.]"0, 0.8, HasFavoir)
+                        
+                    ("A sortie to the upper shelves.", "Lady Bluesteel is assembling a coterie of guards and diplomats.")
+                        
+                    ("Queen Lampyre wishes to offer you a reward.", "Without you, the war would not have been won, and the Queen would have still been a lowly Baroness.")
+                        
+                    NeedsRelationshipsItem("Assassinate Lady Bluesteel.", "You made an agreement to help the Lampyres inherit the throne. First, you will need a private audience with the Lady.", "[Costs x1 Lady Bluesteel's Favour.]"0, 0.8, HasFavoir)
+                        
+                    NeedsMoney("Rest and recover.", "You've spent a long time in darkness. Your crew agree that they need a stiff drink.", "[This will recover some of your Sanity, but will cost you 20 guineas.]", 20)
+                        
+                    ("Gather news.", "Red-faced town-criers will tell you all you need to know, free of charge.", "")
+                        
+                    if (oPlayer.LastVisited != "BluesteelCourt" && global.BluesteelCourt1 == 0)
+                        ("Compete in the tournament.", "A sure-fire way to win Lady Bluesteel's Favour.]", "")
+                            
+                        if (oPlayer.LastVisited != "BluesteelCourt")
+                            ("Currying favour.", "The Bluesteel Baronesses invite you to cordial dinners, where they court your assistance. For now, your words have weight with the Lady, and they want to take advantage.", "[This option is available because you have x1 or more Lady Bluesteel's Favour.]")
+                                
+                    ((("Preach the word of " + oInventories.GodNameForMissionaryWork) + "."), "Lady Bluesteel frequently opens her Court to speakers from all walks of life. Today, the platform will be open to you.", "")
+                        
+                    ("A prospective passenger.", "A hunched figure waves you down at the station.")
+                        
+                    ("Drop off your human passenger.", "", "[They will give you 100 G.]")
+                        
+                ("Inside the kinetopede.", "Here you can find all miscellaneous options.")
+                    
+                ("B")
+                ("LUESTEEL COURT")
+                ("House Bluesteel have established interconnected shelf-towns and shelf-castles on the walls. Blue-cloaked knights glide from one to the other on giant dragonfly steeds.")
+                    ("Hand Queen Sabetha's edict to Lady Bluesteel.")
+                        
+                    ("Inform Lady Bluesteel that now would be the perfect time for war.", "", "[Think carefully. This will lead to a climactic battle and prevent you from further changing factions' allegiances. There is no going back.]"0, 0.8)
+                        
+                    ("Hand Queen Sabetha's edict to Lady Lampyre.")
+                        
+                    ("Inform Lady Lampyre that now would be the perfect time for war.", "", "[Think carefully. This will lead to a climactic battle and prevent you from further changing factions' allegiances. There is no going back.]"0, 0.8)
+                        
+                        NeedsRelationshipsItem("A private audience with Lady Bluesteel.", "It might be worthwhile to investigate her position in the civil war...", "[Costs x1 Lady Bluesteel's Favour.]"0, 0.8, HasFavoir)
+                            
+                        ("A sortie to the upper shelves.", "Lady Bluesteel is assembling a coterie of guards and diplomats.")
+                            
+                        ("Queen Lampyre wishes to offer you a reward.", "Without you, the war would not have been won, and the Queen would have still been a lowly Baroness.")
+                            
+                        ("Assassinate Lady Bluesteel.", "You made an agreement to help the Lampyres inherit the throne. First, you will need a private audience with the Lady.", "[Costs x1 Lady Bluesteel's Favour.]"0, 0.8)
+                            
+                        ("Inform Lady Bluesteel of Lady Thespian's hypocrisy.", "Lady Thespian still allows her Baronesses to keep thralls.")
+                            
+                    NeedsMoney("Rest and recover.", "You've spent a long time in darkness. Your crew agree that they need a stiff drink.", "[This will recover some of your Sanity, but will cost you 20 guineas.]", 20)
+                        
+                    ("Gather news.", "Red-faced town-criers will tell you all you need to know, free of charge.", "")
+                        
+                    if (oPlayer.LastVisited != "BluesteelCourt" && global.BluesteelCourt1 == 0)
+                        ("Compete in the tournament.", "A sure-fire way to win Lady Bluesteel's Favour.]", "")
+                            
+                        if (oPlayer.LastVisited != "BluesteelCourt")
+                            ("Currying favour.", "The Bluesteel Baronesses invite you to cordial dinners, where they court your assistance. For now, your words have weight with the Lady, and they want to take advantage.", "[This option is available because you have x1 or more Lady Bluesteel's Favour.]")
+                                
+                    ((("Preach the word of " + oInventories.GodNameForMissionaryWork) + "."), "Lady Bluesteel frequently opens her Court to speakers from all walks of life. Today, the platform will be open to you.", "")
+                        
+                    ("A prospective passenger.", "A hunched figure waves you down at the station.")
+                        
+                    ("Drop off your human passenger.", "", "[They will give you 100 G.]")
+                        
+                ("Inside the kinetopede.", "Here you can find all miscellaneous options.")
+                    
+        else if (DialogueScreen == "SecondScreen" && LeavingTheCity == 1 && TooHeavyToLeaveTheCity == 0)
+            ("I")
+            ("NTO THE DARK")
+            ("Which direction will you go?")
+            ("On second thoughts...", "There are matters here that still merit attention.", "#"0, 0.8)
+                
+            ("Pore over the map.", "Orient yourself before you launch off into the ravenous dark.")
+                    BoxMode = "Map"
+            ("North.", "The spider-lovers are north-west, though don't expect to get a straight honest word from any of them.")
+                oPlayer.LastVisited = "BluesteelCourt"
+                LeavingSpecialRoomDialogueBox("North")
+            ("West.", "You will find the mantis-city in the mountain. Be cautious.")
+                oPlayer.LastVisited = "BluesteelCourt"
+                LeavingSpecialRoomDialogueBox("West")
+            ("East.", "After a long journey, you will find a city of sugar and music and light.")
+                oPlayer.LastVisited = "BluesteelCourt"
+                LeavingSpecialRoomDialogueBox("East")
+            ("South.", "Do not go there. You will only catch the disease, and spread it wherever you go.")
+                oPlayer.LastVisited = "BluesteelCourt"
+                LeavingSpecialRoomDialogueBox("South")
+        else if (DialogueScreen == "SecondScreen" && LeavingTheCity == 1 && TooHeavyToLeaveTheCity == 1)
+        else if (DialogueScreen == "SecondScreen" && DropOffPassenger == 1)
+        else if (DialogueScreen == "SecondScreen" && EntomarchQuest == 1)
+        else if (DialogueScreen == "SecondScreen" && SecondEntomarchQuest == 1)
+        else if (DialogueScreen == "SecondScreen" && ThirdEntomarchQuest == 1)
+        else if (DialogueScreen == "SecondScreen" && FourthEntomarchQuest == 1)
+        else if (DialogueScreen == "SecondScreen" && FifthEntomarchQuest == 1)
+        else if (DialogueScreen == "SecondScreen" && SixthEntomarchQuest == 1)
+        else if (DialogueScreen == "SecondScreen" && SeventhEntomarchQuest == 1)
+        else if (DialogueScreen == "SecondScreen" && EighthEntomarchQuest == 1)
+        else if (DialogueScreen == "SecondScreen" && TellBluesteel == 1)
+            ("B")
+            ("LUESTEEL COURT")
+            ("Lady Bluesteel listens with obvious horror. " + '"' + "We cannot fight alongside such a knave," + '"' + " she declares. " + '"' + "How do we know she truly plans to abolish thralldom? How do we know we are not merely supporting a worse tyrant?" + '"')
+            ("Her court murmur in agreement. " + '"' + "Thank you for opening my eyes to the truth," + '"' + " says Lady Bluesteel. " + '"' + "We will not fight this war. Clearly, the time is not right." + '"')
+            ("Lost x1 Evidence: Lady Thespian", "Logbook", 4)
+            ("Gained x2 Lady Bluesteel's Favour", "Reputation", 4)
+            ("[The allegiance of Bluesteel Court has changed. This may alter the outcome of the war.]", "", 0)
+            ("The court erupts into shouting as you leave.", "", "")
+                
+        else if (DialogueScreen == "SecondScreen" && CurryingFavour == 1)
+            ("B")
+            ("LUESTEEL COURT")
+            ("Great flying insects flit between shelf-castles, carrying you on their narrow backs. The Baronesses meet you personally, and make their offers over hot sweet tea.")
+            ("Whether you agree to one of the Baronesses' proposals is, of course, entirely at your discretion.")
+            ("You spent 1 day being wined, dined and generally fawned upon.", "Time", 1)
+                NeedsRelationshipsItem("Baroness Myrmeleon's proposal.", "The steel-eyed Dragonfury instructs you to steer Lady Bluesteel toward war with the shelf-holds above.", "[You will lose x1 Lady Bluesteel's Favour. Baroness Myrmeleon will gift you x1 Dubious Trinket.]", HasFavour1)
+                    
+            NeedsRelationshipsItem("Baroness Lampyre's proposal.", "The Baroness hosts a lavish banquet in your honour; her firefly-riders dance in the dark above. " + '"' + "A pardon for my exiled brother is all that I desire," + '"' + " she whispers. " + '"' + "He did not mean what he said." + '"', "[You will lose x2 Lady Bluesteel's Favour. Baroness Lampyre will gift you x5 Flares and 100 G.]", HasFavour2)
+                
+            NeedsRelationshipsItem("Baroness Caliphor's proposal.", "Bluebottle-riders escort you to the palatial Caliphor shelf-hold. Over dinner, the Baroness tells you that Lady Bluesteel must be made to reconsider her abolitionist stance. It is the right of the nobility to own thralls.", "[You will lose x3 Lady Bluesteel's Favour. Baroness Caliphor will gift you 600 G.]", HasFavour3)
+                
+            ("You will accept no significant gifts.", "The Baronesses' flattery is wasted on you.", "")
+                
+        else if (DialogueScreen == "SecondScreen" && WanderTheStreets == 1)
+            ("T")
+            ("HE TOURNAMENT")
+                ("Dragonflies shimmer overhead, brilliant blue darts with thirty-foot wingspans. Minstrels are singing, girls are dancing, the taverns are giving out free ale. Lady Bluesteel has declared another tournament.")
+                ("You join the long line of hopefuls. The tournament offers not only magnificent prizes, but political advantages - Lady Bluesteel seems to enjoy the company of proven champions.")
+                ("In which event do you plan to compete first? You may join three bouts in total.")
+                    ("The melee.", "A clashing mess of ungainly figures in cobalt ringmail, stamping and hacking each other with blunted swords.", "Grit", 66)
+                        
+                    ("Dragon-jousting.", "Capes streaming like flags, knights on dragonfly steeds slam lances into each other's shields. The loser can fall forty feet or more. Don't worry - there's a safety net.", "")
+                        
+                    ("A contest of strength.", "Who can lift the best, throw the furthest, grunt the loudest?", "Guts", 74)
+                        
+                    ("Archery.", "A bow, an arrow, a target. All you need is a good eye and steady hand to bring the three together.", "Vigilance", 51)
+                        
+                    NeedsInformationItem("Traditional dance.", "You can only dance, of course, if you know the steps.", "[This requires x3 or more Cultural Knowledge: The Entomarch.]", HasTheCultKnowl)
+                        
+                ("As the third day of the tournament reaches its end, you are declared the first-place winner of the entire tourney. Amid cheers, you accept a pouch of gold and - more coveted still - a cobalt sword, representing your new status as Lady Bluesteel's Champion.")
+                    ("Lady Bluesteel presents you with an additional prize unique in tournament history - more valuable than any given before. A genuine Key to the House, a toothy little thing of bronze and iron.")
+                    ("Gained x1 Key", "Cargo", 6)
+                ("Gained 600 G", "Money", 0)
+                ("Gained x3 Lady Bluesteel's Favour", "Reputation", 5)
+                    ("Gained Distinction: Champion", "Logbook", 1)
+                ('"' + "Rise, my Champion," + '"' + " says the Lady.", "", "")
+                    if (!steam_get_achievement("CHAMPION"))
+                        steam_set_achievement("CHAMPION")
+                    
+                ("As the third day of the tournament reaches its end, you place second in the entire tourney - second amongst hundreds. Your reward is a pouch of gold, and a symbolic position at court as the Bearer of the Banner.")
+                ("The greatest cheers, of course, are reserved for the champion, Baroness Myrmeleon - adding yet another tourney win to her record.")
+                ("Gained x2 Lady Bluesteel's Favour", "Reputation", 5)
+                ("Gained 300 G", "Money", 0)
+                ("A very respectable result.", "", "")
+                    
+                ("The third day of the tournament reaches its end, and you place very highly in the ranks - highly enough to attract notice. Although you don't receive a prize, Lady Bluesteel comes to congratulate you nevertheless, and promises that you'll always be welcome at her court.")
+                ("Gained x1 Lady Bluesteel's Favour", "Reputation", 5)
+                ("A very respectable result.", "", "")
+                    
+                ("As the third day of the tournament reaches its end, you sit amongst the crowd and watch as the winners receive their prizes.")
+                ("Next time, perhaps it will be you on that podium.")
+                ("You return to the kinetopede.", "", "")
+                    
+        else if (DialogueScreen == "SecondScreen" && MissionaryPreaching == 1)
+            ("The aristocratic audience applaud politely, and then wait for the next speaker - an elderly dragon-knight asking for volunteers to join him on a campaign against the mudwights below.")
+            ("Everyone heard you, but no-one seems to have listened.")
+            ("Pack up your things.", "Somewhere else will accept your god; keep looking.", "")
+                
+        else if (DialogueScreen == "SecondScreen" && GatheringNews == 1)
+            ("T")
+            ("HE LATEST GOINGS-ON")
+                    News1 = "A grand hunt has been declared. Noryan Lampyre has been embroiled in yet another scandal. Mudwights have risen from the bog below, and must soon be dealt with."
+                    News2 = "Dragon-knights have embarked on a quest to track down traitors in the upper shelf-holds. A suspected witch is awaiting trial. Lady Lampyre faces criticism over the execution of an impolite courtier."
+                    News6 = "Fireflies have been lighting up the evenings in celebration of the new Lady. But Lady Lampyre has refused to see any petitioners, for the fourth week in a row."
+                    News4 = "Lady Lampyre is holding a grand tournament. The latest hatch has produced some strong, healthy dragonflies."
+                    News1 = "A grand hunt has been declared. Lady Bluesteel has freed more thralls from their bonds. Mudwights have risen from the bog below, and must soon be dealt with."
+                    News2 = "Dragon-knights have embarked on a quest to track down traitors in the upper shelf-holds. A suspected witch is awaiting trial. Lady Bluesteel's debts to the crown continue to climb."
+                    News6 = "A squire of House Lampyre was killed in a training accident. Baroness Myrmeleon has been pronounced victor of the most recent tournament. Lady Bluesteel has again opened her doors to petitions, and her pronouncements have been wise and fair."
+                    News4 = "Lady Bluesteel is holding a grand tournament. The latest hatch has produced some strong, healthy dragonflies. Baroness Myrmeleon has embarked on another adventure."
+                News3 = "Baroness Caliphor has denied reports of her cruelty toward serfs. The latest egg-ceremony went spectacularly awry. Ramble-trees have learned to climb, and must be repelled daily."
+                News5 = "A famous dragon-knight has died in a jousting match. The edges of the shelf are crumbling, and several serfs' hovels have already fallen far below. Strange lights seen dancing in the swamp."
+                News1 = "Since the civil war, Bluesteel Court's power has waned. Thralls have been legalized once more within the Court's borders. Some minion of Queen Scorn will soon ascend the throne."
+                News2 = "Since the civil war, Bluesteel Court's power has waned. Thralls have been legalized once more within the Court's borders. Some minion of Queen Scorn will soon ascend the throne."
+                News3 = "Since the civil war, Bluesteel Court's power has waned. Thralls have been legalized once more within the Court's borders. Some minion of Queen Scorn will soon ascend the throne."
+                News4 = "Since the civil war, Bluesteel Court's power has waned. Thralls have been legalized once more within the Court's borders. Some minion of Queen Scorn will soon ascend the throne."
+                News5 = "Since the civil war, Bluesteel Court's power has waned. Thralls have been legalized once more within the Court's borders. Some minion of Queen Scorn will soon ascend the throne."
+                News6 = "Since the civil war, Bluesteel Court's power has waned. Thralls have been legalized once more within the Court's borders. Some minion of Queen Scorn will soon ascend the throne."
+                News1 = "Since the civil war, Bluesteel Court's power has waned. Thralls have been legalized once more within the Court's borders. Some minion of Queen Scorn will soon ascend the throne."
+                News2 = "Since the civil war, Bluesteel Court's power has waned. Thralls have been legalized once more within the Court's borders. Some minion of Queen Scorn will soon ascend the throne."
+                News3 = "Since the civil war, Bluesteel Court's power has waned. Thralls have been legalized once more within the Court's borders. Some minion of Queen Scorn will soon ascend the throne."
+                News4 = "Since the civil war, Bluesteel Court's power has waned. Thralls have been legalized once more within the Court's borders. Some minion of Queen Scorn will soon ascend the throne."
+                News5 = "Since the civil war, Bluesteel Court's power has waned. Thralls have been legalized once more within the Court's borders. Some minion of Queen Scorn will soon ascend the throne."
+                News6 = "Since the civil war, Bluesteel Court's power has waned. Thralls have been legalized once more within the Court's borders. Some minion of Queen Scorn will soon ascend the throne."
+            ("Gained x1 Current Affairs: Bluesteel Court", "Logbook", 4)
+                ("Well, well.", "Lady Lampyre exerts her newfound power.", "")
+                    
+            else ("Well, well.", "The honour of Lady Bluesteel.", "")
+                
+        else if (DialogueScreen == "SecondScreen" && RecoveringSanity == 1)
+            ("A")
+            (" BRIEF RESPITE")
+                ("You wake up in the dragonfly stables with a splitting headache and no memory of the last few nights. What just happened?")
+                ("Your old habits got the better of you again. But when you finally piece your crew back together, they seem in much better spirits. Obviously whatever happened was good fun.")
+                ("Your Sanity recovers slightly.", "Sanity", 1)
+                ("You spent 3 days partying at Bluesteel Court.", "Time", 1)
+                ("Such delicious excess.", "You feel slightly sheepish, but your crew have smiles on their faces.#", "#")
+                    
+                ("You carouse in the gardens of the Noble Steed pub, overlooking the Court itself.")
+                ("Dragonflies flit above and below, ridden by gleaming knights. A troubadour sings shambling verses for you, of your exploits thus far. Jugglers and fire-breathers dance through the garden in mock-combat.")
+                ("By the time you finally retreat to your flea-beset bed, you consider yourself to have had a joyous evening.")
+                ("Your Sanity recovers slightly.", "Sanity", 1)
+                ("You spent 1 day at Bluesteel Court.", "Time", 1)
+                ("You feel better already.", "One night of humanity and warmth makes a world of difference.", "#")
+                    
+        else if (DialogueScreen == "SecondScreen" && PickUpPassenger == 1)
+            PickingUpPassenger("Bluesteel Court")
+        else if (DialogueScreen == "SecondScreen" && MiscellaneousEvent == 1)
+        else if (DialogueScreen == "SecondScreen" && MiscOptions == 1)
+            ("C")
+            ("APTAIN'S QUARTERS")
+            ("The machine greets you with a steady, soothing hum. In your quarters, you can safely decide what side activity to pursue. Deal with prisoners? Drink something? Operate on your own memories, perhaps?")
+            ("Return to location.", "")
+                
+        else if (DialogueScreen == "ThirdScreen" && TournamentMelee == 1 && WasChallengeSuccessful == 1)
+            ("T")
+            ("HE TOURNAMENT")
+            ("You wade into a sea of thrashing swords and limbs, and - two broken noses and three unconscious knights later - begin to appreciate how much damage can be done with a wooden sword.")
+            ("By the time the melee draws to a close, you're sore all over. Especially the muscles in your arms - for hours you've been chopping down foes with the groaning rigour of a lumberjack chopping wood.")
+            ("It takes you a long time to realize that you won. You stand alone in a field of broken blades.")
+            ("(You passed a Grit challenge!)", "Challenge", 5)
+            ("You spent 1 day hitting people until they stopped hitting back.", "Time", 0)
+            ("Lady Bluesteel places a sapphire medal over your neck.", "This day of the tourney has ended, and you have secured an enviable victory.", "")
+                
+        else if (DialogueScreen == "ThirdScreen" && TournamentMelee == 1 && WasChallengeSuccessful == 0)
+            ("T")
+            ("HE TOURNAMENT")
+            ("A blue tide of blunted swords crashes over you, and leaves you very little room to fight back. As the flood of screaming faces and fists descends on you like a hammer, you manage to swat one or two aside, but it is nothing like enough.")
+            ("You crawl from the battlefield, armour dented, sword broken, nose smashed flat against your face.")
+            
+            ("(You failed a Grit challenge...)", "Challenge", 5)
+            ("You spent 1 day recovering.", "Time", 1)
+            ("Perhaps you will have better luck next time.", "", "")
+                
+        else if (DialogueScreen == "ThirdScreen" && TournamentStrength == 1 && WasChallengeSuccessful == 1)
+            ("T")
+            ("HE TOURNAMENT")
+            ("Strongmen and strongwomen pose, roar, flex in the centre of a cheering audience. You join them, squashed between two brutes - one the size of a barn, the other the size of a more affordable barn.")
+            ("You fling iron discs, lift rocks, break planks of wood over your head. One by one, your competitors exhaust themselves, but you heft ever-heavier weights and make your muscles dance for the crowd.")
+            ("(You passed a Guts challenge!)", "Challenge", 3)
+            ("You spent 1 day lifting things.", "Time", 1)
+            ("Lady Bluesteel places a sapphire medal over your neck.", "This day of the tourney has ended, and you have secured an enviable victory.", "")
+                
+        else if (DialogueScreen == "ThirdScreen" && TournamentStrength == 1 && WasChallengeSuccessful == 0)
+            ("T")
+            ("HE TOURNAMENT")
+            ("Strongmen and strongwomen pose, roar, flex in the centre of a cheering audience. You join them, squashed between two brutes - one the size of a barn, the other the size of a more affordable barn.")
+            ("You can barely get a good grasp of the boulder dropped in front of you, let alone lift it. You grunt and stagger and labour mightily, but you fail in the contest's early rounds.")
+            ("(You failed a Guts challenge...)", "Challenge", 3)
+            ("You spent 1 day sitting out of the tournament.", "Time", 1)
+            ("Perhaps you will have better luck next time.", "", "")
+                
+        else if (DialogueScreen == "ThirdScreen" && TournamentArchery == 1 && WasChallengeSuccessful == 1)
+            ("T")
+            ("HE TOURNAMENT")
+            ("You slam your arrows into bullseye after bullseye, the roars of the crowd filling you with a warmth that tingles from your ears to the tips of your fingers to the point of your arrow.")
+            ("No-one can match you. In the finals, you split your opponent's arrow in half, a move so confident that the crowd actually groans on your opponent's behalf.")
+            ("(You passed a Vigilance challenge!)", "Challenge", 0)
+            ("You spent 1 day celebrating your victory.", "Time", 1)
+            ("Lady Bluesteel places a sapphire medal over your neck.", "This day of the tourney has ended, and you have secured an enviable victory.", "")
+                
+        else if (DialogueScreen == "ThirdScreen" && TournamentArchery == 1 && WasChallengeSuccessful == 0)
+            ("T")
+            ("HE TOURNAMENT")
+            ("No-one can deny that you made a valiant attempt. But your arrows are inches from the bullseye, and you're knocked from the contest halfway through.")
+            ("(You failed a Vigilance challenge...)", "Challenge", 0)
+            ("You spent 1 day sitting out.", "Time", 1)
+            ("Perhaps you will have better luck next time.", "", "")
+                
+        else if (DialogueScreen == "ThirdScreen" && TournamentDance == 1)
+            ("T")
+            ("HE TOURNAMENT")
+            ("Every tourney features a Dance of the Nymphs, with Lady Bluesteel herself judging the winner on their skill, grace and knowledge of the forms.")
+            ("Follow a strict traditional routine.", "", "Esoterica", 34)
+            ("Go with the rhythm.", "", "Insight", 46)
+        else if (DialogueScreen == "ThirdScreen" && DanceContest == 1 && WasChallengeSuccessful == 1)
+            ("T")
+            ("HE TOURNAMENT")
+                ("You weave your way between your shimmering competitors, your timing perfect, blending traditional forms with your own style. When you finally perform the Dragonfly's Lament, the audience is stifling sobs.")
+                ("(You passed an Insight challenge!)", "Challenge", 2)
+                ("You weave your way between your shimmering competitors, your timing perfect, following the traditional forms with grace. When you finally perform the Dragonfly's Lament, the audience is stifling sobs.")
+                ("(You passed an Esoterica challenge!)", "Challenge", 1)
+            ("You spent 1 day dancing.", "Time", 1)
+            ("Lady Bluesteel places a sapphire medal over your neck.", "This day of the tourney has ended, and you have secured an enviable victory.", "")
+                
+        else if (DialogueScreen == "ThirdScreen" && DanceContest == 1 && WasChallengeSuccessful == 0)
+            ("T")
+            ("HE TOURNAMENT")
+                ("You know the forms, but you lack the grace. Although the audience politely applaud your attempt, the prize is awarded to a young man who performs the Heart and Wheel with such panache that the crowd are reduced to tears.")
+                ("(You failed an Insight challenge...)", "Challenge", 2)
+                ("You know the forms, but you lack the grace. Although the audience politely applaud your attempt, the prize is awarded to a young man who performs the Heart and Wheel with such panache that the crowd are reduced to tears.")
+                ("(You failed an Esoterica challenge...)", "Challenge", 1)
+            ("You spent 1 day dancing.", "Time", 1)
+            ("Perhaps you will have better luck next time.", "", "")
+                
+        else if (DialogueScreen == "ThirdScreen" && TournamentJousting == 1)
+            ("T")
+            ("HE TOURNAMENT")
+            ("The ground drops away. The dragonfly beneath you feels suddenly very frail and slender, for all its size. How will you joust?")
+            ("Feint. Dodge. Weave.", "", "Guile", 56)
+            ("Stay solid. Endure the blows.", "", "Guts", 69)
+        else if (DialogueScreen == "ThirdScreen" && JoustResult == 1 && WasChallengeSuccessful == 1)
+            ("T")
+            ("HE TOURNAMENT")
+            ("You win bout after bout, awing the crowd below. The final round comes down to you and Baroness Myrmeleon herself - the Indigo Lioness, the Dragonfury.")
+            ("She rushes at you, silent, utterly serene. You charge to meet her, the tiniest movements of your legs keeping your dragonfly under your control.")
+            ("Her aim is true, but so is yours. You shatter lances against each other again and again, but neither falls - splintered lances litter the ground below. It is hours before she falls, the longest bout in jousting history.")
+                ("(You passed a Guile challenge!)", "Challenge", 4)
+                ("(You passed a Guts challenge!)", "Challenge", 3)
+            ("You spent 1 day jousting.", "Time", 1)
+            ("Lady Bluesteel places a sapphire medal over your neck.", "This day of the tourney has ended, and you have secured an enviable victory.", "")
+                
+        else if (DialogueScreen == "ThirdScreen" && JoustResult == 1 && WasChallengeSuccessful == 0)
+            ("T")
+            ("HE TOURNAMENT")
+            ("Your dragonfly is an impetuous creature, and you struggle to steer it in a straight line. It bucks, it dives, it tries to hurl you from the saddle.")
+            ("You keep control long enough to make a respectable showing, but your third opponent smashes you so brutally from the saddle that the crowd's gasp matches your own. You plummet, for what feels like both an eternity and a moment, before the net catches you in a silk embrace.")
+                ("(You failed a Guile challenge...)", "Challenge", 4)
+                ("(You failed a Guts challenge...)", "Challenge", 3)
+            ("You spent 1 day jousting.", "Time", 1)
+            ("Perhaps you will have better luck next time.", "", "")
+                
+        
+                
+    draw_text(((view_wport[(0 << 0)] * 0.5) - 3), ((view_hport[(0 << 0)] * 0.75) - 3), "Bluesteel Court")
+    draw_text((view_wport[(0 << 0)] * 0.5), (view_hport[(0 << 0)] * 0.75), "Bluesteel Court")

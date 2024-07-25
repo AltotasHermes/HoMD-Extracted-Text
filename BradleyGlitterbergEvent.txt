@@ -1,0 +1,9 @@
+    ("G")
+    ("LITTERBERG")
+    ("Glitterberg sparkles, certainly, but not prettily. It is tacky. Overbearing. But it has the reputation of being beautiful, and perhaps Bradley will see what everyone else seems to see.")
+    ("He stares at Glitterberg for a long time, then shakes his head. " + '"' + "It just seems tacky and overbearing to me." + '"')
+    ("Concerns updated: A Bet With Bradley", "Logbook", 6)
+    ("Gained x1 Breathtaking Spectacle", "Logbook", 3)
+    ("-1 Relationship: Bradley Baggs", "Logbook", 5)
+    ("Well, he's not wrong.", "", "")
+        

@@ -1,0 +1,90 @@
+if (BoxMode == "Event")
+            oPlayer.LastVisitedForSavePurposes = "The Ballroom"
+            FileSelected = "SaveFile0.homd"
+        else if (DialogueScreen == "FirstScreen")
+                ("T")
+                ("HE BALLROOM")
+                ("A cavernous ballroom populated by shadowy guests. They fade in and out of existence, half-substantial silhouettes flickering gracefully across the polished floor.")
+                    (("New location visited. " + ApprehensionsString), "Logbook", 4)
+                        FileSelected = "SaveFile0.homd"
+                if (oPlayer.LastVisited != "The Ballroom" && global.Ballroom1 == 0)
+                    ("Try to talk with the guests.", "They glide over the dancefloor with ethereal grace, their laughing voices a distant echo.", "")
+                        
+                if (oPlayer.LastVisited != "The Ballroom" && global.Ballroom2 == 0)
+                    ("Search the ballroom.", "The guests may only be half-there, but the objects cluttered in the corners look solid.", "")
+                        
+                ("Inside the kinetopede.", "Here you can find all miscellaneous options.")
+                    
+                ("T")
+                ("HE BALLROOM")
+                ("A cavernous ballroom populated by shadowy guests. They fade in and out of existence, half-substantial silhouettes flickering gracefully across the polished floor.")
+                if (oPlayer.LastVisited != "The Ballroom" && global.Ballroom1 == 0)
+                    ("Try to talk with the guests.", "They glide over the dancefloor with ethereal grace, their laughing voices a distant echo.", "")
+                        
+                if (oPlayer.LastVisited != "The Ballroom" && global.Ballroom2 == 0)
+                    ("Search the ballroom.", "The guests may only be half-there, but the objects cluttered in the corners look solid.", "")
+                        
+                ("Inside the kinetopede.", "Here you can find all miscellaneous options.")
+                    
+        else if (DialogueScreen == "SecondScreen" && LeavingTheCity == 1 && TooHeavyToLeaveTheCity == 0)
+            ("I")
+            ("NTO THE DARK")
+            ("You can only go west. The Doors are locked on all other sides.")
+            ("On second thoughts...", "There are matters here that still merit attention.", "#"0, 0.8)
+                
+            ("Pore over the map.", "Orient yourself before you launch off into the ravenous dark.")
+                    BoxMode = "Map"
+            ("West", "Back to the House.")
+                oPlayer.LastVisited = "The Ballroom"
+                LeavingSpecialRoomDialogueBox("West")
+        else if (DialogueScreen == "SecondScreen" && LeavingTheCity == 1 && TooHeavyToLeaveTheCity == 1)
+        else if (DialogueScreen == "SecondScreen" && WanderTheStreets == 1)
+                ("T")
+                ("HE BALLROOM")
+                ("The guests ignore your polite small talk. They glide past you unaware, and dance themselves out of existence.")
+                ("Leaning on the balustrade of the double staircase is a huge black cat on its hind legs. It seems to see you, at least - it winks knowingly as you walk past. When you glance back, it is gone.")
+                ("Gained x1 Disquieting Incident", "Logbook", 3)
+                ("Curious.", "", "")
+                    
+                ("T")
+                ("HE BALLROOM")
+                ("The guests ignore your polite small talk. They glide past you unaware, and dance themselves out of existence.")
+                ("As you address one of the fading guests, a shabby overcoat on a nearby coatstand sighs gloomily. " + '"' + "Zey cannot hear you, you know," + '"' + " it says.")
+                ("Gained x1 Disquieting Incident", "Logbook", 3)
+                ("The overcoat cannot be induced to speak again.", "Though it occasionally utters a long-suffering sigh.", "")
+                    
+        else if (DialogueScreen == "SecondScreen" && Search1 == 1 && (RandomSearch == 0 || (RandomSearch == 1 && oInventories.BallroomFoundGun == 1) || (RandomSearch == 2 && oInventories.BallroomFoundDiamond == 1)))
+            ("T")
+            ("HE BALLROOM")
+            ("The guests are oblivious to you, and only half-real anyway. You may as well look through their belongings for anything interesting.")
+            ("While rifling through a black doctor's bag on a chair in the corner, you discover a slim book of poems.")
+            ("Gained x1 Volume of Poetry", "Cargo", 5)
+            ("None of the guests protest.", "They slide in and out of shadows.", "")
+                
+        else if (DialogueScreen == "SecondScreen" && Search1 == 1 && RandomSearch == 1 && oInventories.BallroomFoundGun == 0)
+            ("T")
+            ("HE BALLROOM")
+            ("The guests are oblivious to you, and only half-real anyway. You may as well look through their belongings for anything interesting.")
+            ("You come across a large, ornate pistol sitting on the mantelpiece. Might as well pocket it - it's sure to come in useful at some point.")
+            ("+1 Grit", "Challenge", 5)
+            ("None of the guests protest.", "They slide in and out of shadows.", "")
+                
+        else if (DialogueScreen == "SecondScreen" && Search1 == 1 && RandomSearch == 2 && oInventories.BallroomFoundDiamond == 0)
+            ("T")
+            ("HE BALLROOM")
+            ("The guests are oblivious to you, and only half-real anyway. You may as well look through their belongings for anything interesting.")
+            ("Around the walls are twelve ornate chairs. Searching beneath the seat-cushions of one, you discover a diamond the size of your fist.")
+            ("Gained x1 Undreamt Treasure", "Treasure", 1)
+            ("None of the guests protest.", "They slide in and out of shadows.", "")
+                
+        else if (DialogueScreen == "SecondScreen" && MiscellaneousEvent == 1)
+        else if (DialogueScreen == "SecondScreen" && MiscOptions == 1)
+            ("C")
+            ("APTAIN'S QUARTERS")
+            ("The machine greets you with a steady, soothing hum. In your quarters, you can safely decide what side activity to pursue. Deal with prisoners? Drink something? Operate on your own memories, perhaps?")
+            ("Return to location.", "")
+                
+        
+                
+    draw_text(((view_wport[(0 << 0)] * 0.5) - 3), ((view_hport[(0 << 0)] * 0.75) - 3), "The Ballroom")
+    draw_text((view_wport[(0 << 0)] * 0.5), (view_hport[(0 << 0)] * 0.75), "The Ballroom")

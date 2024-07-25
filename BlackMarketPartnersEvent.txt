@@ -1,0 +1,15 @@
+("S")
+("TICKY END")
+    if CrewSpeechText("Lilian Mourn", 161, '"' + "Together we're going to eat this city alive." + '"', 0)
+        ("Gained x1 Criminal Enterprise", "Logbook", 6)
+        ("You shake her hand.", "And try to ignore the squish of rotted flesh.")
+            
+    if CrewSpeechText("Lilian Mourn", 161, '"' + "Yeah. The Hangknot Mob barely put up with me as it is. I'll have to be careful, but don't worry your pretty little 'ead about it." + '"', 0)
+        if CrewSpeechText("Lilian Mourn", 161, '"' + "I've been on the margins for forty years. Makin' pennies while the Mob shit all over the small-time criminal just tryin' to get by. No-one's gonna beat old Lilian at this game." + '"', 1)
+            ("It's worth a shot.", "The streets are there for the taking.")
+                
+            ('"' + "No. Much too risky." + '"', "You've heard that ghouls develop a death wish after the first twenty years or so. Maybe Lilian's is finally kicking in.")
+                
+    if CrewSpeechText("Lilian Mourn", 161, '"' + "Don't come back 'til you change your mind." + '"', 0)
+        ("You walk away.", "The poodle yaps until it faints.")
+            

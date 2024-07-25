@@ -1,0 +1,311 @@
+if (BoxMode == "Event")
+            oPlayer.LastVisitedForSavePurposes = "Calaram"
+            FileSelected = "SaveFile0.homd"
+        else if (DialogueScreen == "FirstScreen")
+                ("C")
+                ("ALARAM")
+                ("The walls are built of hardened caramel. Gouts of syrup spurt sluggishly from ornate fountains. The broad canals are filled with honey. Calaram is a child's dream.")
+                if NextButton("The stench of decay is unbelievable, of course, and the flies will eat you alive. Don't stop moving or they'll settle on you, up your nostrils, in your ears.")
+                        (("New location visited. " + ApprehensionsString), "Logbook", 4)
+                            FileSelected = "SaveFile0.homd"
+                        if (oPlayer.GuardCaptain == "Abbas Salem")
+                            ("Track down Linnaea.")
+                                
+                        ("Drop off your Band of Refugees.", "They started cheering as soon as Calaram came into view.", "[Requires x1 Band of Refugees.]"0, 0.8)
+                            
+                        if (oPlayer.Lookout == "Violante DiMar")
+                            ("Send Violante into hiding.")
+                                
+                    if (oInventories.ViolanteHiding == "Calaram" && global.Calaram1 == 0)
+                        ("Visit Violante DiMar.", "She has been sending you letters begging for your company.")
+                            
+                        NeedsMoney("Rest and recover.", "You've spent a long time in darkness. Your crew need a few days to blow off steam.", "[This will recover some of your Sanity, but will cost you 20 guineas.]", 20)
+                            
+                        NeedsMoney("Repair your hull.", "A honey-dripping mellified man promises that his servants can fix you up in no time.", (("[This will cost you " + string(FixCost)) + " guineas.]"), FixCost)
+                            
+                        NeedsInformationItem("Gather news.", "The Concord is a network of wheels and honey and music, through which Calaramites can speak across the city. You need to understand it, however, to use it.", "[This requires 5+ Cultural Knowledge: The Confectorate.]", CanUseConcord)
+                            
+                    if (oPlayer.LastVisited != "Calaram" && global.Calaram2 == 0)
+                        ("Travel the canals.", "You swat away clouds of flies and call for a honey-barge.", "")
+                            
+                        NeedsInformationItem((("Preach the word of " + oInventories.GodNameForMissionaryWork) + "."), "You will need to make use of the Concord if you expect anyone to listen.", "[This requires 5+ Cultural Knowledge: The Confectorate.]", ConcordPreach)
+                            
+                    ("Inside the kinetopede.", "Here you can find all miscellaneous options.")
+                        
+                ("C")
+                ("ALARAM")
+                ("The walls are built of hardened caramel. Gouts of syrup spurt sluggishly from ornate fountains. The broad canals are filled with honey. Calaram is a child's dream.")
+                    if (oPlayer.GuardCaptain == "Abbas Salem")
+                        ("Track down Linnaea.")
+                            
+                    if (oPlayer.Lookout == "Violante DiMar")
+                        ("Send Violante into hiding.")
+                            
+                    ("Drop off your Band of Refugees.", "They started cheering as soon as Calaram came into view.", "[Requires x1 Band of Refugees.]"0, 0.8)
+                        
+                if (oInventories.ViolanteHiding == "Calaram" && global.Calaram1 == 0)
+                    ("Visit Violante DiMar.", "She has been sending you letters begging for your company.")
+                        
+                    NeedsMoney("Rest and recover.", "You've spent a long time in darkness. Your crew need a few days to blow off steam.", "[This will recover some of your Sanity, but will cost you 20 guineas.]", 20)
+                        
+                    NeedsMoney("Repair your hull.", "A honey-dripping mellified man promises that his servants can fix you up in no time.", (("[This will cost you " + string(FixCost)) + " guineas.]"), FixCost)
+                        
+                    NeedsInformationItem("Gather news.", "The Concord is a network of wheels and honey and music, through which Calaramites can speak across the city. You need to understand it, however, to use it.", "[This requires 5+ Cultural Knowledge: The Confectorate.]", CanUseConcord)
+                        
+                if (oPlayer.LastVisited != "Calaram" && global.Calaram2 == 0)
+                    ("Travel the canals.", "You swat away clouds of flies and call for a honey-barge.", "")
+                        
+                    NeedsInformationItem((("Preach the word of " + oInventories.GodNameForMissionaryWork) + "."), "You will need to make use of the Concord if you expect anyone to listen.", "[This requires 5+ Cultural Knowledge: The Confectorate.]", ConcordPreach)
+                        
+                ("Inside the kinetopede.", "Here you can find all miscellaneous options.")
+                    
+        else if (DialogueScreen == "SecondScreen" && LeavingTheCity == 1 && TooHeavyToLeaveTheCity == 0)
+            ("I")
+            ("NTO THE DARK")
+            ("Which direction will you go?")
+            ("On second thoughts...", "There are matters here that still merit attention.", "#"0, 0.8)
+                
+            ("Pore over the map.", "Orient yourself before you launch off into the ravenous dark.")
+                    BoxMode = "Map"
+            ("North.", "To Makkera, the flooded.")
+                oPlayer.LastVisited = "Calaram"
+                LeavingSpecialRoomDialogueBox("North")
+            ("West.", "To Scornvaunt, the bringer of honey.")
+                oPlayer.LastVisited = "Calaram"
+                LeavingSpecialRoomDialogueBox("West")
+            ("East.", "To Affina, the dark.")
+                oPlayer.LastVisited = "Calaram"
+                LeavingSpecialRoomDialogueBox("East")
+            ("South.", "Nothing good awaits you down south.")
+                oPlayer.LastVisited = "Calaram"
+                LeavingSpecialRoomDialogueBox("South")
+        else if (DialogueScreen == "SecondScreen" && LeavingTheCity == 1 && TooHeavyToLeaveTheCity == 1)
+        else if (DialogueScreen == "SecondScreen" && ViolanteQuest == 1)
+        else if (DialogueScreen == "SecondScreen" && AbbasQuest == 1)
+        else if (DialogueScreen == "SecondScreen" && MissionaryPreaching == 1)
+            ("You find one of the public Concord-booths that dot the city, and step inside. You are faced with a bewildering array of pedals, buttons, and levers. Music pipes through overhead, a symphony played by half the city and conducted by no-one. Sometimes it is a cacophony, but not always.")
+            ((("You sit, place your feet on the pedals, and play. In the language of the Concord, you start a hymn to " + oInventories.GodNameForMissionaryWork) + "."))
+            ("At first your notes are lost in the swirl of other people's melodies. After hours of playing, though, you receive the odd echo in return, a lilting addition that builds on your composition. Soon your music swells.")
+            ((("The tune is building, and building, even when you step away. You have started something, and it will take days before " + oInventories.GodNameForMissionaryWork) + "'s song subsides."))
+                ReligionText("Graveddon", 1, 1)
+                ReligionText("Nahash", 1, 1)
+                ReligionText("Abjah", 1, 1)
+                ReligionText("Cobblestone", 1, 1)
+                ReligionText("Anglecrab", 1, 1)
+                ReligionText("Wyl o' Pan", 1, 1)
+                ReligionText("Morbazar", 1, 1)
+                ReligionText("Scorthidion", 1, 1)
+            ("Leave the booth.", (("The people of Calaram will be talking about " + oInventories.GodNameForMissionaryWork) + " for days. You're sure there will be converts."), "")
+                    ReligionItemAdd("Graveddon", 1, 1)
+                    ReligionItemAdd("Nahash", 1, 1)
+                    ReligionItemAdd("Abjah", 1, 1)
+                    ReligionItemAdd("Cobblestone", 1, 1)
+                    ReligionItemAdd("Anglecrab", 1, 1)
+                    ReligionItemAdd("Wyl o' Pan", 1, 1)
+                    ReligionItemAdd("Morbazar", 1, 1)
+                    ReligionItemAdd("Scorthidion", 1, 1)
+                
+        else if (DialogueScreen == "SecondScreen" && WanderTheStreets == 1)
+                ("T")
+                ("HE FEAST OF SWEETENED MEAT")
+                ('"' + "Here for the feast?" + '"' + " asks the gondolier.")
+                ('"' + "Er... Yes." + '"', "", "")
+                    
+                ('"' + "Sorry, I'm new here. What feast?" + '"', "", "")
+                    
+                NeedsInformationItem('"' + "Of course. Have you ever succeeded in the feast?" + '"', "", "[Requires 3+ Cultural Knowledge: The Confectorate.]", WeHaveCultKnowl)
+                    
+                ('"' + "No." + '"', "", "")
+                    
+                ("C")
+                ("ALARAM")
+                ("The gondolier steers you to an island in the centre of the honey-river. " + '"' + "There is a man trying to mellify himself," + '"' + " she says enthusiastically. " + '"' + "Trust me. You do not want to miss this. This is what Calaram is all about." + '"')
+                ("She deposits you on the island, a bleak sliver of rock that barely pokes above the honey that laps on all sides. Sitting on the highest part of the island, atop a plinth carved with a hundred hieroglyphs, is a wooden barrel.")
+                ("Approach the barrel.", "What's all this about?", "")
+                ("Charter a boat back to the kinetopede.", "You don't have time for this.", "")
+                    
+        else if (DialogueScreen == "SecondScreen" && GatheringNews == 1)
+            ("T")
+            ("HE LATEST GOINGS-ON")
+            News1 = "The next shipment of scorn-honey is delayed. The mellified men have been falling silent and still. Several citizens swimming in the canals have been eaten by glucodiles."
+            News2 = "The Grand Molass has declared another feast of sweetened meat. The Saccharine Heart has been beating irregularly, disrupting the rhythm of the Concord. One of the canals is infested."
+                News3 = "The mellified men have been observed in solemn procession around shattered devil-tombs. The Saccharine Heart has developed another tumour."
+                News3 = "The mellified men have been observed in solemn procession around shattered devil-tombs. Lady Scorn has raised the price of honey. The Saccharine Heart has developed another tumour."
+                News4 = "A baby glucodile has lodged in the pipes of the Heart, stopping all communication via Concord. One of the syrup-fountains has erupted, killing a nearby citizen. A spate of strange murders across the city."
+                News4 = "A baby glucodile has lodged in the pipes of the Heart, stopping all communication via Concord. One of the syrup-fountains has erupted, killing a nearby citizen."
+            ("Gained x1 Current Affairs: Calaram", "Logbook", 4)
+            ("Well, well.", "The wheels turn, the honey flows, the pipes sing, and the heart watches.", "#")
+                
+        else if (DialogueScreen == "SecondScreen" && RecoveringSanity == 1)
+            ("A")
+            (" BRIEF RESPITE")
+                ("You wake up in a honey-fountain with a splitting headache and no memory of the last few nights. What just happened?")
+                ("Your old habits got the better of you again. You wander stickily in search of your crew.")
+                ("Your Sanity recovers slightly.", "Sanity", 1)
+                ("You spent 3 days partying at Calaram.", "Time", 1)
+                ("You need a bath.", "You feel slightly sheepish, but your crew have smiles on their faces.#", "#")
+                    
+                ("One of Calaram's many festivals is parading through the city centre - your crew join in with gusto, singing and dancing and buying candied meats from the toothless street-vendors.")
+                ("When you finally collapse into bed, your sleep is peaceful and untroubled by nightmares.")
+                ("Your Sanity recovers slightly.", "Sanity", 1)
+                ("You spent 1 day at Calaram.", "Time", 1)
+                ("You feel better already.", "The entire festival was absurd, but that's fine.", "#")
+                    
+        else if (DialogueScreen == "SecondScreen" && MiscellaneousEvent == 1)
+        else if (DialogueScreen == "SecondScreen" && MiscOptions == 1)
+            ("C")
+            ("APTAIN'S QUARTERS")
+            ("The machine greets you with a steady, soothing hum. In your quarters, you can safely decide what side activity to pursue. Deal with prisoners? Drink something? Operate on your own memories, perhaps?")
+            ("Return to location.", "")
+                
+        else if (DialogueScreen == "SecondScreen" && MellifiedMan1 == 1)
+            ("C")
+            ("ALARAM")
+            ("A human head emerges from the barrel, a completely bald-shaven man so plastered in honey you can barely see his eyes. He seems to be folded up in the honey-filled barrel, wedged so tightly he can't move his arms.")
+            ('"' + "Hello there, stranger," + '"' + " says the man. His voice has a slurping, glutinous quality to it. " + '"' + "What brings you to Honeysick Isle? This your first time witnessing a mellification?" + '"')
+            ('"' + "What are you doing out here in a barrel?" + '"', "The sickly-sweet stench is overpowering.", "")
+            ('"' + "Yes, this is my first time." + '"', "He looks delighted at the news. " + '"' + "Congratulations!" + '"', "")
+            ('"' + "So you plan to become mellified?" + '"', "Mellified men are Calaram's celebrities, warriors, and leaders.", "")
+        else if (DialogueScreen == "SecondScreen" && FixHull == 1)
+        else if (DialogueScreen == "SecondScreen" && MellifiedMan2 == 1)
+            ("C")
+            ("ALARAM")
+            ('"' + "The process is simple," + '"' + " he tells you. " + '"' + "I sit here meditating in a barrel of honey, for a short period of only six to eight months. I eat honey, I breathe honey, I excrete honey." + '"')
+            ('"' + "Eventually, I either die or I ascend. I become honey. A mellified man, more glucose than flesh." + '"')
+            ("Gained x1 Lurid Tale", "Logbook", 3)
+            ('"' + "That's disgusting." + '"', "", "")
+            ('"' + "That's wonderful." + '"', "", "")
+            ('"' + "Aren't you afraid of dying?" + '"', "", "")
+        else if (DialogueScreen == "SecondScreen" && Refugees1 == 1)
+            ("C")
+            ("ALARAM")
+            ("The refugees pour from your cargo hold, weeping with joy. A group of Calaramites have come out to greet them, waving signs of welcome.")
+            ("It's such a joyous occasion, you're almost forgotten. But not quite. The refugees surge back to shower you with their gratitude and blessings.")
+            ("Lost x1 Band of Refugees", "Cargo", 3)
+            ("Gained some Sanity", "Sanity", 1)
+            ("You've done something magnificent.", "", "")
+                
+        else if (DialogueScreen == "SecondScreen" && (MellifiedMan3 == 1 || MellifiedMan4 == 1 || MellifiedMan5 == 1))
+            ("C")
+            ("ALARAM")
+                ("He looks deeply offended. " + '"' + "On the contrary! It is a great honour! Although..." + '"')
+                ("He grins. " + '"' + "Yes, it is a great honour! Although..." + '"')
+                ("He sighs. " + '"' + "Actually, yes. I am afraid." + '"')
+            ('"' + "I want to become mellified, I do, but... I never thought it would hurt. Not like this." + '"' + " He gulps. " + '"' + "I think I might have to stop." + '"')
+            ("Persuade him to stop.", "If he's not sure, he shouldn't carry on.", "")
+            ("Encourage him to continue.", "He can do it! He can become honey!", "")
+            ("Leave the mellified man to his lonely transformation.", "", "")
+                
+        else if (DialogueScreen == "SecondScreen" && MellifiedMan6 == 1)
+            ("C")
+            ("ALARAM")
+            ('"' + "You're right." + '"' + " The man takes a deep breath, and struggles stickily out of the barrel - he is completely naked, and soaked completely in honey. The stench is appalling.")
+            ('"' + "Thank you." + '"' + " He clasps you in a truly revolting embrace.")
+            ("Return to the kinetopede.", "You detach yourself from the honey-clad man, with difficulty.", "")
+                
+        else if (DialogueScreen == "SecondScreen" && MellifiedMan7 == 1)
+            ("C")
+            ("ALARAM")
+            ('"' + "You're right." + '"' + " The man sinks deeper into the barrel, taking a great gulp of honey. " + '"' + "I can get through this." + '"')
+            ("Leave him to his lonely transformation.", "You wonder how many months he has left.", "")
+                
+        else if (DialogueScreen == "ThirdScreen" && HereForTheFeast == 1)
+            ("T")
+            ("HE FEAST OF SWEETENED MEAT")
+            if CrewSpeechText("Gondolier", 161, '"' + "Of course." + '"', 0)
+                ("Your boat glides glacially across the swelling honey. As you draw closer to the feast, you find the way blocked by more and more boats - the canals and walkways are teeming. Street-vendors sell glazed treats from ramshackle stalls, children play and sing.")
+                ("The Grand Molass stands at the centre of the crowd, mellified men swinging pickaxes behind him. One of the ziggurat-tombs is being cracked open, and dull thuds punctuate the Molass's speech.")
+                ("The Molass drones on and on about the importance of the flow. Finally, the tomb cracks like an egg, and the Molass raises a viscous hand. " + '"' + "Let the feast begin!" + '"')
+                ("The crowd surges forward, flinging mellified men aside like dolls, and dives into the shattered tomb. Each diving figure emerges dragging an embalmed human corpse, tendrils of honey still clinging to its shrivelled skin. As you watch, the ancient mummified dead are torn apart, and the crowd gorge.")
+                ("An entire human leg, dripping honey from the stump, is thrust into your hands by a neighbour.")
+                ("Eat the leg.", "", "Guts", 58)
+                    
+                ("Throw the leg away.", "", "")
+                    
+                ("Throw the leg away. Try to pull an entire corpse from the tomb.", "This could be dangerous. You will need to stay alert.", "Vigilance", 75)
+                    
+        else if (DialogueScreen == "ThirdScreen" && CulturalKnowledgeAboutTheFeast == 1)
+            ("T")
+            ("HE FEAST OF SWEETENED MEAT")
+            if CrewSpeechText("Gondolier", 161, "She grins. " + '"' + "Only once before, but it was... Oh, it was wonderful. You cannot dream the taste of the devil before you eat him yourself." + '"', 0)
+                ("She presses a small leather doll into your hands. " + '"' + "Here, foreigner. A charm, for luck in the feast." + '"')
+                ("Your boat glides glacially across the swelling honey. As you draw closer to the feast, you find the way blocked by more and more boats - the canals and walkways are teeming. Street-vendors sell glazed treats from ramshackle stalls, children play and sing.")
+                ("The Grand Molass stands at the centre of the crowd, mellified men swinging pickaxes behind him. One of the ziggurat-tombs is being cracked open, and dull thuds punctuate the Molass's speech.")
+                ("The Molass drones on and on about the importance of the flow. Finally, the tomb cracks like an egg, and the Molass raises a viscous hand. " + '"' + "Let the feast begin!" + '"')
+                ("The crowd surges forward, flinging mellified men aside like dolls, and dives into the shattered tomb. Each diving figure emerges dragging an embalmed human corpse, tendrils of honey still clinging to its shrivelled skin. As you watch, the ancient mummified dead are torn apart, and the crowd gorge.")
+                ("An entire human leg, dripping honey from the stump, is thrust into your hands by a neighbour.")
+                ("Gained x1 Enchanted Gimmick.", "Occult", 1)
+                ("Eat the leg.", "", "Guts", 58)
+                    
+                ("Throw the leg away.", "", "")
+                    
+                ("Throw the leg away. Try to pull an entire corpse from the tomb.", "This could be dangerous. You will need to stay alert.", "Vigilance", 75)
+                    
+        else if (DialogueScreen == "ThirdScreen" && EatTheLeg == 1 && WasChallengeSuccessful == 1)
+            ("T")
+            ("HE FEAST OF SWEETENED MEAT")
+            ("The leg tastes like sugar and rot and spices and charcoal. You tear into it with enthusiasm.")
+            ('"' + "Devil-eater!" + '"' + " shout the crowd, and suddenly half a dozen hands are lifting you. " + '"' + "Eater of devils!" + '"')
+            ("It's a celebration, not a castigation. You are carried to and fro by the cheering crowd, before being deposited again as people get bored and start to drift away.")
+            ("Your mind spins. The meat filled you with images you will never forget. Baying things with wolf-like heads and bulbous insect bodies. A candle-stub, chuckling like a demon. A skull-faced woman with one dead eye.")
+            ("Gained x1 Haunting Vision", "Logbook", 3)
+            ("Gained x1 Cultural Knowledge: The Confectorate", "Logbook", 4)
+            ReligionText("Graveddon", 1, 1)
+            ("Lost a small amount of Sanity", "Sanity", 0)
+            ("(You passed a Guts challenge!)", "Challenge", 3)
+            ("You sob at the terror and beauty of it all.", "", "")
+                ReligionItemAdd("Graveddon", 1, 1)
+                
+        else if (DialogueScreen == "ThirdScreen" && EatTheLeg == 1 && WasChallengeSuccessful == 0)
+            ("T")
+            ("HE FEAST OF SWEETENED MEAT")
+            ("The leg tastes like leg. You spit it out and hurry away, leaving the screeching crowd as far behind as you can.")
+            ("Gained x1 Disquieting Incident", "Logbook", 3)
+            ("Lost a small amount of Sanity", "Sanity", 0)
+            ("(You failed a Guts challenge...)", "Challenge", 3)
+            ("Such rapture at such a disgusting thing.", "", "")
+                
+        else if (DialogueScreen == "ThirdScreen" && TombDiver == 1 && WasChallengeSuccessful == 1)
+            ("T")
+            ("HE FEAST OF SWEETENED MEAT")
+            ("You fight through and dive into the tomb itself, pushing through the crush. As you near the front of the mass, you push past bodies that feel lifeless and soft to the touch - people squeezed to death in the crowd.")
+            ("You manage to spot one of the few remaining mummies, lodged beneath a corpse that is much too fresh for your liking. You grab it by arm and rib and pull it back to the surface, fighting for your prize with every aching muscle.")
+            ("Gained x1 Embalmed Corpse", "Cargo", 4)
+            ("Gained x1 Cultural Knowledge: The Confectorate", "Logbook", 4)
+            ("(You passed a Vigilance challenge!)", "Challenge", 0)
+            ("The corpse is light as driftwood, and twice as brittle.", "", "")
+                
+        else if (DialogueScreen == "ThirdScreen" && TombDiver == 1 && WasChallengeSuccessful == 0)
+            ("T")
+            ("HE FEAST OF SWEETENED MEAT")
+            ("You fight through and dive into the tomb itself, pushing through the crush. As you near the front of the mass, you push past bodies that feel lifeless and soft to the touch - people squeezed to death in the crowd.")
+            ("Try as you might, you can't spot any mummies left in the tomb. It has been picked clean, and thankfully the crowd have started to thin out. You fight your way back to the light, blessedly uncrushed.")
+            ("(You failed a Vigilance challenge...)", "Challenge", 0)
+            ("For the best, perhaps.", "", "")
+                
+        else if (DialogueScreen == "ThirdScreen" && ThrowTheLeg == 1)
+            ("T")
+            ("HE FEAST OF SWEETENED MEAT")
+            ("You toss the leg aside, disgusted, and hurry away. Calaram has lost some of its already-dubious charm.")
+            ("And the feast draws to a close.", "", "")
+                
+        else if (DialogueScreen == "ThirdScreen" && NoToTheFeast == 1)
+            ("T")
+            ("HE FEAST OF SWEETENED MEAT")
+            if CrewSpeechText("Gondolier", 161, '"' + "Suit yourself." + '"', 0)
+                ("Then she is quiet, and you have a pleasant time relaxing on the canals. You consider scooping a handful of honey from below the boatline and having a taste, but reconsider when you see a glazed dead rat flow by.")
+                ("Gained a small amount of Sanity.", "Sanity", 0)
+                ("A pleasant experience.", "", "Guts", 58)
+                    
+        else if (DialogueScreen == "ThirdScreen" && WhatTheFeast == 1)
+            ("T")
+            ("HE FEAST OF SWEETENED MEAT")
+            if CrewSpeechText("Gondolier", 161, "She churns the honey. Your boat glides along very slowly. " + '"' + "The feast of the sweetened meat, of course. We hold one every few weeks, when the Grand Molass declares it! Oh, you must come and watch it unfold. I'll take you there." + '"', 0)
+                ("Very well, take me to the feast.", "", "Guts", 58)
+                    
+                ("No, thank you.", "", "")
+                    
+        
+                
+    draw_text(((view_wport[(0 << 0)] * 0.5) - 3), ((view_hport[(0 << 0)] * 0.75) - 3), "Calaram")
+    draw_text((view_wport[(0 << 0)] * 0.5), (view_hport[(0 << 0)] * 0.75), "Calaram")

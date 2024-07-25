@@ -1,0 +1,5 @@
+("S")
+("TICKY END")
+("Lilian's poodle seems to be attempting to eat itself. She yanks its leash until it stops.")
+('"' + "That's all I needed." + '"', "Lilian waves you languidly away.")
+    

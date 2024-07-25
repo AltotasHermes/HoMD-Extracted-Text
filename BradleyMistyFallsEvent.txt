@@ -1,0 +1,9 @@
+    ("M")
+    ("ISTY FALLS")
+    ("Bradley takes in the seething water-column, the thousand spectres thronging at its churning base. A rainbow lances through the spray. He squints at it unhappily.")
+    ('"' + "It just gives me the heebie-jeebies." + '"' + " He shudders. " + '"' + "Look at all those black-eyed ghosts. Can we go back inside?" + '"')
+    ("Concerns updated: A Bet With Bradley", "Logbook", 6)
+    ("Gained x1 Breathtaking Spectacle", "Logbook", 3)
+    ("-1 Relationship: Bradley Baggs", "Logbook", 5)
+    ("Maybe somewhere less unnerving...", "", "")
+        

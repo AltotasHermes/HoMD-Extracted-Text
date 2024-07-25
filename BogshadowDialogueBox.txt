@@ -1,0 +1,132 @@
+if (BoxMode == "Event")
+            oPlayer.LastVisitedForSavePurposes = "Bogshadow"
+            FileSelected = "SaveFile0.homd"
+        else if (DialogueScreen == "FirstScreen")
+                ("B")
+                ("OGSHADOW")
+                ("A cluster of mycenae have gathered in the swamp, building a fungal community of their own.")
+                ("The marsh here is untamed - you wonder how often these mycenae see human faces.")
+                    (("New location visited. " + ApprehensionsString), "Logbook", 4)
+                        FileSelected = "SaveFile0.homd"
+                    ("Convince the mycenae to join the war against thralldom.", "The mere mention of Lady Scorn sends a shiver of fear through the village. They are familiar with her wasp-riders, who raid the village once or twice a year.")
+                        
+                    if (oPlayer.Surgeon == "Jhang Ba Sho")
+                        NeedsCargoItem("Dance in fungal dreams.", "", (("[Requires x1 Dreamsalve. You currently have x" + string(CargoReturnNumberOfItems(1))) + ".]")0, 0.8, HasSalve)
+                            
+                    if (oPlayer.Surgeon == "Jhang Ba Sho")
+                        NeedsCargoItem("Dance in fungal dreams.", "", (("[Requires x1 Dreamsalve. You currently have x" + string(CargoReturnNumberOfItems(1))) + ".]")0, 0.8, HasSalve)
+                            
+                if (oPlayer.LastVisited != "Bogshadow" && global.Bogshadow1 == 0)
+                    ("Visit the Elder.", "The mycenae are excited to have a stranger in their midst.", "")
+                        
+                    ((("Preach the word of " + oInventories.GodNameForMissionaryWork) + "."), "Most mycenae have little interest in gods.", "")
+                        
+                    ((("Preach the word of " + oInventories.GodNameForMissionaryWork) + "."), "Most mycenae have little interest in gods.", "")
+                        
+                if (oPlayer.LastVisited != "Bogshadow" && global.Bogshadow3 == 0 && ReputationReturnNumberOfItems(7) > 7)
+                    ("The Elder offers you a gift.", "Word of your deeds has spread on the spores.", "[This option is available because you have 8+ Reputation: Mycenae.]")
+                        
+                    ("A prospective passenger.", "A hunched figure waves you down at the station.")
+                        
+                    ("Drop off your mycena passenger.", "", "[They will give you 100 G.]")
+                        
+                ("Inside the kinetopede.", "Here you can find all miscellaneous options.")
+                    
+                ("B")
+                ("OGSHADOW")
+                ("A cluster of mycenae have gathered in the swamp, building a fungal community of their own.")
+                    ("The mycenae have taken surprisingly well to the worship of Abjah. They refer to her as 'the Lady,' and mourn her absence.")
+                    ("Convince the mycenae to join the war against thralldom.", "The mere mention of Lady Scorn sends a shiver of fear through the village. They are familiar with her wasp-riders, who raid the village once or twice a year.")
+                        
+                    if (oPlayer.Surgeon == "Jhang Ba Sho")
+                        NeedsCargoItem("Dance in fungal dreams.", "", (("[Requires x1 Dreamsalve. You currently have x" + string(CargoReturnNumberOfItems(1))) + ".]")0, 0.8, HasSalve)
+                            
+                    if (oPlayer.Surgeon == "Jhang Ba Sho")
+                        NeedsCargoItem("Dance in fungal dreams.", "", (("[Requires x1 Dreamsalve. You currently have x" + string(CargoReturnNumberOfItems(1))) + ".]")0, 0.8, HasSalve)
+                            
+                if (oPlayer.LastVisited != "Bogshadow" && global.Bogshadow1 == 0)
+                    ("Visit the Elder.", "The mycenae are excited to have a stranger in their midst.", "")
+                        
+                    ((("Preach the word of " + oInventories.GodNameForMissionaryWork) + "."), "Most mycenae have little interest in gods.", "")
+                        
+                    ((("Preach the word of " + oInventories.GodNameForMissionaryWork) + "."), "Most mycenae have little interest in gods.", "")
+                        
+                if (oPlayer.LastVisited != "Bogshadow" && global.Bogshadow3 == 0 && ReputationReturnNumberOfItems(7) > 7)
+                    ("The Elder offers you a gift.", "Word of your deeds has spread on the spores.", "[This option is available because you have 8+ Reputation: Mycenae.]")
+                        
+                    ("A prospective passenger.", "A hunched figure waves you down at the station.")
+                        
+                    ("Drop off your mycena passenger.", "", "[They will give you 100 G.]")
+                        
+                ("Inside the kinetopede.", "Here you can find all miscellaneous options.")
+                    
+        else if (DialogueScreen == "SecondScreen" && LeavingTheCity == 1 && TooHeavyToLeaveTheCity == 0)
+            ("I")
+            ("NTO THE DARK")
+            ("Which direction will you go?")
+            ("On second thoughts...", "There are matters here that still merit attention.", "#"0, 0.8)
+                
+            ("Pore over the map.", "Orient yourself before you launch off into the ravenous dark.")
+                    BoxMode = "Map"
+            ("North.", "To the sinking city of beetle-tamers.")
+                oPlayer.LastVisited = "Bogshadow"
+                LeavingSpecialRoomDialogueBox("North")
+            ("West.", "Nothing awaits you there. That is, if you don't have a key.")
+                oPlayer.LastVisited = "Bogshadow"
+                LeavingSpecialRoomDialogueBox("West")
+            ("East.", "Not far from here stands Lady Papilion's gem-city. It's in the process of dying.")
+                oPlayer.LastVisited = "Bogshadow"
+                LeavingSpecialRoomDialogueBox("East")
+            ("South.", "Only locked doors that way.")
+                oPlayer.LastVisited = "Bogshadow"
+                LeavingSpecialRoomDialogueBox("South")
+        else if (DialogueScreen == "SecondScreen" && LeavingTheCity == 1 && TooHeavyToLeaveTheCity == 1)
+        else if (DialogueScreen == "SecondScreen" && MissionaryPreaching == 1)
+            ("The mycenae gather around you, swaying back and forth. They occasionally make odd, spasmic motions, as though wracked by silent laughter. One of them sinks slowly into the mud and vanishes.")
+            ("Pack up your things.", "Somewhere else will accept your god; keep looking.", "")
+                
+        else if (DialogueScreen == "SecondScreen" && EntomarchQuest == 1)
+        else if (DialogueScreen == "SecondScreen" && JhangQuest == 1)
+        else if (DialogueScreen == "SecondScreen" && SecondJhangQuest == 1)
+        else if (DialogueScreen == "SecondScreen" && MissionaryAbjah == 1)
+            ("T")
+            ("HE GOD-SHAPED VOID")
+            ("You find a spot relatively free of mud and begin to speak of the absence that is Abjah. Nothing comes of nothing, you say, but nothing is what we become.")
+            ("The mycenae are silent, but your words seem to strike a chord. They stop their strange swaying, and they crowd closer and closer.")
+            ("You know what they want.", "", "Insight", 35)
+        else if (DialogueScreen == "SecondScreen" && SuccessfulMissionaryChallenge == 1 && WasChallengeSuccessful == 1)
+            ("T")
+            ("HE GOD-SHAPED VOID")
+            ("The mycenae here are emptier than any others you have met. They have a kind of collective hollowness that pleases you.")
+            ("They understand that they are nothing, but you are telling them that nothingness is a power all its own. When you leave, they have already begun building a shrine.")
+            ("(You passed an Insight challenge!)", "Challenge", 2)
+            ReligionText("Abjah", 1, 1)
+            ("Worship has taken root here.", "", "")
+                ReligionItemAdd("Abjah", 1, 1)
+                
+        else if (DialogueScreen == "SecondScreen" && HighRepEvent == 1)
+            HighRepMycenaEvent("B", "OGSHADOW")
+        else if (DialogueScreen == "SecondScreen" && SuccessfulMissionaryChallenge == 1 && WasChallengeSuccessful == 0)
+            ("T")
+            ("HE GOD-SHAPED VOID")
+            ("You cannot work out how to appeal to these strange mycenae, stranger than any other mycenae you have met. You tell them that Abjah can grant them Favour, but they drift away, uninterested.")
+            ("Nevertheless, Bogshadow has proven promising. Next time, perhaps, you will have better luck...")
+            ("(You failed an Insight challenge...)", "Challenge", 2)
+            ("Next time.", "", "")
+                
+        else if (DialogueScreen == "SecondScreen" && DropOffPassenger == 1)
+        else if (DialogueScreen == "SecondScreen" && WanderTheStreets == 1)
+            ElderMycenaVillage("B", "OGSHADOW")
+        else if (DialogueScreen == "SecondScreen" && PickUpPassenger == 1)
+            PickingUpPassenger("Bogshadow")
+        else if (DialogueScreen == "SecondScreen" && MiscellaneousEvent == 1)
+        else if (DialogueScreen == "SecondScreen" && MiscOptions == 1)
+            ("C")
+            ("APTAIN'S QUARTERS")
+            ("The machine greets you with a steady, soothing hum. In your quarters, you can safely decide what side activity to pursue. Deal with prisoners? Drink something? Operate on your own memories, perhaps?")
+            ("Return to location.", "")
+                
+        
+                
+    draw_text(((view_wport[(0 << 0)] * 0.5) - 3), ((view_hport[(0 << 0)] * 0.75) - 3), "Bogshadow")
+    draw_text((view_wport[(0 << 0)] * 0.5), (view_hport[(0 << 0)] * 0.75), "Bogshadow")

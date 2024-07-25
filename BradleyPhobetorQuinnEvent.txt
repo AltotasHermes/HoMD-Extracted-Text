@@ -1,0 +1,10 @@
+    ("P")
+    ("HOBETOR QUINN")
+    ("The Porcelain Spire impales the city's heart, an impossibly slender spear. Rose-fog spirals, languorous.")
+    ("The city itself seethes with dreams. Giggling children striding on stilts, hurling snowballs. A man in pyjamas flying on a feathered serpent. A nude woman, walking through the street as though underwater, coal-dark hair streaming behind her.")
+    ("Bradley notices the naked woman and hides his eyes. " + '"' + "Do you see? In full view of children? Disgusting." + '"')
+    ("Concerns updated: A Bet With Bradley", "Logbook", 6)
+    ("Gained x1 Breathtaking Spectacle", "Logbook", 3)
+    ("-1 Relationship: Bradley Baggs", "Logbook", 5)
+    ("Maybe somewhere less enlightened...", "", "")
+        
