@@ -1,0 +1,61 @@
+    ("S")
+    ("KIMMERSKARD")
+    ("The chieftain is a small man, although he makes up for it by the size of his beard. His face is painted in blues and yellows, and slung over his back is an axe almost as big as he is. Flanking him at his table are two robed women, their faces hidden by veils.")
+    ('"' + "My valas have peered into the place beyond mirrors and seen a reality storm coming," + '"' + " says the chieftain. " + '"' + "Our lizard-rhinos are gone with our raiders. Your metal beast is fast. You must warn the other tribes before it is too late." + '"')
+        ('"' + "What is a reality storm?" + '"', "", "")
+        ('"' + "Who do you want me to warn?" + '"', "", "")
+        ('"' + "I want a reward." + '"', "", "")
+    ('"' + "How long do I have?" + '"', "", "")
+    ("S")
+    ("KIMMERSKARD")
+    ("The chieftain peers at you dubiously beneath jagged eyebrows. " + '"' + "Does your land beyond the Door not have storms?" + '"')
+    ("He shakes his head. " + '"' + "You are lucky. We often endure emotion storms, which are a hardship. But the reality storms are even worse. Reality storms will change the laws that the gods set down. Even the bravest warriors weep in fear." + '"')
+        ('"' + "What is a reality storm?" + '"', "", "")
+        ('"' + "Who do you want me to warn?" + '"', "", "")
+        ('"' + "I want a reward." + '"', "", "")
+    ('"' + "How long do I have?" + '"', "", "")
+    ("S")
+    ("KIMMERSKARD")
+    ('"' + "The pipe-men, the eaters of gristle, and the Wordhunters," + '"' + " says the chieftain. " + '"' + "Though we may fight with these heathens, we do not wish them to suffer a reality storm unprepared. The other tribes have no valas to warn them." + '"')
+        ('"' + "What is a reality storm?" + '"', "", "")
+        ('"' + "Who do you want me to warn?" + '"', "", "")
+        ('"' + "I want a reward." + '"', "", "")
+    ('"' + "How long do I have?" + '"', "", "")
+    ("S")
+    ("KIMMERSKARD")
+    ('"' + "For doing a simple good deed?" + '"' + " The chieftain snorts. " + '"' + "The other tribes will give you payment. They usually pay the messenger we send them." + '"')
+        ('"' + "What is a reality storm?" + '"', "", "")
+        ('"' + "Who do you want me to warn?" + '"', "", "")
+        ('"' + "I want a reward." + '"', "", "")
+    ('"' + "How long do I have?" + '"', "", "")
+    ("S")
+    ("KIMMERSKARD")
+    ('"' + "You have 2 weeks," + '"' + " says the chieftain. " + '"' + "Punish your steel insect assiduously, and spur it on as fast as it will scamper." + '"')
+    ("[Watch the date. Time is a factor in this quest.]", "Time", 0)
+    ("Concerns updated: An Oncoming Storm", "Logbook", 6)
+    ("The chieftain waves, and his guards escort you away.", "", "")
+            if (oInventories.StormMonthOfTheYear == "Broach")
+                oInventories.SecondStormMonthOfTheYear = "Tenebres"
+            else if (oInventories.StormMonthOfTheYear == "Tenebres")
+                oInventories.SecondStormMonthOfTheYear = "Maunder"
+            else if (oInventories.StormMonthOfTheYear == "Maunder")
+                oInventories.SecondStormMonthOfTheYear = "Echoweb"
+            else if (oInventories.StormMonthOfTheYear == "Echoweb")
+                oInventories.SecondStormMonthOfTheYear = "Lacuna"
+            else if (oInventories.StormMonthOfTheYear == "Lacuna")
+                oInventories.SecondStormMonthOfTheYear = "Crossroads"
+            else if (oInventories.StormMonthOfTheYear == "Crossroads")
+                oInventories.SecondStormMonthOfTheYear = "Nugatory"
+            else if (oInventories.StormMonthOfTheYear == "Nugatory")
+                oInventories.SecondStormMonthOfTheYear = "Dustfall"
+            else if (oInventories.StormMonthOfTheYear == "Dustfall")
+                oInventories.SecondStormMonthOfTheYear = "Eidolon"
+            else if (oInventories.StormMonthOfTheYear == "Eidolon")
+                oInventories.SecondStormMonthOfTheYear = "Quietus"
+            else if (oInventories.StormMonthOfTheYear == "Quietus")
+                oInventories.SecondStormMonthOfTheYear = "Sempitern"
+            else if (oInventories.StormMonthOfTheYear == "Sempitern")
+                oInventories.SecondStormMonthOfTheYear = "Knell"
+            else if (oInventories.StormMonthOfTheYear == "Knell")
+                oInventories.SecondStormMonthOfTheYear = "Broach"
+        ChangeConcernsDescription(112, "Warn Jabad, Blad Raddock and Wordhunters' Hearth about the incoming reality storm.")

@@ -1,0 +1,5 @@
+("T")
+("OO HEAVY!")
+("Whoops! Your ambition should be applauded, but you are trying to carry too much cargo.")
+("Go to the Shops tab and sell some of your excess baggage, or go to the Cargo tab and dump it.")
+("Return.", "#")

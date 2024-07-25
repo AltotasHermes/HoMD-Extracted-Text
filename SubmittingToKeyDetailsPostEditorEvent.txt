@@ -1,0 +1,6 @@
+("T")
+("HE KEY DETAILS")
+("You give your story a double-page spread in the paper's 'Foreign Affairs' section. Since you took control of the Details, it has become the City's premier source for intercellular news.")
+((("You gained " + string(MoneyGained)) + " G!"), "Money", 0)
+("You spent 1 day writing and submitting your article.", "Time", 0)
+("The next day, you receive dozens of letters lauding your article.", "", "")

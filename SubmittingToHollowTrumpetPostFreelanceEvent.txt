@@ -1,0 +1,8 @@
+("T")
+("HE HOLLOW TRUMPET")
+    ("Vanion grunts with approval, and swallows a sausage in one gulping, dog-like motion.")
+    ("Crankshaw shows no sign of approval. He stares at you like he's planning a murder.")
+("The next day, you find a full page devoted to your story in the back of the paper, although some sub-editor has added some exaggerations and inflammatory rhetoric.")
+((("You gained " + string(MoneyGained)) + " G!"), "Money", 0)
+("You spent 1 day writing and submitting your article.", "Time", 0)
+("You overhear conversation about your article in the streets. Some people hate it, some love it. But everyone's talking about it.", "", "")

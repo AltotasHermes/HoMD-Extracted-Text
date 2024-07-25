@@ -1,0 +1,7 @@
+("T")
+("HE KEY DETAILS")
+("The Key Details gives your article a whole page in the back of the paper, opposite a furious expose of working conditions in the Howling Pits. Your name is prominent, but circulation is mediocre at best. You see only a few copies being read in the street.")
+((("You gained " + string(MoneyGained)) + " G!"), "Money", 0)
+("You spent 1 day writing and submitting your article.", "Time", 0)
+("Lost x1 Current Affairs!", "Logbook", 1)
+("Several acquaintances make unexpected house-calls to congratulate you on the quality of your writing.", "", "")

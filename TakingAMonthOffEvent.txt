@@ -1,0 +1,19 @@
+("A")
+(" NECESSARY REST")
+    ("You spend a month allowing yourself to be swallowed by mindless pleasures. Your fractured mind greatly benefits, though not your waistline.")
+    ("You spend a month unfettered by the demands of writing or travel, instead embarking on brisk morning walks and beating the hell out of a sandbag at the local gymnasium. Your fractured mind reknits.")
+    ("You spend a month ploughing through some of the ancient tomes in your study that you never got round to. You lose yourself in the complex thoughts of long-dead geniuses. Your fractured mind reknits.")
+    ("You spend a month unfettered by the demands of writing or travel. You tinker, take long walks, and play the occasional card-game in a seedy gambling den. In your convalescent state you only ever manage to break even, but your fractured mind reknits.")
+    ("You spend a month unfettered by the demands of writing or travel, instead tinkering with mechanisms and clocks. You almost feel yourself putting your own mind back together in the process.")
+    ("You spend a month unfettered by the demands of writing or travel, instead painting your city in oils and watercolours. There is great beauty even in bleak concrete. Your fractured mind reknits, slowly but surely.")
+    ("You spend a month unfettered by the demands of writing or travel, exploring the City of Keys. No doubt it benefits your mind, but you soon find yourself restless.")
+    ("You spend a month unfettered by the demands of writing or travel, instead attending parties, meeting new acquaintances and old friends. Laughter and friendly conversation soon drives out the foul fog that had clogged your mind.")
+("Return.", "You are still haunted, but the ghosts no longer seem real.")
+        oPlayer.PlayerWounds = "Unwounded"
+        oPlayer.SurgeonWounds = "Unwounded"
+        oPlayer.NavigatorWounds = "Unwounded"
+        oPlayer.LookoutWounds = "Unwounded"
+        oPlayer.GuardCaptainWounds = "Unwounded"
+        oPlayer.LightbearerWounds = "Unwounded"
+        oPlayer.PilotWounds = "Unwounded"
+        oPlayer.ChiefEngineerWounds = "Unwounded"

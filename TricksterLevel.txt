@@ -1,0 +1,143 @@
+Old Lady Death:
+
+message[0] = "BOY: Mother, is it true that all of us will die? "
+message[1] = "MOTHER: Not I, my child. "
+message[2] = "BOY: What about me? "
+message[3] = "MOTHER: Yes, one day you will die. I will carry your soul away myself. "
+message2[0] = "BOY: Mother, can you summon a puppy for me to play with? "
+message2[1] = "MOTHER: First bring my scythe from the hourglass room, child. I must go collecting. "
+message3[0] = "MOTHER: Please, child, my scythe. "
+
+
+Trickster Locked Door:
+
+message[0] = "I'm not allowed down to the cellar. "
+
+
+Fireplace:
+
+message[0] = "Blue fire. It's cold."
+
+
+Hourglasses:
+
+message[0] = "Row after row of hourglasses. "
+message[1] = "She says never to touch them. "
+
+
+Portraits:
+
+message[0] = "Portraits of Mother's previous children. "
+message[1] = "She adopted me after the last one died. "
+
+
+Clock:
+
+message[0] = "Mother can make the hands go fast or slow or backwards. "
+
+
+Boardgames:
+
+message[0] = "I said I was bored so mother summoned some board games. "
+message[1] = "I play them on my own. "
+
+
+Ballpit:
+
+message[0] = "Mother doesn't really understand what a ball-pit is. "
+message[1] = "She made it a mile deep. "
+
+
+Owlglass:
+
+message[0] = "Oh, Owlglass. You're the only one who understands me. "
+
+
+Scythe:
+
+message[0] = "Mother's scythe. The air around it is cold. "
+
+
+Empty Chair:
+
+message[0] = "Mother left the cellar key behind! "
+message[1] = "I should hold onto it until she gets back. "
+message[2] = "Gained x1 Key. "
+message2[0] = "She always comes back. "
+
+
+Kitchen Table:
+
+message[0] = "Mother summons sweets and cookies for me."
+message[1] = "I wonder if children on other worlds will get blamed for these disappearing..."
+
+
+Bedside Table:
+
+message[0] = "Just a book I've been reading. "
+message[1] = "'Men must endure"
+message[2] = "Their going hence, even as their coming hither."
+message[3] = "Ripeness is all.'"
+
+
+Bookcase:
+
+message[0] = "I've read all these a hundred times. "
+
+
+Bed:
+
+message[0] = "I'm not tired."
+
+
+Architect Heart:
+
+if (oInventories.CollectScytheMission == 9)
+{
+    message[0] = "BOY: I have the fruit. What now? "
+    message[1] = "EAT IT. IT WILL MAKE YOU IMMORTAL. "
+    message[2] = "BOY: ... "
+    message[3] = "BOY: It tastes wonderful. "
+    message[4] = "IT IS DONE. NOW DO YOU WISH TO PREVENT YOUR MOTHER FROM RETURNING? "
+    message[5] = "BOY: Oh, yes, otherwise she will be so angry! And you should add twelve new rooms. A kennel, a swimming pool, a better ball-pit... "
+    message[6] = "BOY: And lots of friends for me to play with! Wait, if there are mortals here my mother could return... Darn. "
+    message[7] = "I COULD SUMMON IMMORTAL PLAYMATES INSTEAD. ALL WORLDS HAVE GODS. "
+    message[8] = "BOY: Yes please! You've been very kind, Mr Heart. I hope we are friends. "
+    message[9] = "I HOPE SO TOO. "
+    message[10] = "DO NOT LEAVE ME. "
+}
+else
+{
+    message[0] = "BOY: How odd! I didn't know there was anything down here. "
+    message[1] = "I AM THE ARCHITECT HEART. "
+    message[2] = "BOY: You can talk! Are you the one who summons things for Mother? Who adds rooms to the House? "
+    message[3] = "I CURRENTLY SERVE THAT PURPOSE. "
+    message[4] = "BOY: Are you very wise, O heart? "
+    message[5] = "WISER THAN YOU. "
+    message2[0] = "BOY: Mother tells me I will die one day. Is she right? "
+    message2[1] = "SHE DOESN'T HAVE TO BE. "
+    message2[2] = "I COULD PREVENT YOUR MOTHER FROM RETURNING... IF THERE WERE NO MORTALS HERE. "
+    message2[3] = "WHEREVER MORTALS EXIST, SHE CAN FIND THEM. WITHOUT EXCEPTION. "
+    message2[4] = "BOY: But I'm mortal! So there's no hope... "
+    message2[5] = "THERE IS ALWAYS HOPE. "
+    message2[6] = "GO TO THE ORCHARD. BRING ME A FRUIT. "
+    message2[7] = "BOY: But Mother said never to - "
+    message2[8] = "GO. "
+    message3[0] = "... (The Architect Heart throbs but does not speak.) "
+}
+
+
+Orchard Tree:
+
+message[0] = "A very shiny tree. Mother says not to eat the fruit. "
+
+
+Morbazar:
+
+message[0] = "BOY: What?? Who are you? "
+message[1] = "MORBAZAR: Relax, kid. I'm a friend. "
+message[2] = "BOY: A friend? Really? "
+message[3] = (("MORBAZAR: Yeah. And friends help each other, right? So do us a favour and tell the Architect never to impede the progress of a poet named " + oPlayer.PlayerName) + ". ")
+message[4] = "BOY: Why should I? "
+message[5] = "MORBAZAR: I can do you a favour in return. "
+message[6] = "BOY: Okay! Wow... Two new friends in one day... "

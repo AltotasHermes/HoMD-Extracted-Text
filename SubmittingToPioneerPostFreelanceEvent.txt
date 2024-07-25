@@ -1,0 +1,6 @@
+("T")
+("HE PIONEER")
+("Lady Crumpett is enraptured by your story. The next day, your report graces the front cover - accompanied by a pretty illustration drawn by the good Lady herself.")
+((("You gained " + string(MoneyGained)) + " G!"), "Money", 0)
+("You spent 1 day writing and submitting your article.", "Time", 0)
+("You see copies of the Pioneer in the hands of hawkers. Its popularity is growing.", "", "")

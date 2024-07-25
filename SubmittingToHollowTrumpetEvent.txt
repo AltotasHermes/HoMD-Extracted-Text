@@ -1,0 +1,7 @@
+("T")
+("HE HOLLOW TRUMPET")
+("The Hollow Trumpet gives your article half a page, wedged between a made-up scandal about some local aristocrat's predilection for goatmen and a panic-mongering story about the 'mycenae threat.' They also spell your name wrong. But circulation is booming, and you see copies of The Trumpet everywhere.")
+((("You gained " + string(MoneyGained)) + " G!"), "Money", 0)
+("You spent 1 day writing and submitting your article.", "Time", 0)
+("Lost x1 Current Affairs!", "Logbook", 1)
+("Everyone, it seems, is reading it, even the people who hate it.", "", "")

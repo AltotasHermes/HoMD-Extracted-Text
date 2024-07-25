@@ -1,0 +1,7 @@
+("T")
+("HE PIONEER")
+("The Pioneer gives your article a double-page spread of its own and displays your name prominently. However, the magazine evidently has issues with circulation; you don't see anyone reading it in the street, and most hawkers don't carry a copy for sale. Still, money is money.")
+((("You gained " + string(MoneyGained)) + " G!"), "Money", 0)
+("You spent 1 day writing and submitting your article.", "Time", 0)
+("Lost x1 Current Affairs!", "Logbook", 1)
+("The editor sends you a personal letter brimming with praise.", "", "")

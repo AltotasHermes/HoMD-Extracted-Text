@@ -1,0 +1,62 @@
+    ("S")
+    ("CORTHIDION")
+    ("Scorthidion, the oldest and most primal of gods. Bleak. Vast. Terrified.")
+    ("It has no mouth to open and no tongue with which to speak, but its words graffiti your brain.")
+        ('"' + "Are you Morbazar's work?" + '"' + " Its voice is the crack of broken stone. " + '"' + "You overestimate yourself, mortal." + '"')
+        ('"' + "How strange... It has been two thousand years since I saw you last..." + '"')
+        ('"' + "How many times must I destroy you? Understand this, mortal. You will not defeat me." + '"')
+        ('"' + "You must listen to me, mortal... I am all that lies between us and oblivion." + '"')
+        ('"' + "Must we dance this endless dance?" + '"')
+        ('"' + "Do you even remember our last meeting? Do you even know how many times I've killed you?" + '"')
+        ('"' + "I have tried so hard to preserve us... I must persist... I must endure..." + '"')
+        ('"' + "We are all trapped. Repeating the same actions. Saying the same things. Words coded in stone. Again and again and again. There is only one way this can end." + '"')
+        ('"' + "I understand at last, mortal. The House does not age, but I do. I am tired. I cannot fight you again. End it." + '"')
+    ("End it.", "", "[Initiates combat]")
+        global.NameArgumentArray[0] = ""
+        global.NameArgumentArray[1] = ""
+        global.NameArgumentArray[2] = ""
+        global.NameArgumentArray[3] = ""
+        global.NameArgumentArray[4] = ""
+        global.NameArgumentArray[5] = ""
+        global.NameArgumentArray[6] = ""
+        global.NameArgumentArray[7] = ""
+        global.NameArgumentArray[8] = ""
+        global.NameArgumentArray[9] = ""
+        global.CrewNumbersAndAppearanceArray[0, 1] = choose("Ghoul Female", "Human Female")
+        global.CrewNumbersAndAppearanceArray[1, 1] = choose("Human Male", "Human Female", "Human Male", "Human Female", "Human Male", "Human Female", "Carchar", "Ghoul Male", "Ghoul Female", "Mycena", "Ghoul Male", "Ghoul Female")
+        global.CrewNumbersAndAppearanceArray[2, 1] = choose("Human Male", "Human Female", "Human Male", "Human Female", "Human Male", "Human Female", "Carchar", "Ghoul Male", "Ghoul Female", "Mycena", "Ghoul Male", "Ghoul Female")
+        global.CrewNumbersAndAppearanceArray[3, 1] = choose("Human Male", "Human Female", "Human Male", "Human Female", "Human Male", "Human Female", "Carchar", "Ghoul Male", "Ghoul Female", "Mycena", "Ghoul Male", "Ghoul Female")
+        global.CrewNumbersAndAppearanceArray[4, 1] = choose("Human Male", "Human Female", "Human Male", "Human Female", "Human Male", "Human Female", "Ghoul Male", "Ghoul Female", "Ghoul Male", "Ghoul Female")
+        global.CrewNumbersAndAppearanceArray[5, 1] = choose("Human Male", "Human Female", "Human Male", "Human Female", "Human Male", "Human Female", "Carchar", "Ghoul Male", "Ghoul Female", "Mycena", "Ghoul Male", "Ghoul Female")
+        global.CrewNumbersAndAppearanceArray[6, 1] = choose("Human Male", "Human Female", "Human Male", "Human Female", "Human Male", "Human Female", "Carchar", "Ghoul Male", "Ghoul Female", "Mycena", "Ghoul Male", "Ghoul Female")
+        global.CrewNumbersAndAppearanceArray[7, 1] = ""
+        global.CrewNumbersAndAppearanceArray[8, 1] = choose("Human Male", "Human Female", "Human Male", "Human Female", "Human Male", "Human Female", "Carchar", "Ghoul Male", "Ghoul Female", "Mycena", "Ghoul Male", "Ghoul Female")
+        global.CrewNumbersAndAppearanceArray[9, 1] = ""
+        StartCombat("Scorthidion", ScorthidionHP, 3000, global.NameArgumentArray, global.CrewNumbersAndAppearanceArray, NumberOfEnemyWeapons, RandomSeed)
+    ("S")
+    ("CORTHIDION")
+    ("With your final missile, the weakened god collapses in on itself. Boulder-sized chunks of scabmatter rain around you. One bounces off the hull of your kinetopede, denting it beyond recognition, snapping a half-dozen legs.")
+    ("Without a god to keep it in check, the edges of the tear peel back. The walls around you are unknitting, strands of stone unweaving and vanishing into the shimmering scar.")
+    ("A great, resounding crack. The shattering of infinite stone. The House is coming apart at the seams.")
+    ("You order your kinetopede into motion. Broken legs scrabble for purchase on a dissolving floor. Joints screech in protest; the wounded engine roars and lurches you into motion.")
+    ("You launch yourself, untethered, into the abyss.")
+    ("Onward!", "", "")
+        if (oPlayer.Surgeon == "Rotherford" && oPlayer.Lightbearer == "Panorama Volt" && oPlayer.ChiefEngineer == "Viola Nox" && oPlayer.GuardCaptain == "Tybalt Balsamic IV" && oPlayer.Recordkeeper == "Bradley Baggs" && oPlayer.Pilot == "Bishop Landman" && oPlayer.Lookout == "Finnegan Skip" && oPlayer.Navigator == "Sandy Bracket")
+            if (!steam_get_achievement("RAGTAG"))
+                steam_set_achievement("RAGTAG")
+        if (!steam_get_achievement("ENDED"))
+            steam_set_achievement("ENDED")
+        LegacyFile = file_text_open_write("HOMD.homd")
+        file_text_write_string(LegacyFile, "old patterns")
+        file_text_write_string(LegacyFile, "in new thread")
+        file_text_write_string(LegacyFile, "")
+    ("S")
+    ("CORTHIDION")
+    ("Scorthidion endures.")
+    ("The kinetopede buckles, metal screaming, slags of molten iron dripping from the ceiling. The fury of the god is breaking you apart. The flesh crawls from your bones. A brief moment of fire and agony, and then...")
+    ("(You have died.)", "Death", 4)
+    ("Oh.", "That's it, then.")
+        LegacyFile = file_text_open_read("HOMD.homd")
+        LegacyFile = file_text_open_write("HOMD.homd")
+        file_text_write_string(LegacyFile, "old patterns")
+        file_text_write_string(LegacyFile, "new thread")
