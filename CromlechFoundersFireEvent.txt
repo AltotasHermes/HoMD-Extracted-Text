@@ -1,0 +1,6 @@
+    ("F")
+    ("OUNDER'S FIRE")
+    ("You force Cromlech to walk Founder's Fire by your side, showing him everything about it that he used to love. The roaring flame of the Founder's engines, the acrobats, the carnivals, the bizarre spectrum of alien life wandering the streets.")
+    ("He snarls a bit, and occasionally tries to bite you. But he's quieter than usual, and his bitter scowl softens.")
+    ("Gained x1 Breathtaking Spectacle", "Logbook", 3)
+    ("You even buy him an ice cream. He eats it daintily.", "", "")

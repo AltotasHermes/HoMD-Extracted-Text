@@ -1,0 +1,7 @@
+    ("T")
+    ("HE CITY OF MASKS")
+    ("It requires a great deal of subterfuge - and an overlarge trenchcoat - to smuggle the fighting, raving Cromlech into the theatre. When you finally have him settled down, he is an absolute nightmare until the lights dim. After that, he is silent and entranced.")
+    ("You are watching The Labours of Dan Karkadann, the tragedy of a unicorn-Masked hero. When he defends an accused murderer from a lynching, the people turn against him - and hang them both.")
+    ("By the play's end, the audience are bawling with tears. Cromlech weeps hardest of all.")
+    ("Gained x1 Moment of Melancholy", "Logbook", 3)
+    ("That evening, you spot him writing again - the first time he's held a pen since the ritual.", "", "")

@@ -1,0 +1,6 @@
+    ("F")
+    ("ARGYLE KEEP")
+    ("You explain the situation to the Poet-Knights, and they agree to forgive Cromlech any impoliteness. He shouts and snarls at first, but as the poetry flows - and whiskey and laudanum flows with it - he quietens.")
+    ("By the end, Cromlech is in tears of joy.")
+    ("Gained x1 Fragment of Epiphany", "Logbook", 3)
+    ('"' + "So beautiful," + '"' + " he sobs, blowing his nose noisily on the tablecloth.", "", "")

@@ -1,0 +1,14 @@
+("S")
+("ELLING INK CHEAP")
+("The Hollow Trumpet are willing to accept freelance work. They're the biggest tabloid in the City and they'll pay best, though they won't appreciate you.")
+("The second option is the Pioneer, a magazine for explorers and travellers. They'll naturally be interested in your work, and they pay quite well.")
+("Then there's the Key Details, a semi-satirical paper known for tweaking the noses of censors. You won't get paid well, but you might do some real journalism occasionally.")
+("By selling your freelance work to one of these papers, you'll be able to build a reputation with them. Maybe one day you'll land an exclusive contract.")
+    ("Sell your report to the Hollow Trumpet.", "", (("[You will earn 100 G plus your distance bonus of " + string(DistanceBonus)) + " G.]"))
+        
+    ("Submit your report to the Pioneer.", "", (("[You will earn 80 G plus your distance bonus of " + string(DistanceBonus)) + " G.]"))
+        
+    ("Offer your report to the Key Details.", "", (("[You will earn 50 G plus your distance bonus of " + string(DistanceBonus)) + " G.]"))
+        
+    ("On second thoughts...", "", "[If you don't see an option you're used to, perhaps you should check your Dwellings. You may have received a job offer.]")
+else ("On second thoughts...", "")

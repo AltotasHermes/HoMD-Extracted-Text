@@ -1,0 +1,6 @@
+    ("G")
+    ("HOULWATCH")
+    ("You show him the gothic spires, the sullen ghoulgoyles, the gallows and gates, the guns so huge and old they're covered in moss. The crenellations and columns and bleak stone faces.  The spectacular blanket of bright flowers that ghouls call the Gardens of the Sublime.")
+    ("He protests at first, but is soon staring around in childish wonder.")
+    ("Gained x1 Breathtaking Spectacle", "Logbook", 3)
+    ("At one point the church-bells ring and he pauses, smiling.", "", "")

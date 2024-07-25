@@ -1,0 +1,183 @@
+    ("G")
+    ("HOULWATCH")
+        ("The first thing you need to do is decide on a candidate who you can support. The Scarred Minister is not running, so he's out. The Mirror Minister has been missing for months. And the Tourmaline Minister is a bigot who refuses to work with the living.")
+        ("That leaves...")
+        ('"' + "The first thing you need to do is decide on a candidate who you can support," + '"' + " says Durango. " + '"' + "The Scarred Minister is not running, so he's out. The Mirror Minister has been missing for months. And the Tourmaline Minister is a bigot who refuses to work with the living." + '"')
+        ('"' + "That leaves..." + '"')
+    ("The Silent Minister.", "Find out more about Edrethin.", "")
+    ("The Gallows Minister.", "Find out more about Folonoch.", "")
+    ("The Horned Minister.", "Find out more about Abernath.", "")
+    ("The Bright Minister.", "Find out more about Berengiel.", "")
+    ("The Carrion Minister.", "Find out more about Gorganta.", "")
+    ("The Ninth Minister.", "Find out more about Icon.", "")
+    ("G")
+    ("HOULWATCH")
+    ("Missing a tongue, Edrethin communicates only in writing and signs. She favours espionage, assassination, and the keeping of secrets.")
+    ("The polls rank the candidates as follows:")
+    ((((((((((((((("Tourmaline Minister - " + string(oInventories.TourmalinePolling)) + " %
+#Carrion Minister - ") + string(oInventories.CarrionPolling)) + " %
+#Silent Minister - ") + string(oInventories.SilentPolling)) + " %
+#Gallows Minister - ") + string(oInventories.GallowsPolling)) + " %
+#Horned Minister - ") + string(oInventories.HornedPolling)) + " %
+#Bright Minister - ") + string(oInventories.BrightPolling)) + " %
+#Ninth Minister - ") + string(oInventories.NinthPolling)) + " %"))
+    ("Do you want to work for the Silent Minister?")
+    ("Yes.", "You will not be able to change your candidate.", "")
+    ("The Gallows Minister.", "Find out more about Folonoch.", "")
+    ("The Horned Minister.", "Find out more about Abernath.", "")
+    ("The Bright Minister.", "Find out more about Berengiel.", "")
+    ("The Carrion Minister.", "Find out more about Gorganta.", "")
+    ("The Ninth Minister.", "Find out more about Icon.", "")
+    ("G")
+    ("HOULWATCH")
+    ("Hanging from a gibbet in his Crypt-Library, Folonoch favours scholarship, education, and the accumulation of knowledge.")
+    ("The polls rank the candidates as follows:")
+    ((((((((((((((("Tourmaline Minister " + string(oInventories.TourmalinePolling)) + " %
+#Carrion Minister - ") + string(oInventories.CarrionPolling)) + " %
+#Silent Minister - ") + string(oInventories.SilentPolling)) + " %
+#Gallows Minister - ") + string(oInventories.GallowsPolling)) + " %
+#Horned Minister - ") + string(oInventories.HornedPolling)) + " %
+#Bright Minister - ") + string(oInventories.BrightPolling)) + " %
+#Ninth Minister - ") + string(oInventories.NinthPolling)) + " %"))
+    ("Do you want to work for the Gallows Minister?")
+    ("Yes.", "You will not be able to change your candidate.", "")
+    ("The Silent Minister.", "Find out more about Edrethin.", "")
+    ("The Horned Minister.", "Find out more about Abernath.", "")
+    ("The Bright Minister.", "Find out more about Berengiel.", "")
+    ("The Carrion Minister.", "Find out more about Gorganta.", "")
+    ("The Ninth Minister.", "Find out more about Icon.", "")
+    ("G")
+    ("HOULWATCH")
+    ("Abernath craves war and to conquer the other civilizations of the House. He has two curling ram's horns atop his withered head.")
+    ("The polls rank the candidates as follows:")
+    ((((((((((((((("Tourmaline Minister - " + string(oInventories.TourmalinePolling)) + " %
+#Carrion Minister - ") + string(oInventories.CarrionPolling)) + " %
+#Silent Minister - ") + string(oInventories.SilentPolling)) + " %
+#Gallows Minister - ") + string(oInventories.GallowsPolling)) + " %
+#Horned Minister - ") + string(oInventories.HornedPolling)) + " %
+#Bright Minister - ") + string(oInventories.BrightPolling)) + " %
+#Ninth Minister - ") + string(oInventories.NinthPolling)) + " %"))
+    ("Do you want to work for the Horned Minister?")
+    ("Yes.", "You will not be able to change your candidate.", "")
+    ("The Silent Minister.", "Find out more about Edrethin.", "")
+    ("The Gallows Minister.", "Find out more about Folonoch.", "")
+    ("The Bright Minister.", "Find out more about Berengiel.", "")
+    ("The Carrion Minister.", "Find out more about Gorganta.", "")
+    ("The Ninth Minister.", "Find out more about Icon.", "")
+    ("G")
+    ("HOULWATCH")
+    ("With eyes that glow so bright-white they can blind the living, Berengiel is obsessed with blood rituals, occultism, and sacrifice.")
+    ("The polls rank the candidates as follows:")
+    ((((((((((((((("Tourmaline Minister - " + string(oInventories.TourmalinePolling)) + " %
+#Carrion Minister - ") + string(oInventories.CarrionPolling)) + " %
+#Silent Minister - ") + string(oInventories.SilentPolling)) + " %
+#Gallows Minister - ") + string(oInventories.GallowsPolling)) + " %
+#Horned Minister - ") + string(oInventories.HornedPolling)) + " %
+#Bright Minister - ") + string(oInventories.BrightPolling)) + " %
+#Ninth Minister - ") + string(oInventories.NinthPolling)) + " %"))
+    ("Do you want to work for the Bright Minister?")
+    ("Yes.", "You will not be able to change your candidate.", "")
+    ("The Silent Minister.", "Find out more about Edrethin.", "")
+    ("The Gallows Minister.", "Find out more about Folonoch.", "")
+    ("The Horned Minister.", "Find out more about Abernath.", "")
+    ("The Carrion Minister.", "Find out more about Gorganta.", "")
+    ("The Ninth Minister.", "Find out more about Icon.", "")
+    ("G")
+    ("HOULWATCH")
+    ("Half-imprisoned in, half-composed of, a massive heap of rotting, swarming meat and viscera, Gorganta favours decadence, hedonism, mindless pleasures and vanity projects.")
+    ("The polls rank the candidates as follows:")
+    ((((((((((((((("Tourmaline Minister - " + string(oInventories.TourmalinePolling)) + " %
+#Carrion Minister - ") + string(oInventories.CarrionPolling)) + " %
+#Silent Minister - ") + string(oInventories.SilentPolling)) + " %
+#Gallows Minister - ") + string(oInventories.GallowsPolling)) + " %
+#Horned Minister - ") + string(oInventories.HornedPolling)) + " %
+#Bright Minister - ") + string(oInventories.BrightPolling)) + " %
+#Ninth Minister - ") + string(oInventories.NinthPolling)) + " %"))
+    ("Do you want to work for the Carrion Minister?")
+    ("Yes.", "You will not be able to change your candidate.", "")
+    ("The Silent Minister.", "Find out more about Edrethin.", "")
+    ("The Gallows Minister.", "Find out more about Folonoch.", "")
+    ("The Horned Minister.", "Find out more about Abernath.", "")
+    ("The Bright Minister.", "Find out more about Berengiel.", "")
+    ("The Ninth Minister.", "Find out more about Icon.", "")
+    ("G")
+    ("HOULWATCH")
+    ("No-one has seen him, but a vote for the Ninth is a vote for the destruction of Ghoulwatch and all its people. His name is Icon; whisper it.")
+    ("The polls rank the candidates as follows:")
+    ((((((((((((((("Tourmaline Minister - " + string(oInventories.TourmalinePolling)) + " %
+#Carrion Minister - ") + string(oInventories.CarrionPolling)) + " %
+#Silent Minister - ") + string(oInventories.SilentPolling)) + " %
+#Gallows Minister - ") + string(oInventories.GallowsPolling)) + " %
+#Horned Minister - ") + string(oInventories.HornedPolling)) + " %
+#Bright Minister - ") + string(oInventories.BrightPolling)) + " %
+#Ninth Minister - ") + string(oInventories.NinthPolling)) + " %"))
+    ("Do you want to work for the Ninth Minister?")
+    ("Yes.", "You will not be able to change your candidate.", "")
+    ("The Silent Minister.", "Find out more about Edrethin.", "")
+    ("The Gallows Minister.", "Find out more about Folonoch.", "")
+    ("The Horned Minister.", "Find out more about Abernath.", "")
+    ("The Bright Minister.", "Find out more about Berengiel.", "")
+    ("The Carrion Minister.", "Find out more about Gorganta.", "")
+    ("G")
+    ("HOULWATCH")
+        ('"' + "The Silent, eh?" + '"' + " Durango chuckles and claps you on the back. " + '"' + "Good choice! She pays well, and she don't mind how dirty yer hands get. The only problem is that she scares me a little." + '"')
+    ("The Silent Minister receives you at her rotted banquet, extending her scimitar fingernails in welcome. She will pay you three hundred guineas each polling month, she writes, and she hopes you use the most underhanded tactics available to you. She has a reputation to maintain.")
+    ("Concerns updated: The Game of Whispers", "Logbook", 6)
+    ("The first polling month begins soon.", "You should prepare.", "")
+        oInventories.GhoulwatchCandidate = "Silent"
+    ("G")
+    ("HOULWATCH")
+        ('"' + "The Gallows, huh?" + '"' + " Durango sighs. " + '"' + "I guess if it's your decision, it's your decision. Shame, though. The pay's not as good as it could be, and he's such a dried-up old bastard." + '"')
+    ("The Gallows Minister receives you in his vast Crypt-Library, where he dangles from a fraying noose with his hands fused behind his back. His servants stand before him, holding books before his face and turning the pages on his behalf.")
+    ('"' + "It is imperative I win this election," + '"' + " he says. " + '"' + "The other candidates would prove a disaster for the city. I have already compiled an extensive list of sensible education reforms and some legislation that I hope will relieve street congestion not insignificantly." + '"' + " He will pay you two hundred and fifty guineas each polling month.")
+    ("Concerns updated: The Game of Whispers", "Logbook", 6)
+    ("The first polling month begins soon.", "You should prepare.", "")
+        oInventories.GhoulwatchCandidate = "Gallows"
+    ("G")
+    ("HOULWATCH")
+        ('"' + "The Horned, hm?" + '"' + " Durango raises his eyebrows. " + '"' + "A brave pick! You realize he'll probably declare war on your home city? Ah well, he's electable and pays decently and that's what matters to me!" + '"')
+    ("The Horned Minister receives you in his battle-room, where the walls are lined with maps and rifles and medals in glass cases. He is skeletal even for a ghoul, and one of his arms has been replaced by an enormous antique brass cannon he can barely lift. And then, of course, there's the curling ram's horns extending from his barely-covered skull.")
+    ('"' + "I hope you will conduct my campaign with honour." + '"' + " Your hand is squeezed by unpleasantly sharp claws. He will pay you two hundred and ninety guineas each polling month.")
+    ("Concerns updated: The Game of Whispers", "Logbook", 6)
+    ("The first polling month begins soon.", "You should prepare.", "")
+        oInventories.GhoulwatchCandidate = "Horned"
+    ("G")
+    ("HOULWATCH")
+        ('"' + "The Bright?" + '"' + " Durango cocks his head. " + '"' + "Hmm. Okay. He hasn't won an election in centuries, and he's a mad bastard,  but... I like a challenge." + '"')
+    ("The Bright Minister receives you in his planetarium. Gently luminescent orbs spin languidly above. A colossal telescope looms in the centre, through with the Bright Minister peers. In his purple robes he looks more like a wizard from a storybook than any other serious occultist you've seen - though he stops short of the pointy hat.")
+    ("When he greets you he closes his eyes to save your vision. " + '"' + "We will escape this House," + '"' + " he promises. " + '"' + "That is my campaign pledge." + '"' + " He will pay you two hundred and seventy guineas each polling month.")
+    ("Concerns updated: The Game of Whispers", "Logbook", 6)
+    ("The first polling month begins soon.", "You should prepare.", "")
+        oInventories.GhoulwatchCandidate = "Bright"
+    ("G")
+    ("HOULWATCH")
+        ('"' + "The Carrion, is it?" + '"' + " Durango smiles broadly. " + '"' + "After me own heart, you are! I campaigned for the Carrion in the last election. We came within a hair of winning, too." + '"')
+    ("The Carrion Minister receives you in a sumptuous satin-cushioned vestibule, where the censers and perfumes fail to mask his stench. His torso emerges from the maggot-crawling fly-blown heap of tangled innards like a ship's figurehead or a victim of quicksand.")
+    ('"' + "We simply must win this time, you know!" + '"' + " he says. " + '"' + "Ghoulwatch has been a dour place for such a long time, and it's time we made it fun again." + '"' + " He will pay you three hundred and twenty guineas each polling month.")
+    ("Concerns updated: The Game of Whispers", "Logbook", 6)
+    ("The first polling month begins soon.", "You should prepare.", "")
+        oInventories.GhoulwatchCandidate = "Carrion"
+    ("G")
+    ("HOULWATCH")
+        ("The enthusiasm drains from Durango's rotted face. " + '"' + "No fixer's ever worked for Icon," + '"' + " he hisses. " + '"' + "Are you mad? Icon don't even pay. Icon don't care if he wins. And if he does win, everyone in Ghoulwatch is gonna die. If you're going down this road, buddy, you're going to have to go without your pal Durango." + '"')
+        ("Reconsider.", "", "")
+        ("Go it alone.", "", "")
+        ("You cannot visit the Ninth Minister, of course. He dwells in the Cremated District, and would destroy you instantly.")
+        ("And all your work will be unpaid - the Ninth does not campaign in elections, and no fixer has ever before worked for him.")
+        ("Reconsider.", "", "")
+        ("Support the Ninth.", "", "")
+    ("G")
+    ("HOULWATCH")
+    ("Who will you support?")
+    ("The Silent Minister.", "Find out more about Edrethin.", "")
+    ("The Gallows Minister.", "Find out more about Folonoch.", "")
+    ("The Horned Minister.", "Find out more about Abernath.", "")
+    ("The Bright Minister.", "Find out more about Berengiel.", "")
+    ("The Carrion Minister.", "Find out more about Gorganta.", "")
+    ("The Ninth Minister.", "Find out more about Icon.", "")
+    ("G")
+    ("HOULWATCH")
+    ("It is decided. You will try to persuade the citizens of Ghoulwatch to vote for their own destruction.")
+    ("Concerns updated: The Game of Whispers", "Logbook", 6)
+    ("The first polling month begins soon.", "You should prepare.", "")
+        oInventories.GhoulwatchCandidate = "Ninth"

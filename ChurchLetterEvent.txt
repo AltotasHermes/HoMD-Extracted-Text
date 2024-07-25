@@ -1,0 +1,30 @@
+("A")
+(" CHURCH MISSIVE")
+("The churches are always on the lookout for a missionary to impress Sanctioned faiths upon the heathens outside the Seven Cities. You're an opportunity they cannot pass up.")
+("Missionary work can be extremely dangerous, the letter warns, and proselytizing for the Sanctioned can land you in hot water. But proselytizing a god in distant rooms will certainly further their interest in you.")
+("And once you have enough of a god's attention, that god may bestow their Favour on you.")
+("Put the letter to one side.", "Dabbling in religion is a risky business, and you've never had much truck with it.", "[You can pick up the letter again and reconsider at any time.]")
+    ("Become Graveddon's missionary.", "You will carry the strength of the Iron Swine to distant realms.", "[This option is available because you have x3 or more Divine Scrutiny: Graveddon.]")
+        oInventories.GodNameForMissionaryWork = "Graveddon"
+        
+    ("Become Nahash's missionary.", "You will offer the knowledge of the Serpent.", "[This option is available because you have x3 or more Divine Scrutiny: Nahash.]")
+        oInventories.GodNameForMissionaryWork = "Nahash"
+        
+    ("Become Abjah's missionary.", "You will take the emptiness of the God-Shaped Void with you.", "[This option is available because you have x3 or more Divine Scrutiny: Abjah.]")
+        oInventories.GodNameForMissionaryWork = "Abjah"
+        
+    ("Become Cobblestone's missionary.", "You will spread the diligence of the Trodden God.", "[This option is available because you have x3 or more Divine Scrutiny: Cobblestone.]")
+        oInventories.GodNameForMissionaryWork = "Cobblestone"
+        
+    ("Become Anglecrab's missionary.", "You will demonstrate the intricacies of the Impossible Geometries.", "[This option is available because you have x3 or more Divine Scrutiny: Anglecrab.]")
+        oInventories.GodNameForMissionaryWork = "Anglecrab"
+        
+    ("Become Wyl o' Pan's missionary.", "You will shine the light of the Glimmer-smith.", "[This option is available because you have x3 or more Divine Scrutiny: Wyl o' Pan.]")
+        oInventories.GodNameForMissionaryWork = "Wyl o' Pan"
+        
+    ("Become Morbazar's missionary.", "You will whisper the riddles of the Storyteller.", "[This option is available because you have x3 or more Divine Scrutiny: Morbazar.]")
+        oInventories.GodNameForMissionaryWork = "Morbazar"
+        
+    ("Become Scorthidion's missionary.", "You will foster grateful dread of the Mountainous Scab.", "[This option is available because you have x3 or more Divine Scrutiny: Scorthidion.]")
+        oInventories.GodNameForMissionaryWork = "Scorthidion"
+        

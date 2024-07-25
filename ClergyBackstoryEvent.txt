@@ -1,0 +1,30 @@
+("A")
+("N OLD FRIEND")
+("Truth be told, she never made you comfortable enough to call her a friend. She was a long-suffering, long-suffered acquaintance, at best. But now she comes to you with a proposition.")
+("You abandoned the church, but the church is not ready to abandon you. Perhaps your urge to explore was given to you by your god, she suggests, with a sardonic smile. Because after all, a church of the Sanctioned is always keen to employ new missionaries.")
+("You know from your own experience - from all the friends you had at seminary who never came home - that missionary work can be dangerous. Proselytizing for the Sanctioned can land you in hot water in rooms where Unsanctioned worship is the norm. But while there will be no financial reward, proselytizing a god in distant rooms could attract their interest. And a god's interest is no small thing.")
+("Politely decline.", "Your days of serving the Sanctioned are behind you now. Your old friend wishes you well through gritted teeth.", "[You will not be able to explore this option again until you have attracted enough of a god's Scrutiny.]")
+("Become Graveddon's missionary.", "You will carry the strength of the Iron Swine.", "")
+    oInventories.GodNameForMissionaryWork = "Graveddon"
+    
+("Become Nahash's missionary.", "You will offer the knowledge of the Serpent.", "")
+    oInventories.GodNameForMissionaryWork = "Nahash"
+    
+("Become Abjah's missionary.", "You will take the emptiness of the God-Shaped Void with you.", "")
+    oInventories.GodNameForMissionaryWork = "Abjah"
+    
+("Become Cobblestone's missionary.", "You will spread the diligence of the Trodden God.", "")
+    oInventories.GodNameForMissionaryWork = "Cobblestone"
+    
+("Become Anglecrab's missionary.", "You will demonstrate the intricacies of the Impossible Geometries.", "")
+    oInventories.GodNameForMissionaryWork = "Anglecrab"
+    
+("Become Wyl o' Pan's missionary.", "You will shine the light of the Glimmer-smith.", "")
+    oInventories.GodNameForMissionaryWork = "Wyl o' Pan"
+    
+("Become Morbazar's missionary.", "You will whisper the riddles of the Storyteller.", "")
+    oInventories.GodNameForMissionaryWork = "Morbazar"
+    
+("Become Scorthidion's missionary.", "You will foster grateful dread of the Mountainous Scab.", "")
+    oInventories.GodNameForMissionaryWork = "Scorthidion"
+    

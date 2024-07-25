@@ -1,0 +1,8 @@
+    ("T")
+    ("HE GOAT-STONES")
+    ("This time, the meeting goes much more smoothly. Cromlech leaves you behind - your presence, he says, would only aggravate them. When he returns, he is smiling.")
+    ('"' + "The goatmen have agreed to let me become their ambassador in the City of Keys," + '"' + " he says. " + '"' + "Can you take me there? I will need your help when it comes to persuading the bureaucrats." + '"')
+    ("Concerns updated: The Rebellion of Stones", "Logbook", 6)
+    ("+2 Relationship: Cromlech", "Logbook", 5)
+    ("He sweeps past you.", "But he pauses to offer you a pained smile.", "")
+        ChangeConcernsDescription(100, "Take Cromlech to the City of Keys and help him establish an embassy for goatmen.")
