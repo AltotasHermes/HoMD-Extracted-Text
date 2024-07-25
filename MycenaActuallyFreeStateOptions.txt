@@ -1,0 +1,4 @@
+    ("Stay in one of the regrown fungus-cottages.", "The mycenae welcome you with open arms.", "")
+    ("Ask about the recent news.", "Mycenae gather to tell you stories of the regrowth efforts.", "")
+if ((PreachingClicked == 0 && global.MycenaFreeState2 == 0 && global.MissionaryFlag[13] == 0 && oPlayer.LastVisited != "MycenaFreeState" && ConcernsCheckForSpecificItem(0)) || ConcernsCheckForSpecificItem(1) || ConcernsCheckForSpecificItem(2) || ConcernsCheckForSpecificItem(3) || ConcernsCheckForSpecificItem(4) || ConcernsCheckForSpecificItem(5) || ConcernsCheckForSpecificItem(6) || ConcernsCheckForSpecificItem(7))
+    ((("Preach the word of " + oInventories.GodNameForMissionaryWork) + "."), "You head to the foot of the statue, where the majority of the mycenae toil. Tramelia follows on your heels, shrieking at you to stop.", "")

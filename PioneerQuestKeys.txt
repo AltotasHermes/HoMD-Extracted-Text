@@ -1,0 +1,8 @@
+    ("T")
+    ("HE PIONEER")
+    ("The letter is also hanging from the wall - she prises it carefully from its frame.")
+    ('"' + "My dear little Phoenix," + '"' + " she reads aloud. " + '"' + "Are you making sure Mummy and Daddy behave themselves? I am in Gravespite currently, where the air smells of sodden dirt, and the corpses below berate me for my heavy footfalls. I know you are always so keen to see the exotic places I visit, but I believe you would find this one, at least, a little cold and dull!" + '"')
+    ('"' + "I will be gone just a little while longer, as I am on the cusp of the discovery of a lifetime. I cannot speak of it via post. All you need to know is that this discovery will change all our lives. Be excited, little one! And give my love to your parents. They mean well and they love you very much, even if they don't let you go on adventures with me." + '"')
+    ('"' + "With all my love, Phosphorus," + '"' + " she concludes.")
+    ("Head to Gravespite.", "There is work to be done.", "")
+                global.ConcernsInventory[i, 2] = "Your assignment is to track down Lord Phosphorus Crumpett."

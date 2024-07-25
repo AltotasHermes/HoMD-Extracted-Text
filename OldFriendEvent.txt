@@ -1,0 +1,171 @@
+("You send word to an old companion. You need them once again.")
+if (global.CrewDeathFlag[1] == 0 && oPlayer.Pilot != "Augustus Ribbins" && RelationshipsReturnNumberOfItems(47) > 4)
+        ("Augustus Ribbins", "A circumspect man of formal dress and angular proportions. He is a veteran of several wars, with scars to prove it. Ruthlessly organized and relentlessly polite, he seems capable of anything.", "A Pilot. +5 Guile, +5 Grit. [Personal concern: Resolved.]", sAugustusRibbins, 0, 0.8)
+            RandomlySelectedCrewName = "Augustus Ribbins"
+    else ("Augustus Ribbins", "A circumspect man of formal dress and angular proportions. He is a veteran of several wars, with scars to prove it. Ruthlessly organized and relentlessly polite, he seems capable of anything.", "A Pilot. +5 Guile, +5 Grit. [Personal concern: Unresolved.]", sAugustusRibbins, 0, 0.8)
+        RandomlySelectedCrewName = "Augustus Ribbins"
+if (global.CrewDeathFlag[2] == 0 && global.ConcernsConcludedFlag[2] != 3 && oPlayer.Lightbearer != "Genevieve Caul" && RelationshipsReturnNumberOfItems(59) > 4)
+        ("Genevieve Caul", "She seldom talks about her past, but she expounds with great enthusiasm on all manner of sciences and philosophies. When she smiles, you see a glint of fang. When she talks to you, her eyes drift to your neck.", "A Lightbearer. +7 Spirit, +3 Esoterica. [Personal concern: Resolved.]", sGenevieveCaul, 0, 0.8)
+            RandomlySelectedCrewName = "Genevieve Caul"
+    else ("Genevieve Caul", "She won't talk about her past, but she expounds with great enthusiasm on all manner of sciences and philosophies. When she smiles, you see a glint of fang. When she talks to you, her eyes drift to your neck.", "A Lightbearer. +7 Spirit, +3 Esoterica. [Personal concern: Unresolved.]", sGenevieveCaul, 0, 0.8)
+        RandomlySelectedCrewName = "Genevieve Caul"
+if (global.CrewDeathFlag[3] == 0 && global.ConcernsConcludedFlag[3] != 4 && oPlayer.ChiefEngineer != "Dr Henry Delgado" && RelationshipsReturnNumberOfItems(83) > 4 && oInventories.CanRecruitDelgado == 1)
+        ("Dr Henry Delgado", "From the City of Engines, where machinery is much more cooperative. He seems amiably bewildered by the fact that technology doesn't shape itself effortlessly to his will, but he's cheerfully willing to try to learn anew.", "A Chief Engineer. +5 Graft, +5 Spirit. [Personal concern: Resolved.]", sDrHenryDelgado, 0, 0.8)
+            RandomlySelectedCrewName = "Dr Henry Delgado"
+    else ("Dr Henry Delgado", "From the City of Engines, where machinery is much more cooperative. He seems amiably bewildered by the fact that technology doesn't shape itself effortlessly to his will, but he's cheerfully willing to try to learn anew.", "A Chief Engineer. +5 Graft, +5 Spirit. [Personal concern: Unresolved.]", sDrHenryDelgado, 0, 0.8)
+        RandomlySelectedCrewName = "Dr Henry Delgado"
+if (global.CrewDeathFlag[4] == 0 && oPlayer.Lookout != "Spire" && RelationshipsReturnNumberOfItems(56) > 4)
+        ("Spire", "The third eye in his forehead glimmers with terrible purpose, and the other two are shut.", "A Lookout. +12 Vigilance. [Personal concern: Resolved.]", sSpire, 0, 0.8)
+            RandomlySelectedCrewName = "Spire"
+        ("Thaddeus Herb", "The third eye in his forehead is closed. His young face is prematurely lined from past suffering.", "A Lookout. +12 Vigilance. [Personal concern: Resolved.]", sSpire, 0, 0.8)
+            RandomlySelectedCrewName = "Spire"
+    else ("Spire", "The third eye in his forehead glimmers with terrible purpose, but the other two look wide and scared.", "A Lookout. +12 Vigilance. [Personal concern: Unresolved.]", sSpire, 0, 0.8)
+        RandomlySelectedCrewName = "Spire"
+if (global.CrewDeathFlag[5] == 0 && oPlayer.GuardCaptain != "Abbas Salem" && RelationshipsReturnNumberOfItems(64) > 4)
+        ("Abbas Salem", "A cheerful man with a cutlass at his side. He's accompanied by a strange, flickering presence that you can't quite see. 'I was born twice,' is how he explains it, 'but I'll work for one man's pay.' His second self nods. You start to feel a vicious migraine coming on.", "A Guard Captain. +7 Grit, +4 Insight. [Personal concern: Resolved.]", sAbbasSalem, 0, 0.8)
+            RandomlySelectedCrewName = "Abbas Salem"
+    else ("Abbas Salem", "A cheerful man with a cutlass at his side. He's accompanied by a strange, flickering presence that you can't quite see. 'I was born twice,' is how he explains it, 'but I'll work for one man's pay.' His second self nods. You start to feel a vicious migraine coming on.", "A Guard Captain. +7 Grit, +4 Insight. [Personal concern: Unresolved.]", sAbbasSalem, 0, 0.8)
+        RandomlySelectedCrewName = "Abbas Salem"
+if (global.CrewDeathFlag[6] == 0 && oPlayer.Pilot != "Bishop Landman" && RelationshipsReturnNumberOfItems(52) > 4)
+        ("Bishop Landman", "Medium-sized, soft-voiced. Grey eyes, grey suit, greying hair under a grey hat. He's so utterly unmemorable that you forgot what he looked like as soon as you met him.", "A Pilot. +1 Guile. [Personal concern: Resolved.]", sBishopLandman, 0, 0.8)
+            RandomlySelectedCrewName = "Bishop Landman"
+    else ("Bishop Landman", "Medium-sized, soft-voiced. Grey eyes, grey suit, greying hair under a grey hat. He's so utterly unmemorable that you forgot what he looked like as soon as you met him.", "A Pilot. +1 Guile. [Personal concern: Unresolved.]", sBishopLandman, 0, 0.8)
+        RandomlySelectedCrewName = "Bishop Landman"
+if (global.CrewDeathFlag[7] == 0 && global.ConcernsConcludedFlag[7] != 3 && oPlayer.Recordkeeper != "Bradley Baggs" && RelationshipsReturnNumberOfItems(41) > 4)
+        ("Bradley Baggs", "A fat, round-faced man with glaring eyes, an off-putting monobrow and a terrible temper. His records are an inky mess, and his spelling is atrocious, but no-one has the courage to complain.", "A Recordkeeper. +1 Esoterica. [Personal concern: Resolved.]", sBradleyBaggs, 0, 0.8)
+            RandomlySelectedCrewName = "Bradley Baggs"
+    else ("Bradley Baggs", "A fat, round-faced man with glaring eyes, an off-putting monobrow and a terrible temper. His records are an inky mess, and his spelling is atrocious, but no-one has the courage to complain.", "A Recordkeeper. +1 Esoterica. [Personal concern: Unresolved.]", sBradleyBaggs, 0, 0.8)
+        RandomlySelectedCrewName = "Bradley Baggs"
+if (global.CrewDeathFlag[8] == 0 && oPlayer.Lookout != "Finnegan Skip" && RelationshipsReturnNumberOfItems(44) > 4)
+    ("Finnegan Skip", "A handsome, easy-going lad with a winning smile and a generous soul. Lazy as sin, though. You've caught him napping on the job more than once.", "A Lookout. +1 Vigilance. [Personal concern: Non-existent.]", sFinneganSkip, 0, 0.8)
+        RandomlySelectedCrewName = "Finnegan Skip"
+if (global.CrewDeathFlag[9] == 0 && oPlayer.Pilot != "Banjo Smiggs" && RelationshipsReturnNumberOfItems(49) > 4)
+        ("Banjo Smiggs", "A supremely confident ghoul in a weatherbeaten coat. When you ask about his past, he says he was involved in 'legitimate business.' Then he winks and clarifies that he means crime.", "A Pilot. +12 Guile. [Personal concern: Resolved.]", sBanjoSmiggs, 0, 0.8)
+            RandomlySelectedCrewName = "Banjo Smiggs"
+    else ("Banjo Smiggs", "A supremely confident ghoul in a weatherbeaten coat. When you ask about his past, he says he was involved in 'legitimate business.' Then he winks and clarifies that he means crime.", "A Pilot. +12 Guile. [Personal concern: Unresolved.]", sBanjoSmiggs, 0, 0.8)
+        RandomlySelectedCrewName = "Banjo Smiggs"
+if (global.CrewDeathFlag[10] == 0 && oPlayer.Navigator != "Valeria Bell-Roberts" && RelationshipsReturnNumberOfItems(51) > 4)
+        ("Valeria Bell-Roberts", "Dozens of small heptahedral boxes float above her, anchored to her fingers by lengths of twine; inside, she tells you, she keeps captured ghosts, who know the ways of the House better than any living mortal. You're not entirely sure of the ethical implications.", "A Navigator. +7 Insight, +4 Esoterica. [Personal concern: Resolved.]", sValeriaBellRoberts, 0, 0.8)
+            RandomlySelectedCrewName = "Valeria Bell-Roberts"
+    else ("Valeria Bell-Roberts", "Dozens of small heptahedral boxes float above her, anchored to her fingers by lengths of twine; inside, she tells you, she keeps captured ghosts, who know the ways of the House better than any living mortal. You're not entirely sure of the ethical implications.", "A Navigator. +7 Insight, +4 Esoterica. [Personal concern: Unresolved.]", sValeriaBellRoberts, 0, 0.8)
+        RandomlySelectedCrewName = "Valeria Bell-Roberts"
+if (global.CrewDeathFlag[11] == 0 && oPlayer.Navigator != "Peter McNally" && RelationshipsReturnNumberOfItems(53) > 4 && oInventories.CanRecruitPeter == 1)
+        ("Peter McNally", "An amiable visitant, snatched from another world and apparently unconcerned by his change of circumstances. [Personal concern: Resolved.]", "A Navigator. +5 Insight, +5 Esoterica.", sPeterMcNally, 0, 0.8)
+            RandomlySelectedCrewName = "Peter McNally"
+    else ("Peter McNally", "An amiable visitant, snatched from another world and apparently unconcerned by his change of circumstances.", "A Navigator. +5 Insight, +5 Esoterica. [Personal concern: Unresolved.]", sPeterMcNally, 0, 0.8)
+        RandomlySelectedCrewName = "Peter McNally"
+if (global.CrewDeathFlag[12] == 0 && global.ConcernsConcludedFlag[12] != 2 && global.ConcernsConcludedFlag[12] != 3 && global.ConcernsConcludedFlag[12] != 4 && global.ConcernsConcludedFlag[12] != 5 && global.ConcernsConcludedFlag[12] != 6 && global.ConcernsConcludedFlag[12] != 7 && global.ConcernsConcludedFlag[12] != 8 && oPlayer.Lookout != "Violante DiMar" && RelationshipsReturnNumberOfItems(57) > 4)
+        ("Violante DiMar", "She drinks hazard-coffee by the pint and vibrates with nervous energy. Her hair is coming out in clumps. She glances over her shoulder every few seconds. 'There's nothing coming after me,' she assures you, repeatedly.", "A Lookout. +9 Vigilance, +1 Graft. [Personal concern: Resolved.]", sViolanteDiMar, 0, 0.8)
+            RandomlySelectedCrewName = "Violante DiMar"
+    else ("Violante DiMar", "She drinks hazard-coffee by the pint and vibrates with nervous energy. Her hair is coming out in clumps. She glances over her shoulder every few seconds. 'There's nothing coming after me,' she assures you, repeatedly.", "A Lookout. +9 Vigilance, +1 Graft. [Personal concern: Unresolved.]", sViolanteDiMar, 0, 0.8)
+        RandomlySelectedCrewName = "Violante DiMar"
+if (global.CrewDeathFlag[13] == 0 && oPlayer.Lookout != "Nicholas Verdant" && RelationshipsReturnNumberOfItems(55) > 4)
+        ("Nicholas Verdant", "He cracks self-effacing jokes, and sports a neat red beard. Despite his amiability, though, something about him seems quietly dangerous. There's a bandolier of pistols half-hidden under his tweed jacket.", "A Lookout. +8 Vigilance, +3 Grit. [Personal concern: Resolved.]", sNicholasVerdant, 0, 0.8)
+            RandomlySelectedCrewName = "Nicholas Verdant"
+    else ("Nicholas Verdant", "He cracks self-effacing jokes, and sports a neat red beard. Despite his amiability, though, something about him seems quietly dangerous. There's a bandolier of pistols half-hidden under his tweed jacket.", "A Lookout. +8 Vigilance, +3 Grit. [Personal concern: Unresolved.]", sNicholasVerdant, 0, 0.8)
+        RandomlySelectedCrewName = "Nicholas Verdant"
+if (global.CrewDeathFlag[14] == 0 && oPlayer.Recordkeeper != "Penpusher" && RelationshipsReturnNumberOfItems(62) > 4)
+        ("Penpusher", "Although innocuous translated, his name is a terrible insult in the carchar language. He stutters when he talks, and begs you to forgive him if he makes a mistake. At a mere seven feet in height, he'd be a runt amongst his fellow shark-men.", "A Recordkeeper. +8 Esoterica, +2 Spirit. [Personal concern: Resolved.]", sPenpusher, 0, 0.8)
+            RandomlySelectedCrewName = "Penpusher"
+    else ("Penpusher", "Although innocuous translated, his name is a terrible insult in the carchar language. He stutters when he talks, and begs you to forgive him if he makes a mistake. At a mere seven feet in height, he'd be a runt amongst his fellow shark-men.", "A Recordkeeper. +8 Esoterica, +2 Spirit. [Personal concern: Unresolved.]", sPenpusher, 0, 0.8)
+        RandomlySelectedCrewName = "Penpusher"
+if (global.CrewDeathFlag[15] == 0 && global.ConcernsConcludedFlag[15] != 3 && oPlayer.Recordkeeper != "Harmony Ricketts" && RelationshipsReturnNumberOfItems(61) > 4)
+            ("Harmony Ricketts", "She's an artist, she tells you, and her body will be her canvas.", "A Recordkeeper. +7 Esoterica, +4 Guts. [Personal concern: Resolved.]", sHarmonyRicketts, 0, 0.8)
+                RandomlySelectedCrewName = "Harmony Ricketts"
+            ("Harmony Ricketts", "She's an artist, she tells you, and her body will be her canvas.", "A Recordkeeper. +7 Esoterica, +4 Guts. [Personal concern: Resolved.]", sHarmonyRicketts2, 0, 0.8)
+                RandomlySelectedCrewName = "Harmony Ricketts"
+            ("Harmony Ricketts", "She's an artist, she tells you, and her body will be her canvas.", "A Recordkeeper. +7 Esoterica, +4 Guts. [Personal concern: Resolved.]", sHarmonyRicketts3, 0, 0.8)
+                RandomlySelectedCrewName = "Harmony Ricketts"
+        ("Harmony Ricketts", "She's an artist, she tells you, and her body will be her canvas.", "A Recordkeeper. +7 Esoterica, +4 Guts. [Personal concern: Unresolved.]", sHarmonyRicketts, 0, 0.8)
+            RandomlySelectedCrewName = "Harmony Ricketts"
+        ("Harmony Ricketts", "She's an artist, she tells you, and her body will be her canvas.", "A Recordkeeper. +7 Esoterica, +4 Guts. [Personal concern: Unresolved.]", sHarmonyRicketts2, 0, 0.8)
+            RandomlySelectedCrewName = "Harmony Ricketts"
+        ("Harmony Ricketts", "She's an artist, she tells you, and her body will be her canvas.", "A Recordkeeper. +7 Esoterica, +4 Guts. [Personal concern: Unresolved.]", sHarmonyRicketts3, 0, 0.8)
+            RandomlySelectedCrewName = "Harmony Ricketts"
+if (global.CrewDeathFlag[16] == 0 && oPlayer.Recordkeeper != "Jack of Quills" && RelationshipsReturnNumberOfItems(60) > 4)
+        ("Jack of Quills", "His fingers are fountain pens. His teeth are nibs. Even his hair is composed of a dozen ink-leaking feather-quills, jutting bizarrely from his scalp. He speaks in a barely-comprehensible lisp, and his tongue is constantly black with blood and ink.", "A Recordkeeper. +6 Esoterica, +4 Grit. [Personal concern: Resolved.]", sJackOfQuills, 0, 0.8)
+            RandomlySelectedCrewName = "Jack of Quills"
+    else ("Jack of Quills", "His fingers are fountain pens. His teeth are nibs. Even his hair is composed of a dozen ink-leaking feather-quills, jutting bizarrely from his scalp. He speaks in a barely-comprehensible lisp, and his tongue is constantly black with blood and ink.", "A Recordkeeper. +6 Esoterica, +4 Grit. [Personal concern: Unresolved.]", sJackOfQuills, 0, 0.8)
+        RandomlySelectedCrewName = "Jack of Quills"
+if (global.CrewDeathFlag[17] == 0 && oPlayer.GuardCaptain != "Ashen" && RelationshipsReturnNumberOfItems(63) > 4)
+        ("Ashen", "A gaunt woman with several moderately horrifying scars. She won't speak of her past.", "A Guard Captain. +12 Grit. [Personal concern: Resolved.]", sAshen, 0, 0.8)
+            RandomlySelectedCrewName = "Ashen"
+    else ("Ashen", "A gaunt woman with several moderately horrifying scars. She won't speak of her past.", "A Guard Captain. +12 Grit. [Personal concern: Unresolved.]", sAshen, 0, 0.8)
+        RandomlySelectedCrewName = "Ashen"
+if (global.CrewDeathFlag[18] == 0 && oPlayer.GuardCaptain != "Fiona McConnaghe" && RelationshipsReturnNumberOfItems(66) > 4)
+        ("Fiona McConnaghe", "Abandoned outside Fargyle Keep as a baby, she was raised by the fearsome Poet Knights. She has an official-looking letter of recommendation that she says is from the Knight-Commander himself.", "A Guard Captain. +6 Grit, +4 Spirit. [Personal concern: Resolved.]", sFionaMcConnaghe, 0, 0.8)
+            RandomlySelectedCrewName = "Fiona McConnaghe"
+    else ("Fiona McConnaghe", "Abandoned outside Fargyle Keep as a baby, she was raised by the fearsome Poet Knights. She has an official-looking letter of recommendation that she says is from the Knight-Commander himself.", "A Guard Captain. +6 Grit, +4 Spirit. [Personal concern: Unresolved.]", sFionaMcConnaghe, 0, 0.8)
+        RandomlySelectedCrewName = "Fiona McConnaghe"
+if (global.CrewDeathFlag[19] == 0 && oPlayer.GuardCaptain != "Ransack Morton" && RelationshipsReturnNumberOfItems(65) > 4)
+        ("Ransack Morton", "Covered in scars, with an ear missing from a recent spell in prison. He was a vicious pirate and murderer, he tells you cheerfully, but he's seen the error of his ways. Now he plans to publish his memoirs, but first he needs to have some non-murderous adventures.", "A Guard Captain. +8 Grit, +3 Esoterica. [Personal concern: Resolved.]", sRansackMorton, 0, 0.8)
+            RandomlySelectedCrewName = "Ransack Morton"
+    else ("Ransack Morton", "Covered in scars, with an ear missing from a recent spell in prison. He was a vicious pirate and murderer, he tells you cheerfully, but he's seen the error of his ways. Now he plans to publish his memoirs, but first he needs to have some non-murderous adventures.", "A Guard Captain. +8 Grit, +3 Esoterica. [Personal concern: Unresolved.]", sRansackMorton, 0, 0.8)
+        RandomlySelectedCrewName = "Ransack Morton"
+if (global.CrewDeathFlag[20] == 0 && oPlayer.Lightbearer != "Otto Von Honbach" && RelationshipsReturnNumberOfItems(58) > 4)
+        ("Otto Von Honbach", "An impossibly huge man, eight feet tall at least and rippling with muscle. The effect is undone somewhat by his tiny pince-nez glasses. He is fond of kittens, babies, and bone-crushing hugs. At first you thought he wanted to be your guard, but he is a devoted pacifist.", "A Lightbearer. +8 Spirit, +3 Guts. [Personal concern: Resolved.]", sOttoVonHonbach, 0, 0.8)
+            RandomlySelectedCrewName = "Otto Von Honbach"
+    else ("Otto Von Honbach", "An impossibly huge man, eight feet tall at least and rippling with muscle. The effect is undone somewhat by his tiny pince-nez glasses. He is fond of kittens, babies, and bone-crushing hugs. At first you thought he wanted to be your guard, but he is a devoted pacifist.", "A Lightbearer. +8 Spirit, +3 Guts. [Personal concern: Unresolved.]", sOttoVonHonbach, 0, 0.8)
+        RandomlySelectedCrewName = "Otto Von Honbach"
+if (global.CrewDeathFlag[21] == 0 && oPlayer.Surgeon != "Char Dvetistek" && RelationshipsReturnNumberOfItems(67) > 4 && global.ConcernsConcludedFlag[21] != 1 && global.ConcernsConcludedFlag[21] != 2)
+        ("Char Dvetistek", "She has cropped red hair and singed eyebrows, and pushes a cart full of clinking glass vials wherever she goes. She's an 'alchemist,' she tells you, and her elixirs heal better than any surgery. Her eyes have the tell-tale tinge of darkness that gives away a Godsmoke addict.", "A Surgeon. +6 Guts, +4 Grit. [Personal concern: Resolved.]", sCharDvetistek, 0, 0.8)
+            RandomlySelectedCrewName = "Char Dvetistek"
+    else ("Char Dvetistek", "She has cropped red hair and singed eyebrows, and pushes a cart full of clinking glass vials wherever she goes. She's an 'alchemist,' she tells you, and her elixirs heal better than any surgery. Her eyes have the tell-tale tinge of darkness that gives away a Godsmoke addict.", "A Surgeon. +6 Guts, +4 Grit. [Personal concern: Unresolved.]", sCharDvetistek, 0, 0.8)
+        RandomlySelectedCrewName = "Char Dvetistek"
+if (global.CrewDeathFlag[22] == 0 && oPlayer.Surgeon != "Dr Mobius Vanch" && RelationshipsReturnNumberOfItems(68) > 4)
+        ("Dr Mobius Vanch", "His face is hidden behind the unnerving beaked mask of the old plague doctors. 'It never ended,' he insists. 'The plague is still with us.' His black-gloved hands tremble as he shows you his medical license. It is covered in scribbled cryptograms.", "A Surgeon. +8 Guts, +3 Vigilance. [Personal concern: Resolved.]", sDrMobiusVanch, 0, 0.8)
+            RandomlySelectedCrewName = "Dr Mobius Vanch"
+    else ("Dr Mobius Vanch", "His face is hidden behind the unnerving beaked mask of the old plague doctors. 'It never ended,' he insists. 'The plague is still with us.' His black-gloved hands tremble as he shows you his medical license. It is covered in scribbled cryptograms.", "A Surgeon. +8 Guts, +3 Vigilance. [Personal concern: Unresolved.]", sDrMobiusVanch, 0, 0.8)
+        RandomlySelectedCrewName = "Dr Mobius Vanch"
+if (global.CrewDeathFlag[23] == 0 && oPlayer.Surgeon != "Jhang Ba Sho" && RelationshipsReturnNumberOfItems(69) > 4)
+        ("Jhang Ba Sho", "Mycenae cannot gain a medical license in the Seven Cities, so this whiskered, red-capped fungoid has been forced to work cheaply in back-alleys. Its medical work is partly scientific and partly occult, and it claims to harvest healing salve from its own fibrous skin.", "A Surgeon. +8 Guts, +2 Insight. [Personal concern: Resolved.]", sJhangBaSho, 0, 0.8)
+            RandomlySelectedCrewName = "Jhang Ba Sho"
+    else ("Jhang Ba Sho", "Mycenae cannot gain a medical license in the Seven Cities, so this whiskered, red-capped fungoid has been forced to work cheaply in back-alleys. Its medical work is partly scientific and partly occult, and it claims to harvest healing salve from its own fibrous skin.", "A Surgeon. +8 Guts, +2 Insight. [Personal concern: Unresolved.]", sJhangBaSho, 0, 0.8)
+        RandomlySelectedCrewName = "Jhang Ba Sho"
+if (global.CrewDeathFlag[24] == 0 && oPlayer.ChiefEngineer != "Viola Nox" && RelationshipsReturnNumberOfItems(45) >= 1)
+    ("Viola Nox", "She looks down her nose at you whenever you suggest she might do any work. She came 2nd in her entire year at the Academy, she tells you, and this job is beneath her. With a sniff, she resumes reading the newspaper.", "A Chief Engineer. +1 Graft. [Personal concern: Non-existent.]", sViolaNox, 0, 0.8)
+        RandomlySelectedCrewName = "Viola Nox"
+if (global.CrewDeathFlag[25] == 0 && global.ConcernsConcludedFlag[25] != 1 && oPlayer.ChiefEngineer != "Gladys Skarter" && RelationshipsReturnNumberOfItems(72) > 4)
+        ("Gladys Skarter", "An elderly lady whose steel fingers dance over machinery with uncanny grace. She spent her life constructing terrible engines of war, on secret contracts in secret locations. On retirement, she was allowed to keep neither her memories nor her hands. She built better hands.", "A Chief Engineer. +12 Graft. [Personal concern: Resolved.]", sGladysSkarter, 0, 0.8)
+            RandomlySelectedCrewName = "Gladys Skarter"
+    else ("Gladys Skarter", "An elderly lady whose steel fingers dance over machinery with uncanny grace. She spent her life constructing terrible engines of war, on secret contracts in secret locations. On retirement, she was allowed to keep neither her memories nor her hands. She built better hands.", "A Chief Engineer. +12 Graft. [Personal concern: Unresolved.]", sGladysSkarter, 0, 0.8)
+        RandomlySelectedCrewName = "Gladys Skarter"
+if (global.CrewDeathFlag[26] == 0 && oPlayer.ChiefEngineer != "Lucetta Quetzl" && RelationshipsReturnNumberOfItems(71) > 4 && oInventories.CanRecruitLucetta == 1)
+        ("Lucetta Quetzl", "An escaped slave-engineer from the Cathedral of Stolen Gods. She spent two years shackled to its failing engine, helping build a hideous replacement. Engine-work brings back the nightmares, but it's all she knows how to do.", "A Chief Engineer. +8 Graft, +2 Guile. [Personal concern: Resolved.]", sMyrtisQuetzl, 0, 0.8)
+            RandomlySelectedCrewName = "Lucetta Quetzl"
+    else ("Lucetta Quetzl", "An escaped slave-engineer from the Cathedral of Stolen Gods. She spent two years shackled to its failing engine, helping build a hideous replacement. Engine-work brings back the nightmares, but it's all she knows how to do.", "A Chief Engineer. +8 Graft, +2 Guile. [Personal concern: Unresolved.]", sMyrtisQuetzl, 0, 0.8)
+        RandomlySelectedCrewName = "Lucetta Quetzl"
+if (global.CrewDeathFlag[27] == 0 && global.ConcernsConcludedFlag[27] != 1 && oPlayer.ChiefEngineer != "Judith Grimalkin" && RelationshipsReturnNumberOfItems(70) > 4)
+        ("Judith Grimalkin", "She's from the City of Masks, of course, and the elaborate feline visage never leaves her face. You don't know how many generations of intellect are trapped in that mask, and you're not sure you want to know. Like all Masked, she's sure to have countless secret agendas.", "A Chief Engineer. +7 Graft, +4 Guile. [Personal concern: Resolved.]", sJudithGrimalkin, 0, 0.8)
+            RandomlySelectedCrewName = "Judith Grimalkin"
+    else ("Judith Grimalkin", "She's from the City of Masks, of course, and the elaborate feline visage never leaves her face. You don't know how many generations of intellect are trapped in that mask, and you're not sure you want to know. Like all Masked, she's sure to have countless secret agendas.", "A Chief Engineer. +7 Graft, +4 Guile. [Personal concern: Unresolved.]", sJudithGrimalkin, 0, 0.8)
+        RandomlySelectedCrewName = "Judith Grimalkin"
+if (global.CrewDeathFlag[28] == 0 && global.ConcernsConcludedFlag[28] != 1 && global.ConcernsConcludedFlag[28] != 6 && oPlayer.GuardCaptain != "Tybalt Balsamic IV" && RelationshipsReturnNumberOfItems(42) > 4)
+        ("Tybalt Balsamic IV", "He'll try his best, he tells you nervously. He's the son and heir of Lord Balsamic III, and according to his father, he was a born warrior. Sometimes his helmet slips down over his eyes.", "A Guard Captain. +1 Grit. [Personal concern: Resolved.]", sTybaltBalsamicIV, 0, 0.8)
+            RandomlySelectedCrewName = "Tybalt Balsamic IV"
+    else ("Tybalt Balsamic IV", "He'll try his best, he tells you nervously. He's the son and heir of Lord Balsamic III, and according to his father, he was a born warrior. Sometimes his helmet slips down over his eyes.", "A Guard Captain. +1 Grit. [Personal concern: Unresolved.]", sTybaltBalsamicIV, 0, 0.8)
+        RandomlySelectedCrewName = "Tybalt Balsamic IV"
+if (global.CrewDeathFlag[29] == 0 && oPlayer.Lightbearer != "Panorama Volt" && RelationshipsReturnNumberOfItems(43) > 4)
+        ("Panorama Volt", "She was excellent at her job, once, but a few too many journeys into unexplored parts of the House have sent her mad. Now she's paranoid and erratic, and her dire predictions upset the crew.", "A Lightbearer. +1 Spirit. [Personal concern: Resolved.]", sPanoramaVolt, 0, 0.8)
+            RandomlySelectedCrewName = "Panorama Volt"
+    else ("Panorama Volt", "She was excellent at her job, once, but a few too many journeys into unexplored parts of the House have sent her mad. Now she's paranoid and erratic, and her dire predictions upset the crew.", "A Lightbearer. +1 Spirit. [Personal concern: Unresolved.]", sPanoramaVolt, 0, 0.8)
+        RandomlySelectedCrewName = "Panorama Volt"
+if (global.CrewDeathFlag[30] == 0 && global.ConcernsConcludedFlag[30] != 1 && global.ConcernsConcludedFlag[30] != 3 && oPlayer.Navigator != "Sandy Bracket" && RelationshipsReturnNumberOfItems(38) > 4)
+        ("Sandy Bracket", "She claims to know the House like her own lowercase-h house. But the stories she's told of her previous expeditions have been wildly inconsistent.", "A Navigator. +1 Insight. [Personal concern: Resolved.]", sSandyBracket, 0, 0.8)
+            RandomlySelectedCrewName = "Sandy Bracket"
+    else ("Sandy Bracket", "She claims to know the House like her own lowercase-h house. But the stories she's told of her previous expeditions have been wildly inconsistent.", "A Navigator. +1 Insight. [Personal concern: Unresolved.]", sSandyBracket, 0, 0.8)
+        RandomlySelectedCrewName = "Sandy Bracket"
+if (global.CrewDeathFlag[31] == 0 && oPlayer.Surgeon != "Rotherford" && RelationshipsReturnNumberOfItems(46) > 4)
+        ("Rotherford", "A sour man who drinks two bottles of whiskey a day and smokes like a chimney. His license was revoked by the Medical Association, although he won't tell you why.", "A Surgeon. +1 Guts. [Personal concern: Resolved.]", sRotherford, 0, 0.8)
+            RandomlySelectedCrewName = "Rotherford"
+    else ("Rotherford", "A sour man who drinks two bottles of whiskey a day and smokes like a chimney. His license was revoked by the Medical Association, although he won't tell you why.", "A Surgeon. +1 Guts. [Personal concern: Unresolved.]", sRotherford, 0, 0.8)
+        RandomlySelectedCrewName = "Rotherford"
+if (global.CrewDeathFlag[32] == 0 && oPlayer.Pilot != "Avery Goodwin" && RelationshipsReturnNumberOfItems(50) > 4)
+    ("Avery Goodwin", "She's all bristling white hair and black goggles and oil-stains. She used to be a champion scuttle-racer in Junk Palace, she tells you, until the Incident that took her legs.", "A Pilot. +6 Guile, +4 Graft.", sAveryGoodwin, 0, 0.8)
+        RandomlySelectedCrewName = "Avery Goodwin"
+if (global.CrewDeathFlag[33] == 0 && oPlayer.Navigator != "Cromlech" && RelationshipsReturnNumberOfItems(54) > 4)
+        ("Cromlech", "Goatmen are notoriously insular and xenophobic. This shaman is the first you've seen away from the tribe - and he seems remarkably well-groomed. He swings a black cane topped by a goat-skull, and speaks Civean with only a mild accent.", "A Navigator. +7 Insight, +4 Graft. [Personal concern: Resolved.]", sCromlech, 0, 0.8)
+            RandomlySelectedCrewName = "Cromlech"
+    else ("Cromlech", "Goatmen are notoriously insular and xenophobic. This shaman is the first you've seen away from the tribe - and he seems remarkably well-groomed. He swings a black cane topped by a goat-skull, and speaks Civean with only a mild accent.", "A Navigator. +7 Insight, +4 Graft. [Personal concern: Unresolved.]", sCromlech, 0, 0.8)
+        RandomlySelectedCrewName = "Cromlech"
+("On second thoughts...", "There is nobody you wish to contact.")

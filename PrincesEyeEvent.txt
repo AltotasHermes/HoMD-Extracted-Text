@@ -1,0 +1,116 @@
+        ("T")
+        ("HE PRINCE'S EYE")
+        ("He sits in the window of the Sludge Cup cafe, a cup of coffee sitting untouched before him, watching, always watching the stream of passers-by beyond the glass.")
+        ("There's only one eye in his hollow face, and it focuses on you as you sit at his table. " + '"' + "I am the Prince's Eye," + '"' + " he says. " + '"' + "You work for me now. The Governor offers you nothing but ashes and lies, trust me on this." + '"')
+        ("He stares through the window. " + '"' + "Look at them," + '"' + " he says bitterly. " + '"' + "They don't know what we do for them." + '"')
+        ("[The Prince's Eye will pay you for secrets with guineas and Reputation.]", "", 0)
+        ('"' + "Isn't this quite a... busy place to conduct espionage?" + '"', "The cafe is bustling.")
+        ("Leave.", "The Prince's Eye waves to the waiter. " + '"' + "Bill, please." + '"')
+        NeedsInformationItem("Sell a Terrible Secret.", "He jots down the details on a napkin.", "[You will receive 220 G and +1 Reputation: Principate.]" HasSecret)
+            GainString = "Gained 220 G!"
+            LossString = "Lost x1 Terrible Secret"
+            LossString2 = "+1 Reputation: Principate"
+            LossString3 = ""
+        NeedsInformationItem("Sell a scrap of Scandalous Gossip.", "The Prince's Eye does not stop watching traffic.", "[You will receive 15 G.]" HasGossip)
+            GainString = "Gained 15 G!"
+            LossString = "Lost x1 Scandalous Gossip"
+            LossString2 = ""
+            LossString3 = ""
+        NeedsInformationItem("Sell your Unsettling Conjecture.", "The Eye shakes his head. " + '"' + "This strikes me as little more than theory and speculation." + '"', "[You will receive 30 G.]" HasConjecture)
+            GainString = "Gained 30 G!"
+            LossString = "Lost x1 Unsettling Conjecture"
+            LossString2 = ""
+            LossString3 = ""
+        NeedsInformationItem("Sell your knowledge of Dread Machinations.", "His single eye widens. He tears his attention away from the traffic, and demands you repeat yourself.", "[You will receive 300 G and +1 Reputation: Principate.]" HasDread)
+            GainString = "Gained 300 G!"
+            LossString = "Lost x1 Dread Machinations"
+            LossString2 = "+1 Reputation: Principate"
+            LossString3 = ""
+        NeedsInformationItem("Sell your Hideous Revelation.", "Your words peal out like bell-tolls, silencing the babble of the cafe, souring milk and cracking glass.", "[You will receive 550 G and +1 Reputation: Principate.]" HasRevelation)
+            GainString = "Gained 550 G!"
+            LossString = "Lost x1 Hideous Revelation"
+            LossString2 = "+1 Reputation: Principate"
+            LossString3 = ""
+        NeedsInformationItem("Sell Seditious Whispers: Principate.", "The Eye sighs. " + '"' + "See how ungrateful they can be?" + '"', "[You will receive 50 G.]" HasKeysWhispers)
+            GainString = "Gained 50 G!"
+            LossString = "Lost x1 Seditious Whispers: Principate"
+            LossString2 = ""
+            LossString3 = ""
+        NeedsExperienceItem("Sell your Portentous Dream.", "For a man uninterested in speculation, the Eye seems oddly eager to hear your dreams. " + '"' + "In as much detail as you can," + '"' + " he demands.", "[You will receive 40 G.]" HasDream)
+            GainString = "Gained 40 G!"
+            LossString = "Lost x1 Portentous Dream"
+            LossString2 = ""
+            LossString3 = ""
+            ("Sell the Swarm Bomb.", "He almost falls out of his chair. " + '"' + "A what? Show me!" + '"', "[You will receive 4000 G and -2 Stability: The City of Keys.]", sFightIcon, 7, 0.8)
+                GainString = "Gained 4000 G!"
+                LossString = "Lost x1 Swarm Bomb"
+                LossString2 = ""
+                LossString3 = "-2 Stability: The City of Keys"
+        ("T")
+        ("HE PRINCE'S EYE")
+        ("The Sludge Cup looks as busy as ever, though you notice bulky shapes under the patrons' coats, and their careful eyes follow you as you walk to the table where the Eye sits and stares.")
+        ('"' + "Tell me everything you know," + '"' + " snaps the Prince's Eye. His hollow socket bores through you with as much intensity than his glimmering green eye.")
+        ("[The Prince's Eye will pay you for secrets with guineas and Reputation.]", "Logbook", 4)
+        ("Leave.", "The Prince's Eye waves to the waiter. " + '"' + "Bill, please." + '"')
+        NeedsInformationItem("Sell a Terrible Secret.", "He jots down the details on a napkin.", "[You will receive 220 G and +1 Reputation: Principate.]" HasSecret)
+            GainString = "Gained 220 G!"
+            LossString = "Lost x1 Terrible Secret"
+            LossString2 = "+1 Reputation: Principate"
+            LossString3 = ""
+        NeedsInformationItem("Sell a scrap of Scandalous Gossip.", "The Prince's Eye does not stop watching traffic.", "[You will receive 15 G.]" HasGossip)
+            GainString = "Gained 15 G!"
+            LossString = "Lost x1 Scandalous Gossip"
+            LossString2 = ""
+            LossString3 = ""
+        NeedsInformationItem("Sell your Unsettling Conjecture.", "The Eye shakes his head. " + '"' + "This strikes me as little more than theory and speculation." + '"', "[You will receive 30 G.]" HasConjecture)
+            GainString = "Gained 30 G!"
+            LossString = "Lost x1 Unsettling Conjecture"
+            LossString2 = ""
+            LossString3 = ""
+        NeedsInformationItem("Sell your knowledge of Dread Machinations.", "His single eye widens. He tears his attention away from the traffic, and demands you repeat yourself.", "[You will receive 300 G and +1 Reputation: Principate.]" HasDread)
+            GainString = "Gained 300 G!"
+            LossString = "Lost x1 Dread Machinations"
+            LossString2 = "+1 Reputation: Principate"
+            LossString3 = ""
+        NeedsInformationItem("Sell your Hideous Revelation.", "Your words peal out like bell-tolls, silencing the babble of the cafe, souring milk and cracking glass.", "[You will receive 550 G and +1 Reputation: Principate.]" HasRevelation)
+            GainString = "Gained 550 G!"
+            LossString = "Lost x1 Hideous Revelation"
+            LossString2 = "+1 Reputation: Principate"
+            LossString3 = ""
+        NeedsInformationItem("Sell Seditious Whispers: Principate.", "The Eye sighs. " + '"' + "See how ungrateful they can be?" + '"', "[You will receive 50 G.]" HasKeysWhispers)
+            GainString = "Gained 50 G!"
+            LossString = "Lost x1 Seditious Whispers: Principate"
+            LossString2 = ""
+            LossString3 = ""
+        NeedsExperienceItem("Sell your Portentous Dream.", "For a man uninterested in speculation, the Eye seems oddly eager to hear your dreams. " + '"' + "In as much detail as you can," + '"' + " he demands.", "[You will receive 40 G.]" HasDream)
+            GainString = "Gained 40 G!"
+            LossString = "Lost x1 Portentous Dream"
+            LossString2 = ""
+            LossString3 = ""
+            ("Sell the Swarm Bomb.", "He almost falls out of his chair. " + '"' + "A what? Show me!" + '"', "[You will receive 4000 G and -2 Stability: The City of Keys.]", sFightIcon, 7, 0.8)
+                GainString = "Gained 4000 G!"
+                LossString = "Lost x1 Swarm Bomb"
+                LossString2 = ""
+                LossString3 = "-2 Stability: The City of Keys"
+        ("T")
+        ("HE PRINCE'S EYE")
+        ("When you enter the Sludge Cup, every single patron turns and stares at you with flat loathing. They glare at you sullenly, silently, cups suspended in mid-pour, forks frozen halfway to mouths. The Prince's Eye is nowhere to be seen.")
+        ("As you back out the door, you hear the hubbub resume.")
+        ("[You cannot sell information to the Prince's Eye while your Reputation: Principate is below 0.]", "Logbook", 4)
+        ("Leave.", "You are not welcome.")
+    ("T")
+    ("HE PRINCE'S EYE")
+    ('"' + "Come on now," + '"' + " says the Prince's Eye. " + '"' + "They all work for me. Every regular citizen in Founder's Fire avoids the Sludge Cup like the plague." + '"')
+    ('"' + "It took us eighteen months to engineer coffee this bad." + '"' + " The Prince's Eye turns his mug upside down. The coffee slops out gently.")
+    ("He goes back to mournfully watching the passers-by.")
+    ("T")
+    ("HE PRINCE'S EYE")
+    ("He places his hand against the window, breath steaming the glass. " + '"' + "Sometimes I write messages," + '"' + " he says.")
+    (GainString, "Money", 0)
+    (LossString, "Logbook", 4)
+    if (LossString2 != "")
+        (LossString2, "Logbook", 5)
+    if (LossString3 != "")
+        (LossString3, "Logbook", 4)
+    ("You have more information to sell.", '"' + "Go on then," + '"' + " says the Eye wearily.")
+    ("Leave.", "The Prince's Eye waves to the waiter. " + '"' + "Bill, please." + '"')

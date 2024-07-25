@@ -1,0 +1,5 @@
+("D")
+("ARKNESS RUSHES IN")
+("Just another lost soul. You thought there would be more...")
+("(You have died.)", "Death", 0)
+("Oh.", "That's it, then.")

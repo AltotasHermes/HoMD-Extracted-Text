@@ -1,0 +1,170 @@
+    if CrewSpeechText("Vanion Mandible", 161, '"' + "Clayton's Mill. Full of bastards. If anything sells papers, it's the actions of bastards." + '"', 1)
+        ("You gained 500 G!", "Money", 0)
+        ("Concerns updated: Journalism: The Hollow Trumpet", "Logbook", 6)
+        ("Better get going.", "There is work to be done.", "")
+                    global.ConcernsInventory[i, 2] = "Your assignment is to write a report on Clayton's Mill."
+    if CrewSpeechText("Vanion Mandible", 161, '"' + "The City of Knives. Our beloved public can't get enough of those unfortunates." + '"', 1)
+        ("You gained 500 G!", "Money", 0)
+        ("Concerns updated: Journalism: The Hollow Trumpet", "Logbook", 6)
+        ("Better get going.", "There is work to be done.", "")
+                    global.ConcernsInventory[i, 2] = "Your assignment is to write a report on the City of Knives."
+    if CrewSpeechText("Vanion Mandible", 161, '"' + "The City of Engines. Write something about the majesty of technology and the wonders beyond imagining, yadda yadda." + '"', 1)
+        ("You gained 500 G!", "Money", 0)
+        ("Concerns updated: Journalism: The Hollow Trumpet", "Logbook", 6)
+        ("Better get going.", "There is work to be done.", "")
+                    global.ConcernsInventory[i, 2] = "Your assignment is to write a report on the City of Engines."
+    if CrewSpeechText("Vanion Mandible", 161, '"' + "The City of Bridges. Delicate situation at the moment. The Consortium are public enemy number one, in the Governor's eyes, but they're also our second-biggest shareholder. Be as neutral and inoffensive as you possibly can, or I'll burst your bloody eyes." + '"', 1)
+        ("You gained 500 G!", "Money", 0)
+        ("Concerns updated: Journalism: The Hollow Trumpet", "Logbook", 6)
+        ("Better get going.", "There is work to be done.", "")
+                    global.ConcernsInventory[i, 2] = "Your assignment is to write a report on the City of Bridges."
+    if CrewSpeechText("Vanion Mandible", 161, '"' + "The City of Angels. Depressing place, but it's one of the Cities so we have to cover it." + '"', 1)
+        ("You gained 500 G!", "Money", 0)
+        ("Concerns updated: Journalism: The Hollow Trumpet", "Logbook", 6)
+        ("Better get going.", "There is work to be done.", "")
+                    global.ConcernsInventory[i, 2] = "Your assignment is to write a report on the City of Angels."
+    if CrewSpeechText("Vanion Mandible", 161, '"' + "The City of Masks. The Shrouded Council have been acting against our interests lately, so ferret out a good scandal. If you can't find a scandal... Well, use your imagination." + '"', 1)
+        ("You gained 500 G!", "Money", 0)
+        ("Concerns updated: Journalism: The Hollow Trumpet", "Logbook", 6)
+        ("Better get going.", "There is work to be done.", "")
+                    global.ConcernsInventory[i, 2] = "Your assignment is to write a report on the City of Masks."
+    if CrewSpeechText("Vanion Mandible", 161, '"' + "Pannachak. Dismal little hole in the Chimeric Empire. Really play up the foreign oppression angle." + '"', 1)
+        ("You gained 500 G!", "Money", 0)
+        ("Concerns updated: Journalism: The Hollow Trumpet", "Logbook", 6)
+        ("Better get going.", "There is work to be done.", "")
+                    global.ConcernsInventory[i, 2] = "Your assignment is to write a report on Pannachak."
+    if CrewSpeechText("Vanion Mandible", 161, '"' + "We like to take the piss out of the Poet-Knights, because let's face it, they're ridiculous. Go find something funny." + '"', 1)
+        ("You gained 500 G!", "Money", 0)
+        ("Concerns updated: Journalism: The Hollow Trumpet", "Logbook", 6)
+        ("Better get going.", "There is work to be done.", "")
+                    global.ConcernsInventory[i, 2] = "Your assignment is to write a report on Fargyle Keep."
+    if CrewSpeechText("Vanion Mandible", 161, '"' + "Head to Gravespite, our beloved public have an insatiable appetite for the dead." + '"', 1)
+        ("You gained 500 G!", "Money", 0)
+        ("Concerns updated: Journalism: The Hollow Trumpet", "Logbook", 6)
+        ("Better get going.", "There is work to be done.", "")
+                    global.ConcernsInventory[i, 2] = "Your assignment is to write a report on Gravespite."
+    if CrewSpeechText("Vanion Mandible", 161, '"' + "Yeah, I'm not going easy on you. Go up to Chimer, find out what the Emperor's been up to. Preferably something mad. Play up the threat he poses us." + '"', 1)
+        ("You gained 500 G!", "Money", 0)
+        ("Concerns updated: Journalism: The Hollow Trumpet", "Logbook", 6)
+        ("Better get going.", "There is work to be done.", "")
+                    global.ConcernsInventory[i, 2] = "Your assignment is to write a report on Chimer."
+    if CrewSpeechText("Vanion Mandible", 161, (((('"' + "Our beloved public are bloodthirsty, " + oPlayer.PlayerName) + ". Go up to Harlequin and find something gut-hurtingly nasty to sate them.") + '"') + '"'), 1)
+        ("You gained 500 G!", "Money", 0)
+        ("Concerns updated: Journalism: The Hollow Trumpet", "Logbook", 6)
+        ("Better get going.", "There is work to be done.", "")
+                    global.ConcernsInventory[i, 2] = "Your assignment is to write a report on Harlequin."
+    if CrewSpeechText("Vanion Mandible", 161, '"' + "Go up north to Buzzards' Omen and bring back the entrails of a story. What are you waiting for? Get out!" + '"', 1)
+        ("You gained 500 G!", "Money", 0)
+        ("Concerns updated: Journalism: The Hollow Trumpet", "Logbook", 6)
+        ("Better get going.", "There is work to be done.", "")
+                    global.ConcernsInventory[i, 2] = "Your assignment is to write a report on Buzzards' Omen."
+    if CrewSpeechText("Vanion Mandible", 161, '"' + "There's a war in Lisshan, and nothing makes money like war. Go up north and play up the 'gutsy rebel' angle. Oh, and try not to get yourself killed." + '"', 1)
+        ("You gained 500 G!", "Money", 0)
+        ("Concerns updated: Journalism: The Hollow Trumpet", "Logbook", 6)
+        ("Better get going.", "There is work to be done.", "")
+                    global.ConcernsInventory[i, 2] = "Your assignment is to write a report on Lisshan."
+    if CrewSpeechText("Vanion Mandible", 161, '"' + "Our beloved public couldn't care less about mukes, but they hate the Chimeric Empire even more. Go investigate the Mycena Free State, and make it all sound - I don't know." + '"' + " He bites a sausage ostentatiously. " + '"' + "Tragic." + '"', 1)
+        ("You gained 500 G!", "Money", 0)
+        ("Concerns updated: Journalism: The Hollow Trumpet", "Logbook", 6)
+        ("Better get going.", "There is work to be done.", "")
+                    global.ConcernsInventory[i, 2] = "Your assignment is to write a report on the Mycena Free State."
+    if CrewSpeechText("Vanion Mandible", 161, '"' + "Our beloved public love the Entomarch, right? Plenty of blood, sex and scandal, which is everything they want with their breakfast. So go down south to Penitents' Bluff and find something nasty for me." + '"', 1)
+        ("You gained 500 G!", "Money", 0)
+        ("Concerns updated: Journalism: The Hollow Trumpet", "Logbook", 6)
+        ("Better get going.", "There is work to be done.", "")
+                    global.ConcernsInventory[i, 2] = "Your assignment is to write a report on Penitents' Bluff."
+    if CrewSpeechText("Vanion Mandible", 161, '"' + "We have long-standing enmity with Lord Aranach. Go down to Gossamer Smile and smear the hell out of him. The dirtier you get, the happier you make me." + '"' + " He looks at you with the dead eyes of someone to whom happiness is a mostly abstract concept.", 1)
+        ("You gained 500 G!", "Money", 0)
+        ("Concerns updated: Journalism: The Hollow Trumpet", "Logbook", 6)
+        ("Better get going.", "There is work to be done.", "")
+                    global.ConcernsInventory[i, 2] = "Your assignment is to write a report on Gossamer Smile."
+    if CrewSpeechText("Vanion Mandible", 161, '"' + "Go down to Scornvaunt and see what they're hiding. Our beloved public love to be outraged about matters abroad, because it requires no effort or introspection on their part." + '"', 1)
+        ("You gained 500 G!", "Money", 0)
+        ("Concerns updated: Journalism: The Hollow Trumpet", "Logbook", 6)
+        ("Better get going.", "There is work to be done.", "")
+                    global.ConcernsInventory[i, 2] = "Your assignment is to write a report on Scornvaunt."
+    if CrewSpeechText("Vanion Mandible", 161, '"' + "Go down south and see what's happening in Grossfathom. Probably something good and horrible." + '"', 1)
+        ("You gained 500 G!", "Money", 0)
+        ("Concerns updated: Journalism: The Hollow Trumpet", "Logbook", 6)
+        ("Better get going.", "There is work to be done.", "")
+                    global.ConcernsInventory[i, 2] = "Your assignment is to write a report on Grossfathom."
+    if CrewSpeechText("Vanion Mandible", 161, '"' + "If there's one thing our beloved public can't stand, it's people making a transparent effort to do good. Because they're probably hypocrites, you see. Go down south to Bluesteel Court and tear the dragon-knights a collective new arse." + '"' + " He pauses. " + '"' + "Hey, don't look at me like that. I didn't decide what sells and what doesn't, did I?" + '"', 1)
+        ("You gained 500 G!", "Money", 0)
+        ("Concerns updated: Journalism: The Hollow Trumpet", "Logbook", 6)
+        ("Better get going.", "There is work to be done.", "")
+                    global.ConcernsInventory[i, 2] = "Your assignment is to write a report on Bluesteel Court."
+    if CrewSpeechText("Vanion Mandible", 161, '"' + "Go south to the beetle-shaggers in Carapas. Find something scandalous. Lady Lucan's defaulted on her debts again." + '"', 1)
+        ("You gained 500 G!", "Money", 0)
+        ("Concerns updated: Journalism: The Hollow Trumpet", "Logbook", 6)
+        ("Better get going.", "There is work to be done.", "")
+                    global.ConcernsInventory[i, 2] = "Your assignment is to write a report on Carapas."
+    if CrewSpeechText("Vanion Mandible", 161, '"' + "There's some kind of massive plague in Glitterberg, and our beloved capricious public are inclined to be sympathetic today. Get down there and report on it, while the goodwill lasts." + '"', 1)
+        ("You gained 500 G!", "Money", 0)
+        ("Concerns updated: Journalism: The Hollow Trumpet", "Logbook", 6)
+        ("Better get going.", "There is work to be done.", "")
+                    global.ConcernsInventory[i, 2] = "Your assignment is to write a report on Glitterberg."
+    if CrewSpeechText("Vanion Mandible", 161, '"' + "Rule of thumb: Our beloved public despise the Principate. We fought them and they didn't lose, which is a cardinal sin. So go east to Founder's Fire and make them look bad, I don't care how." + '"', 1)
+        ("You gained 500 G!", "Money", 0)
+        ("Concerns updated: Journalism: The Hollow Trumpet", "Logbook", 6)
+        ("Better get going.", "There is work to be done.", "")
+                    global.ConcernsInventory[i, 2] = "Your assignment is to write a report on Founder's Fire."
+    if CrewSpeechText("Vanion Mandible", 161, '"' + "If there's one thing I hate more than the Principate, it's academia. Hextall happens to be both. Go and destroy them. Fly, my minion!" + '"', 1)
+        ("You gained 500 G!", "Money", 0)
+        ("Concerns updated: Journalism: The Hollow Trumpet", "Logbook", 6)
+        ("Better get going.", "There is work to be done.", "")
+                    global.ConcernsInventory[i, 2] = "Your assignment is to write a report on Hextall."
+    if CrewSpeechText("Vanion Mandible", 161, '"' + "Go east to the Principate and find Gandola. Find a story. Make them seem a bit primitive. And bring me back some of that delicious trout, will you?" + '"', 1)
+        ("You gained 500 G!", "Money", 0)
+        ("Concerns updated: Journalism: The Hollow Trumpet", "Logbook", 6)
+        ("Better get going.", "There is work to be done.", "")
+                    global.ConcernsInventory[i, 2] = "Your assignment is to write a report on Gandola."
+    if CrewSpeechText("Vanion Mandible", 161, '"' + "The Hollow Trumpet is very concerned about drug issues in the Cities." + '"' + " He does his best to look pious, then snorts with amusement and scarfs down a sausage. " + '"' + "Go east to Phobetor Quinn and write something very concerned. But don't probe too hard, got it?" + '"', 1)
+        ("You gained 500 G!", "Money", 0)
+        ("Concerns updated: Journalism: The Hollow Trumpet", "Logbook", 6)
+        ("Better get going.", "There is work to be done.", "")
+                    global.ConcernsInventory[i, 2] = "Your assignment is to write a report on Phobetor Quinn."
+    if CrewSpeechText("Vanion Mandible", 161, '"' + "Eld Abrathat's a loony bin. Always a good source for a story about mad foreigners." + '"', 1)
+        ("You gained 500 G!", "Money", 0)
+        ("Concerns updated: Journalism: The Hollow Trumpet", "Logbook", 6)
+        ("Better get going.", "There is work to be done.", "")
+                    global.ConcernsInventory[i, 2] = "Your assignment is to write a report on Eld Abrathat."
+    if CrewSpeechText("Vanion Mandible", 161, '"' + "Go east to the Scars of Sheng and write a horror story about the Principate threat. Our beloved public have been getting complacent again, and we need to apply the whip." + '"', 1)
+        ("You gained 500 G!", "Money", 0)
+        ("Concerns updated: Journalism: The Hollow Trumpet", "Logbook", 6)
+        ("Better get going.", "There is work to be done.", "")
+                    global.ConcernsInventory[i, 2] = "Your assignment is to write a report on the Scars of Sheng."
+    if CrewSpeechText("Vanion Mandible", 161, '"' + "Ever heard of Calaram? Weird little place down south-east. Not much going on. Our beloved public love a story about the truly exotic, though, so get down there." + '"', 1)
+        ("You gained 500 G!", "Money", 0)
+        ("Concerns updated: Journalism: The Hollow Trumpet", "Logbook", 6)
+        ("Better get going.", "There is work to be done.", "")
+                    global.ConcernsInventory[i, 2] = "Your assignment is to write a report on Calaram."
+    if CrewSpeechText("Vanion Mandible", 161, '"' + "Ever heard of Affina, down to the south-east? Horrible place. I wouldn't go there if you paid me." + '"' + " He wipes his mouth with a napkin. " + '"' + "Well, have fun!" + '"', 1)
+        ("You gained 500 G!", "Money", 0)
+        ("Concerns updated: Journalism: The Hollow Trumpet", "Logbook", 6)
+        ("Better get going.", "There is work to be done.", "")
+                    global.ConcernsInventory[i, 2] = "Your assignment is to write a report on Affina."
+    if CrewSpeechText("Vanion Mandible", 161, '"' + "No-one knows much about the Confectorate, so a story from there will shift some papers, I suspect. Go down to Makkera and have a poke around." + '"', 1)
+        ("You gained 500 G!", "Money", 0)
+        ("Concerns updated: Journalism: The Hollow Trumpet", "Logbook", 6)
+        ("Better get going.", "There is work to be done.", "")
+                    global.ConcernsInventory[i, 2] = "Your assignment is to write a report on Makkera."
+    if CrewSpeechText("Vanion Mandible", 161, '"' + "Recalcitrance. The forgotten colony. We've tried very hard for years to make sure it stays forgotten, but apparently our lords and masters have changed their minds." + '"', 1)
+        ("You gained 500 G!", "Money", 0)
+        ("Concerns updated: Journalism: The Hollow Trumpet", "Logbook", 6)
+        ("Better get going.", "There is work to be done.", "")
+                    global.ConcernsInventory[i, 2] = "Your assignment is to write a report on Recalcitrance."
+    if CrewSpeechText("Vanion Mandible", 161, '"' + "Go to the Old Hallow. Bring me back a report. And some cider." + '"', 1)
+        ("You gained 500 G!", "Money", 0)
+        ("Concerns updated: Journalism: The Hollow Trumpet", "Logbook", 6)
+        ("Better get going.", "There is work to be done.", "")
+                    global.ConcernsInventory[i, 2] = "Your assignment is to write a report on the Old Hallow."
+    if CrewSpeechText("Vanion Mandible", 161, '"' + "Everyone's a little bit afraid of the carchar. I mean, big shark bastards, of course people get nervous. You know what sells papers? Fear. Go to the Kelp Fortress and find something scary." + '"', 1)
+        ("You gained 500 G!", "Money", 0)
+        ("Concerns updated: Journalism: The Hollow Trumpet", "Logbook", 6)
+        ("Better get going.", "There is work to be done.", "")
+                    global.ConcernsInventory[i, 2] = "Your assignment is to write a report on the Kelp Fortress."
+    if CrewSpeechText("Vanion Mandible", 161, '"' + "The Oddwinter Intrusion is probably worth a story. Not sure what to make of it." + '"', 1)
+        ("You gained 500 G!", "Money", 0)
+        ("Concerns updated: Journalism: The Hollow Trumpet", "Logbook", 6)
+        ("Better get going.", "There is work to be done.", "")
+                    global.ConcernsInventory[i, 2] = "Your assignment is to write a report on the Oddwinter Intrusion."

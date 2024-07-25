@@ -1,0 +1,7 @@
+    ("T")
+    ("HE CITY OF KEYS")
+    ("He grabs you by the hand and thanks you profusely for rescuing him from the Yard.")
+    ('"' + "If you ever reconsider and want me to be your Navigator, don't hesitate to come back here and ask," + '"' + " he says. " + '"' + "I'd give you an address but, uh, I don't really have a home here, do I? Don't worry. I'll find you." + '"')
+    ("Lost x1 Passenger: Peter McNally", "Cargo", 3)
+    ("Concerns (temporarily) concluded: Heart and Mind", "Logbook", 6)
+    ("He hitches his belt and strides off into the heaving crowd, not looking back.", "The city swallows him utterly.", "")

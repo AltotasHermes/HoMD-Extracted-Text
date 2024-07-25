@@ -1,0 +1,185 @@
+    if CrewSpeechText("Ambiguity Vilecroft", 161, '"' + "There are rumours that Clayton Canker has been dealing with the Clandestine. Probably nothing, but there's a buzz around the Mill lately. It's worth checking out." + '"', 1)
+        ("Gained 400 G!", "Money", 0)
+        ("Concerns updated: Journalism: The Key Details", "Logbook", 6)
+        ("Better get going.", "There is work to be done.", "")
+                    global.ConcernsInventory[i, 2] = "Your assignment is to write a report on Clayton's Mill."
+    if CrewSpeechText("Ambiguity Vilecroft", 161, '"' + "The Prime Minister in the City of Knives has been spouting all kinds of inflammatory rhetoric he can't back up. Go see what's happening over there." + '"', 1)
+        ("Gained 400 G!", "Money", 0)
+        ("Concerns updated: Journalism: The Key Details", "Logbook", 6)
+        ("Better get going.", "There is work to be done.", "")
+                    global.ConcernsInventory[i, 2] = "Your assignment is to write a report on the City of Knives."
+    if CrewSpeechText("Ambiguity Vilecroft", 161, '"' + "The City of Engines is insular, but it's always interesting. Go give it a kick." + '"', 1)
+        ("Gained 400 G!", "Money", 0)
+        ("Concerns updated: Journalism: The Key Details", "Logbook", 6)
+        ("Better get going.", "There is work to be done.", "")
+                    global.ConcernsInventory[i, 2] = "Your assignment is to write a report on the City of Engines."
+    if CrewSpeechText("Ambiguity Vilecroft", 161, '"' + "Don't believe what they say - relations between the Governor and the Consortium have never been so fraught. There has to be a lot of interesting things happening in the City of Bridges right now." + '"', 1)
+        ("Gained 400 G!", "Money", 0)
+        ("Concerns updated: Journalism: The Key Details", "Logbook", 6)
+        ("Better get going.", "There is work to be done.", "")
+                    global.ConcernsInventory[i, 2] = "Your assignment is to write a report on the City of Bridges."
+    if CrewSpeechText("Ambiguity Vilecroft", 161, '"' + "Why don't you investigate affairs in my old home town? The City of Angels. The place festers with conspiracy." + '"', 1)
+        ("Gained 400 G!", "Money", 1)
+        ("Concerns updated: Journalism: The Key Details", "Logbook", 6)
+        ("Better get going.", "There is work to be done.", "")
+                    global.ConcernsInventory[i, 2] = "Your assignment is to write a report on the City of Angels."
+    if CrewSpeechText("Ambiguity Vilecroft", 161, '"' + "Do you know how to get a reliable story of corruption and intrigue? You go to the City of Masks. Go give it a shake and see what falls out." + '"', 1)
+        ("Gained 400 G!", "Money", 0)
+        ("Concerns updated: Journalism: The Key Details", "Logbook", 6)
+        ("Better get going.", "There is work to be done.", "")
+                    global.ConcernsInventory[i, 2] = "Your assignment is to write a report on the City of Masks."
+    if CrewSpeechText("Ambiguity Vilecroft", 161, '"' + "Have you heard of Pannachak? It's a tiny village in the Chimeric Empire, north of here. We need to bring attention to the little places strangled under the Emperor's yoke." + '"', 1)
+        ("Gained 400 G!", "Money", 0)
+        ("Concerns updated: Journalism: The Key Details", "Logbook", 6)
+        ("Better get going.", "There is work to be done.", "")
+                    global.ConcernsInventory[i, 2] = "Your assignment is to write a report on Pannachak."
+    if CrewSpeechText("Ambiguity Vilecroft", 161, '"' + "The Poet-Knights have always looked down on us. They believe in aesthetic truth, rather than literal truth. Go give 'em a poke in the eye and say it's from me." + '"', 1)
+        ("Gained 400 G!", "Money", 0)
+        ("Concerns updated: Journalism: The Key Details", "Logbook", 6)
+        ("Better get going.", "There is work to be done.", "")
+                    global.ConcernsInventory[i, 2] = "Your assignment is to write a report on Fargyle Keep."
+    if CrewSpeechText("Ambiguity Vilecroft", 161, '"' + "I want you to investigate the Mausalon River, north of Ghoulwatch. There's been a crow infestation all over that area that I don't understand... But I have a hunch there's something going on." + '"', 1)
+        ("Gained 400 G!", "Money", 0)
+        ("Concerns updated: Journalism: The Key Details", "Logbook", 6)
+        ("Better get going.", "There is work to be done.", "")
+                    global.ConcernsInventory[i, 2] = "Your assignment is to write a report on the Mausalon River."
+    if CrewSpeechText("Ambiguity Vilecroft", 161, '"' + "I want you to report on affairs in Gravespite, over near Ghoulwatch. They are hiding grave secrets which I want you to poke at. Pardon the pun." + '"', 1)
+        ("Gained 400 G!", "Money", 0)
+        ("Concerns updated: Journalism: The Key Details", "Logbook", 6)
+        ("Better get going.", "There is work to be done.", "")
+                    global.ConcernsInventory[i, 2] = "Your assignment is to write a report on Gravespite."
+    if CrewSpeechText("Ambiguity Vilecroft", 161, '"' + "No-one has heard from Chimer in days, and we desperately need to understand what's happening there. Good luck." + '"', 1)
+        ("Gained 400 G!", "Money", 0)
+        ("Concerns updated: Journalism: The Key Details", "Logbook", 6)
+        ("Better get going.", "There is work to be done.", "")
+                    global.ConcernsInventory[i, 2] = "Your assignment is to write a report on Chimer."
+    if CrewSpeechText("Ambiguity Vilecroft", 161, '"' + "I need you to journey to Harlequin. Sorry. The tensions between them and Chimer are escalating, and the people need to know more." + '"', 1)
+        ("Gained 400 G!", "Money", 0)
+        ("Concerns updated: Journalism: The Key Details", "Logbook", 6)
+        ("Better get going.", "There is work to be done.", "")
+                    global.ConcernsInventory[i, 2] = "Your assignment is to write a report on Harlequin."
+    if CrewSpeechText("Ambiguity Vilecroft", 161, '"' + "Ugh... It pains me to say this, since news from there is so inevitably trite, but I received a tip that something has happened at Buzzards' Omen. Might be bullshit, but I need you to check it out anyway." + '"', 1)
+        ("Gained 400 G!", "Money", 0)
+        ("Concerns updated: Journalism: The Key Details", "Logbook", 6)
+        ("Better get going.", "There is work to be done.", "")
+                    global.ConcernsInventory[i, 2] = "Your assignment is to write a report on Buzzards' Omen."
+    if CrewSpeechText("Ambiguity Vilecroft", 161, '"' + "I'm sorry to send you to an active war-zone, but the whole city is desperate to know the truth about what's happening in Lisshan." + '"', 1)
+        ("Gained 400 G!", "Money", 0)
+        ("Concerns updated: Journalism: The Key Details", "Logbook", 6)
+        ("Better get going.", "There is work to be done.", "")
+                    global.ConcernsInventory[i, 2] = "Your assignment is to write a report on Lisshan."
+    if CrewSpeechText("Ambiguity Vilecroft", 161, '"' + "Other newspapers might not care about the plight of the mycenae, but we do. You need to investigate the atrocities at the Mycena Free State." + '"', 1)
+        ("Gained 400 G!", "Money", 0)
+        ("Concerns updated: Journalism: The Key Details", "Logbook", 6)
+        ("Better get going.", "There is work to be done.", "")
+                    global.ConcernsInventory[i, 2] = "Your assignment is to write a report on the Mycena Free State."
+    if CrewSpeechText("Ambiguity Vilecroft", 161, '"' + "We need you to investigate our backwards neighbours to the south. Begin with Penitents' Bluff." + '"', 1)
+        ("Gained 400 G!", "Money", 0)
+        ("Concerns updated: Journalism: The Key Details", "Logbook", 6)
+        ("Better get going.", "There is work to be done.", "")
+                    global.ConcernsInventory[i, 2] = "Your assignment is to write a report on Penitents' Bluff."
+    if CrewSpeechText("Ambiguity Vilecroft", 161, '"' + "Lord Aranach has made significant donations to the Key Details in the past, but we can't let that cloud our priorities. I want you to see what's happening in Gossamer Smile." + '"', 1)
+        ("Gained 400 G!", "Money", 0)
+        ("Concerns updated: Journalism: The Key Details", "Logbook", 6)
+        ("Better get going.", "There is work to be done.", "")
+                    global.ConcernsInventory[i, 2] = "Your assignment is to write a report on Gossamer Smile."
+    if CrewSpeechText("Ambiguity Vilecroft", 161, '"' + "If there was ever a quite literal hornets' nest in need of kicking, it is Scornvaunt. I need an expose on the horrors of the Entomarch slave trade." + '"', 1)
+        ("Gained 400 G!", "Money", 0)
+        ("Concerns updated: Journalism: The Key Details", "Logbook", 6)
+        ("Better get going.", "There is work to be done.", "")
+                    global.ConcernsInventory[i, 2] = "Your assignment is to write a report on Scornvaunt."
+    if CrewSpeechText("Ambiguity Vilecroft", 161, '"' + "The Entomarch's crimes against humanity cannot be allowed to continue without scrutiny. Please investigate Grossfathom and Queen Sabetha." + '"', 1)
+        ("Gained 400 G!", "Money", 0)
+        ("Concerns updated: Journalism: The Key Details", "Logbook", 6)
+        ("Better get going.", "There is work to be done.", "")
+                    global.ConcernsInventory[i, 2] = "Your assignment is to write a report on Grossfathom."
+    if CrewSpeechText("Ambiguity Vilecroft", 161, '"' + "I need you to go to the Entomarch and investigate Bluesteel Court. It's been worryingly quiet lately, and it doesn't sit right with me." + '"', 1)
+        ("Gained 400 G!", "Money", 0)
+        ("Concerns updated: Journalism: The Key Details", "Logbook", 6)
+        ("Better get going.", "There is work to be done.", "")
+                    global.ConcernsInventory[i, 2] = "Your assignment is to write a report on Bluesteel Court."
+    if CrewSpeechText("Ambiguity Vilecroft", 161, '"' + "Carapas somehow gets off lightly for its long-time involvement in the slave trade. I need you to go down there and excoriate the bastards." + '"', 1)
+        ("Gained 400 G!", "Money", 0)
+        ("Concerns updated: Journalism: The Key Details", "Logbook", 6)
+        ("Better get going.", "There is work to be done.", "")
+                    global.ConcernsInventory[i, 2] = "Your assignment is to write a report on Carapas."
+    if CrewSpeechText("Ambiguity Vilecroft", 161, '"' + "There's a humanitarian crisis of unprecedented scale in Glitterberg. Report on it, but be careful." + '"', 1)
+        ("Gained 400 G!", "Money", 0)
+        ("Concerns updated: Journalism: The Key Details", "Logbook", 6)
+        ("Better get going.", "There is work to be done.", "")
+                    global.ConcernsInventory[i, 2] = "Your assignment is to write a report on Glitterberg."
+    if CrewSpeechText("Ambiguity Vilecroft", 161, '"' + "Have you ever been to Founder's Fire? I think you should go east and do a report on events there. We have a lot to learn from the Principate." + '"', 1)
+        ("Gained 400 G!", "Money", 0)
+        ("Concerns updated: Journalism: The Key Details", "Logbook", 6)
+        ("Better get going.", "There is work to be done.", "")
+                    global.ConcernsInventory[i, 2] = "Your assignment is to write a report on Founder's Fire."
+    if CrewSpeechText("Ambiguity Vilecroft", 161, '"' + "Please travel east to Hextall and report on affairs there." + '"', 1)
+        ("Gained 400 G!", "Money", 0)
+        ("Concerns updated: Journalism: The Key Details", "Logbook", 6)
+        ("Better get going.", "There is work to be done.", "")
+                    global.ConcernsInventory[i, 2] = "Your assignment is to write a report on Hextall."
+    if CrewSpeechText("Ambiguity Vilecroft", 161, '"' + "I'd like a report on Gandola, to the east. We're woefully unversed in the affairs of the Principate." + '"', 1)
+        ("Gained 400 G!", "Money", 0)
+        ("Concerns updated: Journalism: The Key Details", "Logbook", 6)
+        ("Better get going.", "There is work to be done.", "")
+                    global.ConcernsInventory[i, 2] = "Your assignment is to write a report on Gandola."
+    if CrewSpeechText("Ambiguity Vilecroft", 161, '"' + "Head east, to Phobetor Quinn. The public needs to know more about the root of our city's drug problem." + '"', 1)
+        ("Gained 400 G!", "Money", 0)
+        ("Concerns updated: Journalism: The Key Details", "Logbook", 6)
+        ("Better get going.", "There is work to be done.", "")
+                    global.ConcernsInventory[i, 2] = "Your assignment is to write a report on Phobetor Quinn."
+    if CrewSpeechText("Ambiguity Vilecroft", 161, '"' + "I am not religious, but the fact we are restricted to worship of the Sanctioned is a pernicious assault on our liberty. Go to Eld Abrathat, the capital of free Unsanctioned worship. Bring back something controversial." + '"', 1)
+        ("Gained 400 G!", "Money", 0)
+        ("Concerns updated: Journalism: The Key Details", "Logbook", 6)
+        ("Better get going.", "There is work to be done.", "")
+                    global.ConcernsInventory[i, 2] = "Your assignment is to write a report on Eld Abrathat."
+    if CrewSpeechText("Ambiguity Vilecroft", 161, '"' + "We need you to go east and report on affairs in the Scars of Sheng. Don't be jingoistic. Some publications would have you believe the war was still ongoing, but not us." + '"', 1)
+        ("Gained 400 G!", "Money", 0)
+        ("Concerns updated: Journalism: The Key Details", "Logbook", 6)
+        ("Better get going.", "There is work to be done.", "")
+                    global.ConcernsInventory[i, 2] = "Your assignment is to write a report on the Scars of Sheng."
+    if CrewSpeechText("Ambiguity Vilecroft", 161, '"' + "Far southeast, you'll find Calaram, which I know barely anything about. Let's change that, shall we?" + '"', 1)
+        ("Gained 400 G!", "Money", 0)
+        ("Concerns updated: Journalism: The Key Details", "Logbook", 6)
+        ("Better get going.", "There is work to be done.", "")
+                    global.ConcernsInventory[i, 2] = "Your assignment is to write a report on Calaram."
+    if CrewSpeechText("Ambiguity Vilecroft", 161, '"' + "All we know of Affina are legends and nursery tales. Go southeast, and find the truth." + '"', 1)
+        ("Gained 400 G!", "Money", 0)
+        ("Concerns updated: Journalism: The Key Details", "Logbook", 6)
+        ("Better get going.", "There is work to be done.", "")
+                    global.ConcernsInventory[i, 2] = "Your assignment is to write a report on Affina."
+    if CrewSpeechText("Ambiguity Vilecroft", 161, '"' + "I've heard rumours of some kind of disaster in Makkera, though frankly it's all whispers and ephemera. Find out what's happening there. Buy plenty of fuel, it's a long journey southeast." + '"', 1)
+        ("Gained 400 G!", "Money", 0)
+        ("Concerns updated: Journalism: The Key Details", "Logbook", 6)
+        ("Better get going.", "There is work to be done.", "")
+                    global.ConcernsInventory[i, 2] = "Your assignment is to write a report on Makkera."
+    if CrewSpeechText("Ambiguity Vilecroft", 161, '"' + "The Governor seems to have forgotten about our colonies. Not the Key Details. Bring attention to the plight of Recalcitrance." + '"', 1)
+        ("Gained 400 G!", "Money", 0)
+        ("Concerns updated: Journalism: The Key Details", "Logbook", 6)
+        ("Better get going.", "There is work to be done.", "")
+                    global.ConcernsInventory[i, 2] = "Your assignment is to write a report on Recalcitrance."
+    if CrewSpeechText("Ambiguity Vilecroft", 161, '"' + "The Old Hallow is the House's greatest refuge for exiles and runaways. Why not go and turn over a few rocks?" + '"', 1)
+        ("Gained 400 G!", "Money", 0)
+        ("Concerns updated: Journalism: The Key Details", "Logbook", 6)
+        ("Better get going.", "There is work to be done.", "")
+                    global.ConcernsInventory[i, 2] = "Your assignment is to write a report on the Old Hallow."
+    if CrewSpeechText("Ambiguity Vilecroft", 161, '"' + "The carchar don't suffer as much as the mycenae do in this city - I suppose that's because they're enormous ten-foot shark-monsters, and bullying them is an elaborate form of suicide. But they still suffer prejudice, and we should make efforts to understand them. Travel to the Kelp Fortress and report on carchar culture." + '"', 1)
+        ("Gained 400 G!", "Money", 0)
+        ("Concerns updated: Journalism: The Key Details", "Logbook", 6)
+        ("Better get going.", "There is work to be done.", "")
+                    global.ConcernsInventory[i, 2] = "Your assignment is to write a report on the Kelp Fortress."
+    if CrewSpeechText("Ambiguity Vilecroft", 161, '"' + "The landscape of the House changed dramatically when the Oddwinter Intrusion arrived, but we still understand very little about it. Travel north-west and learn as much as you can." + '"', 1)
+        ("Gained 400 G!", "Money", 0)
+        ("Concerns updated: Journalism: The Key Details", "Logbook", 6)
+        ("Better get going.", "There is work to be done.", "")
+                    global.ConcernsInventory[i, 2] = "Your assignment is to write a report on the Oddwinter Intrusion."
+    if CrewSpeechText("Ambiguity Vilecroft", 161, '"' + "I hear tell of a mycenae colony far northwest, nestled deep in the frozen wasteland. No-one has spoken to them since the Intrusion occurred, but the Key Details like to give a voice to the voiceless." + '"', 1)
+        ("Gained 400 G!", "Money", 0)
+        ("Concerns updated: Journalism: The Key Details", "Logbook", 6)
+        ("Better get going.", "There is work to be done.", "")
+                    global.ConcernsInventory[i, 2] = "Your assignment is to write a report on Icicle Spine."
+    if CrewSpeechText("Ambiguity Vilecroft", 161, '"' + "Little is known about the Empire of Thread. A few unlikely myths, that's all. Travel far, far southeast, and tell me what you find." + '"', 1)
+        ("Gained 400 G!", "Money", 0)
+        ("Concerns updated: Journalism: The Key Details", "Logbook", 6)
+        ("Better get going.", "There is work to be done.", "")
+                    global.ConcernsInventory[i, 2] = "Your assignment is to write a report on anywhere in the Empire of Thread."
