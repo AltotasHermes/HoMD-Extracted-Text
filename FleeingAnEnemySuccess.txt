@@ -1,0 +1,5 @@
+("A")
+(" SUCCESSFUL GAMBIT")
+("The Heartlight has been doused and your kinetopede slams into lurching, scrabbling movement. You skitter into the darkness before your enemy can react.")
+("(You passed a Guile challenge!)", "Challenge", 4)
+("Retreat into shadows.", "You have successfully avoided a fight.", "[Your Heartlight has been turned off.]")

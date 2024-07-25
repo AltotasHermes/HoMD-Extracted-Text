@@ -1,0 +1,6 @@
+    ("S")
+    ("CORNVAUNT")
+    ('"' + "My spies have been telling me the same," + '"' + " says Lady Scorn with a vicious grin. She stands up from her honey-crystal throne, slugs back the last dregs of her wine, and dashes the glass against the floor. " + '"' + "To arms! To war!" + '"')
+    ("A wasp the size of a shed swoops down next to her and she climbs into the saddle. " + '"' + "You'll get your money when we win," + '"' + " she says to you, and then she is soaring into the air. War-drums pound in time with wingbeats. Hundreds of wasp-riders fall from the Hive above and form a tornado behind her.")
+    ("Concerns updated: Thralls of the Entomarch", "Logbook", 6)
+    ("Wasp-riders surge through the door.", "The battle will be joined somewhere halfway between Scornvaunt and Penitents' Bluff.")

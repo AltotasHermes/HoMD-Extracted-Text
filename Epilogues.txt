@@ -1,0 +1,161 @@
+if (oInventories.ChosenWorld == "Fantasy")
+    if (oPlayer.Pilot == "Bishop Landman")
+                message[0] = (("In this perilous new world, Bishop's unique suite of skills is in high demand. After he parts ways with " + oPlayer.PlayerName) + ", he declines to involve himself in spycraft. He buys an unassuming farm, which he tends with his usual diligence. ")
+            message[0] = (("In this perilous new world, Bishop's unique suite of skills is in high demand. After he parts ways with " + oPlayer.PlayerName) + ", he declines to involve himself in spycraft. He buys an unassuming farm, which he tends with his usual diligence. ")
+    else if (oPlayer.Pilot == "Banjo Smiggs")
+    else if (oPlayer.Pilot == "Augustus Ribbins")
+            message[0] = "This new world lacks a place for a Pilot. Instead, Augustus joins the queen's court, advising her on military matters. The queen is most keen to hear all about exciting innovations like the square formation, interchangeable parts, and gunpowder. Especially gunpowder. "
+    if (oPlayer.Navigator == "Sandy Bracket")
+    else if (oPlayer.Navigator == "Cromlech")
+                message2[0] = "Cromlech returns to the City of Keys and continues his work at the Goat-Stones Embassy, tirelessly brokering treaties and campaigning for goatmen's rights. "
+            message2[0] = (("Returning to the City of Keys, Cromlech writes a bestselling series of books about his adventures with " + oPlayer.PlayerName) + ". All are written under an assumed name, of course, and make no mention of the main character's species. ")
+    else if (oPlayer.Navigator == "Valeria Bell-Roberts")
+            message2[0] = "Valeria returns to the City of Keys and opens an occult shop. In the ensuing years of turmoil and civil war, she is able to gather many more ghosts about her person. "
+    else if (oPlayer.Navigator == "Peter McNally")
+            message2[0] = "Peter travels up and down this new world, seeing as much as he can before finally settling down on a farm. He ends up living to the age of ninety-three and having a dozen grandchildren, who he thrills with stories of adventure. "
+            message2[0] = "Peter chooses to return to the City of Keys. He charters a kinetopede and is last seen travelling south, still ranting about the heart in his head. "
+    if (oPlayer.Lookout == "Finnegan Skip")
+                message3[0] = "After you arrive in this exciting new world, Finnegan opts to stick by your side. The rest of your adventures together are stories for another time. Suffice to say that Finnegan matures in your company to a kind, thoughtful man. You bring out the best in each other, and wouldn't leave each other for the world. "
+    else if (oPlayer.Lookout == "Nicholas Verdant")
+    else if (oPlayer.Lookout == "Violante DiMar")
+    else if (oPlayer.Lookout == "Spire")
+            message3[0] = "The eye in his head has finally broken Spire's will. He cannot be induced to move from the Orchard, and spends the rest of his life living amongst the trees, a tired ghost beneath an azure sky. "
+    if (oPlayer.Recordkeeper == "Bradley Baggs")
+    else if (oPlayer.Recordkeeper == "Harmony Ricketts")
+    else if (oPlayer.Recordkeeper == "Jack of Quills")
+    else if (oPlayer.Recordkeeper == "Penpusher")
+    if (oPlayer.Lightbearer == "Otto Von Honbach")
+    else if (oPlayer.Lightbearer == "Genevieve Caul")
+        message5[0] = "Genevieve returns to the City of Keys and continues her work for the Abstemii. A few discreet blackmails. A few rogue vampires exterminated. A few politicians influenced under the guise of psychotherapy. She misses her time aboard the kinetopede. "
+    else if (oPlayer.Lightbearer == "Panorama Volt")
+            message5[0] = "Where is left for Panorama Volt to go? She cannot return to the City of Keys, that's for sure. She is last seen walking into the dark. "
+    if (oPlayer.GuardCaptain == "Tybalt Balsamic IV")
+    else if (oPlayer.GuardCaptain == "Abbas Salem")
+    else if (oPlayer.GuardCaptain == "Fiona McConnaghe")
+    else if (oPlayer.GuardCaptain == "Ashen")
+    else if (oPlayer.GuardCaptain == "Ransack Morton")
+    if (oPlayer.Surgeon == "Rotherford")
+    else if (oPlayer.Surgeon == "Jhang Ba Sho")
+            message7[0] = (("Jhang Ba Sho returns to the City of Keys. Thanks to its acquaintance with the great explorer " + oPlayer.PlayerName) + ", the Surgeons' Association are finally ready to grant it a medical licence.
+    else if (oPlayer.Surgeon == "Char Dvetistek")
+    else if (oPlayer.Surgeon == "Dr Mobius Vanch")
+            message7[0] = "The Plague sheds Dr Vanch's skin as soon as it arrives in the new world. The resulting epidemic kills hundreds of thousands. The smoke of corpse-pyres blacks out the skies. The rivers are clogged with corpses. "
+            message7[0] = "Dr Vanch finds it difficult to conceal his delight when he discovers that plague is still common in the new world. He dedicates the rest of his life to developing a cure, sometimes with unethical zeal. He doesn't succeed. "
+    if (oPlayer.ChiefEngineer == "Gladys Skarter")
+            message8[0] = "Gladys returns to the City of Keys, still bent on revenge. Months later, explosions rock the Factory. Entire chimneys come tumbling down. No-one knows who to blame, but the Governor's Men - already at each other's throats following the Governor's absence - mostly accuse each other. "
+    else if (oPlayer.ChiefEngineer == "Viola Nox")
+        message8[0] = "Viola vanishes into the ether. She takes a new name, a new face, a new gender. She is an Aspect of the Trickster, and she's had fun watching you. But she can't stay still for long. "
+    else if (oPlayer.ChiefEngineer == "Judith Grimalkin")
+    else if (oPlayer.ChiefEngineer == "Lucetta Quetzl")
+    else if (oPlayer.ChiefEngineer == "Dr Henry Delgado")
+            message8[0] = "Dr Delgado says his goodbyes and returns to the City of Engines, where his powerful imagination can work literal wonders. He has a distinguished career building dizzying marvels, before finally finding himself elevated to the head of the Technical Assembly. When he finally dies, old and at peace, the entire City is in mourning for their brightest scion. "
+    message9[0] = (("And what about you? Well, the name " + oPlayer.PlayerName) + " will be remembered in the House forever. But you left that behind. 
+else if (oInventories.ChosenWorld == "Earth")
+    if (oPlayer.Pilot == "Bishop Landman")
+    else if (oPlayer.Pilot == "Banjo Smiggs")
+    else if (oPlayer.Pilot == "Augustus Ribbins")
+    if (oPlayer.Navigator == "Sandy Bracket")
+    else if (oPlayer.Navigator == "Cromlech")
+                message2[0] = "Cromlech returns to the City of Keys and continues his work at the Goat-Stones Embassy, tirelessly brokering treaties and campaigning for goatmen's rights. "
+                message2[0] = "Cromlech is considered an 'alien species,' and his existence is kept secret from the majority of this new world. He spends the rest of his life in an installation deep beneath the earth, experimented upon daily, occasionally visited by intrigued world leaders. "
+            message2[0] = (("Returning to the City of Keys, Cromlech writes a bestselling series of books about his adventures with " + oPlayer.PlayerName) + ". All are written under an assumed name, of course, and make no mention of the main character's species. ")
+    else if (oPlayer.Navigator == "Valeria Bell-Roberts")
+            message2[0] = "Valeria returns to the City of Keys and opens an occult shop. In the ensuing years of turmoil and civil war, she is able to gather many more ghosts about her person. "
+    else if (oPlayer.Navigator == "Peter McNally")
+            message2[0] = "Peter is surprised to find himself back in his old world. He returns to Morocco, seeking a years-delayed revenge on the enemy agent who gave him the slip. The memories of his time in the House fade, like a troubling dream. "
+            message2[0] = "Peter chooses to return to the City of Keys. He charters a kinetopede and is last seen travelling south, still ranting about the heart in his head. "
+    if (oPlayer.Lookout == "Finnegan Skip")
+                message3[0] = "After you arrive in this exciting new world, Finnegan opts to stick by your side. The rest of your adventures together are stories for another time. Suffice to say that Finnegan matures in your company to a kind, thoughtful man. You bring out the best in each other, and wouldn't leave each other for the world. "
+                message3[0] = "Finnegan is able to make a decent living as a test subject, and he spends the money on every luxury this world offers. He becomes a very fat and happy man, glued to a screen and gorging near-constantly on salt and sugar and neon energy drinks. It is everything he ever wanted. "
+    else if (oPlayer.Lookout == "Nicholas Verdant")
+    else if (oPlayer.Lookout == "Violante DiMar")
+        message3[0] = "Finally free of the noddy-doctors' pursuit, Violante settles down in a tiny apartment. Jumpy and paranoid and going through extreme caffeine withdrawal, she sits indoors all day and every day, posting ever-more frantic videos about global conspiracies. "
+    else if (oPlayer.Lookout == "Spire")
+            message3[0] = "The eye in his head has finally broken Spire's will. He cannot be induced to move from the Orchard, and spends the rest of his life living amongst the trees, a tired ghost beneath an azure sky. "
+    if (oPlayer.Recordkeeper == "Bradley Baggs")
+    else if (oPlayer.Recordkeeper == "Harmony Ricketts")
+    else if (oPlayer.Recordkeeper == "Jack of Quills")
+    else if (oPlayer.Recordkeeper == "Penpusher")
+    if (oPlayer.Lightbearer == "Otto Von Honbach")
+    else if (oPlayer.Lightbearer == "Genevieve Caul")
+        message5[0] = "Genevieve returns to the City of Keys and continues her work for the Abstemii. A few discreet blackmails. A few rogue vampires exterminated. A few politicians influenced under the guise of psychotherapy. She misses her time aboard the kinetopede. "
+    else if (oPlayer.Lightbearer == "Panorama Volt")
+            message5[0] = "Panorama settles in a dingy apartment, which she fills with from floor to ceiling with cats. At night, she takes long walks and basks under the stars. "
+            message5[0] = "Where is left for Panorama Volt to go? She cannot return to the City of Keys, that's for sure. She is last seen walking into the dark. "
+    if (oPlayer.GuardCaptain == "Tybalt Balsamic IV")
+            message6[0] = "Tybalt starts a barbershop. After years of debt and failure, it finally turns a profit. Several years after that, it's a chain. Balsamic Barbers start popping up all over the region. "
+    else if (oPlayer.GuardCaptain == "Abbas Salem")
+    else if (oPlayer.GuardCaptain == "Fiona McConnaghe")
+    else if (oPlayer.GuardCaptain == "Ashen")
+    else if (oPlayer.GuardCaptain == "Ransack Morton")
+            message6[0] = "You and Ransack settle down together, of course, in a small terraced house. Of all the new things in this world, he especially loves the cinema - an experience that for him is almost religious. You go on a date there every week, just you and him. You are blissfully happy. "
+    if (oPlayer.Surgeon == "Rotherford")
+    else if (oPlayer.Surgeon == "Jhang Ba Sho")
+            message7[0] = (("Jhang Ba Sho returns to the City of Keys. Thanks to its acquaintance with the great explorer " + oPlayer.PlayerName) + ", the Surgeons' Association are finally ready to grant it a medical licence.
+    else if (oPlayer.Surgeon == "Char Dvetistek")
+            message7[0] = "In this world, alchemy is called 'chemistry,' and it operates by a completely different set of rules. After she finally recovers from godsmoke withdrawal, Char enrols at a college and devotes herself to learning it anew. "
+    else if (oPlayer.Surgeon == "Dr Mobius Vanch")
+    if (oPlayer.ChiefEngineer == "Gladys Skarter")
+            message8[0] = "Gladys retires to a small farm where she keeps goats and makes jam. For a few blissful years, at the end of her life, she finally takes the time to sit out beneath the stars and enjoy doing nothing at all. "
+            message8[0] = "Gladys returns to the City of Keys, still bent on revenge. Months later, explosions rock the Factory. Entire chimneys come tumbling down. No-one knows who to blame, but the Governor's Men - already at each other's throats following the Governor's absence - mostly accuse each other. "
+    else if (oPlayer.ChiefEngineer == "Viola Nox")
+        message8[0] = "Viola vanishes into the ether. She takes a new name, a new face, a new gender. She is an Aspect of the Trickster, and she's had fun watching you. But she can't stay still for long. "
+    else if (oPlayer.ChiefEngineer == "Judith Grimalkin")
+    else if (oPlayer.ChiefEngineer == "Lucetta Quetzl")
+    else if (oPlayer.ChiefEngineer == "Dr Henry Delgado")
+            message8[0] = "Dr Delgado says his goodbyes and returns to the City of Engines, where his powerful imagination can work literal wonders. He has a distinguished career building dizzying marvels, before finally finding himself elevated to the head of the Technical Assembly. When he finally dies, old and at peace, the entire City is in mourning for their brightest scion. "
+    message9[0] = (("And what about you? Well, the name " + oPlayer.PlayerName) + " will be remembered in the House forever. But you left that behind. 
+else if (oInventories.ChosenWorld == "Sky")
+    if (oPlayer.Pilot == "Bishop Landman")
+                message[0] = (("In this perilous new world, Bishop's unique suite of skills is in high demand. But after he parts ways with " + oPlayer.PlayerName) + ", he declines to involve himself in spycraft. He buys an unassuming farm, which he tends with his usual diligence.
+    else if (oPlayer.Pilot == "Banjo Smiggs")
+        message[0] = "Banjo takes up a job much like his old one, steering scoundrels and smugglers from port to port. But the dusty dark is a distant memory. Banjo's every day is draped in sunshine; he skips between clouds. "
+    else if (oPlayer.Pilot == "Augustus Ribbins")
+            message[0] = "Augustus gets a job operating one of the great iron cannons which defends the islands from predatory rocs. Although he rarely needs to fire a missile, he grows greatly fond and protective of his village community. He performs his job with fanatical diligence, and in his old age is elected the mayor. "
+    if (oPlayer.Navigator == "Sandy Bracket")
+    else if (oPlayer.Navigator == "Cromlech")
+                message2[0] = "Cromlech returns to the City of Keys and continues his work at the Goat-Stones Embassy, tirelessly brokering treaties and campaigning for goatmen's rights. "
+            message2[0] = (("Returning to the City of Keys, Cromlech writes a bestselling series of books about his adventures with " + oPlayer.PlayerName) + ". All are written under an assumed name, of course, and make no mention of the main character's species. ")
+    else if (oPlayer.Navigator == "Valeria Bell-Roberts")
+                message2[0] = "Valeria's ghosts survive the transition to a new world, much to her relief. She falls naturally into her old role as a navigator - there are none in the skies whose instruments can match her ghosts for accuracy. "
+    else if (oPlayer.Navigator == "Peter McNally")
+            message2[0] = "Peter travels up and down this new world, seeing as much as he can before finally settling down on a farm. He ends up living to the age of ninety-three and having a dozen grandchildren, who he thrills with stories of adventure. "
+            message2[0] = "Peter chooses to return to the City of Keys. He charters a kinetopede and is last seen travelling south, still ranting about the heart in his head. "
+    if (oPlayer.Lookout == "Finnegan Skip")
+                message3[0] = "After you arrive in this exciting new place, Finnegan opts to stick by your side. The rest of your adventures together are stories for another time. Suffice to say that Finnegan matures in your company to a kind, thoughtful man. You bring out the best in each other, and wouldn't leave each other for the world. "
+    else if (oPlayer.Lookout == "Nicholas Verdant")
+        message3[0] = "Nicholas finds a job as a lookout in a merchant ship. He greatly enjoys cloud-gazing in the crow's nest, taking potshots at the occasional passing bird. Much later, he will become the captain of his own vessel and explore the unmapped skies to the west, pushing deep into perpetual fog. "
+    else if (oPlayer.Lookout == "Violante DiMar")
+    else if (oPlayer.Lookout == "Spire")
+            message3[0] = "The eye in his head has finally broken Spire's will. He cannot be induced to move from the Orchard, and spends the rest of his life living amongst the trees, a tired ghost beneath an azure sky. "
+    if (oPlayer.Recordkeeper == "Bradley Baggs")
+    else if (oPlayer.Recordkeeper == "Harmony Ricketts")
+    else if (oPlayer.Recordkeeper == "Jack of Quills")
+    else if (oPlayer.Recordkeeper == "Penpusher")
+        message4[0] = "Penpusher finds a quiet library in which to settle down, a castle full of books that drifts gently through the clouds and accepts all scholars - even those as unusual in appearance as Penpusher. For him, it is something like heaven."
+    if (oPlayer.Lightbearer == "Otto Von Honbach")
+    else if (oPlayer.Lightbearer == "Genevieve Caul")
+        message5[0] = "Genevieve returns to the City of Keys and continues her work for the Abstemii. A few discreet blackmails. A few rogue vampires exterminated. A few politicians influenced under the guise of psychotherapy. She misses her time aboard the kinetopede. "
+    else if (oPlayer.Lightbearer == "Panorama Volt")
+            message5[0] = "Panorama settles down in a flying village, filling the vital role of 'eccentric old lady not quite mad enough to burn as a witch.' She fills her cottage with cats, and local youths dare each other to creep through her overgrown garden. At night, she takes long walks and basks under the stars. "
+            message5[0] = "Where is left for Panorama Volt to go? She does not return to the City of Keys, that's for sure. She is last seen walking into the dark. "
+    if (oPlayer.GuardCaptain == "Tybalt Balsamic IV")
+    else if (oPlayer.GuardCaptain == "Abbas Salem")
+    else if (oPlayer.GuardCaptain == "Fiona McConnaghe")
+    else if (oPlayer.GuardCaptain == "Ashen")
+    else if (oPlayer.GuardCaptain == "Ransack Morton")
+    if (oPlayer.Surgeon == "Rotherford")
+    else if (oPlayer.Surgeon == "Jhang Ba Sho")
+            message7[0] = (("Jhang Ba Sho returns to the City of Keys. Thanks to its acquaintance with the great explorer " + oPlayer.PlayerName) + ", the Surgeons' Association are finally ready to grant it a medical licence.
+    else if (oPlayer.Surgeon == "Char Dvetistek")
+    else if (oPlayer.Surgeon == "Dr Mobius Vanch")
+            message7[0] = "The Plague sheds Dr Vanch's skin as soon as it arrives in the new world. The resulting epidemic kills hundreds of thousands. The smoke of the pyres blacks out the skies. Entire corpse-choked islands float in eerie silence. "
+    if (oPlayer.ChiefEngineer == "Gladys Skarter")
+            message8[0] = "Gladys returns to the City of Keys, still bent on revenge. Months later, explosions rock the Factory. Entire chimneys come tumbling down. No-one knows who to blame, but the Governor's Men - already at each other's throats following the Governor's absence - mostly accuse each other. "
+    else if (oPlayer.ChiefEngineer == "Viola Nox")
+        message8[0] = "Viola vanishes into the ether. She takes a new name, a new face, a new gender. She is an Aspect of the Trickster, and she's had fun watching you. But she can't stay still for long. "
+    else if (oPlayer.ChiefEngineer == "Judith Grimalkin")
+    else if (oPlayer.ChiefEngineer == "Lucetta Quetzl")
+    else if (oPlayer.ChiefEngineer == "Dr Henry Delgado")
+            message8[0] = "Dr Delgado says his goodbyes and returns to the City of Engines, where his powerful imagination can work literal wonders. He has a distinguished career building dizzying marvels, before finally finding himself elevated to the head of the Technical Assembly. When he finally dies, old and at peace, the entire City is in mourning for their brightest scion. "
+    message9[0] = (("And what about you? Well, the name " + oPlayer.PlayerName) + " will be remembered in the House forever. But you left that behind.

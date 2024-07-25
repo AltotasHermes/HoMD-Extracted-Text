@@ -1,0 +1,55 @@
+    ("G")
+    ("ROSSFATHOM")
+    ("Queen Sabetha scratches at the black mould corroding her throat. " + '"' + "Good work." + '"')
+    ("She picks up a scroll of parchment from beside her throne. " + '"' + "This edict declares that the sons and daughters of thralls will be free citizens, and no new thralls may be taken. But it also promises that all current thralls will remain enslaved until they die. It will inflame tensions on both sides, so we must ensure it passes while Scorn and Thespian are deadlocked." + '"')
+    ("The scroll is handed to a servant, who brings it over to you. " + '"' + "Please deliver this edict to both Lady Scorn and Lady Thespian," + '"' + " the Queen tells you. " + '"' + "They are sure to be furious, but if you're right, the peace will hold." + '"')
+    ("Concerns updated: Thralls of the Entomarch", "Logbook", 6)
+    ('"' + "And my reward?" + '"', "")
+    ("Bow and leave the room.", "")
+    ('"' + "I can't accept this edict." + '"', "You had thought the Queen wanted to free all thralls, even if it took a while.")
+    ("G")
+    ("ROSSFATHOM")
+    ("Queen Sabetha waves to her servant, who vanishes through a side-door for a moment. He returns with a clinking leather bag, a ruby as big as a fist, and a snuffling mosquito on a lead.")
+    ('"' + "Romeo is one of my favourite little boys," + '"' + " says Queen Sabetha, leaning forward and stroking the mosquito's wing fondly. " + '"' + "He will grow much bigger soon, don't worry! Look after him well." + '"')
+    ("Gained x1 Undreamt Treasure", "Treasure", 1)
+    ("Gained 1500 G!", "Money", 1)
+    ("Gained x1 Dangerous Beast (Alive)", "Cargo", 2)
+    ("Bow and leave the room.", "")
+    ("G")
+    ("ROSSFATHOM")
+    ("You storm from the room, leaving the Queen spluttering furiously. Perhaps Lady Thespian will still accept your support...")
+    ("You still have time to turn this war around.", "")
+    ("G")
+    ("ROSSFATHOM")
+    ("Queen Sabetha's spymistress is a plump elderly woman with a pleasant smile and a glass eye. She sits with her grandchild on her lap while she discusses her network of spies and assassins.")
+        ScornString1 = " the butterfly knights of Glitterberg,"
+        ScornString1 = ""
+        ScornString2 = " the beetle-cavalry of Carapas,"
+        ScornString2 = ""
+        ScornString3 = " the Icarian Ghast mercenaries,"
+        ScornString3 = ""
+    (((((('"' + "Lady Scorn has a full battalion of wasp-riders under her control, of course," + '"' + " says the spymistress. " + '"' + "As well as" + ScornString1) + ScornString2) + ScornString3) + " and the honey-mad legions of Calaram, who will never betray their alliance with her.") + '"'))
+        String1 = " the dragon-knights of the Court,"
+        String1 = ""
+        String2 = " the spider-riders of Gossamer Smile,"
+        String2 = ""
+        String3 = " the mycenae of Frogbit Smut,"
+        String3 = ""
+        String4 = " some monsters from Bogshadow,"
+        String4 = ""
+        String5 = " the butterfly-knights of Glitterberg,"
+        String5 = ""
+        String6 = " a band of undisciplined shelf-exiles from above Bluesteel Court,"
+        String6 = ""
+        String7 = " the beetle-cavalry of Carapas,"
+        String7 = ""
+        String9 = " the mantis-warriors of Penitents' Bluff,"
+        String9 = ""
+        String8 = " Apparently there's a slave-revolt brewing in Scornvaunt, too, meaning Lady Scorn will have to leave some troops behind to keep order. That might tip the balance."
+        String8 = ""
+        (((((((((((((('"' + "And on the abolitionist side, we have" + String7) + String9) + String6) + String5) + String4) + String3) + String2) + String1) + " and, well, ") + "that's ") + "about it.") + String8) + '"'))
+        ('"' + "And on the abolitionist side, nobody. Not good. Not good at all." + '"')
+        ('"' + "Lady Scorn is currently far too powerful," + '"' + " she says. " + '"' + "She will be eager to declare war. You must sap some of her support, before it is too late." + '"')
+        ('"' + "The abolitionists are growing in confidence, and will soon risk a war," + '"' + " she says. " + '"' + "Best if you reduce some of their support." + '"')
+        ('"' + "I suspect neither side will risk a war," + '"' + " she says. " + '"' + "Any battle between them would be a toss of the coin. Good work. You should speak to the Queen." + '"')
+    ("She bounces the infant on her knee and smiles.", "For just a moment, you think you see a glint of fang.")

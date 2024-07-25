@@ -1,0 +1,31 @@
+        ("T")
+        ("HE CITY OF BRIDGES")
+        ("Most of the posters are rotting off the walls and well out of date, but you find a couple that are recent.")
+            CrimeString1 = "A lifelong troublemaker. He stands accused of hassling Consortium merchants, robbing banks, setting fire to churches in the City of Angels... The list goes on."
+            CrimeString1 = "He fled from the City of Knives after a brutal killing spree, and now spends his time preying on merchants in the dark."
+            CrimeString1 = "He is an enforcer for the Hangknot Mob - you can see the noose around his neck in the daguerreotype. His job is to attack merchants who don't pay their dues to the syndicate."
+            CrimeString1 = "A particularly vicious bandit, renowned for his cruelty and for sending grisly trophies to the newspapers. (The newspapers love it.)"
+            CrimeString1 = "His crimes aren't listed, but there's something skin-crawling about his gaze."
+            CrimeString1 = "Worse than a mere bandit, he's surrounded by horrible rumours of cannibalism and occult sacrifice."
+            CrimeString1 = "He grins merrily in his daguerreotype. How could such an innocent-looking fellow commit such crimes?"
+            CrimeString1 = "You examine the daguerreotype - his face is pocked and scarred. A downcast turn to his mouth. He looks like a man who's led a miserable life."
+            CrimeString1 = "He's something of a legend and a folk hero. He'll avoid killing if he can, and his madcap exploits always make headlines in the Hollow Trumpet."
+            CrimeString2 = "A lifelong troublemaker. He stands accused of hassling Consortium merchants, robbing banks, setting fire to churches in the City of Angels... The list goes on."
+            CrimeString2 = "He fled from the City of Knives after a brutal killing spree, and now spends his time preying on merchants in the dark."
+            CrimeString2 = "He is an enforcer for the Hangknot Mob - you can see the noose around his neck. His job is to attack merchants who don't pay their dues to the syndicate."
+            CrimeString2 = "A particularly vicious bandit, renowned for his cruelty and for sending grisly trophies to the newspapers. (The newspapers love it.)"
+            CrimeString2 = "His crimes aren't listed, but there's something skin-crawling about his gaze."
+            CrimeString2 = "Worse than a mere bandit, he's surrounded by horrible rumours of cannibalism and occult sacrifice."
+            CrimeString2 = "He grins merrily in his daguerreotype. How could such an innocent-looking fellow commit such crimes?"
+            CrimeString2 = "You examine the daguerreotype - his face is pocked and scarred. A downcast turn to his mouth. He looks like a man who's led a miserable life."
+            CrimeString2 = "He's something of a legend and a folk hero. He'll avoid killing if he can, and his madcap exploits always make headlines in the Hollow Trumpet."
+        (((((("The first poster offers a bounty of " + string(oInventories.BountyAmount1)) + " G, for a man who the newspapers dubbed ") + oInventories.BountyName1) + ". ") + CrimeString1))
+        (((((("The face of " + oInventories.BountyName2) + " leers from the poster below. Bold block letters advertise a bounty of ") + string(oInventories.BountyAmount2)) + " G. ") + CrimeString2))
+        ((("Hunt down " + oInventories.BountyName1) + "."), "You make a note of the co-ordinates.", "")
+        ((("Hunt down " + oInventories.BountyName2) + "."), "You make a note of the co-ordinates.", "")
+        ("Return.", "You have no desire to hunt down random unfortunates.", "")
+        ("T")
+        ("HE CITY OF BRIDGES")
+        ("A Consortium clerk blanches when you drag the bandit's corpse into his office, but quickly recovers his composure. " + '"' + "Keep up the good work," + '"' + " he says, presenting you with a bag of gold.")
+        ((("Gained " + string(oInventories.CurrentBountyAmount)) + " G!"), "Money", 0)
+        ("You count through the coins.", "All present and correct.", "")

@@ -1,0 +1,4 @@
+("A")
+(" DISORDERLY WITHDRAWAL")
+("Your enemy's priority is now simple survival.")
+("Let them go.", "There's no point in further violence.")

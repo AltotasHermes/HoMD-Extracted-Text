@@ -1,0 +1,7 @@
+    ("B")
+    ("LUESTEEL COURT")
+    ('"' + "My advisors have said the same," + '"' + " says Lady Bluesteel. She stands, drawing her sword. " + '"' + "Today, we go to war!" + '"')
+    ("An excited buzz breaks out through the hall. Courtiers bustle in and out.")
+    ("Outside, the war-drums are beating like a heart. The Court shakes with the stamp of booted feet.")
+    ("Concerns updated: Thralls of the Entomarch", "Logbook", 6)
+    ("Dragon-knights flit through the South Door.", "The battle will be joined somewhere halfway between Scornvaunt and Bluesteel Court.")

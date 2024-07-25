@@ -1,0 +1,208 @@
+    ("T")
+    ("HE BATTLE")
+        ScornString1 = " the gleaming butterfly-cavalry of Glitterberg,"
+        ScornString1 = ""
+        ScornString2 = " the steel-armoured beetle-riders of Carapas,"
+        ScornString2 = ""
+    (((("Drawn up along one side of the great dark room, the buzzing armies of Lady Scorn, the swooping Icarian Ghasts," + ScornString1) + ScornString2) + " and the glutinous legions sent from distant Calaram."))
+        String1 = " the dragon-knights on their mounts of shimmering blue,"
+        String1 = ""
+        String2 = " the spider-riders atop chittering arachnids,"
+        String2 = ""
+        String3 = " mycenae with slings and spears,"
+        String3 = ""
+        String4 = " an assortment of hideous bog-monsters with their skulls coated in dark fungus,"
+        String4 = ""
+        String5 = " the gleaming butterfly-cavalry of Glitterberg,"
+        String5 = ""
+        String6 = " the ragged hard-bitten shelf-exiles,"
+        String6 = ""
+        String7 = " the steel-armoured beetle-riders of Carapas,"
+        String7 = ""
+        String9 = " the fearsome mantis-warriors of Penitents' Bluff,"
+        String9 = ""
+        (((((((((("And drawn up along the other side," + String7) + String6) + String5) + String4) + String3) + String2) + String1) + String9) + " and a few treacherous mosquito-riders defected from Grossfathom."))
+        if (String1 != "")
+        if (String2 != "")
+        if (String3 != "")
+        if (String4 != "")
+        if (String5 != "")
+        if (String6 != "")
+        if (String7 != "")
+        if (String9 != "")
+        if (String1 != "" && String1 != NewString1)
+            NewString2 = " the dragon-knights on their mounts of shimmering blue."
+        if (String2 != "" && String2 != NewString1)
+            NewString2 = " the spider-riders atop chittering arachnids."
+        if (String3 != "" && String3 != NewString1)
+            NewString2 = " mycenae with slings and spears."
+        if (String4 != "" && String4 != NewString1)
+            NewString2 = " an assortment of hideous bog-monsters with their skulls coated in dark fungus."
+        if (String5 != "" && String5 != NewString1)
+            NewString2 = " the gleaming butterfly-cavalry of Glitterberg."
+        if (String6 != "" && String6 != NewString1)
+            NewString2 = " the ragged and hard-bitten shelf-exiles."
+        if (String7 != "" && String7 != NewString1)
+            NewString2 = " the steel-armoured beetle-riders of Carapas."
+        if (String9 != "" && String9 != NewString1)
+            NewString2 = " the fearsome mantis-warriors of Penitents' Bluff."
+        (((("And drawn up along the other side, " + NewString1) + " and") + NewString2))
+        if (String1 != "")
+            NewString2 = " the dragon-knights on their mounts of shimmering blue."
+        if (String2 != "")
+            NewString2 = " the spider-riders atop chittering arachnids."
+        if (String3 != "")
+            NewString2 = " mycenae with slings and spears."
+        if (String4 != "")
+            NewString2 = " an assortment of hideous bog-monsters with their skulls coated in dark fungus."
+        if (String5 != "")
+            NewString2 = " the gleaming butterfly-cavalry of Glitterberg."
+        if (String6 != "")
+            NewString2 = " the ragged and hard-bitten shelf-exiles."
+        if (String7 != "")
+            NewString2 = " the steel-armoured beetle-riders of Carapas."
+        if (String9 != "")
+            NewString2 = " the fearsome mantis-warriors of Penitents' Bluff."
+        ((("And drawn up along the other side, " + NewString2) + " They look very lonely indeed."))
+        ("And drawn up along the other side, nobody at all.")
+        ("A breathless moment turns into an hour's wait as the two sides manoeuvre themselves, send out scouts to spy and diplomats to demand surrender. Finally, just as the tension is starting to leave the room, a bugle is blown. The two armies begin to move.")
+    ("Stay back from the battle and watch at a safe distance.", "")
+        ("Join the battle on Lady Scorn's side.", "")
+        ("Join the battle on Lady Thespian's side.", "")
+        ("Join the battle on Lady Bluesteel's side.", "")
+        ("Join the battle on Lady Lampyre's side.", "")
+    ("T")
+    ("HE BATTLE")
+        String1 = "A great swarm of dragon-knights flit across the battle, some spearing opponents on their lances. "
+        String1 = ""
+        String2 = "The giant spiders spin great webs across the field, catching wasp-riders in inescapable nets and sucking out their innards. "
+        String2 = ""
+        String3 = "Hideous swamp-monsters from Bogshadow rampage back and forth, bog-drakes wolfing down men in a single gulp, great creaking ramble-trees smashing wasps to smithereens beneath enormous oaken fists ."
+        String3 = ""
+        String4 = "The soldiers of Glitterberg flutter overhead on their enormous butterfly steeds, raining crossbow bolts on their unfortunate enemies below. "
+        String4 = ""
+        String5 = "Missiles rain down on the beetles of Carapas - but their shells and armour can withstand almost anything. They march forward like a moving wall. "
+        String5 = ""
+        String6 = "Shrieking and laughing, the Icarian Ghasts turn and betray Lady Scorn at the last possible moment - dive-bombing wasp-riders, plucking them from the saddle, dropping them screaming to the floor below. "
+        String6 = ""
+        String7 = "The mantis-warriors are some of the fastest and deadliest fighters you have ever seen, their huge scythes decapitating enemies in a single blow. They fight like demons, cutting a swathe through the quivering mellified soldiers of the Confectorate. "
+        String7 = ""
+        ScornString1 = "The soldiers of Glitterberg flutter overhead on their enormous butterfly steeds, raining crossbow bolts on their unfortunate enemies below. "
+        ScornString1 = ""
+        ScornString2 = "Missiles rain down on the beetles of Carapas - but their shells and armour can withstand almost anything. They march forward like a moving wall. "
+        ScornString2 = ""
+        ScornString3 = "Shrieking and laughing, the Icarian Ghasts dive-bomb with sticks of makeshift dynamite, blowing holes in entire regiments before pulling up and pinwheeling and coming back for a second attempt. "
+        ScornString3 = ""
+    (((("The stings of the wasps are long as swords, dripping venom, and they dive-bomb the enemy with ruthless efficiency - each sting drops a soldier bloated and dead, and all the while, the wasp-rider on its back fires crossbow-bolts. The Confectorate soldiers, a marching legion of mellified men, take dozens of blows to destroy - their molten bodies reform sickeningly after each strike. " + ScornString1) + ScornString2) + ScornString3))
+        ("Finally, Lady Scorn's opponents rout in utter disarray. Wasp-riders go after the retreating soldiers, stings stabbing, but at this point it's almost cursory. The battle is won, and Lady Scorn knows it.")
+        ("She swoops her wasp low over your kinetopede, her armour ripped and singed, half her hair burned away. " + '"' + "We won!" + '"' + " she shouts down at you, then soars back into the air and returns to her cheering troops. Lady Scorn will likely be the next Queen of the Entomarch. You should return to Scornvaunt to receive your reward.")
+        ("Concerns updated: Thralls of the Entomarch", "Logbook", 6)
+        ("Finally, Lady Scorn's opponents rout in utter disarray. Wasp-riders go after the retreating soldiers, stings stabbing, but at this point it's almost cursory. The battle is lost.")
+        ("Lady Scorn will likely be the next Queen of the Entomarch, and she will be furious if she finds you here. You order your kinetopede to turn around and leave.")
+        ("Concerns concluded: Thralls of the Entomarch", "Logbook", 6)
+        ("Finally, the wasps of Scornvaunt rout in utter disarray. The Confectorate soldiers follow, leaving a mass of corpses and honey in their wake.")
+            ("Lady Thespian will likely be the next Queen of the Entomarch. You should return to Penitents' Bluff to receive your reward.")
+            ("Concerns updated: Thralls of the Entomarch", "Logbook", 6)
+            ("Lady Bluesteel soars overhead, dragonfly-wings shimmering, gleaming sword held aloft. She will likely be the next Queen of the Entomarch. You should return to Bluesteel Court to receive your reward.")
+            ("Concerns updated: Thralls of the Entomarch", "Logbook", 6)
+            ("Lady Lampyre soars overhead, her firefly blazing with righteous light. She will likely be the next Queen of the Entomarch. You should return to Bluesteel Court to receive your reward.")
+            ("Concerns updated: Thralls of the Entomarch", "Logbook", 6)
+        ("Finally, the wasps of Scornvaunt rout in utter disarray. Dismayed, the Confectorate soldiers follow, leaving a mass of corpses and honey in their wake.")
+            ("Lady Thespian will likely be the next Queen of the Entomarch, and she will be furious if she finds you here. You order your kinetopede to turn around and leave.")
+            ("Lady Bluesteel will likely be the next Queen of the Entomarch, and she will be furious if she finds you here. You order your kinetopede to turn around and leave.")
+            ("Lady Lampyre will likely be the next Queen of the Entomarch, and she will be furious if she finds you here. You order your kinetopede to turn around and leave.")
+        ("Concerns concluded: Thralls of the Entomarch", "Logbook", 6)
+    ("Gained x1 Breathtaking Spectacle", "Logbook", 3)
+    ("Gained x1 War Story", "Logbook", 3)
+    ("The battlefield is littered with corpses, crawling men, broken-legged insects.", "The cheering of the victorious is drowned out by the screams of the wounded.")
+            ChangeConcerns2Description(72, "Lady Scorn won.")
+            ChangeConcerns2Description(72, "Lady Scorn lost.")
+    ("T")
+    ("HE BATTLE")
+        String1 = "A great swarm of dragon-knights flit across the battle, some spearing opponents on their lances. "
+        String1 = ""
+        String2 = "The giant spiders spin great webs across the field, catching wasp-riders in inescapable nets and sucking out their innards. "
+        String2 = ""
+        String3 = "Hideous swamp-monsters from Bogshadow rampage back and forth, bog-drakes wolfing down men in a single gulp, great creaking ramble-trees smashing wasps to smithereens beneath enormous oaken fists ."
+        String3 = ""
+        String4 = "The soldiers of Glitterberg flutter overhead on their enormous butterfly steeds, raining crossbow bolts on their unfortunate enemies below. "
+        String4 = ""
+        String5 = "Missiles rain down on the beetles of Carapas - but their shells and armour can withstand almost anything. They march forward like a moving wall. "
+        String5 = ""
+        String6 = "Shrieking and laughing, the Icarian Ghasts turn and betray Lady Scorn at the last possible moment - dive-bombing wasp-riders, plucking them from the saddle, dropping them screaming to the floor below. "
+        String6 = ""
+        String7 = "The mantis-warriors are some of the fastest and deadliest fighters you have ever seen, their huge scythes decapitating enemies in a single blow. They fight like demons, cutting a swathe through the quivering mellified soldiers of the Confectorate. "
+        String7 = ""
+        ScornString1 = "The soldiers of Glitterberg flutter overhead on their enormous butterfly steeds, raining crossbow bolts on their unfortunate enemies below. "
+        ScornString1 = ""
+        ScornString2 = "Missiles rain down on the beetles of Carapas - but their shells and armour can withstand almost anything. They march forward like a moving wall. "
+        ScornString2 = ""
+        ScornString3 = "Shrieking and laughing, the Icarian Ghasts dive-bomb with sticks of makeshift dynamite, blowing holes in entire regiments before pulling up and pinwheeling and coming back for a second attempt. "
+        ScornString3 = ""
+    (((("The stings of the wasps are long as swords, dripping venom, and they dive-bomb the enemy with ruthless efficiency - each sting drops a soldier bloated and dead, and all the while, the wasp-rider on its back fires crossbow-bolts. The Confectorate soldiers, a marching legion of mellified men, take dozens of blows to destroy - their molten bodies reform sickeningly after each strike. " + ScornString1) + ScornString2) + ScornString3))
+    ("Your kinetopede lurches into the fray, trampling enemy soldiers underfoot, your big guns firing. How will you contribute to the battle?")
+        ("Your old instincts kick in.", "", "[Requires Former Profession: Soldier.]")
+    ("Bravery.", "Guts", 48)
+    ("Ruthlessness.", "Grit", 48)
+    ("Inspiring leadership.", "Spirit", 48)
+    ("Tactics.", "Esoterica", 48)
+    ("Dirty tricks.", "Guile", 48)
+    ("T")
+    ("HE BATTLE")
+        ("You charge your kinetopede right to where the fighting is thickest, blowing holes in the enemy's front lines, churning corpses to slurry beneath your frantic mechanical legs.")
+        ("They flee before you, screaming for mercy. You sit atop the kinetopede roof, sniping them with your rifle as they run, the big guns booming away on either side of you. You are an avatar of death and destruction.")
+        ("You head to where your side is faltering and issue a booming speech over your kinetopede's tannoy, reminding them of why they fight. Then, bell ringing and whistle shrilling, you lead them cheering back into the thick of battle.")
+        ("No-one in the Entomarch is used to fighting Civean technology, and they have no idea how to handle artillery. You blow holes in their strongest lines of defence, or just where your side's soldiers are about to hit. You rampage up and down the battlefield, charging relentlessly at the flanks - just as you read in your military history books.")
+        ("You ambush the enemy soldiers from the shadows, fake a retreat, then lead them into someone else's even more deadly ambush - your kinetopede runs rings around the enemy, exhausting them with unpredictable gambits.")
+        ("There - soaring above you, screaming with rage, you spot Lady Scorn. Her wasp is bloodied, one wing bent, slower than usual. You grab your gunner, point, steer their aim. Your cannon rumbles and, an instant later, Lady Scorn and her wasp both explode in a ball of fire.")
+        ("All that falls to the floor is a charred fragment of gossamer.")
+        ("(You passed a Guts challenge!)", "Challenge", 3)
+        ("+1 Guts", "Challenge", 3)
+        ("(You passed a Grit challenge!)", "Challenge", 4)
+        ("+1 Grit", "Challenge", 4)
+        ("(You passed a Spirit challenge!)", "Challenge", 7)
+        ("+1 Spirit", "Challenge", 7)
+        ("(You passed an Esoterica challenge!)", "Challenge", 1)
+        ("+1 Esoterica", "Challenge", 1)
+        ("(You passed a Guile challenge!)", "Challenge", 4)
+        ("+1 Guile", "Challenge", 4)
+    ("Gained x1 War Story", "Logbook", 3)
+    ("Gained x1 Thrilling Yarn", "Logbook", 3)
+        ("The tide of battle shifts.", "")
+    else ("The tide of battle shifts.", "")
+    ("T")
+    ("HE BATTLE")
+        ("You charge into the thick of combat, determined to make a difference, but one of the wasp-riders above drops a perfectly-timed stick of dynamite. You bounce from the ceiling and walls as the kinetopede is hurled to its side, and the last thing you see as you lie broken-limbed on the floor is more wasps, descending.")
+        ("You charge into the thick of combat, determined to make a difference, but the sheer crush of bodies proves overwhelming for your kinetopede. Ropes are looped around its legs and a hundred pushing hands topple it sideways. You bounce from the ceiling and walls as the kinetopede is hurled to its side, and the last thing you see as you lie broken-limbed on the floor is dozens more soldiers, hacking at your kinetopede's hull.")
+        ("(You failed a Guts challenge...)", "Challenge", 3)
+        ("(You failed a Grit challenge...)", "Challenge", 4)
+        ("(You failed a Spirit challenge...)", "Challenge", 7)
+        ("(You failed an Esoterica challenge...)", "Challenge", 1)
+        ("(You failed a Guile challenge...)", "Challenge", 4)
+    ("Lost some Hull Integrity", "Kinetopede", 0)
+        ("When you wake up, the battle is over.", "")
+    else ("When you wake up, the battle is over.", "")
+    ("T")
+    ("HE BATTLE")
+        ("Finally, Lady Scorn's opponents rout in utter disarray. Wasp-riders go after the retreating soldiers, stings stabbing, but at this point it's almost cursory. The battle is won, and Lady Scorn knows it.")
+        ("She swoops her wasp low over your kinetopede, her armour ripped and singed, half her hair burned away. " + '"' + "We won!" + '"' + " she shouts down at you, then soars back into the air and returns to her cheering troops. Lady Scorn will likely be the next Queen of the Entomarch. You should return to Scornvaunt to receive your reward.")
+        ("Concerns updated: Thralls of the Entomarch", "Logbook", 6)
+        ("Finally, Lady Scorn's opponents rout in utter disarray. Wasp-riders go after the retreating soldiers, stings stabbing, but at this point it's almost cursory. The battle is lost.")
+        ("Lady Scorn will likely be the next Queen of the Entomarch, and she will be furious if she finds you here. You order your kinetopede to turn around and leave.")
+        ("Concerns concluded: Thralls of the Entomarch", "Logbook", 6)
+        ("Finally, the wasps of Scornvaunt rout in utter disarray. The Confectorate soldiers follow, leaving a mass of corpses and honey in their wake.")
+            ("Lady Thespian will likely be the next Queen of the Entomarch. You should return to Penitents' Bluff to receive your reward.")
+            ("Concerns updated: Thralls of the Entomarch", "Logbook", 6)
+            ("Lady Bluesteel soars overhead, dragonfly-wings shimmering, gleaming sword held aloft. She will likely be the next Queen of the Entomarch. You should return to Bluesteel Court to receive your reward.")
+            ("Concerns updated: Thralls of the Entomarch", "Logbook", 6)
+            ("Lady Lampyre soars overhead, her firefly blazing with righteous light. She will likely be the next Queen of the Entomarch. You should return to Bluesteel Court to receive your reward.")
+            ("Concerns updated: Thralls of the Entomarch", "Logbook", 6)
+        ("Finally, the wasps of Scornvaunt rout in utter disarray. Dismayed, the Confectorate soldiers follow, leaving a mass of corpses and honey in their wake.")
+            ("Lady Thespian will likely be the next Queen of the Entomarch, and she will be furious if she finds you here. You order your kinetopede to turn around and leave.")
+            ("Lady Bluesteel will likely be the next Queen of the Entomarch, and she will be furious if she finds you here. You order your kinetopede to turn around and leave.")
+            ("Lady Lampyre will likely be the next Queen of the Entomarch, and she will be furious if she finds you here. You order your kinetopede to turn around and leave.")
+        ("Concerns concluded: Thralls of the Entomarch", "Logbook", 6)
+    ("Gained x1 Trophy: Severed Mandibles", "Engine", 2)
+    ("You pull the enormous mandibles from an insect you slew in the chaos.", "The battlefield is littered with corpses, crawling men, broken-legged insects. The cheering of the victorious is drowned out by the screams of the wounded.")
+            ChangeConcerns2Description(72, "Lady Scorn won.")
+            ChangeConcerns2Description(72, "Lady Scorn lost.")

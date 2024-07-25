@@ -1,0 +1,8 @@
+    ("T")
+    ("WINFLOWER RUST")
+    ("You find the co-ordinates Gladys gave you and begin to dig, attracting a gaggle of curious mycenae onlookers. Buried, down where soil meets stone floor, you find the weapon - a slender cannon built from iron cogs and basalt and witchglass, deep runes carved across its belly.")
+    ('"' + "DESICCATION," + '"' + " reads an engraving on the barrel. There is no further explanation. You wonder why it was buried.")
+    ("Gained x1 Weapon: 'Desiccation' Curse Engine", "Engine", 4)
+    ("Concerns concluded: An Inexorable Course", "Logbook", 6)
+    ("You heft it from the damp soil.")
+        ChangeConcerns2Description(86, "Obtained the hidden Curse Engine.")

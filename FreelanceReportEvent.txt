@@ -1,0 +1,97 @@
+("A")
+(" DEFINITIVE ARTICLE")
+("Speed and style are more important here than quality. You write up your information in terse passages, and garnishing the truth with speculation and a few well-placed lies.")
+    ("Write a freelance report on Current Affairs in the City of Knives.", "", "[Because the City of Knives is nearby, you will not receive a bonus.]")
+        ReportOrigin = "Knives"
+    ("Write a freelance report on Current Affairs in the City of Engines.", "", "[Because the City of Engines is nearby, you will not receive a bonus.]")
+        ReportOrigin = "Engines"
+    ("Write a freelance report on Current Affairs in the City of Bridges.", "", "[Because the City of Bridges is nearby, you will not receive a bonus.]")
+        ReportOrigin = "Bridges"
+    ("Write a freelance report on Current Affairs in the City of Angels.", "", "[Because the City of Angels is nearby, you will not receive a bonus.]")
+        ReportOrigin = "Angels"
+    ("Write a freelance report on Current Affairs in the City of Masks.", "", "[Because the City of Masks is nearby, you will not receive a bonus.]")
+        ReportOrigin = "Masks"
+    ("Write a freelance report on Current Affairs in Waker's Respite.", "", "[Because Waker's Respite is nearby, you will not receive a bonus.]")
+        ReportOrigin = "Respite"
+    ("Write a freelance report on Current Affairs in Clayton's Mill.", "", "[Because Clayton's Mill is nearby, you will not receive a bonus.]")
+        ReportOrigin = "Mill"
+    ("Write a freelance report on Current Affairs in Fargyle Keep.", "", "[You will receive a 20 G distance bonus.]")
+        ReportOrigin = "Fargyle"
+    ("Write a freelance report on Current Affairs in the Old Hallow.", "", "[You will receive a 30 G distance bonus.]")
+        ReportOrigin = "Hallow"
+    ("Write a freelance report on Current Affairs in the Kelp Fortress.", "", "[You will receive a 30 G distance bonus.]")
+        ReportOrigin = "Kelp"
+    ("Write a freelance report on Current Affairs in Gravespite.", "", "[You will receive a 60 G distance bonus.]")
+        ReportOrigin = "Gravespite"
+    ("Write a freelance report on Current Affairs in Ghoulwatch.", "", "[You will receive a 75 G distance bonus.]")
+        ReportOrigin = "Ghoulwatch"
+    ("Write a freelance report on Current Affairs on the Mausalon River.", "", "[You will receive a 75 G distance bonus.]")
+        ReportOrigin = "Mausalon"
+    ("Write a freelance report on Current Affairs in Recalcitrance.", "", "[You will receive a 100 G distance bonus.]")
+        ReportOrigin = "Recalcitrance"
+    ("Write a freelance report on Current Affairs in Gossamer Smile.", "", "[You will receive a 60 G distance bonus.]")
+        ReportOrigin = "Gossamer"
+    ("Write a freelance report on Current Affairs in Penitents' Bluff.", "", "[You will receive a 75 G distance bonus.]")
+        ReportOrigin = "Bluff"
+    ("Write a freelance report on Current Affairs in Scornvaunt.", "", "[You will receive a 120 G distance bonus.]")
+        ReportOrigin = "Scornvaunt"
+    ("Write a freelance report on Current Affairs in Grossfathom.", "", "[You will receive a 100 G distance bonus.]")
+        ReportOrigin = "Grossfathom"
+    ("Write a freelance report on Current Affairs in Bluesteel Court.", "", "[You will receive a 80 G distance bonus.]")
+        ReportOrigin = "Bluesteel"
+    ("Write a freelance report on Current Affairs in Carapas.", "", "[You will receive a 100 G distance bonus.]")
+        ReportOrigin = "Carapas"
+    ("Write a freelance report on Current Affairs in Glitterberg.", "", "[You will receive a 120 G distance bonus.]")
+        ReportOrigin = "Glitterberg"
+    ("Write a freelance report on Current Affairs in Pannachak.", "", "[You will receive a 150 G distance bonus.]")
+        ReportOrigin = "Pannachak"
+    ("Write a freelance report on Current Affairs in Chimer.", "", "[You will receive a 120 G distance bonus.]")
+        ReportOrigin = "Chimer"
+    ("Write a freelance report on Current Affairs in Harlequin.", "", "[You will receive a 120 G distance bonus.]")
+        ReportOrigin = "Harlequin"
+    ("Write a freelance report on Current Affairs in Buzzards' Omen.", "", "[You will receive a 130 G distance bonus.]")
+        ReportOrigin = "Omen"
+    ("Write a freelance report on Current Affairs in the Mycena Free State.", "", "[You will receive a 120 G distance bonus.]")
+        ReportOrigin = "Mycena"
+    ("Write a freelance report on Current Affairs in Lisshan.", "", "[You will receive a 120 G distance bonus.]")
+        ReportOrigin = "Lisshan"
+    ("Write a freelance report on Current Affairs in Gandola.", "", "[You will receive a 100 G distance bonus.]")
+        ReportOrigin = "Gandola"
+    ("Write a freelance report on Current Affairs in Founder's Fire.", "", "[You will receive an 80 G distance bonus.]")
+        ReportOrigin = "Founder"
+    ("Write a freelance report on Current Affairs in Hextall.", "", "[You will receive a 100 G distance bonus.]")
+        ReportOrigin = "Hextall"
+    ("Write a freelance report on Current Affairs in Phobetor Quinn.", "", "[You will receive a 140 G distance bonus.]")
+        ReportOrigin = "Quinn"
+    ("Write a freelance report on Current Affairs in Eld Abrathat.", "", "[You will receive a 120 G distance bonus.]")
+        ReportOrigin = "Eld"
+    ("Write a freelance report on Current Affairs in the Scars of Sheng.", "", "[You will receive a 130 G distance bonus.]")
+        ReportOrigin = "Sheng"
+    ("Write a freelance report on Current Affairs in Calaram.", "", "[You will receive a 175 G distance bonus.]")
+        ReportOrigin = "Calaram"
+    ("Write a freelance report on Current Affairs in Affina.", "", "[You will receive a 160 G distance bonus.]")
+        ReportOrigin = "Affina"
+    ("Write a freelance report on Current Affairs in Makkera.", "", "[You will receive a 160 G distance bonus.]")
+        ReportOrigin = "Makkera"
+    ("Write a freelance report on Current Affairs in Blad Raddock.", "", "[You will receive a 200 G distance bonus.]")
+        ReportOrigin = "Blad"
+    ("Write a freelance report on Current Affairs in Skimmerskard.", "", "[You will receive a 200 G distance bonus.]")
+        ReportOrigin = "Skimmerskard"
+    ("Write a freelance report on Current Affairs in Jabad.", "", "[You will receive a 200 G distance bonus.]")
+        ReportOrigin = "Jabad"
+    ("Write a freelance report on Current Affairs in Wordhunters' Hearth.", "", "[You will receive a 200 G distance bonus.]")
+        ReportOrigin = "Hearth"
+    ("Write a freelance report on Current Affairs in Threshold.", "", "[You will receive a 200 G distance bonus.]")
+        ReportOrigin = "Threshold"
+    ("Write a freelance report on Current Affairs in the Oddwinter Intrusion.", "", "[You will receive a 200 G distance bonus.]")
+        ReportOrigin = "Oddwinter"
+    ("Write a freelance report on Current Affairs in Icicle Spine.", "", "[You will receive a 200 G distance bonus.]")
+        ReportOrigin = "Icicle"
+    ("Write a freelance report on Current Affairs in New Draden.", "", "[You will receive a 220 G distance bonus.]")
+        ReportOrigin = "Draden"
+    ("Write a freelance report on Current Affairs in Byssus.", "", "[You will receive a 240 G distance bonus.]")
+        ReportOrigin = "Byssus"
+    ("Write a freelance report on Current Affairs in Mergulus.", "", "[You will receive a 230 G distance bonus.]")
+        ReportOrigin = "Mergulus"
+    ("Write a freelance report on Current Affairs in Filimenor.", "", "[You will receive a 260 G distance bonus.]")
+        ReportOrigin = "Filimenor"

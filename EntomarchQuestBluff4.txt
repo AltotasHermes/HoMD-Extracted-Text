@@ -1,0 +1,7 @@
+    ("P")
+    ("ENITENTS' BLUFF")
+    ('"' + "My advisors have said the same," + '"' + " says Lady Thespian. She stands, leaving her scythe-cane behind on her throne, and walks unaided down the steps. " + '"' + "Today, we go to war!" + '"')
+    ("An excited buzz breaks out through the hall. Courtiers bustle in and out. " + '"' + "You will be rewarded when the war is won," + '"' + " Lady Thespian promises, momentarily faltering and leaning on your arm.")
+    ("Outside, the war-drums are beating like a heart. The mountain shakes with the stamp of booted feet.")
+    ("Concerns updated: Thralls of the Entomarch", "Logbook", 6)
+    ("Mantis-cavalry and scythe-soldiers storm through the South Door.", "The battle will be joined somewhere halfway between Scornvaunt and Penitents' Bluff.")
