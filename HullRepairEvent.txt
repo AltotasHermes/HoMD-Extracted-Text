@@ -1,0 +1,6 @@
+("G")
+("OOD AS NEW")
+("Your engineers help with the repairs, hopefully speeding the process along. It's still an agonizing wait.")
+    ((("You spent " + string(TimeToRepair)) + " days having your kinetopede fixed up."), "Kinetopede", 0)
+    ((("You spent " + string(TimeToRepair)) + " day having your kinetopede fixed up."), "Kinetopede", 0)
+("At last.", "Your kinetopede is returned to you, pristine.", "")

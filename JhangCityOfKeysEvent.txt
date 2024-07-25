@@ -1,0 +1,6 @@
+    ("T")
+    ("HE CITY OF KEYS")
+    ('"' + "Mycenae here live in funghettos," + '"' + " says Jhang Ba Sho. " + '"' + "The Society For Civean Purity campaign for mass mycenae relocation, and the Governor does nothing to curb them." + '"')
+    ('"' + "On a minor note," + '"' + " he adds, dabbing dreamsalve on your finger, " + '"' + "this is where the Surgeons' Association refused to register me purely because of my species. Despite the fact that I outclass all of them, the spineless bureaucrats. Ahem." + '"')
+    ("You fall into dreams.", "", "")
+    DreamProgressEvent("T", "HE CITY OF KEYS")

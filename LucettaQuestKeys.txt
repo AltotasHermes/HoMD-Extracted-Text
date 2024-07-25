@@ -1,0 +1,5 @@
+    ("T")
+    ("HE CITY OF KEYS")
+    ("She nods to you. " + '"' + "If you ever change your mind, I will happily join your crew as a Chief Engineer. Until then, goodbye." + '"')
+    ("Lost x1 Passenger: Lucetta Quetzl", "Cargo", 3)
+    ("She adjusts her hat and wanders off into the heaving crowd, not looking back.", "The city swallows her utterly.", "")

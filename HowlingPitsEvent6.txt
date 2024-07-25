@@ -1,0 +1,4 @@
+("T")
+("HE HOWLING PITS")
+if CrewSpeechText("Foreman", 161, '"' + "A cautious gen'leman wouldn't sell under-the-table to a stranger. Why not come back a few times, and we'll see if I start to think of you as a friend." + '"', 0)
+    ("Examine the fossil-ghost more closely.", "", "[You can now return to the Howling Pits whenever you please.]")

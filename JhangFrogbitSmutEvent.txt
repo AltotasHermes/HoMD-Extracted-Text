@@ -1,0 +1,5 @@
+    ("F")
+    ("ROGBIT SMUT")
+    ('"' + "The Entomarch raids these villages for thralls," + '"' + " says Jhang Ba Sho. " + '"' + "I confess I'm not as familiar with the situation here as I am when it comes to the Cities, but I know oppression when I see it." + '"')
+    ("You fall into dreams.", "", "")
+    DreamProgressEvent("F", "ROGBIT SMUT")

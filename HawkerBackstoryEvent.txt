@@ -1,0 +1,7 @@
+("A")
+("N OLD FRIEND")
+("The pub on Midden Street is a predictably miserable dive. On the way to the bar you have to step over at least three things which make your stomach turn.")
+("The man waiting for you at a many-stained table is very different from the boy you once knew. He's balding now, ferret-eyed, a notepad in his hands. He's a journalist, he explains. A journalist? You didn't even know he could read.")
+("He's heard about your recent exploits, somehow, and he's eager for an interview. Anything to finally get his big break. In exchange, he offers to introduce you to some people. Connections mean everything in this line of work, and he's spent the last ten years trying to make the right ones with very occasional success. There are people, he tells you, very interested in having an intercellular traveller write articles for them.")
+("Politely decline.", "The gleam in those ferrety eyes means nothing good.", "[You will not be able to explore this option again.]")
+("Agree to an interview.", "Hopefully you won't regret this.", "[This will advance your career in Freelance Journalism slightly faster.]")

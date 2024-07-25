@@ -1,0 +1,157 @@
+        ("L")
+        ("ADY NYCTIMENE")
+        ((((('"' + oPlayer.PlayerName) + "!") + '"') + " she cries, ushering you into her mansion. Her saucer-eyed owl Mask sheds its snowy-white feathers as she walks."))
+        ("A jug of red wine and a platter of odiferous cheeses await you. " + '"' + "Please, help yourself," + '"' + " she insists, smoothing her skirts and pouring herself a very generous glass.")
+        ('"' + "My friend at Withering Street probably wants to keep you all to himself," + '"' + " she says brightly, tilting her glass to you. " + '"' + "But don't worry - I'm just a curious old gossip with too much money. There's no harm in telling me the odd tidbit." + '"')
+        ("[Lady Nyctimene will pay you for secrets with guineas and Reputation.]", "", 0)
+        ('"' + "Do you work for the Shrouded Council?" + '"')
+        ("Leave.", '"' + "Oh, we simply must do this again," + '"' + " she says.")
+        NeedsInformationItem("Sell a Terrible Secret.", "She listens very carefully, then sighs and pours herself another large helping of wine.", "[You will receive 170 G and +1 Reputation: The City of Masks.]" HasSecret)
+            GainString = "Gained 170 G!"
+            LossString = "Lost x1 Terrible Secret"
+            LossString2 = "+1 Reputation: The City of Masks"
+            LossString3 = ""
+        NeedsInformationItem("Sell a scrap of Scandalous Gossip.", "Lady Nyctimene laughs with delight and proposes a toast to the parties involved.", "[You will receive 50 G.]" HasGossip)
+            GainString = "Gained 50 G!"
+            LossString = "Lost x1 Scandalous Gossip"
+            LossString2 = ""
+            LossString3 = ""
+        NeedsInformationItem("Sell your Unsettling Conjecture.", "She discusses the implications with you in thorough detail, nodding along to your suppositions and presenting theories of her own.", "[You will receive 80 G.]" HasConjecture)
+            GainString = "Gained 80 G!"
+            LossString = "Lost x1 Unsettling Conjecture"
+            LossString2 = ""
+            LossString3 = ""
+        NeedsInformationItem("Sell your knowledge of Dread Machinations.", "She sets down her wine and listens in silence. " + '"' + "The webs we spin for each other," + '"' + " she muses. " + '"' + "Reminds me of a riddle..." + '"' + "" + '"', "[You will receive 260 G, +2 Reputation: The City of Masks, and +1 Perplexing Riddle.]" HasDread)
+            GainString = "Gained 260 G!"
+            LossString = "Lost x1 Dread Machinations"
+            LossString2 = "+2 Reputation: The City of Masks"
+            LossString3 = "Gained x1 Perplexing Riddle"
+        NeedsInformationItem("Sell your Hideous Revelation.", "You speak with unholy fervour, sweating, coughing, hacking. The words spool from your throat like barbed wire.", "[You will receive 500 G and +1 Reputation: The City of Masks.]" HasRevelation)
+            GainString = "Gained 500 G!"
+            LossString = "Lost x1 Hideous Revelation"
+            LossString2 = "+1 Reputation: The City of Masks"
+            LossString3 = ""
+        NeedsInformationItem("Sell your Evidence: The Shrouded Council.", "She stands up abruptly, almost spilling the cheeses across the floor. " + '"' + "Of course, this need not pass beyond us," + '"' + " she says sharply. " + '"' + "Friend." + '"', "[You will receive 400 G and +1 Reputation: The City of Masks.]" HasCouncilEvidence)
+            GainString = "Gained 400 G!"
+            LossString = "Lost x1 Evidence: The Shrouded Council"
+            LossString2 = "+1 Reputation: The City of Masks"
+            LossString3 = ""
+        NeedsInformationItem("Sell your Evidence: The Governor.", '"' + "The poor Governor would be most upset if this fell into the wrong hands," + '"' + " says Lady Nyctimene. " + '"' + "You should pass it to me. For safekeeping." + '"', "[You will receive 100 G.]" HasGovernorEvidence)
+            GainString = "Gained 100 G!"
+            LossString = "Lost x1 Evidence: The Governor"
+            LossString2 = ""
+            LossString3 = ""
+        NeedsInformationItem("Sell your Evidence: The Consortium.", "Lady Nyctimene shakes her head, apparently disappointed by the evils of the world. " + '"' + "Why not give this to me? I'll make sure this goes through the proper channels." + '"', "[You will receive 100 G.]" HasConsortiumEvidence)
+            GainString = "Gained 100 G!"
+            LossString = "Lost x1 Evidence: The Consortium"
+            LossString2 = ""
+            LossString3 = ""
+        NeedsExperienceItem("Sell your Glimpse of Another World.", "Lady Nyctimene sips her wine as she listens, interrupting occasionally to flesh out a peculiar detail. What colour the sky? How yellow the sun?", "[You will receive 160 G.]" HasGlimpse)
+            GainString = "Gained 160 G!"
+            LossString = "Lost x1 Glimpse of Another World"
+            LossString2 = ""
+            LossString3 = ""
+            ("Sell the Swarm Bomb.", "She splutters wine across the table. " + '"' + "You have WHAT in your cargo?" + '"', "[You will receive 2800 G, x1 '79 Vintage Angelwine and -1 Stability: The City of Keys.]", sFightIcon, 7, 0.8)
+                GainString = "Gained 2800 G!"
+                LossString = "Lost x1 Swarm Bomb"
+                LossString2 = "Gained x1 '79 Vintage Angelwine"
+                LossString3 = "-1 Stability: The City of Keys"
+        ("L")
+        ("ADY NYCTIMENE")
+        ("The owl-Mask regards you, blank and watchful. Lady Nyctimene has laid out another smorgasbord - wines, cheeses, dates, olives swimming in balsamic vinegar.")
+        (((((((('"' + "Delightful to see you again, " + oPlayer.PlayerName) + ",") + '"') + " she says. ") + '"') + "You know how fascinated I am to hear your stories.") + '"'))
+        ("[Lady Nyctimene will pay you for secrets with guineas and Reputation.]", "Logbook", 4)
+        ("Leave.", '"' + "Oh, we simply must do this again," + '"' + " she says.")
+        NeedsInformationItem("Sell a Terrible Secret.", "She listens very carefully, then sighs and pours herself another large helping of wine.", "[You will receive 170 G and +1 Reputation: The City of Masks.]" HasSecret)
+            GainString = "Gained 170 G!"
+            LossString = "Lost x1 Terrible Secret"
+            LossString2 = "+1 Reputation: The City of Masks"
+            LossString3 = ""
+        NeedsInformationItem("Sell a scrap of Scandalous Gossip.", "Lady Nyctimene laughs with delight and proposes a toast to the parties involved.", "[You will receive 50 G.]" HasGossip)
+            GainString = "Gained 50 G!"
+            LossString = "Lost x1 Scandalous Gossip"
+            LossString2 = ""
+            LossString3 = ""
+        NeedsInformationItem("Sell your Unsettling Conjecture.", "She discusses the implications with you in thorough detail, nodding along to your suppositions and presenting theories of her own.", "[You will receive 80 G.]" HasConjecture)
+            GainString = "Gained 80 G!"
+            LossString = "Lost x1 Unsettling Conjecture"
+            LossString2 = ""
+            LossString3 = ""
+        NeedsInformationItem("Sell your knowledge of Dread Machinations.", "She sets down her wine and listens in silence. " + '"' + "The webs we spin for each other," + '"' + " she muses. " + '"' + "Reminds me of a riddle..." + '"' + "" + '"', "[You will receive 260 G, +2 Reputation: The City of Masks, and +1 Perplexing Riddle.]" HasDread)
+            GainString = "Gained 260 G!"
+            LossString = "Lost x1 Dread Machinations"
+            LossString2 = "+2 Reputation: The City of Masks"
+            LossString3 = "Gained x1 Perplexing Riddle"
+        NeedsInformationItem("Sell your Hideous Revelation.", "You speak with unholy fervour, sweating, coughing, hacking. The words spool from your throat like barbed wire.", "[You will receive 500 G and +1 Reputation: The City of Masks.]" HasRevelation)
+            GainString = "Gained 500 G!"
+            LossString = "Lost x1 Hideous Revelation"
+            LossString2 = "+1 Reputation: The City of Masks"
+            LossString3 = ""
+        NeedsInformationItem("Sell your Evidence: The Shrouded Council.", "She stands up abruptly, almost spilling the cheeses across the floor. " + '"' + "Of course, this need not pass beyond us," + '"' + " she says sharply. " + '"' + "Friend." + '"', "[You will receive 400 G and +1 Reputation: The City of Masks.]" HasCouncilEvidence)
+            GainString = "Gained 400 G!"
+            LossString = "Lost x1 Evidence: The Shrouded Council"
+            LossString2 = "+1 Reputation: The City of Masks"
+            LossString3 = ""
+        NeedsInformationItem("Sell your Evidence: The Governor.", '"' + "The poor Governor would be most upset if this fell into the wrong hands," + '"' + " says Lady Nyctimene. " + '"' + "You should pass it to me. For safekeeping." + '"', "[You will receive 100 G.]" HasGovernorEvidence)
+            GainString = "Gained 100 G!"
+            LossString = "Lost x1 Evidence: The Governor"
+            LossString2 = ""
+            LossString3 = ""
+        NeedsInformationItem("Sell your Evidence: The Consortium.", "Lady Nyctimene shakes her head, apparently disappointed by the evils of the world. " + '"' + "Why not give this to me? I'll make sure this goes through the proper channels." + '"', "[You will receive 100 G.]" HasConsortiumEvidence)
+            GainString = "Gained 100 G!"
+            LossString = "Lost x1 Evidence: The Consortium"
+            LossString2 = ""
+            LossString3 = ""
+        NeedsExperienceItem("Sell your Glimpse of Another World.", "Lady Nyctimene sips her wine as she listens, interrupting occasionally to flesh out a peculiar detail. What colour the sky? How yellow the sun?", "[You will receive 160 G.]" HasGlimpse)
+            GainString = "Gained 160 G!"
+            LossString = "Lost x1 Glimpse of Another World"
+            LossString2 = ""
+            LossString3 = ""
+            ("Sell the Swarm Bomb.", "She splutters wine across the table. " + '"' + "You have WHAT in your cargo?" + '"', "[You will receive 2800 G, x1 '79 Vintage Angelwine and -1 Stability: The City of Keys.]", sFightIcon, 7, 0.8)
+                GainString = "Gained 2800 G!"
+                LossString = "Lost x1 Swarm Bomb"
+                LossString2 = "Gained x1 '79 Vintage Angelwine"
+                LossString3 = "-1 Stability: The City of Keys"
+        ("L")
+        ("ADY NYCTIMENE")
+        ("The gate to Lady Nyctimene's estate is locked. Black-clad men appear from all sides, knives glinting in their fists, and escort you away.")
+        ("[You cannot sell information to Lady Nyctimene while your Reputation: The City of Masks is below 0.]", "Logbook", 4)
+        ("Leave.", "You are not welcome.")
+    ("L")
+    ("ADY NYCTIMENE")
+    ('"' + "I serve the Council in an advisory capacity," + '"' + " she says. " + '"' + "But this is pleasure, not business. A chat between friends. Yes?" + '"')
+    ("She laughs at some private joke.")
+    ("L")
+    ("ADY NYCTIMENE")
+    ('"' + "As always, your company has borne delightful fruit," + '"' + " says Lady Nyctimene.")
+    (GainString, "Money", 0)
+    (LossString, "Logbook", 4)
+    if (LossString2 != "")
+        (LossString2, "Logbook", 5)
+    if (LossString3 != "")
+        (LossString3, "Logbook", 4)
+    ("You have more information to sell.", "She pours you more wine.")
+    ("Leave.", '"' + "Oh, we simply must do this again," + '"' + " she says.")
+    ("L")
+    ("ADY NYCTIMENE")
+    ("She laughs. " + '"' + "What asks but never answers?" + '"')
+    (GainString, "Money", 0)
+    (LossString, "Logbook", 4)
+    if (LossString2 != "")
+        (LossString2, "Logbook", 5)
+    if (LossString3 != "")
+        (LossString3, "Logbook", 4)
+    ("You have more information to sell.", "She pours you more wine.")
+    ("Leave.", '"' + "Oh, we simply must do this again," + '"' + " she says.")
+    ("L")
+    ("ADY NYCTIMENE")
+    ("Once the transaction is made - black-clad figures hauling the Swarm Bomb into Lady Nyctimene's mansion at the dead of lampdouse - she proposes a toast in your honour.")
+    ('"' + "This is the kind of coup that even the best spymistress can only dream of," + '"' + " she says. " + '"' + "Here. I want you to have this. The very best vintage in my cellar." + '"')
+    (GainString, "Money", 0)
+    (LossString, "Logbook", 4)
+    if (LossString2 != "")
+        (LossString2, "Logbook", 5)
+    if (LossString3 != "")
+        (LossString3, "Logbook", 4)
+    ("You have more information to sell.", "She pours you more wine.")
+    ("Leave.", '"' + "Oh, we simply must do this again," + '"' + " she says.")

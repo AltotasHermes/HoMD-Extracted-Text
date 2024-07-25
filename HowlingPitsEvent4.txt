@@ -1,0 +1,6 @@
+("T")
+("HE HOWLING PITS")
+("The foreman says nothing as you run your finger over the lump of ghost, but he sucks air through his teeth.")
+if NextButton("It's cold and oily, but warms at your touch. It pulsates once, slowly, like a heart or stirring snake.", 1)
+    ("Offer to buy it.", "", "")
+    ("Examine it more closely.", "", "")

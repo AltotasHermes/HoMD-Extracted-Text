@@ -1,0 +1,7 @@
+("T")
+("HE HOWLING PITS")
+("It is a small thing. Expelled soul-waste. A little ball of voided humanity.")
+("You feel something.")
+("Sorrow.", "", "[Gain +1 Moment of Melancholy.]")
+("Morbid fascination.", "", "[Gain +1 Reflection on Mortality.]")
+("Profound unease.", "", "[Gain +1 Disquieting Incident.]")

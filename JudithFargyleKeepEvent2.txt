@@ -1,0 +1,7 @@
+    ("F")
+    ("ARGYLE KEEP")
+    ('"' + "These are fantastic props," + '"' + " says Sir Bruin, sweeping back his magnificent hair to get a better look. " + '"' + "Spectacle! Verisimilitude! This will be one of our best shows yet! We'll start production of 'The Romance of Lord Reynard' tomorrow." + '"')
+    ("Lost x1 Historical Curio, x1 Enchanted Gimmick, and x3 Flares", "Cargo", 1)
+    ("Concerns updated: Hunting Lord Reynard", "Logbook", 6)
+    ("He walks away, muttering excitedly.")
+        ChangeConcernsDescription(83, "Attend the play at Fargyle Keep with Judith.")

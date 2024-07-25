@@ -1,0 +1,6 @@
+    ("M")
+    ("YCENA FREE STATE")
+        ('"' + "The Mycena Free State," + '"' + " sneers Jhang Ba Sho, his voice dripping scorn. " + '"' + "That's what the Emperor called it, when he set it up. A place for oppressed mycenae around the House to find refuge and equality, or so he advertised. I had just finished packing my bags when I heard it was actually a labour camp." + '"')
+        ('"' + "The Mycena Free State," + '"' + " sneers Jhang Ba Sho, his voice dripping scorn. " + '"' + "That's what the Emperor called it, when he set it up. A place for oppressed mycenae around the House to find refuge and equality, or so he advertised. Now the Queen of Harlequin is in control, and working the mycenae just as brutally as the Emperor did." + '"')
+    ("You fall into dreams.", "", "")
+    DreamProgressEvent("M", "YCENA FREE STATE")

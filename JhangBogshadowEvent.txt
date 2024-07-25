@@ -1,0 +1,6 @@
+    ("B")
+    ("OGSHADOW")
+    ('"' + "The Entomarch raids these villages for thralls," + '"' + " says Jhang Ba Sho. " + '"' + "Just look at these poor, helpless primitives. Someone must act on their behalf." + '"')
+    ("A nearby mycena tending to the wall-fungi pauses to glare at you, then returns muttering to its work.")
+    ("You fall into dreams.", "", "")
+    DreamProgressEvent("B", "OGSHADOW")

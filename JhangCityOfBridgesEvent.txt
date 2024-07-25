@@ -1,0 +1,5 @@
+    ("T")
+    ("HE CITY OF BRIDGES")
+    ("Jhang Ba Sho looks especially sombre as he surveys the City of Bridges. You see his eyes flicker to the underhangs. " + '"' + "We've already spoken enough about what happens here," + '"' + " it says, dabbing dreamsalve on your finger. " + '"' + "Let's cut to the chase." + '"')
+    ("You fall into dreams.", "", "")
+    DreamProgressEvent("T", "HE CITY OF BRIDGES")

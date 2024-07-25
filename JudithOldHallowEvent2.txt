@@ -1,0 +1,4 @@
+    ("L")
+    ("ORD REYNARD")
+    ('"' + "Thank you for the warning," + '"' + " says Lord Reynard. You have met in his room in secret. " + '"' + "If I send any assassins, I'll ensure only Judith is the target. And if you can keep her away from me in future... I'd be most grateful." + '"')
+    ("He sighs. " + '"' + "But it will be a shame to miss the play." + '"')

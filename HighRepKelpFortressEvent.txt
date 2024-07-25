@@ -1,0 +1,6 @@
+("T")
+("HE KELP FORTRESS")
+("The wide-faced Hammerheads waltz between strands of dried kelp, singing together in a mournful dirge. Toward the end of the evening, they link their hands and focus.")
+("With the power of their minds alone, they send glittering dust floating into the air and concoct sweeping tapestries across the ceiling. Each vast new vista tells its own legend, of battle or romance or blood in the water, and each is gone before you've looked at even half.")
+("Gained x1 Breathtaking Spectacle", "Logbook", 3)
+("After, they enter a feeding frenzy at the buffet.", "You stay out of the way.")

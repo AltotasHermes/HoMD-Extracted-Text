@@ -1,0 +1,6 @@
+("H")
+("ARLEQUIN")
+("The Night of Revels is a predictable nightmare. Fireworks streak viciously across the floor, apparently aimed at clusters of guests who stay still for too long. Clowns with disfigured mouths scream as they are burned in dangling cages. Fool-knights stride through the crowd on long stilts, occasionally dipping their lance and lifting a guest on its end, wriggling and shrieking.")
+("The Painted Queen watches everything from her balcony and laughs and claps her hands.")
+("Gained x1 Disquieting Incident", "Logbook", 3)
+("How often do they do this?", "The bodycount just seems highly impractical.")

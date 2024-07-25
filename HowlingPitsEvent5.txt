@@ -1,0 +1,5 @@
+("T")
+("HE HOWLING PITS")
+if CrewSpeechText("Foreman", 161, '"' + "Aye. And burning in our engines, feeding the Factory... Don't worry, though, they're ancient buggers. No-one you knew." + '"', 0)
+    ("Offer to buy it.", "", "")
+    ("Examine it more closely.", "", "")
